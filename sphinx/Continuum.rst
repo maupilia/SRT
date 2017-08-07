@@ -10,8 +10,17 @@ Mauraaaaa
 .. toctree::
    :maxdepth:2
 
+Continuum
+=========
+
 C-band
-======
+------
+
+K-band
+------
+
+L-band
+------
 
 
 
