@@ -5,16 +5,12 @@
 
 Select your backend:
 
-Mauraaaaa
 
 .. toctree::
    :maxdepth:2
 
-Continuum
-=========
+   Continuum-C.rst
 
-C-band
-------
 
 K-band
 ------
