@@ -12,7 +12,7 @@ Contents:
    :maxdepth:2
 
 
-Continuum.rst
+   Continuum.rst
 
 
 Pulsars
