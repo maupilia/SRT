@@ -3,16 +3,14 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Select your backend:
 
 .. toctree::
    :maxdepth:2
   
-   Continuum-C-TP.rst
 
 
-C-band
-======
+Total Power
+===========
 
 $ : commands to insert in a shell
 > : commands to insert in the operatorInput panel
