@@ -3,20 +3,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to SRT procedures's documentation!
-==========================================
+Select your backend:
 
-Contents:
+Mauraaaaa
 
 .. toctree::
    :maxdepth:2
 
-
-Continuum.rst
-
-
-Pulsars
-==================
+C-band
+======
 
 
 
