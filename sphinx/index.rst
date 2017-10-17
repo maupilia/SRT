@@ -14,10 +14,13 @@ Observation mode > Receiver > Backend...
 How to start the observation, check during the session...)
 
 
+Obsevation modes
+============
+
 .. toctree::
-   :maxdepth:3
+   :maxdepth:1
  
-   Spectral Lines <SpectralLine/index.rst>
+   SpectralLine/index.rst
 
 
 
