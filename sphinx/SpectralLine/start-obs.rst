@@ -62,6 +62,7 @@ with : [sect]=0 in full-Stokes observations ;
 #. Attenuate the signal based on the rms range [-128 ;128] and check the value on the interface
 
     ``> getrms``
+
     ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB
 
 
