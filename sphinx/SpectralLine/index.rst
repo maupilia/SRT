@@ -10,7 +10,7 @@ Spectral Lines
 .. toctree::
    :maxdepth:1
  
-   start-obs.rst
+   Start the observations <start-obs.rst>
 
 
 
