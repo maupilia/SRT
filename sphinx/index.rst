@@ -14,9 +14,9 @@ Spectral Lines
 =========
 
 .. toctree::
-   :maxdepth:10
+   :maxdepth:1
  
-   start-obs
+   SpectralLine/start-obs.rst
 
 
 
