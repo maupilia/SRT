@@ -3,9 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+=========
+C-band
+=========
 
 .. toctree::
-   :maxdepth:1
+   :maxdepth:2
 
    Before observing <start-obs.rst>
    Start the observations <start-obs.rst>
