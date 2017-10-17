@@ -13,6 +13,7 @@ Start the observations
 ===========
 
 $ : commands to insert in a shell
+
 > : commands to insert in the operatorInput panel
 
 
