@@ -4,13 +4,13 @@
    contain the root `toctree` directive.
 
 
-.. toctree::
-   :maxdepth:1
-  
 ========================================
 C-band observations with the Total Power
 ========================================
 
+.. toctree::
+   :maxdepth:1
+  
 
 Start the observations
 ======================
