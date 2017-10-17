@@ -7,9 +7,13 @@
 .. toctree::
    :maxdepth:1
   
+========================================
+C-band observations with the Total Power
+========================================
+
 
 Start the observations
-==============
+======================
 
 $ : commands to insert in a shell   
  
@@ -35,36 +39,27 @@ $ : commands to insert in a shell
 
     ``> setLO=[freq]``
 
-#. Select and configure the SARDARA backend in C-band
+#. Select the Total Power backend
 
-    ``> chooseBackend=BACKENDS/Sardara``
+    ``> chooseBackend=BACKENDS/TotalPower``
 
-    ``> initialize=SC00``
+#. Insert the bandwidth (300, 730, 1250 or 2000 MHz) and choose the sample rate (in MHz) :
 
-#. Set the different parameters of the backend:
+    ``> setSection=0,*, [bw],*,*,[sampleRate],*``
 
-    ``> setSection=[sect],[startFreq],[bw],[num-feed],[polarization], [sampleRate], [bin]``
+    ``> setSection=1,*, [bw],*,*,[sampleRate],*``
 
-with : [sect]=0 in full-Stokes observations ;
-  and  [sect]=0,1 in non full-Stokes observations ;
-          [startFreq] corresponds to the initial frequency in MHz from the LO value ; 
-          [bw] the bandwidth in MHz ; 
-          [num-feed] the number of feeds (1 in C-band) ;
-          [polarization] the polarization mode ;
-          [sampleRate] in MHz ;
-          [bin] the frequency channels (1024, 2048, 4096, 8192, 16384) ;
+#. Put the antenna at 45 deg of elevation and attenuate the signal in order to obtain values between 750 and 1100 counts (linear range of the backend) :
 
+    ``> goTo=*,45d``
 
-#. Choose the integration time in ms (e.g. n=10 corresponds to 100 spectra/sec)
+    ``> getTpi``
 
-    ``> integration=[n]``
+    ``> setAttenuation=0,[att]``	with [att] between 0 and 15 dB
 
-#. Attenuate the signal based on the rms range [-128 ;128] and check the value on the interface
+    ``> setAttenuation=1,[att]``	with [att] between 0 and 15 dB
 
-    ``> getrms``
-
-    ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB
-
+    ``> getTpi``
 
 #. Check the tsys (typical values)
 
