@@ -71,7 +71,7 @@ with : [sect]=0 in full-Stokes observations ;
 
     ``>tsys``
 
-#.  Begin the schedule by indicating the start scan [N] or subscan
+#. Begin the schedule by indicating the start scan [N] or subscan
  [N_n] in the SCD file :
 
     ``>startSchedule=[projectID]/[schedulename].scd,[N]``
