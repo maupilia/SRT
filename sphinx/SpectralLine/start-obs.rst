@@ -19,17 +19,59 @@ $ : commands to insert in a shell
 
 #. Insert your project number
 
-    ``- project=[projectID]``
+    ``> project=[projectID]``
 
 #. Initial setup
 
-    ``- antennaReset``
+    ``> antennaReset``
 
-    ``- setupCCB``
+    ``> setupCCB``
 
 
 #. Select the active surface shape (Shaped configuration for C-band observations)
 
-    ``- asSetup=S``
+    ``> asSetup=S``
 
-#. Provaaaaaaaaa
+#. Insert the Local Oscillator value in MHz
+
+    ``>setLO=[freq]``
+
+#. Select and configure the SARDARA backend in C-band
+
+    ``>chooseBackend=BACKENDS/Sardara``
+
+    ``>initialize=SC00``
+
+#. Set the different parameters of the backend:
+
+    ``>setSection=[sect],[startFreq],[bw],[num-feed],[polarization], [sampleRate], [bin]``
+
+with : [sect]=0 in full-Stokes observations ;
+   and [sect]=0,1 in non full-Stokes observations ;
+          [startFreq] corresponds to the initial frequency in MHz from the LO value ; 
+          [bw] the bandwidth in MHz ; 
+          [num-feed] the number of feeds (1 in C-band) ;
+          [polarization] the polarization mode ;
+          [sampleRate] in MHz ;
+          [bin] the frequency channels (1024, 2048, 4096, 8192, 16384) ;
+
+
+#. Choose the integration time in ms (e.g. n=10 corresponds to 100 spectra/sec)
+
+    ``>integration=[n]``
+
+#. Attenuate the signal based on the rms range [-128 ;128] and check
+ the value on the interface
+
+    ``>getrms``
+    ``>setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB
+
+
+#. Check the tsys (typical values)
+
+    ``>tsys``
+
+#.  Begin the schedule by indicating the start scan [N] or subscan
+ [N_n] in the SCD file :
+
+    ``>startSchedule=[projectID]/[schedulename].scd,[N]``
