@@ -18,7 +18,7 @@ How to start the observation, check during the session...)
 .. toctree::
    :maxdepth:3
  
-Spectral Lines <SpectralLine/index.rst>
+   Spectral Lines <SpectralLine/index.rst>
 
 ..
 Continuum
