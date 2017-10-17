@@ -16,8 +16,7 @@ Spectral Lines
 .. toctree::
    :maxdepth:10
  
-
-   :include:: SpectralLine/C-band/Sardara/start-obs
+   start-obs
 
 
 
