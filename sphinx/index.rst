@@ -21,8 +21,8 @@ Observation modes
    :maxdepth:1
  
    SpectralLine/index.rst
-
-
+   Continuum/index.rst
+   Pulsar/index.rst
 
 
 
