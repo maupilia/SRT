@@ -10,7 +10,7 @@ C-band
 .. toctree::
    :maxdepth:2
 
-   Before observing <start-obs.rst>
+   Before observing <befor-obs.rst>
    Start the observations <start-obs.rst>
 
 
