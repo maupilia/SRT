@@ -12,8 +12,8 @@
 Start the observations
 ===========
 
-$ : commands to insert in a shell
-
+$ : commands to insert in a shell   
+ 
 > : commands to insert in the operatorInput panel
 
 
@@ -60,8 +60,7 @@ with : [sect]=0 in full-Stokes observations ;
 
     ``> integration=[n]``
 
-#. Attenuate the signal based on the rms range [-128 ;128] and check
- the value on the interface
+#. Attenuate the signal based on the rms range [-128 ;128] and check the value on the interface
 
     ``> getrms``
     ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB
