@@ -7,27 +7,28 @@
 Welcome to SRT procedures's documentation!
 =============================
 
-Contents:
+Introduction TBD...
 
+..
+(Selection observation mode... follow the instruction...
+Observation mode > Receiver > Backend...
+How to start the observation, check during the session...)
 
-Spectral Lines
-=========
 
 .. toctree::
-   :maxdepth:1
+   :maxdepth:3
  
-   SpectralLine/start-obs.rst
+Spectral Lines <SpectralLine/index.rst>
 
-
-
+..
 Continuum
-=================
 
-   Continuum.rst
+..
+Spectral Lines
 
-
+..
 Pulsars
-==================
+
 
 
 
