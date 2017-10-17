@@ -8,14 +8,15 @@ Welcome to SRT procedures's documentation!
 
 Contents:
 
-.. toctree::
-   :maxdepth:2
-
 
 Spectral Lines
 ==================
 
+.. toctree::
+   :maxdepth:2
+   
    /Users/elisegron/github/sphinx/SpectralLine/C-band/Sardara/start-obs.rst
+
 
 
 Continuum
