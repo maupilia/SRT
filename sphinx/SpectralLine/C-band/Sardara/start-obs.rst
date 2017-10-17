@@ -16,18 +16,18 @@ $ : commands to insert in a shell
 > : commands to insert in the operatorInput panel
 
 
-1. Insert your project number
+#. Insert your project number
 
-    - project=[projectID]
+    ``- project=[projectID]``
 
-2. Initial setup
+#. Initial setup
 
-    - antennaReset
+    ``- antennaReset``
 
-    - setupCCB
+    ``- setupCCB``
 
 
-3. Select the active surface shape (Shaped configuration for C-band observations)
+#. Select the active surface shape (Shaped configuration for C-band observations)
 
-    - asSetup=S
+    ``- asSetup=S``
 
