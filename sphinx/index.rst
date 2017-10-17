@@ -9,7 +9,6 @@ Welcome to SRT procedures's documentation!
 
 Introduction TBD...
 
-..
 (Selection observation mode... follow the instruction...
 Observation mode > Receiver > Backend...
 How to start the observation, check during the session...)
@@ -19,15 +18,6 @@ How to start the observation, check during the session...)
    :maxdepth:3
  
    Spectral Lines <SpectralLine/index.rst>
-
-..
-Continuum
-
-..
-Spectral Lines
-
-..
-Pulsars
 
 
 
