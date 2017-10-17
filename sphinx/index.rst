@@ -14,8 +14,8 @@ Observation mode > Receiver > Backend...
 How to start the observation, check during the session...)
 
 
-Obsevation modes
-============
+Observation modes
+=================
 
 .. toctree::
    :maxdepth:1
