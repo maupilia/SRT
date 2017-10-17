@@ -4,10 +4,6 @@
    contain the root `toctree` directive.
 
 
-========================================
-C-band observations with the Total Power
-========================================
-
 .. toctree::
    :maxdepth:1
   

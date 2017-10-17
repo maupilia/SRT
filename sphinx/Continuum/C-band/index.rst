@@ -10,7 +10,9 @@ Continuum
 .. toctree::
    :maxdepth:1
 
-   C-band <C-band/index.rst>
+   Before observing <start-obs.rst>
+   Start the observations <start-obs.rst>
+
 
 
 
