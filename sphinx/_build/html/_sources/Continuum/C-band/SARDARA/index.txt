@@ -4,16 +4,16 @@
    contain the root `toctree` directive.
 
 =========
-Continuum
+SARDARA
 =========
-
 
 .. toctree::
    :maxdepth:2
 
-   C-band <C-band/index.rst>
-   K-band <K-band/index.rst>
-   L-band <L-band/index.rst>
-
+   Before observing <befor-obs.rst>
+   Start the observations <start-obs.rst>
+   Check during the observations <check-obs.rst>
+   Getting your data <get-data>
+   End of the session <stop.rst>
 
 
