@@ -14,6 +14,6 @@ SARDARA
    Start the observations <start-obs.rst>
    Check during the observations <check-obs.rst>
    Getting your data <get-data>
-   End of the session <stop.rst>
+   End of the session <stop-session.rst>
 
 

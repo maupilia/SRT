@@ -41,6 +41,7 @@ $ : commands to insert in a shell
 
    ``> initialize=SC00``
 
+
 #. Set the different parameters :
 
    ``> setSection=[sect],[startFreq],[bw],[num-feed],[polarization], [sampleRate], [bin]``
