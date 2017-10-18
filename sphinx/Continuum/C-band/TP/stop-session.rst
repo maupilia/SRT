@@ -20,11 +20,11 @@ On nuraghe-obs1
 
 1. Stop your schedule :
 
-   ``> stopSchedule``   *immediat interruption of the current subscan*
+   ``> stopSchedule``   *interruption of the current subscan*
 
 or
 
-   ``> haltSchedule``    *the schedule stop at the end of the on-going subscan.*
+   ``> haltSchedule``    *the schedule stops at the end of the on-going subscan.*
 
 
 
