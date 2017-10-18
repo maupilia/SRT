@@ -31,7 +31,7 @@
 
   
     <link rel="top" title="SRT procedures 1 documentation" href="../../../index.html"/>
-        <link rel="up" title="SARDARA" href="index.html"/>
+        <link rel="up" title="Xarcos" href="index.html"/>
         <link rel="next" title="Getting your data" href="get-data.html"/>
         <link rel="prev" title="Before observing" href="before-obs.html"/> 
 
@@ -87,14 +87,14 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Spectral lines</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../C-band/index.html">C-band</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">K-band</a><ul class="current">
-<li class="toctree-l3 current"><a class="reference internal" href="index.html">SARDARA</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../SARDARA/index.html">SARDARA</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Xarcos</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="before-obs.html">Before observing</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="">Start the observations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="get-data.html">Getting your data</a></li>
 <li class="toctree-l4"><a class="reference internal" href="stop-session.html">End of the session</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../Xarcos/index.html">Xarcos</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../L-band/index.html">L-band</a></li>
@@ -135,13 +135,13 @@
       
           <li><a href="../index.html">K-band</a> &raquo;</li>
       
-          <li><a href="index.html">SARDARA</a> &raquo;</li>
+          <li><a href="index.html">Xarcos</a> &raquo;</li>
       
     <li>Start the observations</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../../_sources/SpectralLine/K-band/SARDARA/start-obs.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/SpectralLine/K-band/Xarcos/start-obs.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -181,46 +181,46 @@
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setLO=[freq]</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">Select and configure the SARDARA backend in K-band</p>
+<li><p class="first">Select and configure the XARCOS backend in K-band</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/Sardara</span></code></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/Xbackends</span></code></p>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">initialize=[code]</span></code></p>
-<blockquote>
-<div><dl class="docutils">
-<dt>with [code]=SK00 <span class="classifier-delimiter">:</span> <span class="classifier">central feed only ;</span></dt>
-<dd><p class="first last">[code]=SK77 : 7 feeds ;
-[code]=SK03 : feeds 0 and 3 only ;
-[code]=SK06 : feeds 0 and 6 only.</p>
-</dd>
-</dl>
-</div></blockquote>
-</div></blockquote>
-</li>
-<li><p class="first">Set the different parameters of the backend:</p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setSection=[sect],[startFreq],[bw],[num-feed],[polarization],</span> <span class="pre">[sampleRate],</span> <span class="pre">[bin]</span></code></p>
-<blockquote>
-<div><dl class="docutils">
-<dt>with <span class="classifier-delimiter">:</span> <span class="classifier">[sect]=0,1,2,3,4,5,6 in full-Stokes observations;</span></dt>
-<dd><dl class="first last docutils">
-<dt>and [sect]=0,1,2,3,4,5,6,7,8,9,0,11,12,13 in non full-Stokes observations;</dt>
-<dd><p class="first last">[startFreq] corresponds to the initial frequency in MHz from the LO value;
-[bw] the bandwidth in MHz;
-[num-feed] the number of feeds (from 1 to 7);
-[polarization] the polarization mode;
-[sampleRate] in MHz;
-[bin] the frequency channels (1024, 2048, 4096, 8192, 16384).</p>
-</dd>
-</dl>
-</dd>
-</dl>
+<p>with</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">[code]=XK00</span></code> : central feed only.
+4 full-Stokes sections with bandwidths of 62.5 MHz, 8 MHz, 2 MHz
+and 0.5 MHz, each having 2048(x4) channels ;</li>
+<li><code class="docutils literal"><span class="pre">[code]=XK77</span></code> : 7 feeds.
+Full-Stokes sections are recorded, each having a 62.5 MHz
+bandwidth and 2048(x4) channels ;</li>
+<li><code class="docutils literal"><span class="pre">[code]=XK03</span></code> : feeds 0 and 3 only.
+Each feed produces two full-Stokes sections respectively having
+bandwidths of 62.5 MHz and 4 MHz and 2048(x4) channels ;</li>
+<li><code class="docutils literal"><span class="pre">[code]=XK06</span></code> : feeds 0 and 6 only.
+Each feed produces two full-Stokes sections respectively having
+bandwidths of 62.5 MHz and 4 MHz and 2048(x4) channels.</li>
+</ul>
 </div></blockquote>
 </li>
-<li><p class="first">Choose the integration time in ms (e.g. n=10 corresponds to 100 spectra/sec)</p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">integration=[n]</span></code></p>
+<li><p class="first">The <em>initialize</em> command and the parameters inserted in the schedule (.bck) directly set the full-Stoke mode, frequency, bandwidth and sample rate. You can check that the backend parameters are correct, or modify them by using the following command that you have to repeat for each section number [sect] :</p>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setSection=[sect],[startFreq],[bw],*,*,</span> <span class="pre">[sampleRate],*</span></code></p>
+<p>with</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">[sect]</span></code> = 0, 1, 2, 3, 4, 5, 6 in full-Stokes observations ;</li>
+<li><code class="docutils literal"><span class="pre">[startFreq]</span></code> corresponds to the initial frequency in the
+125-250 MHz range from the LO value ;</li>
+<li><code class="docutils literal"><span class="pre">[bw]</span></code> the bandwidth : 125.0, 62.5, 31.25, 15.625, 7.8125,
+3.90625, 1.953125, 0.9765625 or 0.48828125 MHz ;</li>
+<li><code class="docutils literal"><span class="pre">[sampleRate]</span></code> its value (in MHz) must be twice the bandwidth ;</li>
+<li><code class="docutils literal"><span class="pre">*</span></code> refers to the number of feeds, polarization mode and
+frequency channels, respectively. Let is like this.</li>
+</ul>
+</div></blockquote>
 </li>
 <li><p class="first">If you want to use the multi-feed derotator to prevent field rotation during long acquisition, select the derotator configuration :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">derotatorSetConfiguration=[config]</span></code>   with [config]=BSC, CUSTOM or FIXED</p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">derotatorSetConfiguration=[config]</span></code>    with [config]=BSC, CUSTOM or FIXED.</p>
 <ul class="simple">
 <li>BSC is for Best Coverage Space (automatic rotation of the dewar in order to best cover the scanned area).</li>
 <li>CUSTOM : the user has to choose the angle of the dewar axis with</li>
@@ -231,22 +231,15 @@ whole duration of the acquisition :</p>
 </div></blockquote>
 <p><code class="docutils literal"><span class="pre">&gt;</span>&nbsp; <span class="pre">derotatorSetPosition=[ang]d</span></code>     with [ang] the dewar angle in degrees</p>
 <ul class="simple">
-<li>FIXED : the dewar keeps a fixed postion w.r.t the horizon, no rotation is applied. To specify a static angle :</li>
+<li>FIXED : the dewar keeps a fixed postion w.r.t the horizon, no
+rotation is applied. This configuration is usually selected for
+spectral line observations, with an angle of 0 deg. To specify a static angle :</li>
 </ul>
 <p><code class="docutils literal"><span class="pre">&gt;</span>&nbsp; <span class="pre">derotatorSetPosition=[ang]d</span></code>     with [ang] the dewar angle in degrees</p>
 </div></blockquote>
 <p>To read back the position of the dewar :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">derotatorGetPosition</span></code></p>
-</div></blockquote>
-</li>
-<li><p class="first">Attenuate the signal based on the rms range [-128 ;128] and check the value on the interface.</p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">getrms</span></code>  ???</p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setAttenuation=[sect],[att]</span></code>    with [att] the attenuation from 0 to 15 dB.</p>
-</li>
-<li><p class="first">Check the tsys (typical values)</p>
-<blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">tsys</span></code></p>
 </div></blockquote>
 </li>
 <li><p class="first">Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :</p>

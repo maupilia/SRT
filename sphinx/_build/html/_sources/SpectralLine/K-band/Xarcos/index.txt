@@ -4,12 +4,16 @@
    contain the root `toctree` directive.
 
 =========
-K-band
+Xarcos
 =========
 
 .. toctree::
-   :maxdepth:2
+   :maxdepth:1
 
-   SARDARA <SARDARA/index.rst>
-   Xarcos <Xarcos/index.rst>   
+   Before observing <before-obs.rst>
+   Start the observations <start-obs.rst>
+   Check during the observations <check-obs.rst>
+   Getting your data <get-data.rst>
+   End of the session <stop-session.rst>
+
 
