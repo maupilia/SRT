@@ -13,7 +13,7 @@ SARDARA
    Before observing <before-obs.rst>
    Start the observations <start-obs.rst>
    Check during the observations <check-obs.rst>
-   Getting your data <get-data>
+   Getting your data <get-data.rst>
    End of the session <stop-session.rst>
 
 

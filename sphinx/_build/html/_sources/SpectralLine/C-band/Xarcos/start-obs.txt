@@ -55,8 +55,8 @@ $ : commands to insert in a shell
           [bw] the bandwidth : 125.0, 62.5, 31.25, 15.625, 7.8125, 3.90625, 1.953125, 0.9765625 or 0.48828125 MHz ; 
           [sampleRate] its value (in MHz) must be twice the bandwidth.
 
-          * : indicates the number of feeds, polarization mode and
-            frequency channels,  respectively. Let the asterix (*) for Xarcos observations.
+          ``*`` : indicates the number of feeds, polarization mode and
+            frequency channels,  respectively. Let the asterix (``*``) for Xarcos observations.
 
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
