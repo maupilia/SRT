@@ -13,17 +13,12 @@ function ThemeNav () {
         winPosition: 0,
         winHeight: null,
         docHeight: null,
-<<<<<<< HEAD
         isRunning: false
-=======
-        isRunning: null
->>>>>>> master
     };
 
     nav.enable = function () {
         var self = this;
 
-<<<<<<< HEAD
         if (!self.isRunning) {
             self.isRunning = true;
             jQuery(function ($) {
@@ -48,29 +43,6 @@ function ThemeNav () {
                 self.onResize();
             });
         };
-=======
-        jQuery(function ($) {
-            self.init($);
-
-            self.reset();
-            self.win.on('hashchange', self.reset);
-
-            // Set scroll monitor
-            self.win.on('scroll', function () {
-                if (!self.linkScroll) {
-                    self.winScroll = true;
-                }
-            });
-            setInterval(function () { if (self.winScroll) self.onScroll(); }, 25);
-
-            // Set resize monitor
-            self.win.on('resize', function () {
-                self.winResize = true;
-            });
-            setInterval(function () { if (self.winResize) self.onResize(); }, 25);
-            self.onResize();
-        });
->>>>>>> master
     };
 
     nav.init = function ($) {
@@ -126,7 +98,6 @@ function ThemeNav () {
             try {
                 var link = $('.wy-menu-vertical')
                     .find('[href="' + anchor + '"]');
-<<<<<<< HEAD
                 // If we didn't find a link, it may be because we clicked on
                 // something that is not in the sidebar (eg: when using
                 // sphinxcontrib.httpdomain it generates headerlinks but those
@@ -140,8 +111,6 @@ function ThemeNav () {
                     .find('[href="#' + closest_section.attr("id") + '"]');
 
                 }
-=======
->>>>>>> master
                 $('.wy-menu-vertical li.toctree-l1 li.current')
                     .removeClass('current');
                 link.closest('li.toctree-l2').addClass('current');
