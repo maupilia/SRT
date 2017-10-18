@@ -24,22 +24,46 @@ $ : commands to insert in a shell
 
     ``> antennaReset``
 
-    ``> setupCCB``
+    ``> setupLLP``
 
 
-#. Select the active surface shape (Shaped configuration for C-band observations)
+#. Select the receiver Mode :
 
-    ``> asSetup=S``
+    ``> receiversMode=[mode]``
+
+     - with receiversMode=XXC1;
+            receiversMode=XXC2;
+            receiversMode=XXC3;
+            receiversMode=XXC4;
+            receiversMode=XXC5;
+            receiversMode=XXL1;
+            receiversMode=XXL2;
+            receiversMode=XXL3;
+            receiversMode=XXL4;
+            receiversMode=XXL5.
+
+     Note that C is for *Circular*, L for *Linear polarization* and
+     1 : all band, 1300-1800 MHz (no filter);
+     2 : 1320-1780 MHz;
+     3 : 1350-1450 MHz;
+     4 : 1300-1800 MHz (band-pass);
+     5 : 1625-1715 MHz.
+
+
+#. Select the active surface shape (Parabolic for L-band observations)
+
+    ``> asSetup=P``
+
 
 #. Insert the Local Oscillator value in MHz
 
     ``> setLO=[freq]``
 
-#. Select and configure the SARDARA backend
+#. Select and configure the SARDARA backend in L-band
 
     ``> chooseBackend=BACKENDS/Sardara``
 
-    ``> initialize=SC00``
+    ``> initialize=SL00``
 
 
 #. Set the different parameters of the backend :
@@ -49,7 +73,7 @@ $ : commands to insert in a shell
     with : [sect]=0 in full-stokes observations and [sect]=0,1 in non full-stokes observations ;
           [startFreq] corresponds to the initial frequency in MHz from the LO value ; 
           [bw] the bandwidth in MHz ; 
-          [num-feed] the number of feed : 1 in C-band ;
+          [num-feed] the number of feed : 1 in L-band ;
           [polarization] the polarization mode (0 or 1 : Left and
           Right ; 2 : full-Stokes) ;
           [sampleRate] in MHz;
