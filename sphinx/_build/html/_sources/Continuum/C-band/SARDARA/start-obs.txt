@@ -18,44 +18,52 @@ $ : commands to insert in a shell
 
 #. Insert your project number
 
-    ``> project=[projectID]``
+   ``> project=[projectID]``
 
 #. Initial setup
 
-    ``> antennaReset``
+   ``> antennaReset``
 
-    ``> setupCCB``
+   ``> setupCCB``
 
 
 #. Select the active surface shape (Shaped configuration for C-band observations)
 
-    ``> asSetup=S``
+   ``> asSetup=S``
 
 #. Insert the Local Oscillator value in MHz
 
-    ``> setLO=[freq]``
+   ``> setLO=[freq]``
 
-#. Select the Total Power backend
+#. Select and configure the SARDARA backend
 
-    ``> chooseBackend=BACKENDS/TotalPower``
+   ``> chooseBackend=BACKENDS/Sardara``
 
-#. Insert the bandwidth (300, 730, 1250 or 2000 MHz) and choose the sample rate (in MHz) :
+   ``> initialize=SC00``
 
-    ``> setSection=0,*, [bw],*,*,[sampleRate],*``
+#. Set the different parameters :
 
-    ``> setSection=1,*, [bw],*,*,[sampleRate],*``
+   ``> setSection=[sect],[startFreq],[bw],[num-feed],[polarization], [sampleRate], [bin]``
 
-#. Put the antenna at 45 deg of elevation and attenuate the signal in order to obtain values between 750 and 1100 counts (linear range of the backend) :
+   with : [sect]=0 in full-stokes observations and [sect]=0,1 in non full-stokes observations ;
+          [startFreq] corresponds to the initial frequency in MHz from the LO value ; 
+          [bw] the bandwidth in MHz ; 
+          [num-feed] the number of feed : 1 in C-band ;
+          [polarization] the polarization mode (0 or 1 : Left and
+          Right ; 2 : full-Stokes) ;
+          [sampleRate] in MHz;
+          [bin] the frequency channels (1024, 2048, 4096, 8192, 16384).
+    
+#. Choose the integration time in ms (e.g. n=10 corresponds to 100 spectra/sec)
 
-    ``> goTo=*,45d``
+   ``> integration=[n]``
 
-    ``> getTpi``
 
-    ``> setAttenuation=0,[att]``	with [att] between 0 and 15 dB
+#. Attenuate the signal based on the rms range [-128 ;128] and check the value on the interface.
 
-    ``> setAttenuation=1,[att]``	with [att] between 0 and 15 dB
+   ``> getrms``  ???
 
-    ``> getTpi``
+   ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.
 
 #. Check the tsys (typical values)
 
