@@ -12,6 +12,7 @@ C-band
 
    Before observing <befor-obs.rst>
    Start the observations <start-obs.rst>
+   Check during the observations <during-obs.rst>
 
 
 
