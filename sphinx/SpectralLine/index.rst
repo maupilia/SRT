@@ -3,14 +3,17 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-==============
-Spectral Lines
-==============
+=========
+Spectral lines
+=========
+
 
 .. toctree::
-   :maxdepth:1
- 
-   Start the observations <start-obs.rst>
+   :maxdepth:2
+
+   C-band <C-band/index.rst>
+   K-band <K-band/index.rst>
+   L-band <L-band/index.rst>
 
 
 
