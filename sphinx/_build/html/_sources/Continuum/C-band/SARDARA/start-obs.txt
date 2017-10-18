@@ -18,35 +18,35 @@ $ : commands to insert in a shell
 
 #. Insert your project number
 
-   ``> project=[projectID]``
+    ``> project=[projectID]``
 
 #. Initial setup
 
-   ``> antennaReset``
+    ``> antennaReset``
 
-   ``> setupCCB``
+    ``> setupCCB``
 
 
 #. Select the active surface shape (Shaped configuration for C-band observations)
 
-   ``> asSetup=S``
+    ``> asSetup=S``
 
 #. Insert the Local Oscillator value in MHz
 
-   ``> setLO=[freq]``
+    ``> setLO=[freq]``
 
 #. Select and configure the SARDARA backend
 
-   ``> chooseBackend=BACKENDS/Sardara``
+    ``> chooseBackend=BACKENDS/Sardara``
 
-   ``> initialize=SC00``
+    ``> initialize=SC00``
 
 
-#. Set the different parameters :
+#. Set the different parameters of the backend :
 
-   ``> setSection=[sect],[startFreq],[bw],[num-feed],[polarization], [sampleRate], [bin]``
+    ``> setSection=[sect],[startFreq],[bw],[num-feed],[polarization], [sampleRate], [bin]``
 
-   with : [sect]=0 in full-stokes observations and [sect]=0,1 in non full-stokes observations ;
+    with : [sect]=0 in full-stokes observations and [sect]=0,1 in non full-stokes observations ;
           [startFreq] corresponds to the initial frequency in MHz from the LO value ; 
           [bw] the bandwidth in MHz ; 
           [num-feed] the number of feed : 1 in C-band ;
@@ -57,19 +57,19 @@ $ : commands to insert in a shell
     
 #. Choose the integration time in ms (e.g. n=10 corresponds to 100 spectra/sec)
 
-   ``> integration=[n]``
+    ``> integration=[n]``
 
 
 #. Attenuate the signal based on the rms range [-128 ;128] and check the value on the interface.
 
-   ``> getrms``  ???
+    ``> getrms``  ???
 
-   ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.
+    ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.
 
 #. Check the tsys (typical values)
 
-    ``> tsys``
+     ``> tsys``
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 
-    ``> startSchedule=[projectID]/[schedulename].scd,[N]``
+     ``> startSchedule=[projectID]/[schedulename].scd,[N]``
