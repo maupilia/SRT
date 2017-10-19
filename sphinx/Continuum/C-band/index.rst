@@ -10,6 +10,5 @@ C-band
 .. toctree::
    :maxdepth:2
 
-
    Total Power <TP/index.rst>
    SARDARA <SARDARA/index.rst>
