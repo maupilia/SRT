@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 ========================================
-Welcome to SRT procedures documentation!
+Welcome to SRT procedure documentation!
 ========================================
 
 Introduction TBD...
