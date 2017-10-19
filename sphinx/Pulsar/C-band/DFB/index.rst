@@ -4,17 +4,19 @@
    contain the root `toctree` directive.
 
 
-####################
-Pulsar observations
-####################
+
+DFB
+-----
 
 .. toctree::
    :maxdepth:3
  
 
-   C-band <C-band/index.rst>
-   L-band <L-band/index.rst>
-   P-band <P-band/index.rst>
+   Before <before-obs.rst>
+   Start <start-obs.rst>
+   During <check-obs.rst>
+   GetData <get-data.rst>
+   Stop <stop-session.rst>
 
 
 

@@ -3,18 +3,14 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-
-####################
+=====================
 Pulsar observations
-####################
+=====================
 
 .. toctree::
-   :maxdepth:3
+   :maxdepth:1
  
-
-   C-band <C-band/index.rst>
-   L-band <L-band/index.rst>
-   P-band <P-band/index.rst>
+   
 
 
 
