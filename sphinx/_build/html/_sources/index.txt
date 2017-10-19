@@ -4,7 +4,6 @@
    contain the root `toctree` directive.
 
 
-
 Welcome to SRT procedure documentation!
 ----------------------------------
 
@@ -17,10 +16,11 @@ How to start the observation, check during the session...)
 
 Observation modes
 ============
-
+   
 .. toctree::
    :maxdepth: 1
- 
+
+
    Continuum/index.rst
    SpectralLine/index.rst
    Pulsar/index.rst
