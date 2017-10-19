@@ -8,7 +8,7 @@ L-band
 =========
 
 .. toctree::
-   :maxdepth:2
+   :maxdepth: 1
 
    Total Power <TP/index.rst>
    SARDARA <SARDARA/index.rst>

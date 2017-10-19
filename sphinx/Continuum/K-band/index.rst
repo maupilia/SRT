@@ -8,7 +8,8 @@ K-band
 =========
 
 .. toctree::
-   :maxdepth:2
+   :maxdepth: 1
+   :titlesonly:
 
    Total Power <TP/index.rst>
    SARDARA <SARDARA/index.rst>
