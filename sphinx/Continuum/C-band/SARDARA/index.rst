@@ -8,7 +8,7 @@ SARDARA
 =========
 
 .. toctree::
-   :maxdepth:2
+   :maxdepth: 1
 
    Before observing <before-obs.rst>
    Start the observations <start-obs.rst>

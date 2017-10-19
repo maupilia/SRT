@@ -5,9 +5,8 @@
 
 
 
-========================================
 Welcome to SRT procedure documentation!
-========================================
+----------------------------------
 
 Introduction TBD...
 
@@ -17,10 +16,10 @@ How to start the observation, check during the session...)
 
 
 Observation modes
-=================
+============
 
 .. toctree::
-   :titlesonly:
+   :maxdepth: 1
  
    Continuum/index.rst
    SpectralLine/index.rst
@@ -29,9 +28,8 @@ Observation modes
 
 
 Indices and tables
-==================
+============
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
 
