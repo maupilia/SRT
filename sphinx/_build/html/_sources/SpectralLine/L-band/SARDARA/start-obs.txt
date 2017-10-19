@@ -26,7 +26,6 @@ $ : commands to insert in a shell
 
     ``> setupLLP``
 
-
 #. Select the receiver Mode :
 
     ``> receiversMode=[mode]``
