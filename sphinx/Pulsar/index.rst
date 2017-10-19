@@ -4,13 +4,13 @@
    contain the root `toctree` directive.
 
 =====================
-Pulsar's observations
+Pulsar observations
 =====================
 
 .. toctree::
    :maxdepth:1
  
-   S
+   
 
 
 
