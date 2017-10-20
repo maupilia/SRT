@@ -8,15 +8,8 @@ C-band
 =====================
 
 .. toctree::
-<<<<<<< HEAD
    :maxdepth: 1
  
    
    DFB <DFB/index.rst>
 
-=======
-   :maxdepth:2
- 
-   
-   DFB <DFB/index.rst>
->>>>>>> master

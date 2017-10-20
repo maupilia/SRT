@@ -9,11 +9,7 @@ Pulsar observations
 ####################
 
 .. toctree::
-<<<<<<< HEAD
    :maxdepth: 1
-=======
-   :maxdepth:3
->>>>>>> master
  
 
    C-band <C-band/index.rst>
