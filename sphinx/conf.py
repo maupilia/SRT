@@ -46,8 +46,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'SRT procedures'
-copyright = u'2017, Egron, Pilia'
-author = u'Egron, Pilia'
+copyright = u'2017, E. Egron, M. Pilia, S. Loru'
+author = u'E. Egron, M. Pilia, S. Loru'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -223,7 +223,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'SRTprocedures.tex', u'SRT procedures Documentation',
-     u'Egron, Pilia', 'manual'),
+     u'E. Egron, M. Pilia, S. Loru', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
