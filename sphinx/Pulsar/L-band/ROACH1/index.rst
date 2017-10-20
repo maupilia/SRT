@@ -3,13 +3,19 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-=====================
-L-band
-=====================
+
+
+ROACH1
+-----
 
 .. toctree::
-   :maxdepth: 1
  
-   
-   DFB <DFB/index.rst>
-   ROACH1 <ROACH1/index.rst>
+
+   Before <before-obs.rst>
+   Start <start-obs.rst>
+   During <check-obs.rst>
+   GetData <get-data.rst>
+   Stop <stop-session.rst>
+
+
+

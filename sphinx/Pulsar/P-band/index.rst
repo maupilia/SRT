@@ -4,13 +4,12 @@
    contain the root `toctree` directive.
 
 =====================
-Pulsar observations
+P-band
 =====================
 
 .. toctree::
-   :maxdepth:1
+   :maxdepth: 1
  
    
-
-
+   ROACH1 <ROACH1/index.rst>
 
