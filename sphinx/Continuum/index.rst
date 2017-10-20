@@ -9,7 +9,7 @@ Continuum
 
 
 .. toctree::
-   :titlesonly:
+   :maxdepth: 1
 
    C-band <C-band/index.rst>
    K-band <K-band/index.rst>

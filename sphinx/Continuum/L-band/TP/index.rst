@@ -8,7 +8,7 @@ Total Power
 =========
 
 .. toctree::
-   :maxdepth:1
+   :maxdepth: 1
 
    Before observing <before-obs.rst>
    Start the observations <start-obs.rst>

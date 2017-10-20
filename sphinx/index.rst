@@ -4,24 +4,35 @@
    contain the root `toctree` directive.
 
 
+.. Welcome to SRT procedure documentation!
+   ----------------------------------
 
-========================================
-Welcome to SRT procedure documentation!
-========================================
+Observing with SRT
+----------------
 
-Introduction TBD...
+Welcome to the user cookbook! 
 
-(Selection observation mode... follow the instruction...
-Observation mode > Receiver > Backend...
-How to start the observation, check during the session...)
+These pages are intended to support the observer when
+performing observations with SRT. For a complete documentation on the
+user guide *Observing at SRT with Nuraghe*, please click
+`here <http://discos.readthedocs.io/en/latest/index.html>`_.
+
+Select the **observation mode** you want, a menu with the receivers (C-,
+K- and L-bands) and the associated backends (Total Power, SARDARA,
+Xarcos, DFB, Roach1) will appear. You can simply follow the different steps in
+order to carry out safety observations.
+
+.. (Selection observation mode... follow the instruction...
+   Observation mode > Receiver > Backend...
+   How to start the observation, check during the session...)
 
 
 Observation modes
-=================
-
+============
+   
 .. toctree::
-   :titlesonly:
- 
+   :maxdepth: 1
+
    Continuum/index.rst
    SpectralLine/index.rst
    Pulsar/index.rst
@@ -29,9 +40,8 @@ Observation modes
 
 
 Indices and tables
-==================
+============
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
 
