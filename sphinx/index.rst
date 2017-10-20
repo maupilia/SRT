@@ -18,7 +18,7 @@ Observation modes
 =================
 
 .. toctree::
-   :maxdepth:1
+   :maxdepth: 1
  
    Continuum/index.rst
    SpectralLine/index.rst
