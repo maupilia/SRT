@@ -11,5 +11,5 @@ K-band
    :maxdepth: 1
 
    SARDARA <SARDARA/index.rst>
-   Xarcos <Xarcos/index.rst>   
+
 

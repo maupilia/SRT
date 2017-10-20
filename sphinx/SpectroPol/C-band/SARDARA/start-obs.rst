@@ -47,11 +47,12 @@ $ : commands to insert in a shell
     ``> setSection=[sect],[startFreq],[bw],[num-feed],[polarization],[sampleRate],[bin]``
 
     with : 
-      - ``[sect]`` : 0 in full Stokes observations ;
+
+      - ``[sect]``: 0 in full Stokes observations ;
       - ``[startFreq]`` corresponds to the initial frequency in MHz from the LO value ; 
       - ``[bw]`` the bandwidth in MHz ; 
-      - ``[num-feed]`` : 1 (number of feed in C-band) ;
-      - ``[polarization]`` : 2 for full Stokes observations ;
+      - ``[num-feed]``: 1 (number of feed in C-band) ;
+      - ``[polarization]``: 2 for full Stokes observations ;
       - ``[sampleRate]`` in MHz ;
       - ``[bin]`` the frequency channels (1024, 2048, 4096, 8192, 16384).
     

@@ -15,16 +15,24 @@ Your observations are now finished, we can stop the schedule and park
 the antenna.
 
 
+In LEAP VNC
+------------------
+
+1. W2: Do a ``Control-C`` to end the ./control.csh script.
+
+2. W2: ``$./end.csh`` to end data acquisition and close the daemons.
+
+
 On nuraghe-obs1
 ------------------
 
 1. Stop your schedule :
 
-   ``> stopSchedule``   *interruption of the current subscan*
+    ``> stopSchedule``   *interruption of the current subscan*
 
-or
+      or
 
-   ``> haltSchedule``    *the schedule stops at the end of the on-going subscan.*
+    ``> haltSchedule``    *the schedule stops at the end of the on-going subscan.*
 
 
 
@@ -46,6 +54,6 @@ Block the axes of the antenna
 
 Look at the monitor of the antenna and wait until the upper right
 panel becomes red. It can take a few minutes after the command
-*antennaPark* has been given. 
+``> antennaPark`` has been given. 
 
 Only at this moment, you can press on the red button.

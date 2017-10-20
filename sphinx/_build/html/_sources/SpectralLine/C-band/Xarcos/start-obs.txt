@@ -16,47 +16,52 @@ $ : commands to insert in a shell
 > : commands to insert in the operatorInput panel
 
 
-#. Insert your project number
+#. Insert your project number :
 
     ``> project=[projectID]``
 
-#. Initial setup
+#. Initial setup :
 
     ``> antennaReset``
 
     ``> setupCCB``
 
 
-#. Select the active surface shape (Shaped configuration for C-band observations)
+#. Select the active surface shape (Shaped configuration for C-band
+ observations) :
 
     ``> asSetup=S``
 
-#. Insert the Local Oscillator value in MHz
+#. Insert the Local Oscillator value in MHz :
 
     ``> setLO=[freq]``
 
-#. Select and configure the XARCOS backend in C-band
+#. Select and configure the XARCOS backend in C-band :
 
     ``> chooseBackend=BACKENDS/Xbackends``
 
     ``> initialize=XC00``
 
 
-#. The *initialize* command and the parameters inserted in the
- schedule (.bck) directly set the full-Stoke mode, frequency,
+#. The ``initialize`` command and the parameters inserted in the
+ schedule (.bck) directly set the full Stoke mode, frequency,
  bandwidth and sample rate. You can check that the backend parameters
  are correct, or modify them by using the following command :
 
     ``> setSection=[sect],[startFreq],[bw],*,*, [sampleRate],*``
 
-     with : [sect]=0 in full-Stokes observations ;
-          [startFreq] corresponds to the initial frequency in the
-          125-250 MHz range from the LO value ;
-          [bw] the bandwidth : 125.0, 62.5, 31.25, 15.625, 7.8125, 3.90625, 1.953125, 0.9765625 or 0.48828125 MHz ; 
-          [sampleRate] its value (in MHz) must be twice the bandwidth.
+    with :
 
-          ``*`` : indicates the number of feeds, polarization mode and
-            frequency channels,  respectively. Let the asterix (``*``) for Xarcos observations.
+      - ``[sect]``: 0 in full-Stokes observations ;
+      - ``[startFreq]`` corresponds to the initial frequency in the
+        125-250 MHz range from the LO value ;
+      - ``[bw]`` the bandwidth : 125.0, 62.5, 31.25, 15.625, 7.8125,
+        3.90625, 1.953125, 0.9765625 or 0.48828125 MHz ; 
+      - ``[sampleRate]``: in MHz, must be twice the bandwidth.
+      - ``*`` : indicates the number of feeds, polarization mode and
+        frequency channels, respectively. Let the asterix (``*``) for
+        Xarcos observations.
+
 
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
