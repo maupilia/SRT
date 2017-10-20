@@ -9,7 +9,6 @@ DFB
 -----
 
 .. toctree::
-   :maxdepth:3
  
 
    Before <before-obs.rst>
