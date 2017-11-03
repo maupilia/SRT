@@ -16,50 +16,42 @@ $ : commands to insert in a shell
 > : commands to insert in the operatorInput panel
 
 
-#. Insert your project number
+#. Insert your project number :
 
     ``> project=[projectID]``
 
 
-#. Initial setup
+#. Initial setup :
 
     ``> antennaReset``
 
     ``> setupLLP``
 
 
-#. Select the receiver Mode :
+#. Select the receiver mode :
 
-    ``> receiversMode=[mode]``
+    ``> receiversMode=[code]`` where ``[code]`` can be ``XXC1``,
+    ``XXC2``, ``XXC3``, ``XXC4``, ``XXC5``, ``XXL1``, ``XXL2``,
+    ``XXL3``, ``XXL4``, ``XXL5``.
 
-     - with receiversMode=XXC1;
-            receiversMode=XXC2;
-            receiversMode=XXC3;
-            receiversMode=XXC4;
-            receiversMode=XXC5;
-            receiversMode=XXL1;
-            receiversMode=XXL2;
-            receiversMode=XXL3;
-            receiversMode=XXL4;
-            receiversMode=XXL5.
-
-     Note that C is for *Circular*, L for *Linear polarization* and
-     1 : all band, 1300-1800 MHz (no filter);
-     2 : 1320-1780 MHz;
-     3 : 1350-1450 MHz;
-     4 : 1300-1800 MHz (band-pass);
-     5 : 1625-1715 MHz.
+       - **C** is for **Circular**, **L** for **Linear polarization** ;
+       - **1** : all band, 1300-1800 MHz (no filter) ;
+       - **2** : 1320-1780 MHz ;
+       - **3** : 1350-1450 MHz ;
+       - **4** : 1300-1800 MHz (band-pass) ;
+       - **5** : 1625-1715 MHz.
 
 
-#. Select the active surface shape (Parabolic for L-band observations)
+
+#. Select the active surface shape (Parabolic for L-band observations) :
 
     ``> asSetup=P``
 
-#. Insert the Local Oscillator value in MHz
+#. Insert the Local Oscillator value in MHz :
 
     ``> setLO=[freq]``
 
-#. Select the Total Power backend
+#. Select the Total Power backend :
 
     ``> chooseBackend=BACKENDS/TotalPower``
 
@@ -83,7 +75,7 @@ $ : commands to insert in a shell
 
     ``> getTpi``
 
-#. Check the tsys (typical values)
+#. Check the tsys (typical values) :
 
     ``> tsys``
 

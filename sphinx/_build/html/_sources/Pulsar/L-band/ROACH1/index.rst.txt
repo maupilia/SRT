@@ -9,13 +9,11 @@ ROACH1
 -----
 
 .. toctree::
+   :maxdepth: 1
  
 
-   Before <before-obs.rst>
-   Start <start-obs.rst>
-   During <check-obs.rst>
-   GetData <get-data.rst>
-   Stop <stop-session.rst>
+   Folding mode <Folding/index.rst>
+   Baseband mode <Folding/index.rst>
 
 
 
