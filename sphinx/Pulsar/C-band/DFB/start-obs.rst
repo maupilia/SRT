@@ -26,6 +26,8 @@ $ : commands to insert in a shell
 
     ``> setupCCB``
 
+    ``> goTo=*,81.9d``
+
 
 #. Select the active surface shape (Shaped configuration for C-band observations)
 
