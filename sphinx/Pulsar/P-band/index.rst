@@ -11,5 +11,5 @@ P-band
    :maxdepth: 1
  
    
+   DFB <DFB/index.rst>
    ROACH1 <ROACH1/index.rst>
-
