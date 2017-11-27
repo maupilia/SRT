@@ -109,8 +109,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../../L-band/index.html">L-band</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../SpectralLine/index.html">Spectral lines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../Pulsar/index.html">Pulsar observations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../SpectralLine/index.html">Spectral lines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../SpectroPol/index.html">Spectro-polarimetry</a></li>
 </ul>
 
             
@@ -215,15 +216,15 @@
 </li>
 <li><p class="first">Insert the bandwidth (300, 730, 1250 or 2000 MHz) and choose the sample rate (in MHz) :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setSection=0,*,</span> <span class="pre">[bw],*,*,[sampleRate],*</span></code></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setSection=1,*,</span> <span class="pre">[bw],*,*,[sampleRate],*</span></code></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setSection=0,*,[bw],*,*,[sampleRate],*</span></code></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setSection=1,*,[bw],*,*,[sampleRate],*</span></code></p>
 </div></blockquote>
 </li>
 <li><p class="first">Put the antenna at 45 deg of elevation and attenuate the signal in order to obtain values between 750 and 1100 counts (linear range of the backend) :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">goTo=*,45d</span></code></p>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">getTpi</span></code></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setAttenuation=0,[att]</span></code>        with [att] between 0 and 15 dB</p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setAttenuation=0,[att]</span></code>          with [att] between 0 and 15 dB</p>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setAttenuation=1,[att]</span></code>        with [att] between 0 and 15 dB</p>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">getTpi</span></code></p>
 </div></blockquote>
@@ -233,7 +234,7 @@
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">tsys</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :</p>
+<li><p class="first">Begin the schedule by indicating the start scan [N] or subscan [N_n] in the .scd file :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">startSchedule=[projectID]/[schedulename].scd,[N]</span></code></p>
 </div></blockquote>

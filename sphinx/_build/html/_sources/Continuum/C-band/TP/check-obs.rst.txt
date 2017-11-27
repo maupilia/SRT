@@ -16,25 +16,24 @@ $ : commands to insert in a shell
 > : commands to insert in the operatorInput panel
 
 
-#. Data are correctly written in the directory
+#. On nuraghe-obs2, check that the data are correctly written in your project section :
 
-	On nuraghe-obs2, check that the data are written in your project section:
+    ``$ cd/archive/data/[projectID]/``   
+
+
+#. Look at the Quick-look of the data :
+
+    ``$ idl``             
+
+    ``IDL> .r fitslook``
+
+    ``IDL> fitslook``
 	
-	``$ cd/archive/data/[projectID]/``
+    Note that the subscans are shown with a short delay in the
+    quick-look plots with respect to the real observations.
 
-#. Quick-look of the data
 
-	On nuraghe-obs2:
-
-	``$ idl``
-
-	``IDL> .r fitslook``
-
-	``IDL> fitslook``
-	
-	Note that in the quick-look plots, the subscans are shown with a short delay   		with respect to the real observations.
-
-#. Antenna's monitors
+#. Antenna monitors
 
 	Check that everything section is green. If a red box appears, put the cursor on 	it and look at the error message.
 

@@ -108,8 +108,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../../L-band/index.html">L-band</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../SpectralLine/index.html">Spectral lines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../Pulsar/index.html">Pulsar observations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../SpectralLine/index.html">Spectral lines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../SpectroPol/index.html">Spectro-polarimetry</a></li>
 </ul>
 
             
@@ -186,28 +187,32 @@
 <p>$ : commands to insert in a shell</p>
 <p>&gt; : commands to insert in the operatorInput panel</p>
 <ol class="arabic">
-<li><p class="first">Insert your project number</p>
+<li><p class="first">Insert your project number :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">Initial setup</p>
+<li><p class="first">Initial setup :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code></p>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setupCCB</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">Select the active surface shape (Shaped configuration for C-band observations)</p>
-<blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asSetup=S</span></code></p>
-</div></blockquote>
+<li><p class="first">Select the active surface shape (Shaped configuration for C-band</p>
 </li>
-<li><p class="first">Insert the Local Oscillator value in MHz</p>
+</ol>
+<blockquote>
+<div><p>observations) :</p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asSetup=S</span></code></div></blockquote>
+</div></blockquote>
+<ol class="arabic">
+<li><p class="first">Insert the Local Oscillator value in MHz :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setLO=[freq]</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">Select and configure the SARDARA backend</p>
+<li><p class="first">Select and configure the SARDARA backend :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/Sardara</span></code></p>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">initialize=SC00</span></code></p>
@@ -215,32 +220,38 @@
 </li>
 <li><p class="first">Set the different parameters of the backend :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setSection=[sect],[startFreq],[bw],[num-feed],[polarization],</span> <span class="pre">[sampleRate],</span> <span class="pre">[bin]</span></code></p>
-<dl class="docutils">
-<dt>with <span class="classifier-delimiter">:</span> <span class="classifier">[sect]=0 in full-stokes observations and [sect]=0,1 in non full-stokes observations ;</span></dt>
-<dd><p class="first last">[startFreq] corresponds to the initial frequency in MHz from the LO value ;
-[bw] the bandwidth in MHz ;
-[num-feed] the number of feed : 1 in C-band ;
-[polarization] the polarization mode (0 or 1 : Left and
-Right ; 2 : full-Stokes) ;
-[sampleRate] in MHz;
-[bin] the frequency channels (1024, 2048, 4096, 8192, 16384).</p>
-</dd>
-</dl>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setSection=[sect],[startFreq],[bw],[num-feed],[polarization],[sampleRate],[bin]</span></code></p>
+<p>with :</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">[sect]</span></code>: 0 in full-stokes observations and <code class="docutils literal"><span class="pre">[sect]</span></code>: 0, 1 in non full-stokes observations ;</li>
+<li><code class="docutils literal"><span class="pre">[startFreq]</span></code> corresponds to the initial frequency in MHz from the LO value ;</li>
+<li><code class="docutils literal"><span class="pre">[bw]</span></code> the bandwidth in MHz ;</li>
+<li><code class="docutils literal"><span class="pre">[num-feed]</span></code>: 1 (number of feed in C-band) ;</li>
+<li><code class="docutils literal"><span class="pre">[polarization]</span></code> = 0 or 1 : Left and Right ; 2 : full Stokes) ;</li>
+<li><code class="docutils literal"><span class="pre">[sampleRate]</span></code> in MHz ;</li>
+<li><code class="docutils literal"><span class="pre">[bin]</span></code> the frequency channels (1024, 2048, 4096, 8192, 16384).</li>
+</ul>
+</div></blockquote>
 </div></blockquote>
 </li>
-<li><p class="first">Choose the integration time in ms (e.g. n=10 corresponds to 100 spectra/sec)</p>
+<li><p class="first">Choose the integration time in ms (e.g. n=10 corresponds to 100 spectra/sec) :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">integration=[n]</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">Attenuate the signal based on the rms range [-128 ;128] and check the value on the interface.</p>
+<li><p class="first">Attenuate the signal based on the rms range [-128 ;128] and check</p>
+</li>
+</ol>
+<blockquote>
+<div><p>the value on the interface :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">getrms</span></code>  ???</p>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setAttenuation=[sect],[att]</span></code>    with [att] the attenuation from 0 to 15 dB.</p>
 </div></blockquote>
-</li>
-<li><p class="first">Check the tsys (typical values)</p>
+</div></blockquote>
+<ol class="arabic">
+<li><p class="first">Check the tsys (typical values) :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">tsys</span></code></p>
 </div></blockquote>

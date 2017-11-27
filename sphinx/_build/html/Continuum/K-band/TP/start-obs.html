@@ -108,8 +108,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../../L-band/index.html">L-band</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../SpectralLine/index.html">Spectral lines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../Pulsar/index.html">Pulsar observations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../SpectralLine/index.html">Spectral lines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../SpectroPol/index.html">Spectro-polarimetry</a></li>
 </ul>
 
             
@@ -186,58 +187,63 @@
 <p>$ : commands to insert in a shell</p>
 <p>&gt; : commands to insert in the operatorInput panel</p>
 <ol class="arabic">
-<li><p class="first">Insert your project number</p>
+<li><p class="first">Insert your project number :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">Initial setup</p>
+<li><p class="first">Initial setup :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code></p>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setupKKG</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">Select the active surface shape (Shaped configuration for K-band observations)</p>
-<blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asSetup=S</span></code></p>
-</div></blockquote>
+<li><p class="first">Select the active surface shape (Shaped configuration for K-band</p>
 </li>
-<li><p class="first">Insert the Local Oscillator value in MHz</p>
+</ol>
+<blockquote>
+<div><p>observations) :</p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asSetup=S</span></code></div></blockquote>
+</div></blockquote>
+<ol class="arabic">
+<li><p class="first">Insert the Local Oscillator value in MHz :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setLO=[freq]</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">Select the Total Power backend</p>
+<li><p class="first">Select the Total Power backend :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/TotalPower</span></code></p>
 </div></blockquote>
 </li>
 <li><p class="first">For each section [sect], insert the bandwidth ([bw]=300, 730, 1250 or 2000 MHz) and the sample rate (in MHz) :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setSection=[sect],*,</span> <span class="pre">[bw],*,*,[sampleRate],*</span></code></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setSection=[sect],*,[bw],*,*,[sampleRate],*</span></code></p>
+<p>Reminder : in K-band there are 7 feeds, so 14 sections with
+<code class="docutils literal"><span class="pre">[sect]</span></code> = 0, 1 , 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13.</p>
 </div></blockquote>
-<p>Reminder : in K-band there are 7 feeds, so 14 sections with [sect]=0,1,2,3,4,5,6,7,8,9,10,11,12,13.</p>
 </li>
 <li><p class="first">If you want to use the multi-feed derotator to prevent field rotation during long acquisition, select the derotator configuration :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">derotatorSetConfiguration=[config]</span></code>   with [config]=BSC, CUSTOM or FIXED</p>
-<ul class="simple">
-<li>BSC is for Best Coverage Space (automatic rotation of the dewar in order to best cover the scanned area).</li>
-<li>CUSTOM : the user has to choose the angle of the dewar axis with</li>
-</ul>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">derotatorSetConfiguration=[config]</span></code>   with <code class="docutils literal"><span class="pre">[config]</span></code> = BSC, CUSTOM or FIXED.</p>
 <blockquote>
-<div><p>the y-axis of the scanning frame that will be kept during the
-whole duration of the acquisition :</p>
-</div></blockquote>
-<p><code class="docutils literal"><span class="pre">&gt;</span>&#160; <span class="pre">derotatorSetPosition=[ang]d</span></code>     with [ang] the dewar angle in degrees</p>
-<ul class="simple">
-<li>FIXED : the dewar keeps a fixed postion w.r.t the horizon, no rotation is applied. To specify a static angle :</li>
+<div><ul class="simple">
+<li>BSC is for Best Coverage Space (automatic rotation of the
+dewar in order to best cover the scanned area).</li>
+<li>CUSTOM : the user has to choose the angle of the dewar axis
+with the y-axis of the scanning frame that will be kept
+during the whole duration of the acquisition :
+<code class="docutils literal"><span class="pre">&gt;</span>&#160; <span class="pre">derotatorSetPosition=[ang]d</span></code>     with <code class="docutils literal"><span class="pre">[ang]</span></code> the
+dewar angle in degrees.</li>
+<li>FIXED : the dewar keeps a fixed postion w.r.t the horizon,
+no rotation is applied. To specify a static angle :
+<code class="docutils literal"><span class="pre">&gt;</span>&#160; <span class="pre">derotatorSetPosition=[ang]d</span></code>     with <code class="docutils literal"><span class="pre">[ang]</span></code> the
+dewar angle in degrees.</li>
 </ul>
-<p><code class="docutils literal"><span class="pre">&gt;</span>&#160; <span class="pre">derotatorSetPosition=[ang]d</span></code>     with [ang] the dewar angle in degrees</p>
 </div></blockquote>
 <p>To read back the position of the dewar :</p>
-<blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">derotatorGetPosition</span></code></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">derotatorGetPosition</span></code></p>
 </div></blockquote>
 </li>
 <li><p class="first">Put the antenna at 45 deg of elevation and attenuate the signal for</p>
@@ -254,7 +260,7 @@ counts (linear range of the backend) :</p>
 </div></blockquote>
 </div></blockquote>
 <ol class="arabic">
-<li><p class="first">Check the tsys (typical values)</p>
+<li><p class="first">Check the tsys (typical values) :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">tsys</span></code></p>
 </div></blockquote>

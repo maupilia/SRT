@@ -93,6 +93,7 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../Continuum/index.html">Continuum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Pulsar/index.html">Pulsar observations</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Spectral lines</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">C-band</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">Xarcos</a><ul class="current">
@@ -108,7 +109,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../L-band/index.html">L-band</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../Pulsar/index.html">Pulsar observations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../SpectroPol/index.html">Spectro-polarimetry</a></li>
 </ul>
 
             
@@ -185,55 +186,59 @@
 <p>$ : commands to insert in a shell</p>
 <p>&gt; : commands to insert in the operatorInput panel</p>
 <ol class="arabic">
-<li><p class="first">Insert your project number</p>
+<li><p class="first">Insert your project number :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">Initial setup</p>
+<li><p class="first">Initial setup :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code></p>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setupCCB</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">Select the active surface shape (Shaped configuration for C-band observations)</p>
-<blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asSetup=S</span></code></p>
-</div></blockquote>
+<li><p class="first">Select the active surface shape (Shaped configuration for C-band</p>
 </li>
-<li><p class="first">Insert the Local Oscillator value in MHz</p>
+</ol>
+<blockquote>
+<div><p>observations) :</p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asSetup=S</span></code></div></blockquote>
+</div></blockquote>
+<ol class="arabic">
+<li><p class="first">Insert the Local Oscillator value in MHz :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setLO=[freq]</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">Select and configure the XARCOS backend in C-band</p>
+<li><p class="first">Select and configure the XARCOS backend in C-band :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/Xbackends</span></code></p>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">initialize=XC00</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">The <em>initialize</em> command and the parameters inserted in the</p>
+<li><p class="first">The <code class="docutils literal"><span class="pre">initialize</span></code> command and the parameters inserted in the</p>
 </li>
 </ol>
 <blockquote>
-<div><p>schedule (.bck) directly set the full-Stoke mode, frequency,
+<div><p>schedule (.bck) directly set the full Stoke mode, frequency,
 bandwidth and sample rate. You can check that the backend parameters
 are correct, or modify them by using the following command :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setSection=[sect],[startFreq],[bw],*,*,</span> <span class="pre">[sampleRate],*</span></code></p>
+<p>with :</p>
 <blockquote>
-<div><dl class="docutils">
-<dt>with <span class="classifier-delimiter">:</span> <span class="classifier">[sect]=0 in full-Stokes observations ;</span></dt>
-<dd><p class="first">[startFreq] corresponds to the initial frequency in the
-125-250 MHz range from the LO value ;
-[bw] the bandwidth : 125.0, 62.5, 31.25, 15.625, 7.8125, 3.90625, 1.953125, 0.9765625 or 0.48828125 MHz ;
-[sampleRate] its value (in MHz) must be twice the bandwidth.</p>
-<dl class="last docutils">
-<dt><code class="docutils literal"><span class="pre">*</span></code> <span class="classifier-delimiter">:</span> <span class="classifier">indicates the number of feeds, polarization mode and</span></dt>
-<dd>frequency channels,  respectively. Let the asterix (<code class="docutils literal"><span class="pre">*</span></code>) for Xarcos observations.</dd>
-</dl>
-</dd>
-</dl>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">[sect]</span></code>: 0 in full-Stokes observations ;</li>
+<li><code class="docutils literal"><span class="pre">[startFreq]</span></code> corresponds to the initial frequency in the
+125-250 MHz range from the LO value ;</li>
+<li><code class="docutils literal"><span class="pre">[bw]</span></code> the bandwidth : 125.0, 62.5, 31.25, 15.625, 7.8125,
+3.90625, 1.953125, 0.9765625 or 0.48828125 MHz ;</li>
+<li><code class="docutils literal"><span class="pre">[sampleRate]</span></code>: in MHz, must be twice the bandwidth.</li>
+<li><code class="docutils literal"><span class="pre">*</span></code> : indicates the number of feeds, polarization mode and
+frequency channels, respectively. Let the asterix (<code class="docutils literal"><span class="pre">*</span></code>) for
+Xarcos observations.</li>
+</ul>
 </div></blockquote>
 </div></blockquote>
 </div></blockquote>
