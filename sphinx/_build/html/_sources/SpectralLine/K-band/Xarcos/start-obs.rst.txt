@@ -40,22 +40,22 @@ $ : commands to insert in a shell
 
     ``> initialize=[code]``    
 
-    with
+    with :
 
     * ``[code]=XK00`` : central feed only.
-      4 full-Stokes sections with bandwidths of 62.5 MHz, 8 MHz, 2 MHz
+      4 full Stokes sections with bandwidths of 62.5 MHz, 8 MHz, 2 MHz
       and 0.5 MHz, each having 2048(x4) channels ;
 
     * ``[code]=XK77`` : 7 feeds.
-      Full-Stokes sections are recorded, each having a 62.5 MHz
+      Full Stokes sections are recorded, each having a 62.5 MHz
       bandwidth and 2048(x4) channels ;
 
     * ``[code]=XK03`` : feeds 0 and 3 only.
-      Each feed produces two full-Stokes sections respectively having
+      Each feed produces two full Stokes sections respectively having
       bandwidths of 62.5 MHz and 4 MHz and 2048(x4) channels ;
 
     * ``[code]=XK06`` : feeds 0 and 6 only. 
-      Each feed produces two full-Stokes sections respectively having
+      Each feed produces two full Stokes sections respectively having
       bandwidths of 62.5 MHz and 4 MHz and 2048(x4) channels.
 
 
@@ -63,7 +63,7 @@ $ : commands to insert in a shell
 
     ``> setSection=[sect],[startFreq],[bw],*,*, [sampleRate],*``
 
-    with 
+    with :
 
     * ``[sect]`` = 0, 1, 2, 3, 4, 5, 6 in full-Stokes observations ;
     * ``[startFreq]`` corresponds to the initial frequency in the
@@ -78,25 +78,24 @@ $ : commands to insert in a shell
 
 #. If you want to use the multi-feed derotator to prevent field rotation during long acquisition, select the derotator configuration :
 
-    ``> derotatorSetConfiguration=[config]``    with [config]=BSC, CUSTOM or FIXED.
+    ``> derotatorSetConfiguration=[config]``   with ``[config]`` = BSC, CUSTOM or FIXED.
+
+        - BSC is for Best Coverage Space (automatic rotation of the
+          dewar in order to best cover the scanned area).
+
+        - CUSTOM : the user has to choose the angle of the dewar axis
+          with the y-axis of the scanning frame that will be kept
+          during the whole duration of the acquisition :
+          ``>  derotatorSetPosition=[ang]d``     with ``[ang]`` the
+          dewar angle in degrees.
+
+        - FIXED : the dewar keeps a fixed postion w.r.t the horizon,
+          no rotation is applied. To specify a static angle :
+          ``>  derotatorSetPosition=[ang]d``     with ``[ang]`` the
+          dewar angle in degrees.
 
 
-    - BSC is for Best Coverage Space (automatic rotation of the dewar in order to best cover the scanned area).
-
-    - CUSTOM : the user has to choose the angle of the dewar axis with
-     the y-axis of the scanning frame that will be kept during the
-     whole duration of the acquisition :
-
-    ``>  derotatorSetPosition=[ang]d``     with [ang] the dewar angle in degrees
-
-
-    - FIXED : the dewar keeps a fixed postion w.r.t the horizon, no
-      rotation is applied. This configuration is usually selected for
-      spectral line observations, with an angle of 0 deg. To specify a static angle :
-
-    ``>  derotatorSetPosition=[ang]d``     with [ang] the dewar angle in degrees
-
-   To read back the position of the dewar :
+    To read back the position of the dewar :
 
     ``> derotatorGetPosition`` 
 
