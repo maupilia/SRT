@@ -39,10 +39,13 @@ Observation modes
    SpectroPol/index.rst
 
 
-Indicies and figures
+Indices and figures
 ============
 
-* :ref:`check-fig`
-* :ref:`error-fig`
-* :ref:`search`
+.. toctree::
+   :maxdepth: 1
+
+   Figures/index.rst
+
+
 
