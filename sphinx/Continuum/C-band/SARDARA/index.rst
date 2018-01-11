@@ -7,10 +7,15 @@
 SARDARA
 =========
 
-.. toctree::
+
+*  :ref:`before-obs`
+*  :ref:`before-obs`
+ 
+ .. toctree::
    :maxdepth: 1
 
    Before observing <before-obs.rst>
+   Before observing :ref:`before-obs`
    Start the observations <start-obs.rst>
    Check during the observations <check-obs.rst>
    Getting your data <get-data>

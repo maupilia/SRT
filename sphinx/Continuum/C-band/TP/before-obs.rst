@@ -7,6 +7,8 @@
 .. toctree::
    :maxdepth:1
   
+.. _before-obs:
+
 ======================
 Before observing
 ======================
