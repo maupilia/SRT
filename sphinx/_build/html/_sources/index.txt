@@ -22,6 +22,8 @@ K- and L-bands) and the associated backends (Total Power, SARDARA,
 Xarcos, DFB, Roach1) will appear. You can simply follow the different steps in
 order to carry out safety observations.
 
+.. warning:: Check the update and temporary modifications before proceeding!
+
 .. (Selection observation mode... follow the instruction...
    Observation mode > Receiver > Backend...
    How to start the observation, check during the session...)
@@ -37,6 +39,15 @@ Observation modes
    Pulsar/index.rst
    SpectralLine/index.rst
    SpectroPol/index.rst
+
+
+Troubleshooting
+============
+   
+.. toctree::
+   :maxdepth: 1
+
+   Problems/index.rst
 
 
 Indices and figures
