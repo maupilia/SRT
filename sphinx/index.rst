@@ -39,10 +39,10 @@ Observation modes
    SpectroPol/index.rst
 
 
-
-Indices and tables
+Indicies and figures
 ============
 
-* :ref:`genindex`
+* :ref:`check-fig`
+* :ref:`error-fig`
 * :ref:`search`
 

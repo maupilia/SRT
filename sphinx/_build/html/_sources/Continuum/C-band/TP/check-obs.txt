@@ -55,6 +55,13 @@ $ : commands to insert in a shell
 
 	``> antennaStart=[projectID]/…scd,n``     (with n the number of scan)
 
+        .. _srt_scheduler:
+
+     	.. figure:: srt_scheduler.png 
+	   :align: center
+          
+           Bella Figura
+
      	.. image:: srt_scheduler.png 
 	   :align: center
 
@@ -66,7 +73,9 @@ $ : commands to insert in a shell
 
  	* Mount : READY, READY, OK green (CHECK!!!!) while the antenna is pointing a source.
 
-    	.. image:: srt_mount.png 
+        .. _srt_mount:
+
+    	.. figure:: srt_mount.png 
 	   :align: center
 
  
