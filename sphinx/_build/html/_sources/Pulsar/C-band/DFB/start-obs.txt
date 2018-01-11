@@ -5,7 +5,7 @@
 
 
 .. toctree::
-   :maxdepth:1
+   :maxdepth: 1
   
 
 Start the observations
@@ -15,6 +15,9 @@ $ : commands to insert in a shell
  
 > : commands to insert in the operatorInput panel
 
+
+On nuraghe-obs1
+------------------
 
 #. Insert your project number
 
@@ -26,41 +29,72 @@ $ : commands to insert in a shell
 
     ``> setupCCB``
 
+    ``> goTo=*,81.9d``
 
-#. Select the active surface shape (Shaped configuration for C-band observations)
 
-    ``> asSetup=S``
+#. On a terminal open a vnc session for corr@seadas:
 
-#. Insert the Local Oscillator value in MHz
+    ``$ vncviewer seadas:1``
 
-    ``> setLO=[freq]``
+#. If this fails, start a new vnc session on corr@seadas. 
 
-#. Select the Total Power backend
+#. Type password at prompt. 
 
-    ``> chooseBackend=BACKENDS/TotalPower``
 
-#. Insert the bandwidth (300, 730, 1250 or 2000 MHz) and choose the sample rate (in MHz) :
 
-    ``> setSection=0,*, [bw],*,*,[sampleRate],*``
+#. On another workspace, open a new terminal and start a vnc session for corr@psrdfb:
 
-    ``> setSection=1,*, [bw],*,*,[sampleRate],*``
+    ``$ vncviewer psrdfb:2``
 
-#. Put the antenna at 45 deg of elevation and attenuate the signal in order to obtain values between 750 and 1100 counts (linear range of the backend) :
+#. If this fails, start a new vnc session on corr@psrdfb. 
 
-    ``> goTo=*,45d``
+#. Type password at prompt. 
 
-    ``> getTpi``
 
-    ``> setAttenuation=0,[att]``	with [att] between 0 and 15 dB
+In the vnc session corr@seadas
+----------------------------------
 
-    ``> setAttenuation=1,[att]``	with [att] between 0 and 15 dB
+#. Open a terminal and start SEADAS
 
-    ``> getTpi``
+    ``$ seadas``
 
-#. Check the tsys (typical values)
+#. In the log frame of seadas main window check that SEADAS connects to nuraghe
 
-    ``> tsys``
+#. Click on the red label at the top right corner of the Antenna and Pointing Management frame.
 
-#. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
+#. Check that the clicked label becomes green and dislpays the word "ENABLED"
 
-    ``> startSchedule=[projectID]/[schedulename].scd,[N]``
+
+In the vnc session corr@psrdfb
+----------------------------------
+
+#. Open a terminal and check the system clock is working properly (time properly synchronized, tick phase ~ 100 ns, positive or negative) by typing
+
+    ``$ atdc``
+
+#. Open a new terminal and start DFBCONTROLLER
+
+    ``$ /home/corr/software/seadas/bin/dfbcontroller``
+
+#. In DFBCONTROLLER window, check that the colored label at the right of the
+  "tkds" label is green and displays the word "CONNECTED". If not, click on it.
+
+
+Inside SEADAS window
+------------------------
+
+#. Verify and adjust attenuation levels
+
+#. Select "Schedule" in the "Session mode" combo box
+
+#. Click "View obs list". A window named "Observations List" pops up
+
+#. Click "View schedule". A window named "Schedule Manager" pops up
+
+#. Click "Load sched" in "Schedule Manager" window. A system window pops up for browsing system directories and selecting the schedule file
+
+#. In "Schedule manager" window select schedule lines to be done - mouse left click on each single line - or click button "Select all" for loading the entire schedule in the "Observations List" window
+
+#. If necessary, rearrange the order of the observations in the "Observations List" window  - left button click == cut line ; mid button click == paste line
+
+#. Click "Observe"

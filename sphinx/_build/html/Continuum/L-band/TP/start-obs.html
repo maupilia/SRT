@@ -13,8 +13,6 @@
 
   
   
-  
-  
 
   
 
@@ -32,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../../../genindex.html"/>
-        <link rel="search" title="Search" href="../../../search.html"/>
     <link rel="top" title="SRT procedures 1 documentation" href="../../../index.html"/>
         <link rel="up" title="Total Power" href="index.html"/>
         <link rel="next" title="Getting your data" href="get-data.html"/>
@@ -47,7 +42,6 @@
 
 <body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
 
     
@@ -88,17 +82,14 @@
           
             
             
-              
-            
-            
-              <ul class="current">
+                <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Continuum</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../C-band/index.html">C-band</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../K-band/index.html">K-band</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">L-band</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">Total Power</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="before-obs.html">Before observing</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">Start the observations</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="">Start the observations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="get-data.html">Getting your data</a></li>
 <li class="toctree-l4"><a class="reference internal" href="stop-session.html">End of the session</a></li>
 </ul>
@@ -108,8 +99,12 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../SpectralLine/index.html">Spectral lines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../Pulsar/index.html">Pulsar observations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../SpectralLine/index.html">Spectral lines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../SpectroPol/index.html">Spectro-polarimetry</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../Figures/index.html">Figures</a></li>
 </ul>
 
             
@@ -122,10 +117,8 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">SRT procedures</a>
-        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../index.html">SRT procedures</a>
       </nav>
 
 
@@ -138,104 +131,78 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../../index.html">Docs</a> &raquo;</li>
-        
+    <li><a href="../../../index.html">Docs</a> &raquo;</li>
+      
           <li><a href="../../index.html">Continuum</a> &raquo;</li>
-        
+      
           <li><a href="../index.html">L-band</a> &raquo;</li>
-        
+      
           <li><a href="index.html">Total Power</a> &raquo;</li>
-        
-      <li>Start the observations</li>
-    
-    
+      
+    <li>Start the observations</li>
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="../../../_sources/Continuum/L-band/TP/start-obs.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="../../../_sources/Continuum/L-band/TP/start-obs.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
   <div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
 </div>
 <div class="section" id="start-the-observations">
 <h1>Start the observations<a class="headerlink" href="#start-the-observations" title="Permalink to this headline">¶</a></h1>
 <p>$ : commands to insert in a shell</p>
 <p>&gt; : commands to insert in the operatorInput panel</p>
 <ol class="arabic">
-<li><p class="first">Insert your project number</p>
+<li><p class="first">Insert your project number :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">Initial setup</p>
+<li><p class="first">Initial setup :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code></p>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setupLLP</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">Select the receiver Mode :</p>
+<li><p class="first">Select the receiver mode :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">receiversMode=[mode]</span></code></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">receiversMode=[code]</span></code> where <code class="docutils literal"><span class="pre">[code]</span></code> can be <code class="docutils literal"><span class="pre">XXC1</span></code>,
+<code class="docutils literal"><span class="pre">XXC2</span></code>, <code class="docutils literal"><span class="pre">XXC3</span></code>, <code class="docutils literal"><span class="pre">XXC4</span></code>, <code class="docutils literal"><span class="pre">XXC5</span></code>, <code class="docutils literal"><span class="pre">XXL1</span></code>, <code class="docutils literal"><span class="pre">XXL2</span></code>,
+<code class="docutils literal"><span class="pre">XXL3</span></code>, <code class="docutils literal"><span class="pre">XXL4</span></code>, <code class="docutils literal"><span class="pre">XXL5</span></code>.</p>
 <blockquote>
 <div><ul class="simple">
-<li><dl class="first docutils">
-<dt>with receiversMode=XXC1;</dt>
-<dd>receiversMode=XXC2;
-receiversMode=XXC3;
-receiversMode=XXC4;
-receiversMode=XXC5;
-receiversMode=XXL1;
-receiversMode=XXL2;
-receiversMode=XXL3;
-receiversMode=XXL4;
-receiversMode=XXL5.</dd>
-</dl>
-</li>
+<li><strong>C</strong> is for <strong>Circular</strong>, <strong>L</strong> for <strong>Linear polarization</strong> ;</li>
+<li><strong>1</strong> : all band, 1300-1800 MHz (no filter) ;</li>
+<li><strong>2</strong> : 1320-1780 MHz ;</li>
+<li><strong>3</strong> : 1350-1450 MHz ;</li>
+<li><strong>4</strong> : 1300-1800 MHz (band-pass) ;</li>
+<li><strong>5</strong> : 1625-1715 MHz.</li>
 </ul>
-<p>Note that C is for <em>Circular</em>, L for <em>Linear polarization</em> and
-1 : all band, 1300-1800 MHz (no filter);
-2 : 1320-1780 MHz;
-3 : 1350-1450 MHz;
-4 : 1300-1800 MHz (band-pass);
-5 : 1625-1715 MHz.</p>
 </div></blockquote>
 </div></blockquote>
 </li>
-<li><p class="first">Select the active surface shape (Parabolic for L-band observations)</p>
+<li><p class="first">Select the active surface shape (Parabolic for L-band observations) :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asSetup=P</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">Insert the Local Oscillator value in MHz</p>
+<li><p class="first">Insert the Local Oscillator value in MHz :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setLO=[freq]</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">Select the Total Power backend</p>
+<li><p class="first">Select the Total Power backend :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/TotalPower</span></code></p>
 </div></blockquote>
@@ -255,7 +222,7 @@ receiversMode=XXL5.</dd>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">getTpi</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">Check the tsys (typical values)</p>
+<li><p class="first">Check the tsys (typical values) :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">tsys</span></code></p>
 </div></blockquote>
@@ -270,18 +237,15 @@ receiversMode=XXL5.</dd>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="get-data.html" class="btn btn-neutral float-right" title="Getting your data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="get-data.html" class="btn btn-neutral float-right" title="Getting your data" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="before-obs.html" class="btn btn-neutral" title="Before observing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="before-obs.html" class="btn btn-neutral" title="Before observing" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -315,8 +279,7 @@ receiversMode=XXL5.</dd>
             VERSION:'1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            HAS_SOURCE:  true
         };
     </script>
       <script type="text/javascript" src="../../../_static/jquery.js"></script>
