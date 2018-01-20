@@ -50,3 +50,14 @@ Logging Display
 
 Active Surface
 =========
+
+
+MeteoClient
+========
+
+        .. _srt_scheduler:
+
+     	.. figure:: srt_scheduler.png 
+	   :align: center
+          
+           Bella Figura
