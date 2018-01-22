@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 ===================
-Identification of the problems
+Problem identification
 ===================
 
 Depending on the problem, you can be able to resolve it.
