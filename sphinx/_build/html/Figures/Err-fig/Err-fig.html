@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>AntennaBoss &mdash; SRT procedures 1 documentation</title>
+  <title>Primary Control Panel ACU &mdash; SRT procedures 1 documentation</title>
   
 
   
@@ -88,14 +88,15 @@
 <li class="toctree-l1"><a class="reference internal" href="../../SpectroPol/index.html">Spectro-polarimetry</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../Problems/problems.html">Identification of the problems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Problems/problems.html">Problem identification</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Problems/problems.html#unresolved-problems">Unresolved problems</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Figures</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../Check-fig/index.html">Check panels</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Error messages</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="">AntennaBoss</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Primary Control Panel ACU</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#antennaboss">AntennaBoss</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#observatory">Observatory</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#mount">Mount</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#genericbackend">GenericBackend</a></li>
@@ -143,7 +144,7 @@
       
           <li><a href="index.html">Error messages</a> &raquo;</li>
       
-    <li>AntennaBoss</li>
+    <li>Primary Control Panel ACU</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -157,9 +158,29 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="toctree-wrapper compound">
-<ul class="simple">
-</ul>
+  <div class="section" id="primary-control-panel-acu">
+<h1>Primary Control Panel ACU<a class="headerlink" href="#primary-control-panel-acu" title="Permalink to this headline">¶</a></h1>
+<p>When the emergency stop button is pressed, different messages are in red,
+as indicated in the following figure:</p>
+<blockquote>
+<div><div class="figure" id="id1">
+<span id="srt-acu-redbutton"></span><img alt="Figures/Err-fig/srt_ACU_redbutton.png:align:center" src="Figures/Err-fig/srt_ACU_redbutton.png:align:center" />
+<p class="caption"><span class="caption-number">Fig.4 </span><span class="caption-text">Situation of the ACU panel when the emergency button is pressed.</span></p>
+</div>
+</div></blockquote>
+<p>At the end of your observations, do not press the emergency stop button when
+the <strong>Stow Pin Motion</strong> is yellow.</p>
+<blockquote>
+<div><div class="figure align-center" id="srt-acu-stowpin">
+<img alt="Figures/Err-fig/srt_ACU_stowpin.png" src="Figures/Err-fig/srt_ACU_stowpin.png" />
+</div>
+</div></blockquote>
+<p>Wait until <strong>Axis blocked</strong> appears in red to press the emergency stop, as in the following figure:</p>
+<blockquote>
+<div><div class="figure align-center" id="srt-acu-axisblocked">
+<img alt="Figures/Err-fig/srt_ACU_axisblocked.png" src="Figures/Err-fig/srt_ACU_axisblocked.png" />
+</div>
+</div></blockquote>
 </div>
 <div class="section" id="antennaboss">
 <h1>AntennaBoss<a class="headerlink" href="#antennaboss" title="Permalink to this headline">¶</a></h1>
@@ -169,6 +190,11 @@
 </div>
 <div class="section" id="mount">
 <h1>Mount<a class="headerlink" href="#mount" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><div class="figure align-center" id="srt-mount">
+<img alt="Figures/Err-fig/srt_mount.png" src="Figures/Err-fig/srt_mount.png" />
+</div>
+</div></blockquote>
 </div>
 <div class="section" id="genericbackend">
 <h1>GenericBackend<a class="headerlink" href="#genericbackend" title="Permalink to this headline">¶</a></h1>
@@ -178,10 +204,15 @@
 </div>
 <div class="section" id="scheduler">
 <h1>Scheduler<a class="headerlink" href="#scheduler" title="Permalink to this headline">¶</a></h1>
+<p>The antenna is not in tracking when the &#64; is red.
+Note that it can also be red when the antenna is in slewing (to reach
+the position of a target).</p>
+<p>When the status of the scheduler is in FAILURE and the scan/subscan
+number is frozen, stop the schedule.</p>
 <blockquote>
 <div><div class="figure align-center" id="id2">
 <span id="srt-scheduler"></span><img alt="Figures/Err-fig/srt_scheduler.png" src="Figures/Err-fig/srt_scheduler.png" />
-<p class="caption"><span class="caption-number">Fig.4 </span><span class="caption-text">Bella Figura</span></p>
+<p class="caption"><span class="caption-number">Fig.8 </span><span class="caption-text">The scheduler status is in FAILURE !!!!!!!!.</span></p>
 </div>
 </div></blockquote>
 </div>
@@ -196,10 +227,13 @@
 </div>
 <div class="section" id="meteoclient">
 <h1>MeteoClient<a class="headerlink" href="#meteoclient" title="Permalink to this headline">¶</a></h1>
+<p>The real-time monitoring of the wind velocity is performed with the
+meteoClient on a nuraghe-mng shell: <code class="docutils literal"><span class="pre">$</span> <span class="pre">meteoClient</span></code>.
+If the wind speed exceeds 60 km/h, the antenna must be stowed immediately.</p>
 <blockquote>
 <div><div class="figure align-center" id="id3">
-<span id="id1"></span><img alt="Figures/Err-fig/srt_scheduler.png" src="Figures/Err-fig/srt_scheduler.png" />
-<p class="caption"><span class="caption-number">Fig.5 </span><span class="caption-text">Bella Figura</span></p>
+<span id="srt-windspeed"></span><img alt="../../_images/srt_windspeed.png" src="../../_images/srt_windspeed.png" />
+<p class="caption"><span class="caption-number">Fig.9 </span><span class="caption-text">The wind speed exceeds 60 km/h, as indicated with the red horizontal line.</span></p>
 </div>
 </div></blockquote>
 </div>
