@@ -82,14 +82,16 @@
             
             
                 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Continuum/C-band/TP/before-obs.html">Before observing</a></li>
+</ul>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../Continuum/index.html">Continuum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Pulsar/index.html">Pulsar observations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../SpectralLine/index.html">Spectral lines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../SpectroPol/index.html">Spectro-polarimetry</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../Problems/problems.html">Problem identification</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Problems/problems.html#unresolved-problems">Unresolved problems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Problems/index.html">Problems during the observations</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Figures</a><ul class="current">
@@ -160,25 +162,27 @@
             
   <div class="section" id="primary-control-panel-acu">
 <h1>Primary Control Panel ACU<a class="headerlink" href="#primary-control-panel-acu" title="Permalink to this headline">¶</a></h1>
+<p>At the end of your observations, do not press the emergency stop button when
+the <strong>Stow Pin Motion</strong> is yellow as below.</p>
+<blockquote>
+<div><div class="figure align-center" id="id1">
+<span id="srt-acu-stowpin"></span><img alt="../../_images/ACU-stow.png" src="../../_images/ACU-stow.png" />
+<p class="caption"><span class="caption-number">Fig.4 </span><span class="caption-text">ACU panel after <code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaPark</span></code>.</span></p>
+</div>
+</div></blockquote>
+<p>Wait until <strong>Axis blocked</strong> appears in red before pressing the emergency stop, as in the following figure:</p>
+<blockquote>
+<div><div class="figure align-center" id="id2">
+<span id="srt-acu-axisblocked"></span><img alt="../../_images/ACU-axis-blocked.png" src="../../_images/ACU-axis-blocked.png" />
+<p class="caption"><span class="caption-number">Fig.5 </span><span class="caption-text">ACU panel when the antenna is correctly parked.</span></p>
+</div>
+</div></blockquote>
 <p>When the emergency stop button is pressed, different messages are in red,
 as indicated in the following figure:</p>
 <blockquote>
-<div><div class="figure" id="id1">
-<span id="srt-acu-redbutton"></span><img alt="Figures/Err-fig/srt_ACU_redbutton.png:align:center" src="Figures/Err-fig/srt_ACU_redbutton.png:align:center" />
-<p class="caption"><span class="caption-number">Fig.4 </span><span class="caption-text">Situation of the ACU panel when the emergency button is pressed.</span></p>
-</div>
-</div></blockquote>
-<p>At the end of your observations, do not press the emergency stop button when
-the <strong>Stow Pin Motion</strong> is yellow.</p>
-<blockquote>
-<div><div class="figure align-center" id="srt-acu-stowpin">
-<img alt="Figures/Err-fig/srt_ACU_stowpin.png" src="Figures/Err-fig/srt_ACU_stowpin.png" />
-</div>
-</div></blockquote>
-<p>Wait until <strong>Axis blocked</strong> appears in red to press the emergency stop, as in the following figure:</p>
-<blockquote>
-<div><div class="figure align-center" id="srt-acu-axisblocked">
-<img alt="Figures/Err-fig/srt_ACU_axisblocked.png" src="Figures/Err-fig/srt_ACU_axisblocked.png" />
+<div><div class="figure align-center" id="id3">
+<span id="srt-acu-redbutton"></span><img alt="../../_images/srt_ACU_redbutton.png" src="../../_images/srt_ACU_redbutton.png" />
+<p class="caption"><span class="caption-number">Fig.6 </span><span class="caption-text">ACU panel when the emergency button is pressed.</span></p>
 </div>
 </div></blockquote>
 </div>
@@ -210,9 +214,9 @@ the position of a target).</p>
 <p>When the status of the scheduler is in FAILURE and the scan/subscan
 number is frozen, stop the schedule.</p>
 <blockquote>
-<div><div class="figure align-center" id="id2">
-<span id="srt-scheduler"></span><img alt="Figures/Err-fig/srt_scheduler.png" src="Figures/Err-fig/srt_scheduler.png" />
-<p class="caption"><span class="caption-number">Fig.8 </span><span class="caption-text">The scheduler status is in FAILURE !!!!!!!!.</span></p>
+<div><div class="figure align-center" id="id4">
+<span id="srt-scheduler"></span><img alt="../../_images/srt_scheduler2.png" src="../../_images/srt_scheduler2.png" />
+<p class="caption"><span class="caption-number">Fig.8 </span><span class="caption-text">The scheduler status is in FAILURE !!!!!!!!</span></p>
 </div>
 </div></blockquote>
 </div>
@@ -228,12 +232,14 @@ number is frozen, stop the schedule.</p>
 <div class="section" id="meteoclient">
 <h1>MeteoClient<a class="headerlink" href="#meteoclient" title="Permalink to this headline">¶</a></h1>
 <p>The real-time monitoring of the wind velocity is performed with the
-meteoClient on a nuraghe-mng shell: <code class="docutils literal"><span class="pre">$</span> <span class="pre">meteoClient</span></code>.
-If the wind speed exceeds 60 km/h, the antenna must be stowed immediately.</p>
+meteoClient on a nuraghe-mng shell: <code class="docutils literal"><span class="pre">$</span> <span class="pre">meteoClient</span></code>. The red
+horizontal line corresponds to 60 km/h, the limit for observing with
+SRT.</p>
 <blockquote>
-<div><div class="figure align-center" id="id3">
+<div><div class="figure align-center" id="id5">
 <span id="srt-windspeed"></span><img alt="../../_images/srt_windspeed.png" src="../../_images/srt_windspeed.png" />
-<p class="caption"><span class="caption-number">Fig.9 </span><span class="caption-text">The wind speed exceeds 60 km/h, as indicated with the red horizontal line.</span></p>
+<p class="caption"><span class="caption-number">Fig.9 </span><span class="caption-text">The antenna must be stowed immediately when the wind speed
+exceeds 60km/h.</span></p>
 </div>
 </div></blockquote>
 </div>
@@ -255,7 +261,7 @@ If the wind speed exceeds 60 km/h, the antenna must be stowed immediately.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, E. Egron, M. Pilia, S. Loru.
+        &copy; Copyright 2018, E. Egron, M. Pilia, S. Loru.
 
     </p>
   </div>
