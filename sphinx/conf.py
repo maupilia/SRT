@@ -46,7 +46,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'SRT procedures'
-copyright = u'2017, E. Egron, M. Pilia, S. Loru'
+copyright = u'2018, E. Egron, M. Pilia, S. Loru'
 author = u'E. Egron, M. Pilia, S. Loru'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -73,7 +73,7 @@ language = None
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['_build','OldStuff']
+exclude_patterns = ['_build']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -84,7 +84,7 @@ exclude_patterns = ['_build','OldStuff']
 
 # If true, the current module name will be prepended to all description
 # unit titles (such as .. function::).
-add_module_names = True
+#add_module_names = True
 
 # If true, sectionauthor and moduleauthor directives will be shown in the
 # output. They are ignored by default.
@@ -109,13 +109,14 @@ todo_include_todos = False
 # a list of builtin themes.
 # html_theme = 'alabaster'
 html_theme = 'sphinx_rtd_theme'
+#html_theme_path = ["_themes", ]
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-html_theme_options = {
-    'prev_next_buttons_location': None
-}
+#html_theme_options = {
+#    'prev_next_buttons_location': None
+#}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []

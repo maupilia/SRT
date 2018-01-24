@@ -8,11 +8,9 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>AntennaBoss &mdash; SRT procedures 1 documentation</title>
+  <title>Primary Control Panel ACU &mdash; SRT procedures 1 documentation</title>
   
 
-  
-  
   
   
 
@@ -32,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="SRT procedures 1 documentation" href="../../index.html"/>
         <link rel="up" title="Error messages" href="index.html"/>
         <link rel="prev" title="Error messages" href="index.html"/> 
@@ -46,7 +41,6 @@
 
 <body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
 
     
@@ -87,24 +81,24 @@
           
             
             
-              
-            
-            
-              <ul>
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Continuum/C-band/TP/before-obs.html">Before observing</a></li>
+</ul>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../Continuum/index.html">Continuum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Pulsar/index.html">Pulsar observations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../SpectralLine/index.html">Spectral lines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../SpectroPol/index.html">Spectro-polarimetry</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../Problems/problems.html">Identification of the problems</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Problems/problems.html#unresolved-problems">Unresolved problems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Problems/index.html">Problems during the observations</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Figures</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../Check-fig/index.html">Check panels</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Error messages</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">AntennaBoss</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Primary Control Panel ACU</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#antennaboss">AntennaBoss</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#observatory">Observatory</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#mount">Mount</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#genericbackend">GenericBackend</a></li>
@@ -130,10 +124,8 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">SRT procedures</a>
-        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">SRT procedures</a>
       </nav>
 
 
@@ -146,46 +138,53 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../index.html">Docs</a> &raquo;</li>
-        
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
           <li><a href="../index.html">Figures</a> &raquo;</li>
-        
+      
           <li><a href="index.html">Error messages</a> &raquo;</li>
-        
-      <li>AntennaBoss</li>
-    
-    
+      
+    <li>Primary Control Panel ACU</li>
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="../../_sources/Figures/Err-fig/Err-fig.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="../../_sources/Figures/Err-fig/Err-fig.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="toctree-wrapper compound">
+  <div class="section" id="primary-control-panel-acu">
+<h1>Primary Control Panel ACU<a class="headerlink" href="#primary-control-panel-acu" title="Permalink to this headline">¶</a></h1>
+<p>At the end of your observations, do not press the emergency stop button when
+the <strong>Stow Pin Motion</strong> is yellow as below.</p>
+<blockquote>
+<div><div class="figure align-center" id="id1">
+<span id="srt-acu-stowpin"></span><img alt="../../_images/ACU-stow.png" src="../../_images/ACU-stow.png" />
+<p class="caption"><span class="caption-number">Fig.4 </span><span class="caption-text">ACU panel after <code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaPark</span></code>.</span></p>
+</div>
+</div></blockquote>
+<p>Wait until <strong>Axis blocked</strong> appears in red before pressing the emergency stop, as in the following figure:</p>
+<blockquote>
+<div><div class="figure align-center" id="id2">
+<span id="srt-acu-axisblocked"></span><img alt="../../_images/ACU-axis-blocked.png" src="../../_images/ACU-axis-blocked.png" />
+<p class="caption"><span class="caption-number">Fig.5 </span><span class="caption-text">ACU panel when the antenna is correctly parked.</span></p>
+</div>
+</div></blockquote>
+<p>When the emergency stop button is pressed, different messages are in red,
+as indicated in the following figure:</p>
+<blockquote>
+<div><div class="figure align-center" id="id3">
+<span id="srt-acu-redbutton"></span><img alt="../../_images/srt_ACU_redbutton.png" src="../../_images/srt_ACU_redbutton.png" />
+<p class="caption"><span class="caption-number">Fig.6 </span><span class="caption-text">ACU panel when the emergency button is pressed.</span></p>
+</div>
+</div></blockquote>
 </div>
 <div class="section" id="antennaboss">
 <h1>AntennaBoss<a class="headerlink" href="#antennaboss" title="Permalink to this headline">¶</a></h1>
@@ -195,6 +194,11 @@
 </div>
 <div class="section" id="mount">
 <h1>Mount<a class="headerlink" href="#mount" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><div class="figure align-center" id="srt-mount">
+<img alt="Figures/Err-fig/srt_mount.png" src="Figures/Err-fig/srt_mount.png" />
+</div>
+</div></blockquote>
 </div>
 <div class="section" id="genericbackend">
 <h1>GenericBackend<a class="headerlink" href="#genericbackend" title="Permalink to this headline">¶</a></h1>
@@ -204,10 +208,15 @@
 </div>
 <div class="section" id="scheduler">
 <h1>Scheduler<a class="headerlink" href="#scheduler" title="Permalink to this headline">¶</a></h1>
+<p>The antenna is not in tracking when the &#64; is red.
+Note that it can also be red when the antenna is in slewing (to reach
+the position of a target).</p>
+<p>When the status of the scheduler is in FAILURE and the scan/subscan
+number is frozen, stop the schedule.</p>
 <blockquote>
-<div><div class="figure align-center" id="id2">
-<span id="srt-scheduler"></span><img alt="Figures/Err-fig/srt_scheduler.png" src="Figures/Err-fig/srt_scheduler.png" />
-<p class="caption"><span class="caption-number">Fig.2 </span><span class="caption-text">Bella Figura</span></p>
+<div><div class="figure align-center" id="id4">
+<span id="srt-scheduler"></span><img alt="../../_images/srt_scheduler2.png" src="../../_images/srt_scheduler2.png" />
+<p class="caption"><span class="caption-number">Fig.8 </span><span class="caption-text">The scheduler status is in FAILURE !!!!!!!!</span></p>
 </div>
 </div></blockquote>
 </div>
@@ -222,28 +231,37 @@
 </div>
 <div class="section" id="meteoclient">
 <h1>MeteoClient<a class="headerlink" href="#meteoclient" title="Permalink to this headline">¶</a></h1>
+<p>The real-time monitoring of the wind velocity is performed with the
+meteoClient on a nuraghe-mng shell: <code class="docutils literal"><span class="pre">$</span> <span class="pre">meteoClient</span></code>. The red
+horizontal line corresponds to 60 km/h, the limit for observing with
+SRT.</p>
 <blockquote>
-<div><div class="figure align-center" id="id3">
-<span id="id1"></span><img alt="Figures/Err-fig/srt_scheduler.png" src="Figures/Err-fig/srt_scheduler.png" />
-<p class="caption"><span class="caption-number">Fig.3 </span><span class="caption-text">Bella Figura</span></p>
+<div><div class="figure align-center" id="id5">
+<span id="srt-windspeed"></span><img alt="../../_images/srt_windspeed.png" src="../../_images/srt_windspeed.png" />
+<p class="caption"><span class="caption-number">Fig.9 </span><span class="caption-text">The antenna must be stowed immediately when the wind speed
+exceeds 60km/h.</span></p>
 </div>
 </div></blockquote>
 </div>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Error messages" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, E. Egron, M. Pilia, S. Loru.
+        &copy; Copyright 2018, E. Egron, M. Pilia, S. Loru.
 
     </p>
   </div>
@@ -268,8 +286,7 @@
             VERSION:'1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            HAS_SOURCE:  true
         };
     </script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>

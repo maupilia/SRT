@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 ===================
-Identification of the problems
+Problem identification
 ===================
 
 Depending on the problem, you can be able to resolve it.
@@ -21,7 +21,7 @@ The error messages usually come out in red.
 
 * **Scheduler**
 
-The Status is indicated in FAILURE when the schedule is not running
+:ref:`srt-scheduler` when the schedule is not running
 correctly. If the Scan/SubScan number is proceeding correctly, the
 FAILURE can be associated with skipped scans because of the too high
 elevation of the source (> 85°). 
@@ -42,13 +42,8 @@ ACS
 MeteoClient
 ========
 
-On a shell of nuraghe-mng, check that wind velocity does not
-exceed 60 km/h (indicated with the red horizontal line).
-
-``$> meteoClient &``
-
-If the wind speed is beyond this limit, stop immediately the
-observations and park the antenna (link). 
+Check continuously the wind velocity using the ``$> meteoClient &`` on
+a shell of nuraghe-mng. :ref:`srt_windspeed`
 
 
 
