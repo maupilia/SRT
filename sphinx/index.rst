@@ -17,21 +17,29 @@ performing observations with SRT. For a complete documentation on the
 user guide *Observing at SRT with Nuraghe*, please click
 `here <http://discos.readthedocs.io/en/latest/index.html>`_.
 
-Select the **observation mode** you want, a menu with the receivers (C-,
+Before observing, check that the system is ready, then select the **observation mode** you want, a menu with the receivers (C-,
 K- and L-bands) and the associated backends (Total Power, SARDARA,
 Xarcos, DFB, Roach1) will appear. You can simply follow the different steps in
 order to carry out safety observations.
 
-.. warning:: Check the update and temporary modifications before proceeding!
 
-.. (Selection observation mode... follow the instruction...
-   Observation mode > Receiver > Backend...
-   How to start the observation, check during the session...)
+Before observing
+======================
+   
+.. toctree::
+   :maxdepth: 1
+
+   Continuum/C-band/TP/before-obs.rst
+
+
+.. warning:: Check the `update and temporary modifications <http://discos.readthedocs.io/en/latest/user/srt/source/Troubleshooting.html>`_
+.. before proceeding!
+
 
 
 Observation modes
 ============
-   
+
 .. toctree::
    :maxdepth: 1
 

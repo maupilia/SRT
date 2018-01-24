@@ -46,7 +46,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'SRT procedures'
-copyright = u'2017, E. Egron, M. Pilia, S. Loru'
+copyright = u'2018, E. Egron, M. Pilia, S. Loru'
 author = u'E. Egron, M. Pilia, S. Loru'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -109,11 +109,14 @@ todo_include_todos = False
 # a list of builtin themes.
 # html_theme = 'alabaster'
 html_theme = 'sphinx_rtd_theme'
+#html_theme_path = ["_themes", ]
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#html_theme_options = {}
+#html_theme_options = {
+#    'prev_next_buttons_location': None
+#}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
