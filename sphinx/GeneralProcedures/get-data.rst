@@ -5,9 +5,10 @@
 
 
 .. toctree::
-   :maxdepth:1
-  
-======================
+   :maxdepth: 1
+
+.. _get-data:
+
 Getting your data
 ======================
 

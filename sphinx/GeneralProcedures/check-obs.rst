@@ -5,8 +5,9 @@
 
 
 .. toctree::
-   :maxdepth:1
-  
+   :maxdepth: 1
+
+.. _check-obs:
 
 Check during the observations
 ==============================

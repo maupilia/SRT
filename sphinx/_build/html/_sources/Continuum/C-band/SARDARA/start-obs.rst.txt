@@ -4,12 +4,15 @@
    contain the root `toctree` directive.
 
 
+
 .. toctree::
    :maxdepth:1
   
+.. _start-CoCSa:
 
 Start the observations
 ======================
+
 
 $ : commands to insert in a shell   
  
