@@ -6,6 +6,8 @@
 
 .. toctree::
    :maxdepth:1
+
+.. _stop-session:
   
 ======================
 End of the session

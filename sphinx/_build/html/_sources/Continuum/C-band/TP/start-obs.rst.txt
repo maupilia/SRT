@@ -7,6 +7,7 @@
 .. toctree::
    :maxdepth:1
   
+.. _start-obs:
 
 Start the observations
 ======================

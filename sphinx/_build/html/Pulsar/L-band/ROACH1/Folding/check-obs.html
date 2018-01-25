@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../../search.html"/>
     <link rel="top" title="SRT procedures 1 documentation" href="../../../../index.html"/>
         <link rel="up" title="Folding Mode" href="index.html"/>
         <link rel="next" title="Getting your data" href="get-data.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,8 +88,11 @@
           
             
             
-                <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../../Continuum/C-band/TP/before-obs.html">Before observing</a></li>
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../before-obs.html">Before observing</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../../Continuum/index.html">Continuum</a></li>
@@ -121,8 +130,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../../../index.html">SRT procedures</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">SRT procedures</a>
+        
       </nav>
 
 
@@ -135,35 +146,50 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../../index.html">Pulsar observations</a> &raquo;</li>
-      
+        
           <li><a href="../../index.html">L-band</a> &raquo;</li>
-      
+        
           <li><a href="../index.html">ROACH1</a> &raquo;</li>
-      
+        
           <li><a href="index.html">Folding Mode</a> &raquo;</li>
-      
-    <li>Check during the observations</li>
+        
+      <li>Check during the observations</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="../../../../_sources/Pulsar/L-band/ROACH1/Folding/check-obs.txt" rel="nofollow"> View page source</a>
+            
+            <a href="../../../../_sources/Pulsar/L-band/ROACH1/Folding/check-obs.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
   <div class="toctree-wrapper compound">
-<ul class="simple">
-</ul>
 </div>
 <div class="section" id="check-during-the-observations">
 <h1>Check during the observations<a class="headerlink" href="#check-during-the-observations" title="Permalink to this headline">¶</a></h1>
@@ -173,7 +199,7 @@
 <li><p class="first">In the leap0 VNC, go to W3 to check on data quality. Each tab is connected to a cluster node, i.e. a particular 16 MHz sub-band. In each node, go to the data directory:</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">/data-001</span></code>   for node1</p>
-<p><code class="docutils literal"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">/data-002</span></code>   for node2, etc...</p>
+<p><code class="docutils literal"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">/data-002</span></code>   for node2, etc…</p>
 </div></blockquote>
 </li>
 <li><p class="first">In each node, check that the right folders (source and timestamp) are being created and that “.ar” archive files are being written every 10 seconds. If no .ar files are being written, there could be something wrong with the IP table.  For example, if one node is malfunctioning (e.g. is turned off) but is listed in the IP table as one would expect, it will cause packet loss or possibly even not write any files in the other nodes. In that case, check that all nodes are functioning correctly (see daemons in W1). If the node is definitely not working, you will need to ask a qualified person to look into it [this will involve taking the node out in the IP table before re-starting data acquisition].</p>
@@ -299,15 +325,18 @@ the observation (observer friend?).</p>
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="get-data.html" class="btn btn-neutral float-right" title="Getting your data" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="get-data.html" class="btn btn-neutral float-right" title="Getting your data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="start-obs.html" class="btn btn-neutral" title="Start the observations" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="start-obs.html" class="btn btn-neutral" title="Start the observations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -341,7 +370,8 @@ the observation (observer friend?).</p>
             VERSION:'1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../../../_static/jquery.js"></script>
