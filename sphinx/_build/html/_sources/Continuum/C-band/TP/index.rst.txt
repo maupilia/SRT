@@ -3,9 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-===========
+=============
 Total Power
-===========
+=============
 
 .. toctree::
    :maxdepth: 2
@@ -14,4 +14,3 @@ Total Power
 *  :ref:`check-obs`
 *  :ref:`get-data`
 *  :ref:`stop-session` 
-*  Start the observations <start-obs.rst>

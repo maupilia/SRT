@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="SRT procedures 1 documentation" href="../index.html"/>
         <link rel="up" title="Problems during the observations" href="index.html"/>
         <link rel="next" title="Unresolved problems" href="problem-unresolved.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <ul>
+              
+            
+            
+              <ul>
 <li class="toctree-l1"><a class="reference internal" href="../Continuum/index.html">Continuum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Pulsar/index.html">Pulsar observations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../SpectralLine/index.html">Spectral lines</a></li>
@@ -90,7 +99,7 @@
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Problems during the observations</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="">Identification of the problems</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Identification of the problems</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#monitor-panels">Monitor panels</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#jlog">Jlog</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#acu-control-panel">ACU control panel</a></li>
@@ -115,8 +124,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../index.html">SRT procedures</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SRT procedures</a>
+        
       </nav>
 
 
@@ -129,21 +140,38 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="index.html">Problems during the observations</a> &raquo;</li>
-      
-    <li>Problem identification</li>
+        
+      <li>Problem identification</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="../_sources/Problems/problem-identification.txt" rel="nofollow"> View page source</a>
+            
+            <a href="../_sources/Problems/problem-identification.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -164,12 +192,12 @@ jlog, ACS and the ACU control panel.</p>
 </div>
 <p>Check that the command you have insterted is written correctly. If the error is not
 related to a typo, try to identify the origin of the problem. Check
-the different panels (Scheduler, MinorServo, Receivers, etc...) and the jlog.</p>
+the different panels (Scheduler, MinorServo, Receivers, etc…) and the jlog.</p>
 <div class="admonition attention">
 <p class="first admonition-title">Attention</p>
 <p class="last"><strong>Scheduler</strong></p>
 </div>
-<p><a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-scheduler"><span>The scheduler status is in FAILURE !!!!!!!!</span></a> when the schedule is not running
+<p><a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-scheduler"><span class="std std-ref">The scheduler status is in FAILURE !!!!!!!!</span></a> when the schedule is not running
 correctly. If the Scan/SubScan number is proceeding correctly, the
 FAILURE can be associated with skipped scans because of the too high
 or too low
@@ -225,22 +253,25 @@ the observations (observer’s friend).</p>
 <p class="last"><strong>MeteoClient</strong></p>
 </div>
 <p>Check continuously the wind velocity using the <code class="docutils literal"><span class="pre">$&gt;</span> <span class="pre">meteoClient</span> <span class="pre">&amp;</span></code> on
-a shell of nuraghe-mng. <a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-windspeed"><span>The antenna must be stowed immediately when the wind speed
+a shell of nuraghe-mng. <a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-windspeed"><span class="std std-ref">The antenna must be stowed immediately when the wind speed
 exceeds 60km/h.</span></a></p>
 </div>
 </div>
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="problem-unresolved.html" class="btn btn-neutral float-right" title="Unresolved problems" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="problem-unresolved.html" class="btn btn-neutral float-right" title="Unresolved problems" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral" title="Problems during the observations" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral" title="Problems during the observations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -274,7 +305,8 @@ exceeds 60km/h.</span></a></p>
             VERSION:'1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../_static/jquery.js"></script>
