@@ -13,8 +13,6 @@
 
   
   
-  
-  
 
   
 
@@ -32,13 +30,7 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="SRT procedures 1 documentation" href="../../index.html"/>
-        <link rel="up" title="C-band" href="index.html"/>
-        <link rel="next" title="Spectral Lines" href="../../SpectralLine/index.html"/>
-        <link rel="prev" title="Start the observations" href="start-obs.html"/> 
+    <link rel="top" title="SRT procedures 1 documentation" href="../../index.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -47,7 +39,6 @@
 
 <body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
 
     
@@ -88,21 +79,20 @@
           
             
             
-              
-            
-            
-              <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Continuum</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">C-band</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="befor-obs.html">Before observing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="start-obs.html">Start the observations</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Check during the observations</a></li>
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../before-obs.html">Before observing</a></li>
 </ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Continuum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pulsar/index.html">Pulsar observations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../SpectralLine/index.html">Spectral lines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../SpectroPol/index.html">Spectro-polarimetry</a></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../../SpectralLine/index.html">Spectral Lines</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Pulsar/index.html">Pulsar’s observations</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Problems/index.html">Problems during the observations</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Figures/index.html">Figures</a></li>
 </ul>
 
             
@@ -115,10 +105,8 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">SRT procedures</a>
-        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">SRT procedures</a>
       </nav>
 
 
@@ -131,46 +119,27 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../index.html">Docs</a> &raquo;</li>
-        
-          <li><a href="../index.html">Continuum</a> &raquo;</li>
-        
-          <li><a href="index.html">C-band</a> &raquo;</li>
-        
-      <li>Check during the observations</li>
-    
-    
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+    <li>Check during the observations</li>
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="../../_sources/Continuum/C-band/during-obs.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="../../_sources/Continuum/C-band/during-obs.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
   <div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
 </div>
 <div class="section" id="check-during-the-observations">
 <h1>Check during the observations<a class="headerlink" href="#check-during-the-observations" title="Permalink to this headline">¶</a></h1>
@@ -192,7 +161,7 @@
 <p>Note that in the quick-look plots, the subscans are shown with a short delay            with respect to the real observations.</p>
 </div></blockquote>
 </li>
-<li><p class="first">Antenna’s monitors</p>
+<li><p class="first">Antenna&#8217;s monitors</p>
 <blockquote>
 <div><p>Check that everything section is green. If a red box appears, put the cursor on         it and look at the error message.</p>
 <p>Contact and report the error messages to the responsible of the observation             (observer friend?).</p>
@@ -209,24 +178,24 @@
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaStop</span></code>    (in the operatorInput)</p>
 <p>then start again the schedule:</p>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaStart=[projectID]/…scd,n</span></code>     (with n the number of scan)</p>
-<img alt="../../_images/srt_scheduler.png" class="align-center" src="../../_images/srt_scheduler.png" />
+<img alt="Continuum/C-band/srt_scheduler.png" class="align-center" src="Continuum/C-band/srt_scheduler.png" />
 <ul class="simple">
 <li>AntennaBoss : status OK, green.</li>
 </ul>
-<img alt="../../_images/srt_antennaboss.png" class="align-center" src="../../_images/srt_antennaboss.png" />
+<img alt="Continuum/C-band/srt_antennaboss.png" class="align-center" src="Continuum/C-band/srt_antennaboss.png" />
 <ul class="simple">
 <li>Mount : READY, READY, OK green (CHECK!!!!) while the antenna is pointing a source.</li>
 </ul>
-<img alt="../../_images/srt_mount.png" class="align-center" src="../../_images/srt_mount.png" />
+<img alt="Continuum/C-band/srt_mount.png" class="align-center" src="Continuum/C-band/srt_mount.png" />
 <ul class="simple">
 <li>MinorServo; tracking &#64; is green, the status ids OK and green.</li>
 </ul>
-<img alt="../../_images/srt_minorservo.png" class="align-center" src="../../_images/srt_minorservo.png" />
+<img alt="Continuum/C-band/srt_minorservo.png" class="align-center" src="Continuum/C-band/srt_minorservo.png" />
 <ul class="simple">
 <li>Receivers : status OK, green.</li>
 </ul>
 <p>If the derotator (dewar) is used, check the configuration and status (ready green).</p>
-<img alt="../../_images/srt_receivers.png" class="align-center" src="../../_images/srt_receivers.png" />
+<img alt="Continuum/C-band/srt_receivers.png" class="align-center" src="Continuum/C-band/srt_receivers.png" />
 </div></blockquote>
 </li>
 <li><p class="first">Active surface</p>
@@ -236,7 +205,7 @@
 <li>Check that the state of the active surface corresponds to your choice (shaped, shaped fixed, parabolic, parabolic fixed).</li>
 <li>“Ok” should be green during the observations.</li>
 </ul>
-<img alt="../../_images/srt_activesurface.png" class="align-center" src="../../_images/srt_activesurface.png" />
+<img alt="Continuum/C-band/srt_activesurface.png" class="align-center" src="Continuum/C-band/srt_activesurface.png" />
 </div></blockquote>
 </li>
 <li><p class="first">Log</p>
@@ -245,12 +214,12 @@
 <li>The log file (jlog) contains warning and error messages. Warning messages are indicated in yellow while error messages are in red.</li>
 <li>Check the possible error messages. Try to understand the origin of the problem and to solve it. In case of persistent/complex problem, contact and report the error messages and the associated UT to the responsible of the observation (observer friend?).</li>
 </ul>
-<img alt="../../_images/srt_jlog.png" class="align-center" src="../../_images/srt_jlog.png" />
+<img alt="Continuum/C-band/srt_jlog.png" class="align-center" src="Continuum/C-band/srt_jlog.png" />
 </div></blockquote>
 </li>
 <li><p class="first">Calibration tool client</p>
 <blockquote>
-<div><img alt="../../_images/srt_calibrationtool.png" class="align-center" src="../../_images/srt_calibrationtool.png" />
+<div><img alt="Continuum/C-band/srt_calibrationtool.png" class="align-center" src="Continuum/C-band/srt_calibrationtool.png" />
 </div></blockquote>
 </li>
 <li><p class="first">Weather parameters</p>
@@ -260,7 +229,7 @@
 </div></blockquote>
 <p><code class="docutils literal"><span class="pre">$</span> <span class="pre">meteoClient</span></code></p>
 <p>If the wind speed exceeds 61 km/h, the antenna must be stowed.</p>
-<img alt="../../_images/srt_meteo.png" class="align-center" src="../../_images/srt_meteo.png" />
+<img alt="Continuum/C-band/srt_meteo.png" class="align-center" src="Continuum/C-band/srt_meteo.png" />
 </div></blockquote>
 </li>
 </ol>
@@ -268,27 +237,15 @@
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../../SpectralLine/index.html" class="btn btn-neutral float-right" title="Spectral Lines" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="start-obs.html" class="btn btn-neutral" title="Start the observations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Egron, Pilia.
+        &copy; Copyright 2018, E. Egron, M. Pilia, S. Loru.
 
     </p>
   </div>
@@ -313,8 +270,7 @@
             VERSION:'1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            HAS_SOURCE:  true
         };
     </script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>

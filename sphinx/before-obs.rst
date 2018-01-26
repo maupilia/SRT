@@ -20,33 +20,33 @@ On nuraghe-mng
 ------------------
 
 Check that :
-   - all of the 31 containers are active on ACS ;
-   - the active surface is green on AS ;
-   - the jlog is open in order to track possible error messages ;
-   - the interface of the Meteo client is open to check the wind velocity in real time (< 60 km/h).
+   - all of the 31 containers are active on ACS (:numref:`srt_acs`);
+   - the active surface is green on AS (:numref:`srt_activesurface`);
+   - the jlog is open in order to track possible error messages (:numref:`srt_jlog`);
+   - the interface of the Meteo client is open to check the wind velocity in real time (< 60 km/h) (:numref:`srt_meteo`).
 
 
-On nuraghe-obs1
+On nuraghe-obs1 
 ------------------
 
 
-1. Check the presence of the 8 panels : 
+1. Check the presence of the 8 panels (:numref:`srt_vistaglobale`): 
 
-   - **operatorInput**
+   - **operatorInput** (:numref:`srt_operatorinput`)
 
-   - **AntennaBoss**
+   - **AntennaBoss** (:numref:`srt_antennaboss`)
 
-   - **GenericBackend**
+   - **GenericBackend** (:numref:`srt_genericBackend`)
 
-   - **Mount**
+   - **Mount** (:numref:`srt_mount`)
 
-   - **Observatory**
+   - **Observatory** (:numref:`srt_observatory`)
 
-   - **Receivers**
+   - **Receivers** (:numref:`srt_receivers`)
 
-   - **Scheduler**
+   - **Scheduler** (:numref:`srt_scheduler`)
 
-   - **MinorServo**
+   - **MinorServo** (:numref:`srt_minorservo`)
 
 ----------
 ----------
