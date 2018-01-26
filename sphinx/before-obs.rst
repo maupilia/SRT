@@ -13,7 +13,7 @@
 Before observing
 ======================
 
-Some checks need to be performed before starting the observations.
+Some some some checks need to be performed before starting the observations.
 
 
 On nuraghe-mng
