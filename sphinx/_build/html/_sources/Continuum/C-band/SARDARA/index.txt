@@ -7,18 +7,11 @@
 SARDARA
 =========
 
-
-*  :ref:`before-obs`
-*  :ref:`before-obs`
- 
  .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   Before observing <before-obs.rst>
-   Before observing :ref:`before-obs`
-   Start the observations <start-obs.rst>
-   Check during the observations <check-obs.rst>
-   Getting your data <get-data>
-   End of the session <stop-session.rst>
-
+*  :ref:`start-CoCSa`
+*  :ref:`check-obs`
+*  :ref:`get-data`
+*  :ref:`stop-session`
 
