@@ -32,12 +32,7 @@ ReceiversBoss
 Scheduler
 ======
 
-        .. _srt_scheduler:
 
-     	.. figure:: srt_scheduler.png 
-	   :align: center
-          
-           Bella Figura
 
 
 MinorServo

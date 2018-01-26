@@ -164,6 +164,8 @@
 <h1>Check during the observations<a class="headerlink" href="#check-during-the-observations" title="Permalink to this headline">¶</a></h1>
 <p>$ : commands to insert in a shell</p>
 <p>&gt; : commands to insert in the operatorInput panel</p>
+<p><img alt="logo" src="../../../_images/monocle_.png" />:check on the monitor</p>
+<hr class="docutils" />
 <ol class="arabic">
 <li><p class="first">On nuraghe-obs2, check that the data are correctly written in your project section :</p>
 <blockquote>
@@ -188,7 +190,7 @@ quick-look plots with respect to the real observations.</p>
 <li><p class="first">Panels</p>
 <blockquote>
 <div><ul class="simple">
-<li>Scheduler : status OK, green</li>
+<li>Scheduler : status OK, green  <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.8</span></a></li>
 </ul>
 <p>During the tracking, &#64; is green while it is red during the slewing of the antenna.</p>
 <p>Check the update of the number of scan/subscan according to your schedule. Scans will be skipped if the target is not visible at the            moment of the observations.</p>
@@ -196,64 +198,44 @@ quick-look plots with respect to the real observations.</p>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaStop</span></code>    (in the operatorInput)</p>
 <p>then start again the schedule:</p>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaStart=[projectID]/…scd,n</span></code>     (with n the number of scan)</p>
-<div class="figure align-center" id="id1">
-<span id="srt-scheduler"></span><img alt="../../../_images/srt_scheduler.png" src="../../../_images/srt_scheduler.png" />
-<p class="caption"><span class="caption-number">Fig.1 </span><span class="caption-text">Bella Figura</span></p>
-</div>
-<img alt="../../../_images/srt_scheduler.png" class="align-center" src="../../../_images/srt_scheduler.png" />
 <ul class="simple">
-<li>AntennaBoss : status OK, green.</li>
+<li>AntennaBoss : status OK, green. <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-antennaboss"><span>Fig.3</span></a></li>
 </ul>
-<img alt="../../../_images/srt_antennaboss.png" class="align-center" src="../../../_images/srt_antennaboss.png" />
-<ul class="simple">
-<li>Mount : READY, READY, OK green (CHECK!!!!) while the antenna is pointing a source.</li>
-</ul>
-<div class="figure align-center" id="srt-mount">
-<img alt="../../../_images/srt_mount.png" src="../../../_images/srt_mount.png" />
-</div>
-<ul class="simple">
-<li>MinorServo; tracking &#64; is green, the status ids OK and green.</li>
-</ul>
-<img alt="../../../_images/srt_minorservo.png" class="align-center" src="../../../_images/srt_minorservo.png" />
-<ul class="simple">
-<li>Receivers : status OK, green.</li>
-</ul>
-<p>If the derotator (dewar) is used, check the configuration and status (ready green).</p>
-<img alt="../../../_images/srt_receivers.png" class="align-center" src="../../../_images/srt_receivers.png" />
 </div></blockquote>
 </li>
-<li><p class="first">Active surface</p>
+</ol>
+<ol class="arabic">
+<li><p class="first">Active surface <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-activesurface"><span>Fig.12</span></a></p>
 <blockquote>
 <div><p>Sometimes, not all of the small squares of the active surface are green. Do not worry for that. Instead, it can be problematic if a             large fraction of the active surface becomes red.</p>
 <ul class="simple">
 <li>Check that the state of the active surface corresponds to your choice (shaped, shaped fixed, parabolic, parabolic fixed).</li>
 <li>“Ok” should be green during the observations.</li>
 </ul>
-<img alt="../../../_images/srt_activesurface.png" class="align-center" src="../../../_images/srt_activesurface.png" />
 </div></blockquote>
 </li>
-<li><p class="first">Log</p>
+</ol>
+<ol class="arabic">
+<li><p class="first">Log <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-jlog"><span>Fig.11</span></a></p>
 <blockquote>
 <div><ul class="simple">
 <li>The log file (jlog) contains warning and error messages. Warning messages are indicated in yellow while error messages are in red.</li>
 <li>Check the possible error messages. Try to understand the origin of the problem and to solve it. In case of persistent/complex problem, contact and report the error messages and the associated UT to the responsible of the observation (observer friend?).</li>
 </ul>
-<img alt="../../../_images/srt_jlog.png" class="align-center" src="../../../_images/srt_jlog.png" />
 </div></blockquote>
 </li>
-<li><p class="first">Calibration tool client</p>
-<blockquote>
-<div><img alt="../../../_images/srt_calibrationtool.png" class="align-center" src="../../../_images/srt_calibrationtool.png" />
-</div></blockquote>
-</li>
-<li><p class="first">Weather parameters</p>
+</ol>
+<ol class="arabic simple">
+<li>Calibration tool client <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-calibrationtool"><span>Fig.13</span></a></li>
+</ol>
+<ol class="arabic">
+<li><p class="first">Weather parameters <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-meteo"><span>Fig.14</span></a></p>
 <blockquote>
 <div><blockquote>
 <div><p>On nuraghe-obs1, activate the meteo client:</p>
 </div></blockquote>
 <p><code class="docutils literal"><span class="pre">$</span> <span class="pre">meteoClient</span></code></p>
 <p>If the wind speed exceeds 61 km/h, the antenna must be stowed.</p>
-<img alt="../../../_images/srt_meteo.png" class="align-center" src="../../../_images/srt_meteo.png" />
 </div></blockquote>
 </li>
 </ol>
