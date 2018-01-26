@@ -12,9 +12,9 @@ the **Stow Pin Motion** is yellow as below.
 
         .. _srt_ACU_stowpin:
 
-    	.. figure:: ACU-stow.png 
+    	.. figure:: ACU-stow.png
 	   :align: center
-  
+
            ACU panel after ``> antennaPark``.
 
 
@@ -22,28 +22,18 @@ Wait until **Axis blocked** appears in red before pressing the emergency stop, a
 
         .. _srt_ACU_axisblocked:
 
-<<<<<<< HEAD
-    	.. figure:: srt_ACU_stowpin.png
+    	.. figure:: ACU-axis-blocked.png
 	   :align: center
-
-=======
-    	.. figure:: ACU-axis-blocked.png 
-	   :align: center
->>>>>>> origin
 
            ACU panel when the antenna is correctly parked.
 
 
-<<<<<<< HEAD
-    	.. figure:: srt_ACU_axisblocked.png
-=======
 When the emergency stop button is pressed, different messages are in red,
 as indicated in the following figure:
 
         .. _srt_ACU_redbutton:
 
         .. figure:: srt_ACU_redbutton.png
->>>>>>> origin
 	   :align: center
 
            ACU panel when the emergency button is pressed.
@@ -90,13 +80,8 @@ number is frozen, stop the schedule.
 
      	.. figure:: srt_scheduler.png
 	   :align: center
-<<<<<<< HEAD
 
-           The scheduler status is in FAILURE !!!!!!!!.
-=======
-          
            The scheduler status is in FAILURE !!!!!!!!
->>>>>>> origin
 
 
 MinorServo
@@ -131,11 +116,6 @@ SRT.
 
      	.. figure:: srt_windspeed.png
 	   :align: center
-<<<<<<< HEAD
 
-           The wind speed exceeds 60 km/h, as indicated with the red horizontal line.
-=======
-          
            The antenna must be stowed immediately when the wind speed
            exceeds 60km/h.
->>>>>>> origin

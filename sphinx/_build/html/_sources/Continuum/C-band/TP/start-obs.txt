@@ -7,20 +7,18 @@
 .. toctree::
    :maxdepth:1
 
- 
-
- 
+.. _start-obs:
 
 Start the observations
 ======================
 
-$  : commands to insert in a shell   
- 
+$  : commands to insert in a shell
+
 >  : commands to insert in the operatorInput panel
 
 
 
-.. |logo| image:: monocle_.png 
+.. |logo| image:: monocle_.png
 ..    :width: 20pt
 ..    :height: 20pt
 ..   :align: left
@@ -28,13 +26,13 @@ $  : commands to insert in a shell
 
 
 ======================
- 
+
 #. Insert your project number
 
 
 
-    ``> project=[projectID]``    |logo| :numref:`Fig. %s, <srt_scheduler>` 
-  
+    ``> project=[projectID]``    |logo| :numref:`Fig. %s, <srt_scheduler>`
+
 
 
 
