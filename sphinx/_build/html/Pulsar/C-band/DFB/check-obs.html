@@ -13,8 +13,6 @@
 
   
   
-  
-  
 
   
 
@@ -32,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../../../genindex.html"/>
-        <link rel="search" title="Search" href="../../../search.html"/>
     <link rel="top" title="SRT procedures 1 documentation" href="../../../index.html"/>
         <link rel="up" title="DFB" href="index.html"/>
         <link rel="next" title="End of the session" href="stop-session.html"/>
@@ -47,7 +42,6 @@
 
 <body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
 
     
@@ -88,17 +82,17 @@
           
             
             
-              
-            
-            
-              <ul class="current">
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../before-obs.html">Before observing</a></li>
+</ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../Continuum/index.html">Continuum</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Pulsar observations</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">C-band</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">DFB</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="before-obs.html">Before observing</a></li>
 <li class="toctree-l4"><a class="reference internal" href="start-obs.html">Start the observations</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">Check during the observations</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="">Check during the observations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="stop-session.html">End of the session</a></li>
 </ul>
 </li>
@@ -128,10 +122,8 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">SRT procedures</a>
-        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../index.html">SRT procedures</a>
       </nav>
 
 
@@ -144,48 +136,33 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../../index.html">Docs</a> &raquo;</li>
-        
+    <li><a href="../../../index.html">Docs</a> &raquo;</li>
+      
           <li><a href="../../index.html">Pulsar observations</a> &raquo;</li>
-        
+      
           <li><a href="../index.html">C-band</a> &raquo;</li>
-        
+      
           <li><a href="index.html">DFB</a> &raquo;</li>
-        
-      <li>Check during the observations</li>
-    
-    
+      
+    <li>Check during the observations</li>
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="../../../_sources/Pulsar/C-band/DFB/check-obs.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="../../../_sources/Pulsar/C-band/DFB/check-obs.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
   <div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
 </div>
 <div class="section" id="check-during-the-observations">
 <h1>Check during the observations<a class="headerlink" href="#check-during-the-observations" title="Permalink to this headline">¶</a></h1>
@@ -204,7 +181,7 @@
 <p>TBD</p>
 </div></blockquote>
 </li>
-<li><p class="first">Antenna’s monitors</p>
+<li><p class="first">Antenna&#8217;s monitors</p>
 <blockquote>
 <div><p>Check that everything section is green. If a red box appears, put the cursor on         it and look at the error message.</p>
 <p>Contact and report the error messages to the responsible of the observation             (observer friend?).</p>
@@ -221,24 +198,24 @@
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaStop</span></code>    (in the operatorInput)</p>
 <p>then start again the schedule:</p>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaStart=[projectID]/…scd,n</span></code>     (with n the number of scan)</p>
-<img alt="../../../_images/srt_scheduler2.png" class="align-center" src="../../../_images/srt_scheduler2.png" />
+<img alt="../../../_images/srt_scheduler1.png" class="align-center" src="../../../_images/srt_scheduler1.png" />
 <ul class="simple">
 <li>AntennaBoss : status OK, green.</li>
 </ul>
-<img alt="../../../_images/srt_antennaboss.png" class="align-center" src="../../../_images/srt_antennaboss.png" />
+<img alt="../../../_images/srt_antennaboss1.png" class="align-center" src="../../../_images/srt_antennaboss1.png" />
 <ul class="simple">
 <li>Mount : READY, READY, OK green (CHECK!!!!) while the antenna is pointing a source.</li>
 </ul>
-<img alt="../../../_images/srt_mount.png" class="align-center" src="../../../_images/srt_mount.png" />
+<img alt="../../../_images/srt_mount1.png" class="align-center" src="../../../_images/srt_mount1.png" />
 <ul class="simple">
 <li>MinorServo; tracking &#64; is green, the status ids OK and green.</li>
 </ul>
-<img alt="../../../_images/srt_minorservo.png" class="align-center" src="../../../_images/srt_minorservo.png" />
+<img alt="../../../_images/srt_minorservo1.png" class="align-center" src="../../../_images/srt_minorservo1.png" />
 <ul class="simple">
 <li>Receivers : status OK, green.</li>
 </ul>
 <p>If the derotator (dewar) is used, check the configuration and status (ready green).</p>
-<img alt="../../../_images/srt_receivers.png" class="align-center" src="../../../_images/srt_receivers.png" />
+<img alt="../../../_images/srt_receivers1.png" class="align-center" src="../../../_images/srt_receivers1.png" />
 </div></blockquote>
 </li>
 <li><p class="first">Active surface</p>
@@ -248,7 +225,7 @@
 <li>Check that the state of the active surface corresponds to your choice (shaped, shaped fixed, parabolic, parabolic fixed).</li>
 <li>“Ok” should be green during the observations.</li>
 </ul>
-<img alt="../../../_images/srt_activesurface.png" class="align-center" src="../../../_images/srt_activesurface.png" />
+<img alt="../../../_images/srt_activesurface1.png" class="align-center" src="../../../_images/srt_activesurface1.png" />
 </div></blockquote>
 </li>
 <li><p class="first">Log</p>
@@ -257,7 +234,7 @@
 <li>The log file (jlog) contains warning and error messages. Warning messages are indicated in yellow while error messages are in red.</li>
 <li>Check the possible error messages. Try to understand the origin of the problem and to solve it. In case of persistent/complex problem, contact and report the error messages and the associated UT to the responsible of the observation (observer friend?).</li>
 </ul>
-<img alt="../../../_images/srt_jlog.png" class="align-center" src="../../../_images/srt_jlog.png" />
+<img alt="../../../_images/srt_jlog1.png" class="align-center" src="../../../_images/srt_jlog1.png" />
 </div></blockquote>
 </li>
 <li><p class="first">Calibration tool client</p>
@@ -272,7 +249,7 @@
 </div></blockquote>
 <p><code class="docutils literal"><span class="pre">$</span> <span class="pre">meteoClient</span></code></p>
 <p>If the wind speed exceeds 61 km/h, the antenna must be stowed.</p>
-<img alt="../../../_images/srt_meteo.png" class="align-center" src="../../../_images/srt_meteo.png" />
+<img alt="../../../_images/srt_meteo1.png" class="align-center" src="../../../_images/srt_meteo1.png" />
 </div></blockquote>
 </li>
 </ol>
@@ -280,18 +257,15 @@
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="stop-session.html" class="btn btn-neutral float-right" title="End of the session" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="stop-session.html" class="btn btn-neutral float-right" title="End of the session" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="start-obs.html" class="btn btn-neutral" title="Start the observations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="start-obs.html" class="btn btn-neutral" title="Start the observations" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -325,8 +299,7 @@
             VERSION:'1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            HAS_SOURCE:  true
         };
     </script>
       <script type="text/javascript" src="../../../_static/jquery.js"></script>

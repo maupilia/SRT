@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 
-Primary Control Panel ACU 
+Primary Control Panel ACU
 =================
 
 At the end of your observations, do not press the emergency stop button when
@@ -12,9 +12,9 @@ the **Stow Pin Motion** is yellow as below.
 
         .. _srt_ACU_stowpin:
 
-    	.. figure:: ACU-stow.png 
+    	.. figure:: ACU-stow.png
 	   :align: center
-  
+
            ACU panel after ``> antennaPark``.
 
 
@@ -22,7 +22,7 @@ Wait until **Axis blocked** appears in red before pressing the emergency stop, a
 
         .. _srt_ACU_axisblocked:
 
-    	.. figure:: ACU-axis-blocked.png 
+    	.. figure:: ACU-axis-blocked.png
 	   :align: center
 
            ACU panel when the antenna is correctly parked.
@@ -54,7 +54,7 @@ Mount
 
         .. _srt_mount:
 
-    	.. figure:: srt_mount.png 
+    	.. figure:: srt_mount.png
 	   :align: center
 
 
@@ -78,9 +78,9 @@ number is frozen, stop the schedule.
 
         .. _srt-scheduler:
 
-     	.. figure:: srt_scheduler.png 
+     	.. figure:: srt_scheduler.png
 	   :align: center
-          
+
            The scheduler status is in FAILURE !!!!!!!!
 
 
@@ -114,8 +114,8 @@ SRT.
 
         .. _srt_windspeed:
 
-     	.. figure:: srt_windspeed.png 
+     	.. figure:: srt_windspeed.png
 	   :align: center
-          
+
            The antenna must be stowed immediately when the wind speed
            exceeds 60km/h.
