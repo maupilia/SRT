@@ -9,27 +9,27 @@
  
 
 AntennaBoss
-========
+===========
 
 
 Observatory
-========
+===========
 
 
 Mount
-====
+=====
 
 
 GenericBackend
-==========
+==============
 
 
 ReceiversBoss
-==========
+=============
 
 
 Scheduler
-======
+=========
 
         .. _srt_scheduler:
 
@@ -40,12 +40,12 @@ Scheduler
 
 
 MinorServo
-=======
-
-
-Logging Display
 ==========
 
 
+Logging Display
+===============
+
+
 Active Surface
-=========
+==============

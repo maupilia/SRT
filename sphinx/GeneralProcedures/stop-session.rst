@@ -44,7 +44,7 @@ or
 
 
 Block the axes of the antenna
---------------------------
+------------------------------
 
 Look at the monitor of the antenna and wait until the upper right
 panel becomes red. It can take a few minutes after the command

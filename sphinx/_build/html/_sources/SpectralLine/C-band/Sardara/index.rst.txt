@@ -10,10 +10,9 @@ SARDARA
 .. toctree::
    :maxdepth: 1
 
-   Before observing <before-obs.rst>
-   Start the observations <start-obs.rst>
-   Check during the observations <check-obs.rst>
-   Getting your data <get-data.rst>
-   End of the session <stop-session.rst>
+*  :ref:`start-SLCSa`
+*  :ref:`check-obs`
+*  :ref:`get-data`
+*  :ref:`stop-session` 
 
 
