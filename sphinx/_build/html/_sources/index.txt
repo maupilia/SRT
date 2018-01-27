@@ -29,7 +29,7 @@ Before observing
 .. toctree::
    :maxdepth: 1
 
-   Continuum/C-band/TP/before-obs.rst
+   Before observing <before-obs.rst>
 
 
 .. warning:: Check the `update and temporary modifications <http://discos.readthedocs.io/en/latest/user/srt/source/Troubleshooting.html>`_
@@ -38,7 +38,7 @@ Before observing
 
 
 Observation modes
-============
+==================
 
 .. toctree::
    :maxdepth: 1
@@ -50,7 +50,7 @@ Observation modes
 
 
 Troubleshooting
-============
+================
    
 .. toctree::
    :maxdepth: 1
@@ -59,7 +59,7 @@ Troubleshooting
 
 
 Indices and figures
-============
+====================
 
 .. toctree::
    :maxdepth: 1

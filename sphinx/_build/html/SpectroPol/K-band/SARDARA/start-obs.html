@@ -13,8 +13,6 @@
 
   
   
-  
-  
 
   
 
@@ -32,10 +30,17 @@
   
 
   
+<<<<<<< HEAD
         <link rel="index" title="Index"
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
     <link rel="top" title="SRT procedures 1 documentation" href="../../../index.html"/> 
+=======
+    <link rel="top" title="SRT procedures 1 documentation" href="../../../index.html"/>
+        <link rel="up" title="SARDARA" href="index.html"/>
+        <link rel="next" title="Getting your data" href="get-data.html"/>
+        <link rel="prev" title="Before observing" href="before-obs.html"/> 
+>>>>>>> master
 
   
   <script src="../../../_static/js/modernizr.min.js"></script>
@@ -44,7 +49,6 @@
 
 <body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
 
     
@@ -85,17 +89,32 @@
           
             
             
-              
-            
-            
-              <ul>
+                <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../before-obs.html">Before observing</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../Continuum/index.html">Continuum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../Pulsar/index.html">Pulsar observations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../SpectralLine/index.html">Spectral lines</a></li>
+<<<<<<< HEAD
 <li class="toctree-l1"><a class="reference internal" href="../../index.html">Spectro-polarimetry</a></li>
+=======
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Spectro-polarimetry</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../C-band/index.html">C-band</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">K-band</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">SARDARA</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="before-obs.html">Before observing</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="">Start the observations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="get-data.html">Getting your data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="stop-session.html">End of the session</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../L-band/index.html">L-band</a></li>
+</ul>
+</li>
+>>>>>>> master
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../Problems/index.html">Problems during the observations</a></li>
@@ -114,10 +133,8 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">SRT procedures</a>
-        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../index.html">SRT procedures</a>
       </nav>
 
 
@@ -130,42 +147,42 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
+<<<<<<< HEAD
     
       <li><a href="../../../index.html">Docs</a> &raquo;</li>
         
       <li>Start the observations</li>
     
     
+=======
+    <li><a href="../../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../../index.html">Spectro-polarimetry</a> &raquo;</li>
+      
+          <li><a href="../index.html">K-band</a> &raquo;</li>
+      
+          <li><a href="index.html">SARDARA</a> &raquo;</li>
+      
+    <li>Start the observations</li>
+>>>>>>> master
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="../../../_sources/SpectroPol/K-band/SARDARA/start-obs.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="../../../_sources/SpectroPol/K-band/SARDARA/start-obs.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
   <div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
 </div>
 <div class="section" id="start-the-observations">
 <span id="start-spksa"></span><h1>Start the observations<a class="headerlink" href="#start-the-observations" title="Permalink to this headline">¶</a></h1>
@@ -248,11 +265,11 @@ dewar in order to best cover the scanned area).</li>
 <li>CUSTOM : the user has to choose the angle of the dewar axis
 with the y-axis of the scanning frame that will be kept
 during the whole duration of the acquisition :
-<code class="docutils literal"><span class="pre">&gt;</span>&#160; <span class="pre">derotatorSetPosition=[ang]d</span></code>     with <code class="docutils literal"><span class="pre">[ang]</span></code> the
+<code class="docutils literal"><span class="pre">&gt;</span>&nbsp; <span class="pre">derotatorSetPosition=[ang]d</span></code>     with <code class="docutils literal"><span class="pre">[ang]</span></code> the
 dewar angle in degrees.</li>
 <li>FIXED : the dewar keeps a fixed postion w.r.t the horizon,
 no rotation is applied. To specify a static angle :
-<code class="docutils literal"><span class="pre">&gt;</span>&#160; <span class="pre">derotatorSetPosition=[ang]d</span></code>     with <code class="docutils literal"><span class="pre">[ang]</span></code> the
+<code class="docutils literal"><span class="pre">&gt;</span>&nbsp; <span class="pre">derotatorSetPosition=[ang]d</span></code>     with <code class="docutils literal"><span class="pre">[ang]</span></code> the
 dewar angle in degrees.</li>
 </ul>
 </div></blockquote>
@@ -281,12 +298,21 @@ dewar angle in degrees.</li>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
           </div>
           <footer>
   
+<<<<<<< HEAD
+=======
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="get-data.html" class="btn btn-neutral float-right" title="Getting your data" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="before-obs.html" class="btn btn-neutral" title="Before observing" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+>>>>>>> master
 
   <hr/>
 
@@ -317,8 +343,7 @@ dewar angle in degrees.</li>
             VERSION:'1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            HAS_SOURCE:  true
         };
     </script>
       <script type="text/javascript" src="../../../_static/jquery.js"></script>
