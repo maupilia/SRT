@@ -15,7 +15,6 @@ $ : commands to insert in a shell
  
 > : commands to insert in the operatorInput panel
 
-
 #. Insert your project number
 
     ``> project=[projectID]``

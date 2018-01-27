@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="SRT procedures 1 documentation" href="../index.html"/> 
 
   
@@ -39,6 +44,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -79,7 +85,10 @@
           
             
             
-                <ul>
+              
+            
+            
+              <ul>
 <li class="toctree-l1"><a class="reference internal" href="../before-obs.html">Before observing</a></li>
 </ul>
 <ul>
@@ -105,8 +114,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../index.html">SRT procedures</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SRT procedures</a>
+        
       </nav>
 
 
@@ -119,51 +130,66 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../index.html">Docs</a> &raquo;</li>
-      
-    <li>End of the session</li>
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>End of the session</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="../_sources/GeneralProcedures/stop-session.txt" rel="nofollow"> View page source</a>
+            
+            <a href="../_sources/GeneralProcedures/stop-session.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
   <div class="toctree-wrapper compound">
-<ul class="simple">
-</ul>
 </div>
 <div class="section" id="end-of-the-session">
 <span id="stop-session"></span><h1>End of the session<a class="headerlink" href="#end-of-the-session" title="Permalink to this headline">¶</a></h1>
 <p>$  : commands to insert in a shell</p>
 <p>&gt;  : commands to insert in the operatorInput panel</p>
-<p><img alt="logo" src="../_images/monocle_6.png" />:check on the monitor</p>
+<p><img alt="logo" src="../_images/monocle_5.png" />:check on the monitor</p>
 <p>Your observations are now finished, we can stop the schedule and park
 the antenna.</p>
 <div class="section" id="on-nuraghe-obs1">
 <h2>On nuraghe-obs1<a class="headerlink" href="#on-nuraghe-obs1" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first">Stop your schedule :</p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">stopSchedule</span></code>   <em>interruption of the current subscan</em>  <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.8</span></a></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">stopSchedule</span></code>   <em>interruption of the current subscan</em>  <img alt="logo" src="../_images/monocle_5.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.8</span></a></p>
 </li>
 </ol>
 <p>or</p>
 <blockquote>
-<div><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">haltSchedule</span></code>    <em>the schedule stops at the end of the on-going subscan.</em> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.8</span></a></div></blockquote>
+<div><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">haltSchedule</span></code>    <em>the schedule stops at the end of the on-going subscan.</em> <img alt="logo" src="../_images/monocle_5.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.8</span></a></div></blockquote>
 <ol class="arabic" start="2">
 <li><p class="first">Park the minor servo, active surface and antenna</p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">goTo=180d,89d</span></code> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-mount"><span>Fig.18</span></a></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">servoPark</span></code> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-minorservo"><span>Fig.9</span></a></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asPark</span></code> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-activesurface"><span>Fig.12</span></a></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaPark</span></code> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-mount"><span>Fig.18</span></a></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">goTo=180d,89d</span></code> <img alt="logo" src="../_images/monocle_5.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-mount"><span class="std std-numref">Fig.5</span></a></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">servoPark</span></code> <img alt="logo" src="../_images/monocle_5.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-minorservo"><span class="std std-numref">Fig.9</span></a></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asPark</span></code> <img alt="logo" src="../_images/monocle_5.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-activesurface"><span class="std std-numref">Fig.12</span></a></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaPark</span></code> <img alt="logo" src="../_images/monocle_5.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-mount"><span class="std std-numref">Fig.5</span></a></p>
 </li>
 </ol>
 </div>
@@ -177,6 +203,9 @@ panel becomes red. It can take a few minutes after the command
 </div>
 
 
+           </div>
+           <div class="articleComments">
+            
            </div>
           </div>
           <footer>
@@ -211,7 +240,8 @@ panel becomes red. It can take a few minutes after the command
             VERSION:'1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../_static/jquery.js"></script>
