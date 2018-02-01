@@ -24,7 +24,7 @@ $ : commands to insert in a shell
 ..    :width: 20pt
 ..    :height: 20pt
 ..   :align: left
-|logo|:check on the monitor
+|logo|: check on the monitor
 
 
 ======================
@@ -42,8 +42,7 @@ $ : commands to insert in a shell
     ``> setupCCB`` |logo| :numref:`srt_receivers`
 
 
-#. Select the active surface shape (Shaped configuration for C-band
- observations) :
+#. Select the active surface shape (Shaped configuration for C-band observations) :
 
     ``> asSetup=S`` |logo| :numref:`srt_activesurface`
 
@@ -75,20 +74,20 @@ $ : commands to insert in a shell
     
 #. Choose the integration time in ms (e.g. n=10 corresponds to 100 spectra/sec) :
 
-    ``> integration=[n]``
+     ``> integration=[n]``
 
 
 #. Attenuate the signal based on the rms range [-128 ;128] and check
  the value on the interface :
 
-    ``> getrms``  ???
+     ``> getrms``  ???
 
-    ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.  |logo| :numref:`srt_genericBackend`
+     ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.  |logo| :numref:`srt_genericBackend`
 
 #. Check the tsys (typical values) :
 
-     ``> tsys`` |logo| :numref:`srt_genericBackend`
+      ``> tsys`` |logo| :numref:`srt_genericBackend`
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 
-     ``> startSchedule=[projectID]/[schedulename].scd,[N]``  |logo| :numref:`srt_scheduler`
+      ``> startSchedule=[projectID]/[schedulename].scd,[N]``  |logo| :numref:`srt_scheduler`

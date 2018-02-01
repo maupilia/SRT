@@ -80,7 +80,7 @@
             
             
                 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../before-obs.html">Before observing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../before-obs.html">Important checks</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../Continuum/index.html">Continuum</a></li>
@@ -143,36 +143,38 @@
 </div>
 <div class="section" id="end-of-the-session">
 <span id="stop-session"></span><h1>End of the session<a class="headerlink" href="#end-of-the-session" title="Permalink to this headline">¶</a></h1>
-<p>$  : commands to insert in a shell</p>
 <p>&gt;  : commands to insert in the operatorInput panel</p>
-<p><img alt="logo" src="../_images/monocle_6.png" />:check on the monitor</p>
+<p><img alt="logo" src="../_images/monocle_6.png" />: check on the monitor</p>
+<hr class="docutils" />
 <p>Your observations are now finished, we can stop the schedule and park
 the antenna.</p>
 <div class="section" id="on-nuraghe-obs1">
 <h2>On nuraghe-obs1<a class="headerlink" href="#on-nuraghe-obs1" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first">Stop your schedule :</p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">stopSchedule</span></code>   <em>interruption of the current subscan</em>  <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.8</span></a></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">stopSchedule</span></code>   <em>interruption of the current subscan</em>  <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.12</span></a></p>
 </li>
 </ol>
-<p>or</p>
-<blockquote>
-<div><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">haltSchedule</span></code>    <em>the schedule stops at the end of the on-going subscan.</em> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.8</span></a></div></blockquote>
+<dl class="docutils">
+<dt>or</dt>
+<dd><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">haltSchedule</span></code>    <em>the schedule stops at the end of the on-going subscan.</em></dd>
+</dl>
 <ol class="arabic" start="2">
 <li><p class="first">Park the minor servo, active surface and antenna</p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">goTo=180d,89d</span></code> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-mount"><span>Fig.18</span></a></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">servoPark</span></code> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-minorservo"><span>Fig.9</span></a></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asPark</span></code> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-activesurface"><span>Fig.12</span></a></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaPark</span></code> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-mount"><span>Fig.18</span></a></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">goTo=180d,89d</span></code> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-mount-ok"><span>Fig.9</span></a></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">servoPark</span></code> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-minorservo"><span>Fig.13</span></a></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asPark</span></code> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-activesurface"><span>Fig.2</span></a></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaPark</span></code> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-mount-ok"><span>Fig.9</span></a></p>
 </li>
 </ol>
 </div>
 <div class="section" id="block-the-axes-of-the-antenna">
 <h2>Block the axes of the antenna<a class="headerlink" href="#block-the-axes-of-the-antenna" title="Permalink to this headline">¶</a></h2>
-<p>Look at the monitor of the antenna and wait until the upper right
-panel becomes red. It can take a few minutes after the command
-<code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaPark</span></code> has been given.</p>
-<p>Only at this moment, you can press on the emergency stop button.</p>
+<p>Look at the ACU monitor, wait until
+<strong>Axis blocked</strong> appears in red. It can take a few minutes after the command
+<code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaPark</span></code> has been given (<a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-acu-axisblocked"><span>Fig.16</span></a>).</p>
+<p>Only at this moment, you can press on the emergency stop button
+(<a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-acu-redbutton"><span>Fig.17</span></a>).</p>
 </div>
 </div>
 

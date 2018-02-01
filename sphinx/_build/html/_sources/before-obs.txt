@@ -10,10 +10,10 @@
 .. _before-obs:
 
 ======================
-Before observing
+Important checks
 ======================
 
-Some some some checks need to be performed before starting the observations.
+Some checks need to be performed before starting the observations.
 
 
 On nuraghe-mng
@@ -38,7 +38,7 @@ On nuraghe-obs1
 
    - **GenericBackend** (:numref:`srt_genericBackend`)
 
-   - **Mount** (:numref:`srt_mount`)
+   - **Mount** (:numref:`srt_mount_ok`)
 
    - **Observatory** (:numref:`srt_observatory`)
 
