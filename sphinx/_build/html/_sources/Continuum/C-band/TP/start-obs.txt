@@ -6,11 +6,7 @@
 
 .. toctree::
    :maxdepth:1
-<<<<<<< HEAD
-  
-=======
 
->>>>>>> 59221567023b7fbb02d0cffee9ea5df2ed6a973e
 .. _start-obs:
 
 Start the observations

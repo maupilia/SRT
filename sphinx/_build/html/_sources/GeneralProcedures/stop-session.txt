@@ -5,16 +5,6 @@
 
 
 .. toctree::
-<<<<<<< HEAD
-   :maxdepth:1
-
-.. _stop-session:
-  
-======================
-End of the session
-======================
-
-=======
    :maxdepth: 1
 
 .. _stop-session:
@@ -37,7 +27,6 @@ $  : commands to insert in a shell
 
 
 
->>>>>>> 59221567023b7fbb02d0cffee9ea5df2ed6a973e
 Your observations are now finished, we can stop the schedule and park
 the antenna.
 
@@ -47,34 +36,17 @@ On nuraghe-obs1
 
 1. Stop your schedule :
 
-<<<<<<< HEAD
-   ``> stopSchedule``   *interruption of the current subscan*
-
-or
-
-   ``> haltSchedule``    *the schedule stops at the end of the on-going subscan.*
-=======
    ``> stopSchedule``   *interruption of the current subscan*  |logo| :numref:`srt_scheduler`
 
 or
 
    ``> haltSchedule``    *the schedule stops at the end of the on-going subscan.* |logo| :numref:`srt_scheduler`
->>>>>>> 59221567023b7fbb02d0cffee9ea5df2ed6a973e
 
 
 
 
 2. Park the minor servo, active surface and antenna
 
-<<<<<<< HEAD
-   ``> goTo=180d,89d``
-
-   ``> servoPark``
-
-   ``> asPark``
-
-   ``> antennaPark``
-=======
    ``> goTo=180d,89d`` |logo| :numref:`srt_mount`
 
    ``> servoPark`` |logo| :numref:`srt_minorservo`
@@ -82,7 +54,6 @@ or
    ``> asPark`` |logo| :numref:`srt_activesurface`
 
    ``> antennaPark`` |logo| :numref:`srt_mount`
->>>>>>> 59221567023b7fbb02d0cffee9ea5df2ed6a973e
 
 
 
@@ -91,10 +62,6 @@ Block the axes of the antenna
 
 Look at the monitor of the antenna and wait until the upper right
 panel becomes red. It can take a few minutes after the command
-<<<<<<< HEAD
-``> antennaPark`` has been given. 
-=======
 ``> antennaPark`` has been given.
->>>>>>> 59221567023b7fbb02d0cffee9ea5df2ed6a973e
 
-Only at this moment, you can press on the red button.
+Only at this moment, you can press on the emergency stop button.

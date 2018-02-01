@@ -70,7 +70,7 @@ Before starting data acquisition, do the following:
 
 #. W1: in each of the 8 tabs, launch the daemons:
 
-    ``$ ~/roach/scripts/daemon.s``
+    ``$ ~/roach/scripts/daemon.sh``
 
 #. When the antenna is tracking the first source and you are ready to start data acquisition, go to W2 and type:
 

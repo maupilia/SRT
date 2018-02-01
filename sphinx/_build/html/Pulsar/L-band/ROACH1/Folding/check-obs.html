@@ -90,15 +90,18 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Pulsar observations</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../../C-band/index.html">C-band</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../../index.html">L-band</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../../DFB/index.html">DFB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../DFB/index.html">DFB with SEADAS</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="../index.html">ROACH1</a><ul class="current">
 <li class="toctree-l4 current"><a class="reference internal" href="index.html">Folding mode</a></li>
-<li class="toctree-l4 current"><a class="reference internal" href="index.html">Baseband mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Baseband/index.html">Baseband mode</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../ROACH1-DFB/index.html">ROACH1 + DFB</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../../P-band/index.html">P-band</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../LP-bands/index.html">LP-bands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../index.html#notes">Notes</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../SpectralLine/index.html">Spectral lines</a></li>
@@ -183,12 +186,13 @@
 </div>
 <div class="section" id="external-client">
 <h2>External client<a class="headerlink" href="#external-client" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple">
-<li>If something goes wrong with the external client (e.g. failing to give you antenna parameters), you should kill (using <code class="docutils literal"><span class="pre">Control-C</span></code>) the control.csh code.</li>
-</ol>
-<p>Then go see what is wrong with the External Client. If you manage to fix it, re-start: <code class="docutils literal"><span class="pre">./control.csh</span></code>.</p>
-<p>Failure of the external client does not affect data acquisition with the ROACH while the antenna is tracking. The ROACH keeps recording data. The external client only matters when the antenna is going from TRACKING to SLEWING or from SLEWING to TRACKING.</p>
 <ol class="arabic">
+<li><p class="first">If something goes wrong with the external client (e.g. failing to give you antenna parameters), you should kill (using <code class="docutils literal"><span class="pre">Control-C</span></code>) the control.csh code.</p>
+<blockquote>
+<div><p>Then go see what is wrong with the External Client. If you manage to fix it, re-start: <code class="docutils literal"><span class="pre">./control.csh</span></code>.</p>
+<p>Failure of the external client does not affect data acquisition with the ROACH while the antenna is tracking. The ROACH keeps recording data. The external client only matters when the antenna is going from TRACKING to SLEWING or from SLEWING to TRACKING.</p>
+</div></blockquote>
+</li>
 <li><p class="first">If the external client is not working at all and you need to manually launch data acquisition (i.e. you cannot use the <code class="docutils literal"><span class="pre">./control.csh</span></code> script that is normally used during LEAP to automate data acquisition), you can do the following:</p>
 <blockquote>
 <div><ul class="simple">
@@ -216,8 +220,8 @@
 </ol>
 <p>The difference between <code class="docutils literal"><span class="pre">./start.csh</span></code> and <code class="docutils literal"><span class="pre">./start_simple.csh</span></code> is that <code class="docutils literal"><span class="pre">./start_simple.csh</span></code> does not call the external client to get information about the source. If the external client is working, use <code class="docutils literal"><span class="pre">./start.csh</span></code> and the right folders will be automatically created using the name of the source that is being tracked and the most recent timestamp.</p>
 </div>
-<div class="section" id="antenna-traking">
-<h2>Antenna traking<a class="headerlink" href="#antenna-traking" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="antenna-tracking">
+<h2>Antenna tracking<a class="headerlink" href="#antenna-tracking" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first">Antenna monitors</p>
 <blockquote>

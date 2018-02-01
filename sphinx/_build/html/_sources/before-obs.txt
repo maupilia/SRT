@@ -13,42 +13,13 @@
 Before observing
 ======================
 
-Some checks need to be performed before starting the observations.
+Some some some checks need to be performed before starting the observations.
 
 
 On nuraghe-mng
 ------------------
 
 Check that :
-<<<<<<< HEAD
-   - all of the 31 containers are active on ACS ;
-   - the active surface is green on AS ;
-   - the jlog is open in order to track possible error messages ;
-   - the interface of the Meteo client is open to check the wind velocity in real time (< 60 km/h).
-
-
-On nuraghe-obs1
-------------------
-
-
-1. Check the presence of the 8 panels : 
-
-   - **operatorInput**
-
-   - **AntennaBoss**
-
-   - **GenericBackend**
-
-   - **Mount**
-
-   - **Observatory**
-
-   - **Receivers**
-
-   - **Scheduler**
-
-   - **MinorServo**
-=======
    - all of the 31 containers are active on ACS (:numref:`srt_acs`);
    - the active surface is green on AS (:numref:`srt_activesurface`);
    - the jlog is open in order to track possible error messages (:numref:`srt_jlog`);
@@ -76,7 +47,6 @@ On nuraghe-obs1
    - **Scheduler** (:numref:`srt_scheduler`)
 
    - **MinorServo** (:numref:`srt_minorservo`)
->>>>>>> 59221567023b7fbb02d0cffee9ea5df2ed6a973e
 
 ----------
 ----------

@@ -31,9 +31,9 @@ External client
 
 #. If something goes wrong with the external client (e.g. failing to give you antenna parameters), you should kill (using ``Control-C``) the control.csh code.
  
-Then go see what is wrong with the External Client. If you manage to fix it, re-start: ``./control.csh``.
+    Then go see what is wrong with the External Client. If you manage to fix it, re-start: ``./control.csh``.
  
-Failure of the external client does not affect data acquisition with the ROACH while the antenna is tracking. The ROACH keeps recording data. The external client only matters when the antenna is going from TRACKING to SLEWING or from SLEWING to TRACKING.
+    Failure of the external client does not affect data acquisition with the ROACH while the antenna is tracking. The ROACH keeps recording data. The external client only matters when the antenna is going from TRACKING to SLEWING or from SLEWING to TRACKING.
 
 
 #. If the external client is not working at all and you need to manually launch data acquisition (i.e. you cannot use the ``./control.csh`` script that is normally used during LEAP to automate data acquisition), you can do the following:
@@ -58,7 +58,7 @@ Failure of the external client does not affect data acquisition with the ROACH w
 The difference between ``./start.csh`` and ``./start_simple.csh`` is that ``./start_simple.csh`` does not call the external client to get information about the source. If the external client is working, use ``./start.csh`` and the right folders will be automatically created using the name of the source that is being tracked and the most recent timestamp.
 
 
-Antenna traking
+Antenna tracking
 -------------
 
 #. Antenna monitors

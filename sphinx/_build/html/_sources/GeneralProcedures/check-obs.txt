@@ -17,8 +17,6 @@ $ : commands to insert in a shell
 > : commands to insert in the operatorInput panel
 
 
-<<<<<<< HEAD
-=======
 
 .. |logo| image:: monocle_.png 
 ..    :width: 20pt
@@ -29,7 +27,6 @@ $ : commands to insert in a shell
 ==============================
 
 
->>>>>>> 59221567023b7fbb02d0cffee9ea5df2ed6a973e
 #. On nuraghe-obs2, check that the data are correctly written in your project section :
 
     ``$ cd/archive/data/[projectID]/``   
@@ -55,11 +52,7 @@ $ : commands to insert in a shell
 
 #. Panels
 
-<<<<<<< HEAD
-        * Scheduler : status OK, green
-=======
         * Scheduler : status OK, green  |logo| :numref:`srt_scheduler`
->>>>>>> 59221567023b7fbb02d0cffee9ea5df2ed6a973e
 
 	During the tracking, @ is green while it is red during the slewing of the antenna.
 
@@ -73,36 +66,6 @@ $ : commands to insert in a shell
 
 	``> antennaStart=[projectID]/…scd,n``     (with n the number of scan)
 
-<<<<<<< HEAD
-        .. _srt_scheduler:
-
-     	.. figure:: srt_scheduler.png 
-	   :align: center
-          
-           Bella Figura
-
-     	.. image:: srt_scheduler.png 
-	   :align: center
-
- 	* AntennaBoss : status OK, green.
-		
-     	.. image:: srt_antennaboss.png 
-	   :align: center
-
-
- 	* Mount : READY, READY, OK green (CHECK!!!!) while the antenna is pointing a source.
-
-        .. _srt_mount:
-
-    	.. figure:: srt_mount.png 
-	   :align: center
-
- 
- 	* MinorServo; tracking @ is green, the status ids OK and green.
-
-    	.. image:: srt_minorservo.png 
-	   :align: center
-=======
 
  	* AntennaBoss : status OK, green. |logo| :numref:`srt_antennaboss`
 		
@@ -122,20 +85,10 @@ $ : commands to insert in a shell
 
 ..    	.. image:: srt_minorservo.png 
 ..	   :align: center
->>>>>>> 59221567023b7fbb02d0cffee9ea5df2ed6a973e
 
 
  	* Receivers : status OK, green.
 
-<<<<<<< HEAD
-	If the derotator (dewar) is used, check the configuration and status (ready green).
-
-    	.. image:: srt_receivers.png 
-	   :align: center
-
-
-#. Active surface
-=======
 	If the derotator (dewar) is used, check the configuration and status (ready green). |logo| :numref:`srt_receivers`
 
 ..   	.. image:: srt_receivers.png 
@@ -143,7 +96,6 @@ $ : commands to insert in a shell
 
 
 #. Active surface |logo| :numref:`srt_activesurface`
->>>>>>> 59221567023b7fbb02d0cffee9ea5df2ed6a973e
 
  	Sometimes, not all of the small squares of the active surface are green. Do not worry for that. Instead, it can be problematic if a 		large fraction of the active surface becomes red.
 
@@ -151,15 +103,6 @@ $ : commands to insert in a shell
 	* Check that the state of the active surface corresponds to your choice (shaped, shaped fixed, parabolic, parabolic fixed).
 
 
-<<<<<<< HEAD
- 	* “Ok” should be green during the observations.
-
-    	.. image:: srt_activesurface.png 
-	   :align: center
-
-
-#. Log
-=======
  	* “Ok” should be green during the observations. 
 
 ..    	.. image:: srt_activesurface.png 
@@ -167,33 +110,15 @@ $ : commands to insert in a shell
 
 
 #. Log |logo| :numref:`srt_jlog`
->>>>>>> 59221567023b7fbb02d0cffee9ea5df2ed6a973e
 
  	* The log file (jlog) contains warning and error messages. Warning messages are indicated in yellow while error messages are in red.
 
  
-<<<<<<< HEAD
- 	* Check the possible error messages. Try to understand the origin of the problem and to solve it. In case of persistent/complex problem, contact and report the error messages and the associated UT to the responsible of the observation (observer friend?).
-=======
  	* Check the possible error messages. Try to understand the origin of the problem and to solve it. In case of persistent/complex problem, contact and report the error messages and the associated UT to the responsible of the observation (observer friend?). 
->>>>>>> 59221567023b7fbb02d0cffee9ea5df2ed6a973e
 
 
 
 
-<<<<<<< HEAD
-    	.. image:: srt_jlog.png 
-	   :align: center
-
-
-#. Calibration tool client
-
-
-    	.. image:: srt_calibrationtool.png 
-	   :align: center
-
-#. Weather parameters
-=======
 ..    	.. image:: srt_jlog.png 
 ..	   :align: center
 
@@ -205,22 +130,14 @@ $ : commands to insert in a shell
 ..	   :align: center
 
 #. Weather parameters |logo| :numref:`srt_meteo`
->>>>>>> 59221567023b7fbb02d0cffee9ea5df2ed6a973e
 
  	 On nuraghe-obs1, activate the meteo client:
 
 	``$ meteoClient``
 
-<<<<<<< HEAD
-        If the wind speed exceeds 61 km/h, the antenna must be stowed.
-
-    	.. image:: srt_meteo.png 
-	   :align: center
-=======
         If the wind speed exceeds 61 km/h, the antenna must be stowed. 
 
 ..    	.. image:: srt_meteo.png 
 ..	   :align: center
->>>>>>> 59221567023b7fbb02d0cffee9ea5df2ed6a973e
 
 	

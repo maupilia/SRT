@@ -64,4 +64,4 @@ Look at the monitor of the antenna and wait until the upper right
 panel becomes red. It can take a few minutes after the command
 ``> antennaPark`` has been given.
 
-Only at this moment, you can press on the red button.
+Only at this moment, you can press on the emergency stop button.
