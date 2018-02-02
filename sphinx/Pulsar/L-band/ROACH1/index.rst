@@ -4,16 +4,16 @@
    contain the root `toctree` directive.
 
 
-
+=====
 ROACH1
------
+=====
 
 .. toctree::
    :maxdepth: 1
  
 
    Folding mode <Folding/index.rst>
-   Baseband mode <Folding/index.rst>
+   Baseband mode <Baseband/index.rst>
 
 
 

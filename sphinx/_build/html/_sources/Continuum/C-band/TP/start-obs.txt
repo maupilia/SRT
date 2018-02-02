@@ -6,11 +6,7 @@
 
 .. toctree::
    :maxdepth:1
-<<<<<<< HEAD
-  
-=======
 
->>>>>>> 59221567023b7fbb02d0cffee9ea5df2ed6a973e
 .. _start-obs:
 
 Start the observations
@@ -21,25 +17,18 @@ $  : commands to insert in a shell
 >  : commands to insert in the operatorInput panel
 
 
-
 .. |logo| image:: monocle_.png
 ..    :width: 20pt
 ..    :height: 20pt
 ..   :align: left
-|logo|:check on the monitor
+|logo|: check on the monitor
 
 
 ======================
 
 #. Insert your project number
 
-
-
-    ``> project=[projectID]``    |logo| :numref:`Fig. %s, <srt_scheduler>`
-
-
-
-
+    ``> project=[projectID]``    |logo| :numref:`srt_scheduler`
 
 
 #. Initial setup
@@ -69,13 +58,13 @@ $  : commands to insert in a shell
 
 #. Put the antenna at 45 deg of elevation and attenuate the signal in order to obtain values between 750 and 1100 counts (linear range of the backend) :
 
-    ``> goTo=*,45d`` |logo| :numref:`srt_mount`
+    ``> goTo=*,45d`` |logo| :numref:`srt_mount_ok`
 
     ``> getTpi``
 
     ``> setAttenuation=0,[att]``          with [att] between 0 and 15 dB |logo| :numref:`srt_genericBackend`
 
-    ``> setAttenuation=1,[att]``	with [att] between 0 and 15 dB |logo| :numref:`srt_genericBackend`
+    ``> setAttenuation=1,[att]``	with [att] between 0 and 15 dB 
 
     ``> getTpi``
 

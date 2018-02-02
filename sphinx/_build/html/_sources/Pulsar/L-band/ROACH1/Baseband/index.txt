@@ -4,18 +4,19 @@
    contain the root `toctree` directive.
 
 
-
-ROACH1
------
+==========
+Baseband Mode
+==========
 
 .. toctree::
+   :maxdepth: 1
  
-
-   Before <before-obs.rst>
-   Start <start-obs.rst>
-   During <check-obs.rst>
-   GetData <get-data.rst>
-   Stop <stop-session.rst>
+   Before observing <before-obs.rst>
+   Roach setup <roach-setup.rst>
+   Start the observations <start-obs.rst>
+   Check during the observations <check-obs.rst>
+   Getting your data <get-data.rst>
+   End of the session <stop-session.rst>
 
 
 
