@@ -11,5 +11,5 @@ C-band
    :maxdepth: 1
  
    
-   DFB <DFB/index.rst>
+   DFB with SEADAS <DFB/index.rst>
 
