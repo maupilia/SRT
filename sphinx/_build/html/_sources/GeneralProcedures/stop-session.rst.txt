@@ -51,7 +51,7 @@ or
 
 
 Block the axes of the antenna
-------------------------------
+--------------------------
 
 Look at the ACU monitor, wait until
 **Axis blocked** appears in red. It can take a few minutes after the command
