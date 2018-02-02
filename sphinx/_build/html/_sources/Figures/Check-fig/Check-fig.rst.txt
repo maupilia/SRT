@@ -10,6 +10,53 @@
 .. _Check-fig:
 
 
+ACS Command Center
+========
+
+       .. _srt_acs:
+
+       .. figure:: srt_acs.png 
+	  :align: center
+  
+          The **ACS** monitor shows the state of the containers related to each DISCOS component.
+
+
+Active Surface
+=========
+
+       .. _srt_activesurface:
+
+       .. figure:: srt_activesurface.png 
+	   :align: center
+
+	   This monitor shows the status of the actuators in a graphical representation of the **Active Surface** and its configuration. 
+
+
+Logging Display
+==========
+
+       .. _srt_jlog:
+
+       .. figure:: srt_jlog.png 
+	   :align: center
+
+	   The **Logging Display** shows the log messages related to
+	   the observation. New messages are shown on top of the
+	   previous ones. 
+
+
+Meteo Client
+=========
+
+       .. _srt_meteo:
+
+       .. figure:: srt_meteo.png 
+	   :align: center
+
+       The **Meteo Client** window shows the atmospheric temperature and the wind parameters (including wind direction) 
+       using a graphic  interface.
+
+
 
 Nuraghe-obs1
 ========
@@ -37,7 +84,6 @@ OperatorInput
            (if they are foreseen).
 
 
-
 AntennaBoss
 ========
 
@@ -47,31 +93,8 @@ AntennaBoss
 	   :align: center
           
            The **AntennaBoss** monitor shows the target info, indicating the commanded and actual positions pointed by     
-           the antenna. It also gives a feedback on the pointing accuracy and on the overall antenna status.
-
-Observatory
-========
-
-
-       .. _srt_observatory:
-
-       .. figure:: srt_observatory.png 
-	   :align: center
-
-           The **Observatory** monitor shows the station coordinates and times.
-
-Mount
-====
-
-
-       .. _srt_mount:
-
-       .. figure:: srt_mount.png 
-	   :align: center
-
-	   Observers must focus only on the **Mount** status and on the online readouts for the Azimuth and Elevation axes, 
-           compared to the commanded positions, located in the top left section.
-
+           the antenna. It also gives a feedback on the pointing
+           accuracy and on the overall antenna status.
 
 
 GenericBackend
@@ -83,6 +106,31 @@ GenericBackend
 	   :align: center
 
 	   The monitor **GenericBackend** shows the backend setup parameters related to each section.
+
+
+Mount
+====
+
+       .. _srt_mount_ok:
+
+       .. figure:: srt_mount.png 
+	   :align: center
+
+	   Observers must focus only on the **Mount** status and on the online readouts for the Azimuth and Elevation axes, 
+           compared to the commanded positions, located in the top left section.
+
+
+Observatory
+========
+
+       .. _srt_observatory:
+
+       .. figure:: srt_observatory.png 
+	   :align: center
+
+           The **Observatory** monitor shows the station coordinates and times.
+
+
 
 ReceiversBoss
 ==========
@@ -116,36 +164,6 @@ MinorServo
 
 	   The **MinorServo** monitor shows the current setup code and the minor servo status and movement.
 
-ACS Command Center
-========
-
-       .. _srt_acs:
-
-       .. figure:: srt_acs.png 
-	  :align: center
-  
-          The **ACS** monitor shows the state of the containers related to each DISCOS component.
-
-
-Logging Display
-==========
-
-       .. _srt_jlog:
-
-       .. figure:: srt_jlog.png 
-	   :align: center
-
-	   The **Logging Display** shows the log messages related to the observation. New messages are shown on top of the previous ones. 
-
-Active Surface
-=========
-
-       .. _srt_activesurface:
-
-       .. figure:: srt_activesurface.png 
-	   :align: center
-
-	   This monitor shows the status of the actuators in a graphical representation of the **Active Surface** and its configuration. 
 
 
 Calibration tool client
@@ -159,13 +177,3 @@ Calibration tool client
            In the **Calibration tool client** window the subscan currently being acquired is shown in real-time (upper plot), 
            even if in a low-res version. Under this display, the last completed subscan - in its full sampling - is shown.
 
-Meteo Client
-=========
-
-       .. _srt_meteo:
-
-       .. figure:: srt_meteo.png 
-	   :align: center
-
-       The **Meteo Client** window shows the atmospheric temperature and the wind parameters (including wind direction) 
-       using a graphic  interface.

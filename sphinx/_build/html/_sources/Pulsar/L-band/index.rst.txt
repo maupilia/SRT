@@ -11,5 +11,6 @@ L-band
    :maxdepth: 1
  
    
-   DFB <DFB/index.rst>
+   DFB with SEADAS <DFB/index.rst>
    ROACH1 <ROACH1/index.rst>
+   ROACH1 + DFB <ROACH1-DFB/index.rst>
