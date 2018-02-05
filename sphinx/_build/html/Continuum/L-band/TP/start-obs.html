@@ -35,10 +35,7 @@
         <link rel="index" title="Index"
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
-    <link rel="top" title="SRT procedures 1 documentation" href="../../../index.html"/>
-        <link rel="up" title="Total Power" href="index.html"/>
-        <link rel="next" title="Getting your data" href="get-data.html"/>
-        <link rel="prev" title="Before observing" href="before-obs.html"/> 
+    <link rel="top" title="SRT procedures 1 documentation" href="../../../index.html"/> 
 
   
   <script src="../../../_static/js/modernizr.min.js"></script>
@@ -94,23 +91,8 @@
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../before-obs.html">Important checks</a></li>
 </ul>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Continuum</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../../C-band/index.html">C-band</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../K-band/index.html">K-band</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../index.html">L-band</a><ul class="current">
-<li class="toctree-l3 current"><a class="reference internal" href="index.html">Total Power</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="before-obs.html">Before observing</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">Start the observations</a></li>
-<li class="toctree-l4"><a class="reference internal" href="get-data.html">Getting your data</a></li>
-<li class="toctree-l4"><a class="reference internal" href="stop-session.html">End of the session</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../SARDARA/index.html">SARDARA</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Continuum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../Pulsar/index.html">Pulsar observations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../SpectralLine/index.html">Spectral lines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../SpectroPol/index.html">Spectro-polarimetry</a></li>
@@ -164,12 +146,6 @@
     
       <li><a href="../../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../../index.html">Continuum</a> &raquo;</li>
-        
-          <li><a href="../index.html">L-band</a> &raquo;</li>
-        
-          <li><a href="index.html">Total Power</a> &raquo;</li>
-        
       <li>Start the observations</li>
     
     
@@ -192,20 +168,20 @@
   <div class="toctree-wrapper compound">
 </div>
 <div class="section" id="start-the-observations">
-<h1>Start the observations<a class="headerlink" href="#start-the-observations" title="Permalink to this headline">¶</a></h1>
+<span id="start-coltp"></span><h1>Start the observations<a class="headerlink" href="#start-the-observations" title="Permalink to this headline">¶</a></h1>
 <p>$ : commands to insert in a shell</p>
 <p>&gt; : commands to insert in the operatorInput panel</p>
-<p><img alt="logo" src="../../../_images/monocle_5.png" />:check on the monitor</p>
+<p><img alt="logo" src="../../../_images/monocle_4.png" />:check on the monitor</p>
 <ol class="arabic">
 <li><p class="first">Insert your project number :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code>  <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig. 12,</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code>  <img alt="logo" src="../../../_images/monocle_4.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig. 12,</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Initial setup :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setupLLP</span></code>  <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span class="std std-numref">Fig.11</span></a></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setupLLP</span></code>  <img alt="logo" src="../../../_images/monocle_4.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span class="std std-numref">Fig.11</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Select the receiver mode :</p>
@@ -227,42 +203,42 @@
 </li>
 <li><p class="first">Select the active surface shape (Parabolic for L-band observations) :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asSetup=P</span></code> <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-activesurface"><span class="std std-numref">Fig.2</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asSetup=P</span></code> <img alt="logo" src="../../../_images/monocle_4.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-activesurface"><span class="std std-numref">Fig.2</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Insert the Local Oscillator value in MHz :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setLO=[freq]</span></code> <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span class="std std-numref">Fig.11</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setLO=[freq]</span></code> <img alt="logo" src="../../../_images/monocle_4.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span class="std std-numref">Fig.11</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Select the Total Power backend :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/TotalPower</span></code>  <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.12</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/TotalPower</span></code>  <img alt="logo" src="../../../_images/monocle_4.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.12</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Insert the bandwidth for the focus selector (always 2000 MHz in L-band) and choose the sample rate (in MHz) :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setSection=0,*,2000.000000,*,*,[sampleRate],*</span></code>  <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.8</span></a></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setSection=1,*,2000.000000,*,*,[sampleRate],*</span></code>  <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.8</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setSection=0,*,2000.000000,*,*,[sampleRate],*</span></code>  <img alt="logo" src="../../../_images/monocle_4.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.8</span></a></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setSection=1,*,2000.000000,*,*,[sampleRate],*</span></code>  <img alt="logo" src="../../../_images/monocle_4.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.8</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Put the antenna at 45 deg of elevation and attenuate the signal in order to obtain values between 750 and 1100 counts (linear range of the backend) :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">goTo=*,45d</span></code> <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Err-fig/Err-fig.html#srt-mount"><span class="std std-numref">Fig.18</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">goTo=*,45d</span></code> <img alt="logo" src="../../../_images/monocle_4.png" /> <a class="reference internal" href="../../../Figures/Err-fig/Err-fig.html#srt-mount"><span class="std std-numref">Fig.18</span></a></p>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">getTpi</span></code></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setAttenuation=0,[att]</span></code>        with [att] between 0 and 15 dB <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.8</span></a></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setAttenuation=1,[att]</span></code>        with [att] between 0 and 15 dB <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.8</span></a></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setAttenuation=0,[att]</span></code>        with [att] between 0 and 15 dB <img alt="logo" src="../../../_images/monocle_4.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.8</span></a></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setAttenuation=1,[att]</span></code>        with [att] between 0 and 15 dB <img alt="logo" src="../../../_images/monocle_4.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.8</span></a></p>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">getTpi</span></code></p>
 </div></blockquote>
 </li>
 <li><p class="first">Check the tsys (typical values) :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">tsys</span></code> <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.8</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">tsys</span></code> <img alt="logo" src="../../../_images/monocle_4.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.8</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">startSchedule=[projectID]/[schedulename].scd,[N]</span></code> <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.12</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">startSchedule=[projectID]/[schedulename].scd,[N]</span></code> <img alt="logo" src="../../../_images/monocle_4.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.12</span></a></p>
 </div></blockquote>
 </li>
 </ol>
@@ -275,15 +251,6 @@
            </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="get-data.html" class="btn btn-neutral float-right" title="Getting your data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="before-obs.html" class="btn btn-neutral" title="Before observing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>

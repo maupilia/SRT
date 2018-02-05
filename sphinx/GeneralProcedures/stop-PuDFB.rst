@@ -7,6 +7,8 @@
 .. toctree::
    :maxdepth: 1
   
+.. _stop-PuDFB:
+
 ======================
 End of the session
 ======================
