@@ -39,15 +39,17 @@ $ : commands to insert in a shell
 
 #. Select and configure the XARCOS backend in C-band :
 
-    ``> chooseBackend=BACKENDS/Xbackends``
+    ``> chooseBackend=BACKENDS/XBackends``
+
+    ``$ genericBackendTui BACKENDS/XBackends``
 
     ``> initialize=XC00``
 
 
-#. The ``initialize`` command and the parameters inserted in the
- schedule (.bck) directly set the full Stoke mode, frequency,
+#. The ``initialize`` command, which is also inserted in the
+ schedule (.bck) directly, sets all XARCOS parameters such as frequency,
  bandwidth and sample rate. You can check that the backend parameters
- are correct, or modify them by using the following command :
+ are correct in the BACKENDS/XBackends Tui [[FIGURA]], or modify them by using, i.e., the following command:
 
     ``> setSection=[sect],[startFreq],[bw],*,*, [sampleRate],*``
 
