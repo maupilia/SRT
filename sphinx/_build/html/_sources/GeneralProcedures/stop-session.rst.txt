@@ -33,7 +33,7 @@ On nuraghe-obs1
 
    ``> stopSchedule``   *interruption of the current subscan*  |logo| :numref:`srt_scheduler`
 or
-   ``> haltSchedule``    *the schedule stops at the end of the on-going subscan.*
+   ``> haltSchedule``    *the schedule stops at the end of the on-going subscan.* 
 
 
 
@@ -57,9 +57,6 @@ Look at the ACU monitor, wait until
 **Axis blocked** appears in red. It can take a few minutes after the command
 ``> antennaPark`` has been given (:numref:`srt_ACU_axisblocked`).
 
-Look at the ACU monitor, wait until
-**Axis blocked** appears in red. It can take a few minutes after the command
-``> antennaPark`` has been given (:numref:`srt_ACU_axisblocked`).
-
 Only at this moment, you can press on the emergency stop button
 (:numref:`srt_ACU_redbutton`).
+

@@ -195,7 +195,8 @@
 </li>
 <li><p class="first">Select and configure the XARCOS backend in K-band</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/Xbackends</span></code></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/XBackends</span></code></p>
+<p><code class="docutils literal"><span class="pre">$</span> <span class="pre">genericBackendTui</span> <span class="pre">BACKENDS/XBackends</span></code></p>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">initialize=[code]</span></code></p>
 <p>with :</p>
 <ul class="simple">
@@ -214,7 +215,13 @@ bandwidths of 62.5 MHz and 4 MHz and 2048(x4) channels.</li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first">The <em>initialize</em> command and the parameters inserted in the schedule (.bck) directly set the full-Stoke mode, frequency, bandwidth and sample rate. You can check that the backend parameters are correct, or modify them by using the following command that you have to repeat for each section number [sect] :</p>
+<li><p class="first">The <code class="docutils literal"><span class="pre">initialize</span></code> command, which is also inserted in the</p>
+</li>
+</ol>
+<blockquote>
+<div><p>schedule (.bck) directly, sets all XARCOS parameters such as frequency,
+bandwidth and sample rate. You can check that the backend parameters
+are correct in the BACKENDS/XBackends Tui [[FIGURA]], or modify them by using, i.e., the following command that you have to repeat for each section number [sect]:</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setSection=[sect],[startFreq],[bw],*,*,</span> <span class="pre">[sampleRate],*</span></code></p>
 <p>with :</p>
@@ -229,7 +236,8 @@ bandwidths of 62.5 MHz and 4 MHz and 2048(x4) channels.</li>
 frequency channels, respectively. Let is like this.</li>
 </ul>
 </div></blockquote>
-</li>
+</div></blockquote>
+<ol class="arabic">
 <li><p class="first">If you want to use the multi-feed derotator to prevent field rotation during long acquisition, select the derotator configuration :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">derotatorSetConfiguration=[config]</span></code>   with <code class="docutils literal"><span class="pre">[config]</span></code> = BSC, CUSTOM or FIXED.</p>

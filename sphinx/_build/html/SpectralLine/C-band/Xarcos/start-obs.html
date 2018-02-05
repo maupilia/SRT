@@ -199,17 +199,18 @@
 </li>
 <li><p class="first">Select and configure the XARCOS backend in C-band :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/Xbackends</span></code></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/XBackends</span></code></p>
+<p><code class="docutils literal"><span class="pre">$</span> <span class="pre">genericBackendTui</span> <span class="pre">BACKENDS/XBackends</span></code></p>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">initialize=XC00</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">The <code class="docutils literal"><span class="pre">initialize</span></code> command and the parameters inserted in the</p>
+<li><p class="first">The <code class="docutils literal"><span class="pre">initialize</span></code> command, which is also inserted in the</p>
 </li>
 </ol>
 <blockquote>
-<div><p>schedule (.bck) directly set the full Stoke mode, frequency,
+<div><p>schedule (.bck) directly, sets all XARCOS parameters such as frequency,
 bandwidth and sample rate. You can check that the backend parameters
-are correct, or modify them by using the following command :</p>
+are correct in the BACKENDS/XBackends Tui [[FIGURA]], or modify them by using, i.e., the following command:</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setSection=[sect],[startFreq],[bw],*,*,</span> <span class="pre">[sampleRate],*</span></code></p>
 <p>with :</p>
