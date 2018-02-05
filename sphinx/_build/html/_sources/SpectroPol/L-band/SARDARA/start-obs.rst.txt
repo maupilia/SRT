@@ -5,8 +5,9 @@
 
 
 .. toctree::
-   :maxdepth:1
+   :maxdepth: 1
   
+.. _start-SPLSa:
 
 Start the observations
 ======================
@@ -76,8 +77,7 @@ $ : commands to insert in a shell
     ``> integration=[n]``
 
 
-#. Attenuate the signal based on the rms range [-128 ;128] and check
- the value on the interface :
+#. Attenuate the signal based on the rms range [-128 ;128] and check the value on the interface :
 
     ``> getrms``  ???
 

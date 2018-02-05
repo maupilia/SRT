@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
     <link rel="top" title="SRT procedures 1 documentation" href="../../../index.html"/>
         <link rel="up" title="Xarcos" href="index.html"/>
         <link rel="next" title="Start the observations" href="start-obs.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <ul>
+              
+            
+            
+              <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../before-obs.html">Important checks</a></li>
 </ul>
 <ul class="current">
@@ -90,9 +99,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../Pulsar/index.html">Pulsar observations</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Spectral lines</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">C-band</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../SARDARA/index.html">SARDARA</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">Xarcos</a><ul class="current">
-<li class="toctree-l4 current"><a class="current reference internal" href="">Before observing</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Before observing</a></li>
 <li class="toctree-l4"><a class="reference internal" href="start-obs.html">Start the observations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="get-data.html">Getting your data</a></li>
 <li class="toctree-l4"><a class="reference internal" href="stop-session.html">End of the session</a></li>
@@ -123,8 +131,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../../index.html">SRT procedures</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">SRT procedures</a>
+        
       </nav>
 
 
@@ -137,33 +147,48 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../index.html">Spectral lines</a> &raquo;</li>
-      
+        
           <li><a href="../index.html">C-band</a> &raquo;</li>
-      
+        
           <li><a href="index.html">Xarcos</a> &raquo;</li>
-      
-    <li>Before observing</li>
+        
+      <li>Before observing</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="../../../_sources/SpectralLine/C-band/Xarcos/before-obs.txt" rel="nofollow"> View page source</a>
+            
+            <a href="../../../_sources/SpectralLine/C-band/Xarcos/before-obs.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
   <div class="toctree-wrapper compound">
-<ul class="simple">
-</ul>
 </div>
 <div class="section" id="before-observing">
 <h1>Before observing<a class="headerlink" href="#before-observing" title="Permalink to this headline">¶</a></h1>
@@ -199,7 +224,7 @@
 <ol class="arabic" start="2">
 <li><p class="first">Upload your shedules (.scd, .lis, .bck and .cfg files) and check them :</p>
 <p><em>From your computer:</em></p>
-<p><code class="docutils literal"><span class="pre">$</span> <span class="pre">scp</span>&nbsp; <span class="pre">[schedulename.*]</span> <span class="pre">observer&#64;nuraghe-obs1:/archive/schedules/[projectID]</span></code></p>
+<p><code class="docutils literal"><span class="pre">$</span> <span class="pre">scp</span>&#160; <span class="pre">[schedulename.*]</span> <span class="pre">observer&#64;nuraghe-obs1:/archive/schedules/[projectID]</span></code></p>
 <p><em>On nuraghe-obs1:</em></p>
 <p><code class="docutils literal"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">/archive/schedules/[projectID]</span></code></p>
 <p><code class="docutils literal"><span class="pre">$</span> <span class="pre">scheduleChecker</span> <span class="pre">[schedulename.scd]</span></code></p>
@@ -210,15 +235,18 @@
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="start-obs.html" class="btn btn-neutral float-right" title="Start the observations" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="start-obs.html" class="btn btn-neutral float-right" title="Start the observations" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral" title="Xarcos" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral" title="Xarcos" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -252,7 +280,8 @@
             VERSION:'1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../../_static/jquery.js"></script>

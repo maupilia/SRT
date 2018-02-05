@@ -7,6 +7,7 @@
 .. toctree::
    :maxdepth:1
   
+.. _start-CoLTP:
 
 Start the observations
 ======================
@@ -16,16 +17,24 @@ $ : commands to insert in a shell
 > : commands to insert in the operatorInput panel
 
 
+
+.. |logo| image:: monocle_.png 
+..    :width: 20pt
+..    :height: 20pt
+..   :align: left
+|logo|:check on the monitor
+
+
 #. Insert your project number :
 
-    ``> project=[projectID]``
+    ``> project=[projectID]``  |logo| :numref:`Fig. %s, <srt_scheduler>` 
 
 
 #. Initial setup :
 
     ``> antennaReset``
 
-    ``> setupLLP``
+    ``> setupLLP``  |logo| :numref:`srt_receivers`
 
 
 #. Select the receiver mode :
@@ -45,40 +54,40 @@ $ : commands to insert in a shell
 
 #. Select the active surface shape (Parabolic for L-band observations) :
 
-    ``> asSetup=P``
+    ``> asSetup=P`` |logo| :numref:`srt_activesurface`
 
 #. Insert the Local Oscillator value in MHz :
 
-    ``> setLO=[freq]``
+    ``> setLO=[freq]`` |logo| :numref:`srt_receivers`
 
 #. Select the Total Power backend :
 
-    ``> chooseBackend=BACKENDS/TotalPower``
+    ``> chooseBackend=BACKENDS/TotalPower``  |logo| :numref:`srt_scheduler`
 
 
 #. Insert the bandwidth for the focus selector (always 2000 MHz in L-band) and choose the sample rate (in MHz) :
 
-    ``> setSection=0,*,2000.000000,*,*,[sampleRate],*``
+    ``> setSection=0,*,2000.000000,*,*,[sampleRate],*``  |logo| :numref:`srt_genericBackend`
 
-    ``> setSection=1,*,2000.000000,*,*,[sampleRate],*``
+    ``> setSection=1,*,2000.000000,*,*,[sampleRate],*``  |logo| :numref:`srt_genericBackend`
 
 
 #. Put the antenna at 45 deg of elevation and attenuate the signal in order to obtain values between 750 and 1100 counts (linear range of the backend) :
 
-    ``> goTo=*,45d``
+    ``> goTo=*,45d`` |logo| :numref:`srt_mount`
 
     ``> getTpi``
 
-    ``> setAttenuation=0,[att]``	with [att] between 0 and 15 dB
+    ``> setAttenuation=0,[att]``	with [att] between 0 and 15 dB |logo| :numref:`srt_genericBackend`
 
-    ``> setAttenuation=1,[att]``	with [att] between 0 and 15 dB
+    ``> setAttenuation=1,[att]``	with [att] between 0 and 15 dB |logo| :numref:`srt_genericBackend`
 
     ``> getTpi``
 
 #. Check the tsys (typical values) :
 
-    ``> tsys``
+    ``> tsys`` |logo| :numref:`srt_genericBackend`
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 
-    ``> startSchedule=[projectID]/[schedulename].scd,[N]``
+    ``> startSchedule=[projectID]/[schedulename].scd,[N]`` |logo| :numref:`srt_scheduler`

@@ -7,6 +7,7 @@
 .. toctree::
    :maxdepth:1
   
+.. _start-CoKTP:
 
 Start the observations
 ======================
@@ -16,33 +17,40 @@ $ : commands to insert in a shell
 > : commands to insert in the operatorInput panel
 
 
+.. |logo| image:: monocle_.png 
+..    :width: 20pt
+..    :height: 20pt
+..   :align: left
+|logo|:check on the monitor
+
+
 #. Insert your project number :
 
-    ``> project=[projectID]``
+    ``> project=[projectID]`` |logo| :numref:`srt_scheduler` 
 
 #. Initial setup :
 
     ``> antennaReset``
 
-    ``> setupKKG``
+    ``> setupKKG``  |logo| :numref:`srt_receivers`
 
 
 #. Select the active surface shape (Shaped configuration for K-band
  observations) :
 
-    ``> asSetup=S``
+    ``> asSetup=S`` |logo| :numref:`srt_activesurface`
 
 #. Insert the Local Oscillator value in MHz :
 
-    ``> setLO=[freq]``
+    ``> setLO=[freq]``  |logo| :numref:`srt_receivers`
 
 #. Select the Total Power backend :
 
-    ``> chooseBackend=BACKENDS/TotalPower`` 
+    ``> chooseBackend=BACKENDS/TotalPower`` |logo| :numref:`srt_scheduler`
 
 #. For each section [sect], insert the bandwidth ([bw]=300, 730, 1250 or 2000 MHz) and the sample rate (in MHz) :
 
-    ``> setSection=[sect],*,[bw],*,*,[sampleRate],*``
+    ``> setSection=[sect],*,[bw],*,*,[sampleRate],*`` |logo| :numref:`srt_genericBackend`
 
     Reminder : in K-band there are 7 feeds, so 14 sections with
     ``[sect]`` = 0, 1 , 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13.
@@ -50,7 +58,7 @@ $ : commands to insert in a shell
 
 #. If you want to use the multi-feed derotator to prevent field rotation during long acquisition, select the derotator configuration :
 
-    ``> derotatorSetConfiguration=[config]``   with ``[config]`` = BSC, CUSTOM or FIXED.
+    ``> derotatorSetConfiguration=[config]``   with ``[config]`` = BSC, CUSTOM or FIXED. |logo| :numref:`srt_receivers`
 
         - BSC is for Best Coverage Space (automatic rotation of the
           dewar in order to best cover the scanned area).
@@ -69,26 +77,26 @@ $ : commands to insert in a shell
 
     To read back the position of the dewar :
 
-    ``> derotatorGetPosition`` 
+    ``> derotatorGetPosition``  |logo| :numref:`srt_receivers`
 
 
 #. Put the antenna at 45 deg of elevation and attenuate the signal for
  the 14 sections [sect] in order to obtain values between 750 and 1100
  counts (linear range of the backend) :
 
-     ``> goTo=*,45d``
+     ``> goTo=*,45d``   |logo| :numref:`srt_mount`
 
      ``> getTpi``
 
-     ``> setAttenuation=[sect],[att]``	with [att] between 0 and 15 dB
+     ``> setAttenuation=[sect],[att]``	with [att] between 0 and 15 dB |logo| :numref:`srt_genericBackend`
 
      ``> getTpi``
 
 
 #. Check the tsys (typical values) :
 
-    ``> tsys``
+    ``> tsys`` |logo| :numref:`srt_genericBackend`
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 
-    ``> startSchedule=[projectID]/[schedulename].scd,[N]``
+    ``> startSchedule=[projectID]/[schedulename].scd,[N]`` |logo| :numref:`srt_scheduler`

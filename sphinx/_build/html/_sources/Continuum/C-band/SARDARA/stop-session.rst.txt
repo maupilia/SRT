@@ -6,6 +6,18 @@
 
 .. toctree::
    :maxdepth:1
+
+$  : commands to insert in a shell   
+ 
+>  : commands to insert in the operatorInput panel
+
+
+
+.. |logo| image:: monocle_.png 
+..    :width: 20pt
+..    :height: 20pt
+..   :align: left
+|logo|:check on the monitor
   
 ======================
 End of the session
@@ -20,22 +32,22 @@ On nuraghe-obs1
 
 1. Stop your schedule :
 
-   ``> stopSchedule``   *interruption of the current subscan*
+   ``> stopSchedule``   *interruption of the current subscan*  |logo| :numref:`srt_scheduler`
 
 or
 
-   ``> haltSchedule``    *the schedule stops at the end of the on-going subscan.*
+   ``> haltSchedule``    *the schedule stops at the end of the on-going subscan.*  |logo| :numref:`srt_scheduler`
 
 
 
 
 2. Park the minor servo, active surface and antenna
 
-   ``> goTo=180d,89d``
+   ``> goTo=180d,89d`` |logo| :numref:`srt_mount`
 
-   ``> servoPark``
+   ``> servoPark`` |logo| :numref:`srt_minorservo`
 
-   ``> asPark``
+   ``> asPark`` |logo| :numref:`srt_activesurface`
 
    ``> antennaPark``
 

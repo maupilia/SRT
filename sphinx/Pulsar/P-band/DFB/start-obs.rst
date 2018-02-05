@@ -7,6 +7,7 @@
 .. toctree::
    :maxdepth: 1
   
+.. _start-PuPDF:
 
 Start the observations
 ======================
@@ -14,6 +15,16 @@ Start the observations
 $ : commands to insert in a shell   
  
 > : commands to insert in the operatorInput panel
+
+
+On seadas
+----------
+
+Place your observing files in corr@seadas as follows:
+
+   - your seadas setup file(s) in folder:    corr@seadas:/home/corr/setup/[your project code]
+
+   - your seadas schedule file(s) in folder: corr@seadas:/home/corr/scheds/[your project code]
 
 
 On nuraghe-obs1

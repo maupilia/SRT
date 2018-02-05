@@ -5,7 +5,7 @@
 
 
 .. toctree::
-   :maxdepth:1
+   :maxdepth: 1
   
 
 Start the observations
@@ -14,7 +14,6 @@ Start the observations
 $ : commands to insert in a shell   
  
 > : commands to insert in the operatorInput panel
-
 
 #. Insert your project number
 
