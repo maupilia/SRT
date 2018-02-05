@@ -15,6 +15,19 @@ Pulsar observations
    C-band <C-band/index.rst>
    L-band <L-band/index.rst>
    P-band <P-band/index.rst>
+   LP-bands <LP-bands/index.rst>
 
+
+====
+Notes
+====
+
+.. toctree::
+   :maxdepth: 1
+ 
+   Roach1 backend <Notes/Roach1.rst>
+   SEADAS <Notes/SEADAS.rst>
+
+  
 
 

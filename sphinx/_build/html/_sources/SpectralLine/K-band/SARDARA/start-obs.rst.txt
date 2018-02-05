@@ -5,11 +5,12 @@
 
 
 .. toctree::
-   :maxdepth:1
+   :maxdepth: 1
   
+.. _start-SLKSa:
 
 Start the observations
-======================
+=======================
 
 $ : commands to insert in a shell   
  

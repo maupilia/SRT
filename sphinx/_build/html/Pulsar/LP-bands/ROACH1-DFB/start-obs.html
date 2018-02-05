@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
     <link rel="top" title="SRT procedures 1 documentation" href="../../../index.html"/>
         <link rel="up" title="ROACH1 (baseband) in P-band + DFB (folding) in L-band" href="index.html"/>
         <link rel="next" title="Check during the observations" href="check-obs.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <ul>
+              
+            
+            
+              <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../before-obs.html">Important checks</a></li>
 </ul>
 <ul class="current">
@@ -95,7 +104,7 @@
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">ROACH1 + DFB</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="before-obs.html">Before observing</a></li>
 <li class="toctree-l4"><a class="reference internal" href="roach-setup.html">Roach setup</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="">Start the observations</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Start the observations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="check-obs.html">Check during the observations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="get-data.html">Getting your data</a></li>
 <li class="toctree-l4"><a class="reference internal" href="stop-session.html">End of the session</a></li>
@@ -126,8 +135,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../../index.html">SRT procedures</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">SRT procedures</a>
+        
       </nav>
 
 
@@ -140,33 +151,48 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../index.html">Pulsar observations</a> &raquo;</li>
-      
+        
           <li><a href="../index.html">LP-bands</a> &raquo;</li>
-      
+        
           <li><a href="index.html">ROACH1 (baseband) in P-band + DFB (folding) in L-band</a> &raquo;</li>
-      
-    <li>Start the observations</li>
+        
+      <li>Start the observations</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="../../../_sources/Pulsar/LP-bands/ROACH1-DFB/start-obs.txt" rel="nofollow"> View page source</a>
+            
+            <a href="../../../_sources/Pulsar/LP-bands/ROACH1-DFB/start-obs.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
   <div class="toctree-wrapper compound">
-<ul class="simple">
-</ul>
 </div>
 <div class="section" id="start-the-observations">
 <h1>Start the observations<a class="headerlink" href="#start-the-observations" title="Permalink to this headline">¶</a></h1>
@@ -246,7 +272,7 @@
 </div>
 <div class="section" id="to-use-the-dfb-in-parallel-with-the-roach1">
 <h2>To use the DFB in parallel with the ROACH1:<a class="headerlink" href="#to-use-the-dfb-in-parallel-with-the-roach1" title="Permalink to this headline">¶</a></h2>
-<p>To use the DFB in parallel with the ROACH, we use &#8220;DFBController&#8221; in PASSIVE mode. DO NOT LAUNCH SEADAS, as this will interrupt the Nuraghe schedule.</p>
+<p>To use the DFB in parallel with the ROACH, we use “DFBController” in PASSIVE mode. DO NOT LAUNCH SEADAS, as this will interrupt the Nuraghe schedule.</p>
 <p>In the LEAP cluster VNC, open another window and go to :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">~/externalClient/LeapDFBSockets/</span></code></p>
@@ -255,7 +281,7 @@
 </div></blockquote>
 <p>This will allow the DFB to check the antenna parameters of the antenna (written on the LEAP cluster) and acquire data when the tracked source is a pulsar.</p>
 <p>After having prepared the ROACH1 for LEAP observations and launched
-&#8221;./simple_server&#8221;, you are ready to set up the DFB.</p>
+“./simple_server”, you are ready to set up the DFB.</p>
 <ol class="arabic">
 <li><p class="first">Make sure the DFB is turned on (large button at the back) and make sure the cables connected to the DFB are the right ones (DFB3 &amp; DFB4 for L-band, and DFB1 &amp; DFB2 for P-band).</p>
 </li>
@@ -303,15 +329,18 @@ you will need to turn off the DFB for at least half an hour.</p>
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="check-obs.html" class="btn btn-neutral float-right" title="Check during the observations" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="check-obs.html" class="btn btn-neutral float-right" title="Check during the observations" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="roach-setup.html" class="btn btn-neutral" title="Roach setup" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="roach-setup.html" class="btn btn-neutral" title="Roach setup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -345,7 +374,8 @@ you will need to turn off the DFB for at least half an hour.</p>
             VERSION:'1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../../_static/jquery.js"></script>

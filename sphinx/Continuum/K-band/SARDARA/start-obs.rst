@@ -13,6 +13,7 @@
 ..   :align: left
 |logo|:check on the monitor
   
+.. _start-CoKSa:
 
 Start the observations
 ======================

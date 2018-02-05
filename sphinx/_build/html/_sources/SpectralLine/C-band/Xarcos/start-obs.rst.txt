@@ -7,6 +7,7 @@
 .. toctree::
    :maxdepth:1
   
+.. _start-SLCXa:
 
 Start the observations
 ======================
