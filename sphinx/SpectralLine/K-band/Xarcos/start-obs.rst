@@ -102,6 +102,13 @@ $ : commands to insert in a shell
 
     ``> derotatorGetPosition`` 
 
+#. Report the ground temperature, relative humidity, atmospheric pressure, and wind speed :
+
+    ``> wx``
+
+#. Follow the link below to perform the pointing and focus optimization (if not already included in your schedule) :
+
+      :ref:`pointing-focus`
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 

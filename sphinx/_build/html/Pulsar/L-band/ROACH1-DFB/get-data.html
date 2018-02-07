@@ -13,8 +13,6 @@
 
   
   
-  
-  
 
   
 
@@ -32,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../../../genindex.html"/>
-        <link rel="search" title="Search" href="../../../search.html"/>
     <link rel="top" title="SRT procedures 1 documentation" href="../../../index.html"/>
         <link rel="up" title="ROACH1 (baseband) + DFB (folding)" href="index.html"/>
         <link rel="next" title="End of the session" href="stop-session.html"/>
@@ -47,7 +42,6 @@
 
 <body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
 
     
@@ -88,10 +82,7 @@
           
             
             
-              
-            
-            
-              <ul>
+                <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../before-obs.html">Important checks</a></li>
 </ul>
 <ul class="current">
@@ -106,7 +97,7 @@
 <li class="toctree-l4"><a class="reference internal" href="roach-setup.html">Roach setup</a></li>
 <li class="toctree-l4"><a class="reference internal" href="start-obs.html">Start the observations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="check-obs.html">Check during the observations</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">Getting your data</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="">Getting your data</a></li>
 <li class="toctree-l4"><a class="reference internal" href="stop-session.html">End of the session</a></li>
 </ul>
 </li>
@@ -137,10 +128,8 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">SRT procedures</a>
-        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../index.html">SRT procedures</a>
       </nav>
 
 
@@ -153,42 +142,25 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../../index.html">Docs</a> &raquo;</li>
-        
+    <li><a href="../../../index.html">Docs</a> &raquo;</li>
+      
           <li><a href="../../index.html">Pulsar observations</a> &raquo;</li>
-        
+      
           <li><a href="../index.html">L-band</a> &raquo;</li>
-        
+      
           <li><a href="index.html">ROACH1 (baseband) + DFB (folding)</a> &raquo;</li>
-        
-      <li>Getting your data</li>
-    
-    
+      
+    <li>Getting your data</li>
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="../../../_sources/Pulsar/L-band/ROACH1-DFB/get-data.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="../../../_sources/Pulsar/L-band/ROACH1-DFB/get-data.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -197,6 +169,8 @@
   <div class="section" id="getting-your-data">
 <h1>Getting your data<a class="headerlink" href="#getting-your-data" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
 </div>
 <p>The data have been written on the nodes of the LEAP cluster. After the
 observation run, this baseband data needs to be de-dispersed and
@@ -209,9 +183,9 @@ this and that can be launched in W1 after the daemons are closed.</p>
 <div><code class="docutils literal"><span class="pre">$~/roach/scripts/dspsr.sh</span></code>  (as of October 2017, this code needs to be upgraded; update to follow).</div></blockquote>
 <p>The final archive data will be stored on the head node of the LEAP cluster (leap0) in ~/DATA/.</p>
 <p>This data (in .ar format) can then be transferred to nuraghe-obs1 or a
-personal computer using “scp”. In LEAP cluster VNC:</p>
+personal computer using &#8220;scp&#8221;. In LEAP cluster VNC:</p>
 <blockquote>
-<div><code class="docutils literal"><span class="pre">$</span> <span class="pre">scp</span> <span class="pre">-r</span> <span class="pre">~/DATA/[today’s</span> <span class="pre">date]</span>&#160; <span class="pre">[projectID]&#64;nuraghe-obs2:/archive/data/[projectID]/</span></code></div></blockquote>
+<div><code class="docutils literal"><span class="pre">$</span> <span class="pre">scp</span> <span class="pre">-r</span> <span class="pre">~/DATA/[today’s</span> <span class="pre">date]</span>&nbsp; <span class="pre">[projectID]&#64;nuraghe-obs2:/archive/data/[projectID]/</span></code></div></blockquote>
 <p>If you only want to keep the archive files, go ahead and delete the baseband data on the cluster nodes after all of it has been folded.</p>
 <p>For LEAP observations however, you need to not only fold the data (and keep the archives), but also copy the baseband data to disks onto the LEAP storage cluster (you have to wait for <code class="docutils literal"><span class="pre">dspsr</span></code> to be over before starting to copy the data). Then ship the disks to Jodrell Bank Observatory. Wait until the last minute to delete the baseband data on the LEAP cluster, usually right before the next LEAP run. That’s in case the disks you shipped to JBO get lost or broken.</p>
 <p>As far as the DFB data is concerned, follow the instructions specific to the DFB.</p>
@@ -219,18 +193,15 @@ personal computer using “scp”. In LEAP cluster VNC:</p>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="stop-session.html" class="btn btn-neutral float-right" title="End of the session" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="stop-session.html" class="btn btn-neutral float-right" title="End of the session" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="check-obs.html" class="btn btn-neutral" title="Check during the observations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="check-obs.html" class="btn btn-neutral" title="Check during the observations" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -264,8 +235,7 @@ personal computer using “scp”. In LEAP cluster VNC:</p>
             VERSION:'1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            HAS_SOURCE:  true
         };
     </script>
       <script type="text/javascript" src="../../../_static/jquery.js"></script>

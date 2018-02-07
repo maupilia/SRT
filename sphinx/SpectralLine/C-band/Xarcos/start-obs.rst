@@ -27,9 +27,7 @@ $ : commands to insert in a shell
 
     ``> setupCCB``
 
-
-#. Select the active surface shape (Shaped configuration for C-band
- observations) :
+#. Select the active surface shape (Shaped configuration for C-band observations) :
 
     ``> asSetup=S``
 
@@ -45,11 +43,7 @@ $ : commands to insert in a shell
 
     ``> initialize=XC00``
 
-
-#. The ``initialize`` command, which is also inserted in the
- schedule (.bck) directly, sets all XARCOS parameters such as frequency,
- bandwidth and sample rate. You can check that the backend parameters
- are correct in the BACKENDS/XBackends Tui [[FIGURA]], or modify them by using, i.e., the following command:
+#. The ``initialize`` command, which is also inserted in the schedule (.bck) directly, sets all XARCOS parameters such as frequency, bandwidth and sample rate. You can check that the backend parameters are correct in the BACKENDS/XBackends Tui [[FIGURA]], or modify them by using, i.e., the following command:
 
     ``> setSection=[sect],[startFreq],[bw],*,*, [sampleRate],*``
 
@@ -65,7 +59,13 @@ $ : commands to insert in a shell
         frequency channels, respectively. Let the asterix (``*``) for
         Xarcos observations.
 
+#. Report the ground temperature, relative humidity, atmospheric pressure, and wind speed :
 
+    ``> wx``
+
+#. Follow the link below to perform the pointing and focus optimization (if not already included in your schedule) :
+
+      :ref:`pointing-focus`
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 

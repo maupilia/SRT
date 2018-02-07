@@ -68,10 +68,23 @@ $  : commands to insert in a shell
 
     ``> getTpi``
 
-#. Check the tsys (typical values)
+#. Check the tsys (typical values...)
 
     ``> tsys`` |logo| :numref:`srt_genericBackend`
 
-#. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the .scd file :
+
+#. Report the ground temperature, relative humidity, atmospheric pressure, and wind speed :
+
+    ``> wx``
+
+
+#. Follow the link below to perform the pointing and focus optimization (if not already included in your schedule) :
+
+
+      :ref:`pointing-focus`
+
+
+#. Begin the schedule by indicating the start scan [N] or subscan
+ [N_n] in the .scd file :
 
     ``> startSchedule=[projectID]/[schedulename].scd,[N]`` |logo| :numref:`srt_scheduler`

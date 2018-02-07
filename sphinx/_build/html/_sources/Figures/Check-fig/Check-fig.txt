@@ -171,9 +171,14 @@ Calibration tool client
 
        .. _srt_calibrationtool:
 
-       .. figure:: srt_calibrationtool.png 
+       .. figure:: calibrationtool_cut.png 
 	   :align: center
 
-           In the **Calibration tool client** window the subscan currently being acquired is shown in real-time (upper plot), 
-           even if in a low-res version. Under this display, the last completed subscan - in its full sampling - is shown.
+           In the **Calibration tool client** window the subscan
+           currently being acquired is shown in real-time (upper
+           plot), even if in a low-resoltution. In the lower plot, the
+           last completed subscan - in its full sampling - is
+           shown. We can read the information about the pointing
+           of focus offsets (peakoffsets), the beam size (HPBW), etc.
+
 

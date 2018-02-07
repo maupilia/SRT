@@ -11,12 +11,7 @@ DFB with SEADAS
 .. toctree::
    :maxdepth: 1
  
-
-   Before <before-obs.rst>
-   Start <start-obs.rst>
-   During <check-obs.rst>
-   GetData <get-data.rst>
-   Stop <stop-session.rst>
-
-
-
+*  :ref:`start-PuPDF`
+*  :ref:`check-obs`
+*  :ref:`get-data`
+*  :ref:`stop-PuDFB`

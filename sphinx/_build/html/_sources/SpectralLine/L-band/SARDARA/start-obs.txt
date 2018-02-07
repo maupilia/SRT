@@ -5,8 +5,10 @@
 
 
 .. toctree::
-   :maxdepth:1
+   :maxdepth: 1
   
+
+.. _start-SLLSa:
 
 Start the observations
 ======================

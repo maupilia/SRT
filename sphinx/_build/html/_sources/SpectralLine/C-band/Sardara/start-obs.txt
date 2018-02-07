@@ -7,6 +7,7 @@
 .. toctree::
    :maxdepth:1
   
+.. _start-SLCSa:
 
 Start the observations
 ======================
@@ -26,9 +27,7 @@ $ : commands to insert in a shell
 
     ``> setupCCB``
 
-
-#. Select the active surface shape (Shaped configuration for C-band
- observations) :
+#. Select the active surface shape (Shaped configuration for C-band observations) :
 
     ``> asSetup=S``
 
@@ -41,7 +40,6 @@ $ : commands to insert in a shell
     ``> chooseBackend=BACKENDS/Sardara``
 
     ``> initialize=SC00``
-
 
 #. Set the different parameters of the backend :
 
@@ -57,22 +55,27 @@ $ : commands to insert in a shell
       - ``[sampleRate]`` in MHz ;
       - ``[bin]`` the frequency channels (1024, 2048, 4096, 8192, 16384).
     
-#. Choose the integration time in ms (e.g. n=10 corresponds to 100
- spectra/sec) :
+#. Choose the integration time in ms (e.g. n=10 corresponds to 100 spectra/sec) :
 
     ``> integration=[n]``
 
+#. Attenuate the signal based on the rms range [-128 ;128] and check the value on the interface :
 
-#. Attenuate the signal based on the rms range [-128 ;128] and check
- the value on the interface :
-
-    ``> getrms``  ???
+    ``> getrms``  **(ASK A. MELIS)**
 
     ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.
 
 #. Check the tsys (typical values) :
 
      ``> tsys``
+
+#. Report the ground temperature, relative humidity, atmospheric pressure, and wind speed :
+
+    ``> wx``
+
+#. Follow the link below to perform the pointing and focus optimization (if not already included in your schedule) :
+
+      :ref:`pointing-focus`
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 

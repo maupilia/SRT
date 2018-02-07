@@ -13,8 +13,6 @@
 
   
   
-  
-  
 
   
 
@@ -32,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../../../genindex.html"/>
-        <link rel="search" title="Search" href="../../../search.html"/>
     <link rel="top" title="SRT procedures 1 documentation" href="../../../index.html"/> 
 
   
@@ -44,7 +39,6 @@
 
 <body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
 
     
@@ -85,10 +79,7 @@
           
             
             
-              
-            
-            
-              <ul>
+                <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../before-obs.html">Important checks</a></li>
 </ul>
 <ul>
@@ -114,10 +105,8 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">SRT procedures</a>
-        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../index.html">SRT procedures</a>
       </nav>
 
 
@@ -130,42 +119,27 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../../index.html">Docs</a> &raquo;</li>
-        
-      <li>Start the observations</li>
-    
-    
+    <li><a href="../../../index.html">Docs</a> &raquo;</li>
+      
+    <li>Start the observations</li>
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="../../../_sources/Continuum/C-band/SARDARA/start-obs.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="../../../_sources/Continuum/C-band/SARDARA/start-obs.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
   <div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
 </div>
 <div class="section" id="start-the-observations">
 <span id="start-cocsa"></span><h1>Start the observations<a class="headerlink" href="#start-the-observations" title="Permalink to this headline">¶</a></h1>
@@ -176,34 +150,34 @@
 <ol class="arabic">
 <li><p class="first">Insert your project number :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.12</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.12</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Initial setup :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setupCCB</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span class="std std-numref">Fig.11</span></a></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setupCCB</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span>Fig.11</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Select the active surface shape (Shaped configuration for C-band observations) :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asSetup=S</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-activesurface"><span class="std std-numref">Fig.2</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asSetup=S</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-activesurface"><span>Fig.2</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Insert the Local Oscillator value in MHz :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setLO=[freq]</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span class="std std-numref">Fig.11</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setLO=[freq]</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span>Fig.11</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Select and configure the SARDARA backend :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/Sardara</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.12</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/Sardara</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.12</span></a></p>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">initialize=SC00</span></code></p>
 </div></blockquote>
 </li>
 <li><p class="first">Set the different parameters of the backend :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setSection=[sect],[startFreq],[bw],[num-feed],[polarization],[sampleRate],[bin]</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.8</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setSection=[sect],[startFreq],[bw],[num-feed],[polarization],[sampleRate],[bin]</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span>Fig.8</span></a></p>
 <p>with :</p>
 <blockquote>
 <div><ul class="simple">
@@ -223,34 +197,36 @@
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">integration=[n]</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">Attenuate the signal based on the rms range [-128 ;128] and check</p>
+<li><p class="first">Attenuate the signal based on the rms range [-128 ;128] and check the value on the interface :</p>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">getrms</span></code>  <strong>(ASK A. MELIS)</strong></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setAttenuation=[sect],[att]</span></code>    with [att] the attenuation from 0 to 15 dB.  <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span>Fig.8</span></a></p>
+</div></blockquote>
 </li>
-</ol>
-<blockquote>
-<div><p>the value on the interface :</p>
-<blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">getrms</span></code>  ???</p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setAttenuation=[sect],[att]</span></code>    with [att] the attenuation from 0 to 15 dB.  <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.8</span></a></p>
-</div></blockquote>
-</div></blockquote>
-<ol class="arabic">
 <li><p class="first">Check the tsys (typical values) :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">tsys</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.8</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">tsys</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span>Fig.8</span></a></p>
+</div></blockquote>
+</li>
+<li><p class="first">Report the ground temperature, relative humidity, atmospheric pressure, and wind speed :</p>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">wx</span></code></p>
+</div></blockquote>
+</li>
+<li><p class="first">Follow the link below to perform the pointing and focus optimization (if not already included in your schedule) :</p>
+<blockquote>
+<div><p><a class="reference internal" href="../../../GeneralProcedures/pointing-focus.html#pointing-focus"><span>Pointing and Focus optimization</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">startSchedule=[projectID]/[schedulename].scd,[N]</span></code>  <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.12</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">startSchedule=[projectID]/[schedulename].scd,[N]</span></code>  <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.12</span></a></p>
 </div></blockquote>
 </li>
 </ol>
 </div>
 
 
-           </div>
-           <div class="articleComments">
-            
            </div>
           </div>
           <footer>
@@ -285,8 +261,7 @@
             VERSION:'1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            HAS_SOURCE:  true
         };
     </script>
       <script type="text/javascript" src="../../../_static/jquery.js"></script>

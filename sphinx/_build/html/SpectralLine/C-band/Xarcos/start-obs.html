@@ -13,8 +13,6 @@
 
   
   
-  
-  
 
   
 
@@ -32,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../../../genindex.html"/>
-        <link rel="search" title="Search" href="../../../search.html"/>
     <link rel="top" title="SRT procedures 1 documentation" href="../../../index.html"/> 
 
   
@@ -44,7 +39,6 @@
 
 <body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
 
     
@@ -85,10 +79,7 @@
           
             
             
-              
-            
-            
-              <ul>
+                <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../before-obs.html">Important checks</a></li>
 </ul>
 <ul>
@@ -114,10 +105,8 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">SRT procedures</a>
-        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../index.html">SRT procedures</a>
       </nav>
 
 
@@ -130,42 +119,27 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../../index.html">Docs</a> &raquo;</li>
-        
-      <li>Start the observations</li>
-    
-    
+    <li><a href="../../../index.html">Docs</a> &raquo;</li>
+      
+    <li>Start the observations</li>
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="../../../_sources/SpectralLine/C-band/Xarcos/start-obs.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="../../../_sources/SpectralLine/C-band/Xarcos/start-obs.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
   <div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
 </div>
 <div class="section" id="start-the-observations">
 <span id="start-slcxa"></span><h1>Start the observations<a class="headerlink" href="#start-the-observations" title="Permalink to this headline">¶</a></h1>
@@ -183,15 +157,11 @@
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setupCCB</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">Select the active surface shape (Shaped configuration for C-band</p>
-</li>
-</ol>
+<li><p class="first">Select the active surface shape (Shaped configuration for C-band observations) :</p>
 <blockquote>
-<div><p>observations) :</p>
-<blockquote>
-<div><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asSetup=S</span></code></div></blockquote>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asSetup=S</span></code></p>
 </div></blockquote>
-<ol class="arabic">
+</li>
 <li><p class="first">Insert the Local Oscillator value in MHz :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setLO=[freq]</span></code></p>
@@ -204,13 +174,7 @@
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">initialize=XC00</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">The <code class="docutils literal"><span class="pre">initialize</span></code> command, which is also inserted in the</p>
-</li>
-</ol>
-<blockquote>
-<div><p>schedule (.bck) directly, sets all XARCOS parameters such as frequency,
-bandwidth and sample rate. You can check that the backend parameters
-are correct in the BACKENDS/XBackends Tui [[FIGURA]], or modify them by using, i.e., the following command:</p>
+<li><p class="first">The <code class="docutils literal"><span class="pre">initialize</span></code> command, which is also inserted in the schedule (.bck) directly, sets all XARCOS parameters such as frequency, bandwidth and sample rate. You can check that the backend parameters are correct in the BACKENDS/XBackends Tui [[FIGURA]], or modify them by using, i.e., the following command:</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setSection=[sect],[startFreq],[bw],*,*,</span> <span class="pre">[sampleRate],*</span></code></p>
 <p>with :</p>
@@ -228,8 +192,17 @@ Xarcos observations.</li>
 </ul>
 </div></blockquote>
 </div></blockquote>
+</li>
+<li><p class="first">Report the ground temperature, relative humidity, atmospheric pressure, and wind speed :</p>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">wx</span></code></p>
 </div></blockquote>
-<ol class="arabic">
+</li>
+<li><p class="first">Follow the link below to perform the pointing and focus optimization (if not already included in your schedule) :</p>
+<blockquote>
+<div><p><a class="reference internal" href="../../../GeneralProcedures/pointing-focus.html#pointing-focus"><span>Pointing and Focus optimization</span></a></p>
+</div></blockquote>
+</li>
 <li><p class="first">Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">startSchedule=[projectID]/[schedulename].scd,[N]</span></code></p>
@@ -239,9 +212,6 @@ Xarcos observations.</li>
 </div>
 
 
-           </div>
-           <div class="articleComments">
-            
            </div>
           </div>
           <footer>
@@ -276,8 +246,7 @@ Xarcos observations.</li>
             VERSION:'1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            HAS_SOURCE:  true
         };
     </script>
       <script type="text/javascript" src="../../../_static/jquery.js"></script>

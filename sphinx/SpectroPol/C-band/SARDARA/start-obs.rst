@@ -64,13 +64,21 @@ $ : commands to insert in a shell
 
 #. Attenuate the signal based on the rms range [-128 ;128] and check the value on the interface.
 
-    ``> getrms``  ???
+    ``> getrms``  **(ASK A. MELIS)**
 
     ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.
 
 #. Check the tsys (typical values)
 
      ``> tsys``
+
+#. Report the ground temperature, relative humidity, atmospheric pressure, and wind speed :
+
+    ``> wx``
+
+#. Follow the link below to perform the pointing and focus optimization (if not already included in your schedule) :
+
+      :ref:`pointing-focus`
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 

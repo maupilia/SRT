@@ -6,12 +6,8 @@
 
 .. toctree::
    :maxdepth:1
-
-.. |logo| image:: monocle_.png 
-..    :width: 20pt
-..    :height: 20pt
-..   :align: left
-|logo|:check on the monitor
+  
+.. _start-CoLSa:
 
 Start the observations
 ======================
@@ -23,13 +19,13 @@ $ : commands to insert in a shell
 
 #. Insert your project number 
 
-    ``> project=[projectID]``   |logo| :numref:`srt_scheduler`
+    ``> project=[projectID]``
 
 #. Initial setup 
 
-    ``> antennaReset``   
+    ``> antennaReset``
 
-    ``> setupLLP``    |logo| :numref:`srt_receivers`
+    ``> setupLLP``
 
 
 #. Select the receiver mode 
@@ -48,23 +44,23 @@ $ : commands to insert in a shell
 
 #. Select the active surface shape (Parabolic for L-band observations)
 
-    ``> asSetup=P``   |logo| :numref:`srt_activesurface`
+    ``> asSetup=P``
 
 
 #. Insert the Local Oscillator value in MHz
 
-    ``> setLO=[freq]``  |logo| :numref:`srt_receivers`
+    ``> setLO=[freq]``
 
 #. Select and configure the SARDARA backend in L-band
 
-    ``> chooseBackend=BACKENDS/Sardara`` |logo| :numref:`srt_scheduler`
+    ``> chooseBackend=BACKENDS/Sardara``
 
     ``> initialize=SL00``
 
 
 #. Set the different parameters of the backend 
 
-    ``> setSection=[sect],[startFreq],[bw],[num-feed],[polarization],[sampleRate],[bin]`` |logo| :numref:`srt_genericBackend`
+    ``> setSection=[sect],[startFreq],[bw],[num-feed],[polarization],[sampleRate],[bin]``
 
      with : 
 
@@ -87,7 +83,7 @@ $ : commands to insert in a shell
 
     ``> getrms``  ???
 
-    ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.  |logo| :numref:`srt_genericBackend`
+    ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.
 
 #. Check the tsys (typical values)
 
@@ -95,4 +91,4 @@ $ : commands to insert in a shell
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file 
 
-     ``> startSchedule=[projectID]/[schedulename].scd,[N]`` |logo| :numref:`srt_scheduler`
+     ``> startSchedule=[projectID]/[schedulename].scd,[N]``

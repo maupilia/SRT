@@ -21,8 +21,10 @@ $ : commands to insert in a shell
 ..    :width: 20pt
 ..    :height: 20pt
 ..   :align: left
-|logo|:check on the monitor
+|logo|: check on the monitor
 
+
+======================
 
 #. Insert your project number :
 
@@ -35,8 +37,7 @@ $ : commands to insert in a shell
     ``> setupKKG``  |logo| :numref:`srt_receivers`
 
 
-#. Select the active surface shape (Shaped configuration for K-band
- observations) :
+#. Select the active surface shape (Shaped configuration for K-band observations) :
 
     ``> asSetup=S`` |logo| :numref:`srt_activesurface`
 
@@ -54,7 +55,6 @@ $ : commands to insert in a shell
 
     Reminder : in K-band there are 7 feeds, so 14 sections with
     ``[sect]`` = 0, 1 , 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13.
-
 
 #. If you want to use the multi-feed derotator to prevent field rotation during long acquisition, select the derotator configuration :
 
@@ -79,10 +79,7 @@ $ : commands to insert in a shell
 
     ``> derotatorGetPosition``  |logo| :numref:`srt_receivers`
 
-
-#. Put the antenna at 45 deg of elevation and attenuate the signal for
- the 14 sections [sect] in order to obtain values between 750 and 1100
- counts (linear range of the backend) :
+#. Put the antenna at 45 deg of elevation and attenuate the signal for the 14 sections [sect] in order to obtain values between 750 and 1100 counts (linear range of the backend) :
 
      ``> goTo=*,45d``   |logo| :numref:`srt_mount`
 
@@ -92,10 +89,17 @@ $ : commands to insert in a shell
 
      ``> getTpi``
 
-
 #. Check the tsys (typical values) :
 
     ``> tsys`` |logo| :numref:`srt_genericBackend`
+
+#. Report the ground temperature, relative humidity, atmospheric pressure, and wind speed :
+
+    ``> wx``
+
+#. Follow the link below to perform the pointing and focus optimization (if not already included in your schedule) :
+
+      :ref:`pointing-focus`
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 
