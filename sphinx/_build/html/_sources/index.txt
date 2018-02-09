@@ -48,6 +48,7 @@ Observation modes
    Pulsar/index.rst
    SpectralLine/index.rst
    SpectroPol/index.rst
+   VLBI/index.rst
 
 
 Troubleshooting

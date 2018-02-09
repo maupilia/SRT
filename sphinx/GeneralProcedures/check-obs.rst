@@ -105,12 +105,18 @@ On nuraghe-obs1
 
 #. **AntennaBoss**
 
-     Check the status is OK (green). |logo| :numref:`srt_antennaboss`
-		
+     Check the status is OK (green), the coordinates of the source and
+     the beam size value are correct (FWHM in degrees). 
+     The tracking @ is green when the source is correctly pointed
+     (within 1/10 of the beam), while a red circle appears when the
+     telescope is in slewing. |logo| :numref:`srt_antennaboss`
+  
 
 #. **Mount**
 
-     The status are green while the antenna is pointing a source. |logo| :numref:`srt_mount`
+     Check the commanded azimuth and elevation of the antenna and
+     its real position (in blue). The status must be green. 
+     |logo| :numref:`srt_mount`
 
 
 #. **Active surface**

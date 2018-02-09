@@ -17,33 +17,42 @@ $ : commands to insert in a shell
 > : commands to insert in the operatorInput panel
 
 
+.. |logo| image:: monocle_.png
+..    :width: 20pt
+..    :height: 20pt
+..   :align: left
+|logo|: check on the monitor
+
+
+======================
+
 #. Insert your project number :
 
-    ``> project=[projectID]``
+    ``> project=[projectID]``    |logo| :numref:`srt_scheduler`
 
 #. Initial setup :
 
     ``> antennaReset``
 
-    ``> setupCCB``
+    ``> setupCCB``  |logo| :numref:`srt_receivers`
 
 #. Select the active surface shape (Shaped configuration for C-band observations) :
 
-    ``> asSetup=S``
+    ``> asSetup=S``   |logo| :numref:`srt_activesurface`
 
 #. Insert the Local Oscillator value in MHz :
 
-    ``> setLO=[freq]``
+    ``> setLO=[freq]``  |logo| :numref:`srt_receivers`
 
 #. Select and configure the XARCOS backend in C-band :
 
-    ``> chooseBackend=BACKENDS/XBackends``
+    ``> chooseBackend=BACKENDS/XBackends``   |logo| :numref:`srt_scheduler`
 
-    ``$ genericBackendTui BACKENDS/XBackends``
+    ``$ genericBackendTui BACKENDS/XBackends``  |logo| :numref:`srt_backendXarcos`
 
     ``> initialize=XC00``
 
-#. The ``initialize`` command, which is also inserted in the schedule (.bck) directly, sets all XARCOS parameters such as frequency, bandwidth and sample rate. You can check that the backend parameters are correct in the BACKENDS/XBackends Tui [[FIGURA]], or modify them by using, i.e., the following command:
+#. The ``initialize`` command, which is also inserted in the schedule (.bck) directly, sets all XARCOS parameters such as frequency, bandwidth and sample rate. You can check that the backend parameters are correct in the BACKENDS/XBackends Tui, or modify them by using, i.e., the following command:
 
     ``> setSection=[sect],[startFreq],[bw],*,*, [sampleRate],*``
 

@@ -87,6 +87,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../Pulsar/index.html">Pulsar observations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../index.html">Spectral lines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../SpectroPol/index.html">Spectro-polarimetry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../VLBI/index.html">VLBI</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../Problems/index.html">Problems during the observations</a></li>
@@ -145,36 +146,38 @@
 <span id="start-slcxa"></span><h1>Start the observations<a class="headerlink" href="#start-the-observations" title="Permalink to this headline">¶</a></h1>
 <p>$ : commands to insert in a shell</p>
 <p>&gt; : commands to insert in the operatorInput panel</p>
+<p><img alt="logo" src="../../../_images/monocle_6.png" />: check on the monitor</p>
+<hr class="docutils" />
 <ol class="arabic">
 <li><p class="first">Insert your project number :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code>    <img alt="logo" src="../../../_images/monocle_6.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.12</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Initial setup :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setupCCB</span></code></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setupCCB</span></code>  <img alt="logo" src="../../../_images/monocle_6.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span>Fig.11</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Select the active surface shape (Shaped configuration for C-band observations) :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asSetup=S</span></code></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asSetup=S</span></code>   <img alt="logo" src="../../../_images/monocle_6.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-activesurface"><span>Fig.2</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Insert the Local Oscillator value in MHz :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setLO=[freq]</span></code></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setLO=[freq]</span></code>  <img alt="logo" src="../../../_images/monocle_6.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span>Fig.11</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Select and configure the XARCOS backend in C-band :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/XBackends</span></code></p>
-<p><code class="docutils literal"><span class="pre">$</span> <span class="pre">genericBackendTui</span> <span class="pre">BACKENDS/XBackends</span></code></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/XBackends</span></code>   <img alt="logo" src="../../../_images/monocle_6.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.12</span></a></p>
+<p><code class="docutils literal"><span class="pre">$</span> <span class="pre">genericBackendTui</span> <span class="pre">BACKENDS/XBackends</span></code>  <img alt="logo" src="../../../_images/monocle_6.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-backendxarcos"><span>Fig.15</span></a></p>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">initialize=XC00</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">The <code class="docutils literal"><span class="pre">initialize</span></code> command, which is also inserted in the schedule (.bck) directly, sets all XARCOS parameters such as frequency, bandwidth and sample rate. You can check that the backend parameters are correct in the BACKENDS/XBackends Tui [[FIGURA]], or modify them by using, i.e., the following command:</p>
+<li><p class="first">The <code class="docutils literal"><span class="pre">initialize</span></code> command, which is also inserted in the schedule (.bck) directly, sets all XARCOS parameters such as frequency, bandwidth and sample rate. You can check that the backend parameters are correct in the BACKENDS/XBackends Tui, or modify them by using, i.e., the following command:</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setSection=[sect],[startFreq],[bw],*,*,</span> <span class="pre">[sampleRate],*</span></code></p>
 <p>with :</p>

@@ -167,7 +167,7 @@ MinorServo
 
 
 Calibration tool client
-=========
+==============
 
        .. _srt_calibrationtool:
 
@@ -181,4 +181,17 @@ Calibration tool client
            shown. We can read the information about the pointing
            of focus offsets (peakoffsets), the beam size (HPBW), etc.
 
+
+GenericBackendX
+===========
+
+       .. _srt_backendXarcos:
+
+       .. figure:: generic-backend-Xarcos.png 
+	   :align: center
+
+           A second **GenericBackend** panel shows the setup
+	   parameters of each section of Xarcos.
+
+	   
 
