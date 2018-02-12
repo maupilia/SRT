@@ -81,11 +81,11 @@ $ : commands to insert in a shell
 
 #. Attenuate the signal based on the rms range [-128 ;128] and check the value on the interface
 
-    ``> getrms``  ???
+    ``> getrms``  **(A. MELIS)**
 
     ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.
 
-#. Check the tsys (typical values)
+#. Check the tsys (typical values to be inserted)
 
      ``> tsys``
 

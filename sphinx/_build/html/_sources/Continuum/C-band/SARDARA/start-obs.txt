@@ -79,7 +79,7 @@ $ : commands to insert in a shell
 
      ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.  |logo| :numref:`srt_genericBackend`
 
-#. Check the tsys (typical values) :
+#. Check the tsys (typical values: to be inserted) :
 
      ``> tsys`` |logo| :numref:`srt_genericBackend`
 
