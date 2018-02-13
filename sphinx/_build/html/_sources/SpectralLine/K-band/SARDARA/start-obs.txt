@@ -6,7 +6,13 @@
 
 .. toctree::
    :maxdepth: 1
-  
+
+.. |logo| image:: monocle_.png 
+..    :width: 20pt
+..    :height: 20pt
+..   :align: left
+|logo|: check on the monitor
+
 .. _start-SLKSa:
 
 Start the observations
@@ -17,27 +23,29 @@ $ : commands to insert in a shell
 > : commands to insert in the operatorInput panel
 
 
+======================
+
 #. Insert your project number
 
-    ``> project=[projectID]``
+    ``> project=[projectID]`` |logo| :numref:`srt_scheduler` 
 
 #. Initial setup
 
     ``> antennaReset``
 
-    ``> setupKKG``
+    ``> setupKKG``  |logo| :numref:`srt_receivers`
 
 #. Select the active surface shape (Shaped configuration for K-band observations)
 
-    ``> asSetup=S``
+    ``> asSetup=S``  |logo| :numref:`srt_activesurface`
 
 #. Insert the Local Oscillator value in MHz
 
-    ``> setLO=[freq]``
+    ``> setLO=[freq]`` |logo| :numref:`srt_receivers`
 
 #. Select and configure the SARDARA backend in K-band
 
-    ``> chooseBackend=BACKENDS/Sardara``
+    ``> chooseBackend=BACKENDS/Sardara``  |logo| :numref:`srt_scheduler`
 
     ``> initialize=[code]``
 
@@ -50,7 +58,7 @@ $ : commands to insert in a shell
 
 #. Set the different parameters of the backend:
 
-   ``> setSection=[sect],[startFreq],[bw],[num-feed],[polarization],[sampleRate],[bin]``
+   ``> setSection=[sect],[startFreq],[bw],[num-feed],[polarization],[sampleRate],[bin]``  |logo| :numref:`srt_genericBackend`
 
      with : 
 
@@ -96,12 +104,12 @@ $ : commands to insert in a shell
 
     ``> getrms``  **(ASK A. MELIS)**
 
-    ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.
+    ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.  |logo| :numref:`srt_genericBackend`
 
 
 #. Check the tsys (typical values to be inserted)
 
-    ``> tsys``
+    ``> tsys`` |logo| :numref:`srt_genericBackend`
 
 #. Report the ground temperature, relative humidity, atmospheric pressure, and wind speed :
 
@@ -113,4 +121,4 @@ $ : commands to insert in a shell
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 
-    ``> startSchedule=[projectID]/[schedulename].scd,[N]``
+    ``> startSchedule=[projectID]/[schedulename].scd,[N]`` |logo| :numref:`srt_scheduler`

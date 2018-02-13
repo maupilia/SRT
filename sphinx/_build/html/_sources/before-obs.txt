@@ -31,40 +31,41 @@ Check that :
 
 
 
-On nuraghe-obs1 
-------------------
+.. On nuraghe-obs1 ------------------
 
 
-1. Check the presence of the 8 panels (:numref:`srt_vistaglobale`): 
-
+Check the presence of the 8 panels (:numref:`srt_vistaglobale`): 
    - **operatorInput** (:numref:`srt_operatorinput`)
-
    - **AntennaBoss** (:numref:`srt_antennaboss`)
-
    - **GenericBackend** (:numref:`srt_genericBackend`)
-
    - **Mount** (:numref:`srt_mount_ok`)
-
    - **Observatory** (:numref:`srt_observatory`)
-
    - **Receivers** (:numref:`srt_receivers`)
-
    - **Scheduler** (:numref:`srt_scheduler`)
-
    - **MinorServo** (:numref:`srt_minorservo`)
 
-----------
-----------
 
-2. Upload your shedules (.scd, .lis, .bck and .cfg files) and check them :
+**Upload your shedules (.scd, .lis, .bck and .cfg files) and check them:**
 
    *From your computer:*
 
-   ``$ scp  [schedulename.*] observer@nuraghe-obs1:/archive/schedules/[projectID]``
+   ``$ scp  [schedulename.*] gavino@nuraghe-mng:/archive/schedules/[projectID]``
 
-
-   *On nuraghe-obs1:*
+   *On nuraghe-mng:*
 
    ``$ cd /archive/schedules/[projectID]``
 
    ``$ scheduleChecker [schedulename.scd]``
+
+
+.. Upload your shedules (.scd, .lis, .bck and .cfg files) and check them :
+
+..   *From your computer:*
+
+..   $ scp  [schedulename.*] observer@nuraghe-obs1:/archive/schedules/[projectID]``
+
+..   *On nuraghe-obs1:*
+
+..   $ cd /archive/schedules/[projectID]``
+
+..   $ scheduleChecker [schedulename.scd]``

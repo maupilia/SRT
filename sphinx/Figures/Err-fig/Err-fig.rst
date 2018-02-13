@@ -81,7 +81,7 @@ number is frozen, stop the schedule.
      	.. figure:: srt_scheduler.png
 	   :align: center
 
-           The scheduler status is in FAILURE !!!!!!!!
+           The scheduler status is in FAILURE (add image!)
 
 
 MinorServo
@@ -99,8 +99,15 @@ Logging Display
 Active Surface
 =========
 
+The active surface does not work properly if a large fraction (a whole
+     sector) becomes red. It is a problem in K-band observations.
 
+        .. _srt_AS-fraction-red:
 
+     	.. figure:: AS-fraction-red.png
+	   :align: center
+
+           A fraction of the active surface (red squares) does not work properly.
 
 
 
@@ -117,5 +124,5 @@ SRT.
      	.. figure:: srt_windspeed.png
 	   :align: center
 
-           The antenna must be stowed immediately when the wind speed
+           The antenna is automatically stowed when the wind speed
            exceeds 60km/h.

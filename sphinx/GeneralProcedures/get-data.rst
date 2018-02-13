@@ -12,9 +12,17 @@
 Getting your data
 ======================
 
-Your data are in your private directory on *nuraghe-obs2*.
+Your data are in Maintenance on gavino@nuraghe-mng.
 
-You can download them on your computer whenever you want during the observations.
+You can download them on your computer whenever you want during the
+observations. Ask for the password.
 
-   ``$ scp -r  [projectID]@nuraghe-obs2:/archive/data/[projectID]/* .``
+   ``$ scp -r  gavino@nuraghe-mng:/archive/data/Maintenance/yyyyddmm .``
+
+
+.. Your data are in your private directory on *nuraghe-obs2*.
+
+.. You can download them on your computer whenever you want during the observations.
+
+..   $ scp -r  [projectID]@nuraghe-obs2:/archive/data/[projectID]/* .``
 

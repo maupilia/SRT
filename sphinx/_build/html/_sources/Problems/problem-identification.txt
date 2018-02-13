@@ -92,8 +92,10 @@ Wind velocity
 
 .. ATTENTION:: **MeteoClient**
 
-Check continuously the wind velocity using the ``$> meteoClient &`` on
-a shell of nuraghe-mng. :ref:`srt_windspeed`
+Check regularly the wind velocity using the ``$> meteoClient &`` on
+a shell of nuraghe-mng. For observations in K-band, the wind speed
+should not exceed 30 km/h (value to be checked) otherwise the pointing
+accuracy will probably be lost. :ref:`srt_windspeed`
 
 
 

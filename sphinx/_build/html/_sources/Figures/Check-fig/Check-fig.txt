@@ -53,8 +53,10 @@ Meteo Client
        .. figure:: srt_meteo.png 
 	   :align: center
 
-       The **Meteo Client** window shows the atmospheric temperature and the wind parameters (including wind direction) 
-       using a graphic  interface.
+       The **Meteo Client** window shows the atmospheric temperature
+       and the wind parameters (including wind direction) using a
+       graphic  interface.
+
 
 
 
@@ -195,3 +197,12 @@ GenericBackendX
 
 	   
 
+Primary Control Panel ACU
+=================
+
+       .. _srt_ACU_green:
+
+       .. figure:: srt_ACU_green.png 
+	   :align: center
+
+           Primary Control Panel ACU. 

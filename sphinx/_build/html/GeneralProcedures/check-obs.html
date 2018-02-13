@@ -87,6 +87,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../Pulsar/index.html">Pulsar observations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../SpectralLine/index.html">Spectral lines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../SpectroPol/index.html">Spectro-polarimetry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../VLBI/index.html">VLBI</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../Problems/index.html">Problems during the observations</a></li>
@@ -147,28 +148,19 @@
 <p>&gt; : commands to insert in the operatorInput panel</p>
 <p><img alt="logo" src="../_images/monocle_5.png" />: check on the monitor</p>
 <hr class="docutils" />
-<div class="section" id="on-nuraghe-obs2">
-<h2>On nuraghe-obs2<a class="headerlink" href="#on-nuraghe-obs2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="on-nuraghe-mng">
+<h2>On nuraghe-mng<a class="headerlink" href="#on-nuraghe-mng" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">Check that the data are correctly written in your project section :</p>
+<li><p class="first">Check that the data are correctly written in your project section (Maintenance) :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">/archive/data/[projectID]/</span></code></p>
+<div><p><code class="docutils literal"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">/archive/data/Maintenance/yyyymmdd</span></code></p>
 </div></blockquote>
 </li>
 <li><p class="first">Look at the Quick-look of the data :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">$</span> <span class="pre">idl</span></code></p>
-<p><code class="docutils literal"><span class="pre">IDL&gt;</span> <span class="pre">.r</span> <span class="pre">fitslook</span></code></p>
-<p><code class="docutils literal"><span class="pre">IDL&gt;</span> <span class="pre">fitslook</span></code></p>
+<div><p>TBD (tool M. Bachetti)</p>
 </div></blockquote>
 </li>
-</ol>
-<p>Note that the subscans are shown with a short delay in the quick-look
-plots with respect to the real observations.</p>
-</div>
-<div class="section" id="on-nuraghe-mng">
-<h2>On nuraghe-mng<a class="headerlink" href="#on-nuraghe-mng" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic">
 <li><p class="first"><strong>jlog</strong></p>
 <blockquote>
 <div><p>The logging display shows warning and error messages. Warning
@@ -183,17 +175,14 @@ UT to the responsible of the observation.</p>
 <li><p class="first"><strong>Meteo client</strong></p>
 <blockquote>
 <div><p>Check the wind speed on the Meteo client. If it exceeds 60 km/h,
-the antenna must be stowed <img alt="logo" src="../_images/monocle_5.png" /> <a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-windspeed"><span>Fig.21</span></a>.</p>
+the antenna is automatically stowed. For observations in K-band,
+the wind speed should not exceed 30 km/h (value to be checked)
+otherwise the pointing accuracy will probably be lost. <img alt="logo" src="../_images/monocle_5.png" /> <a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-windspeed"><span>Fig.23</span></a></p>
 </div></blockquote>
 </li>
-</ol>
-</div>
-<div class="section" id="on-nuraghe-obs1">
-<h2>On nuraghe-obs1<a class="headerlink" href="#on-nuraghe-obs1" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic">
 <li><p class="first"><strong>Scheduler</strong></p>
 <blockquote>
-<div><p>Check the status of the Scheduler is ok (green).
+<div><p>Check the status of the Scheduler is OK (green).
 During the tracking, &#64; is green while it is red during the
 slewing of the antenna. <img alt="logo" src="../_images/monocle_5.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.12</span></a></p>
 <p>Check the update of the number of scan/subscan according to your
@@ -232,7 +221,7 @@ telescope is in slewing. <img alt="logo" src="../_images/monocle_5.png" /> <a cl
 <blockquote>
 <div><p>Check the commanded azimuth and elevation of the antenna and
 its real position (in blue). The status must be green.
-<img alt="logo" src="../_images/monocle_5.png" /> <a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-mount"><span>Fig.19</span></a></p>
+<img alt="logo" src="../_images/monocle_5.png" /> <a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-mount"><span>Fig.20</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first"><strong>Active surface</strong></p>
@@ -240,17 +229,22 @@ its real position (in blue). The status must be green.
 <div><p>Check that the state of the active surface corresponds to your
 choice (shaped, shaped fixed, parabolic, parabolic fixed). <img alt="logo" src="../_images/monocle_5.png" />
 <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-activesurface"><span>Fig.2</span></a></p>
-<p>&#8220;Ok&#8221; should be green during the observations.</p>
+<p>&#8220;OK&#8221; should be green during the observations.</p>
 <p>Sometimes, not all of the small squares of the active surface are
-green. Do not worry for that. Instead, it can be problematic if a
-large fraction of the active surface becomes red.</p>
+green. Do not worry for that if they are spread randomly. Instead, it can be problematic if a
+large fraction (a whole sector) of the active surface becomes
+red, in particular in K-band (see <img alt="logo" src="../_images/monocle_5.png" />
+<a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-as-fraction-red"><span>Fig.22</span></a>).
+Contact the responsible of the observation (observer friend).</p>
 </div></blockquote>
 </li>
 </ol>
 </div>
 <div class="section" id="primary-control-panel-acu">
 <h2>Primary Control Panel ACU<a class="headerlink" href="#primary-control-panel-acu" title="Permalink to this headline">¶</a></h2>
-<p>Check that everything appears in green. If a red box appears, put the cursor
+<p>Check that everything appears in green (see <img alt="logo" src="../_images/monocle_5.png" />
+<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-acu-green"><span>Fig.16</span></a>).
+If a red box appears, put the cursor
 on it and look at the error message.</p>
 <p>Contact and report the error messages to the responsible of the observation (observer friend).</p>
 </div>

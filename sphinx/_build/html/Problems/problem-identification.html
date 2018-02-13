@@ -90,6 +90,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../Pulsar/index.html">Pulsar observations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../SpectralLine/index.html">Spectral lines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../SpectroPol/index.html">Spectro-polarimetry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../VLBI/index.html">VLBI</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Problems during the observations</a><ul class="current">
@@ -172,7 +173,7 @@ the different panels (Scheduler, MinorServo, Receivers, etc...) and the jlog.</p
 <p class="first admonition-title">Attention</p>
 <p class="last"><strong>Scheduler</strong></p>
 </div>
-<p><a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-scheduler"><span>The scheduler status is in FAILURE !!!!!!!!</span></a> when the schedule is not running
+<p><a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-scheduler"><span>The scheduler status is in FAILURE (add image!)</span></a> when the schedule is not running
 correctly. If the Scan/SubScan number is proceeding correctly, the
 FAILURE can be associated with skipped scans because of the too high
 or too low
@@ -227,8 +228,10 @@ the observations (observer’s friend).</p>
 <p class="first admonition-title">Attention</p>
 <p class="last"><strong>MeteoClient</strong></p>
 </div>
-<p>Check continuously the wind velocity using the <code class="docutils literal"><span class="pre">$&gt;</span> <span class="pre">meteoClient</span> <span class="pre">&amp;</span></code> on
-a shell of nuraghe-mng. <a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-windspeed"><span>The antenna must be stowed immediately when the wind speed
+<p>Check regularly the wind velocity using the <code class="docutils literal"><span class="pre">$&gt;</span> <span class="pre">meteoClient</span> <span class="pre">&amp;</span></code> on
+a shell of nuraghe-mng. For observations in K-band, the wind speed
+should not exceed 30 km/h (value to be checked) otherwise the pointing
+accuracy will probably be lost. <a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-windspeed"><span>The antenna is automatically stowed when the wind speed
 exceeds 60km/h.</span></a></p>
 </div>
 </div>

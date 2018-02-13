@@ -25,9 +25,10 @@ End of the session
 Your observations are now finished, we can stop the schedule and park
 the antenna.
 
+On nuraghe-mng
+--------------
 
-On nuraghe-obs1
-------------------
+.. On nuraghe-obs1 ------------------
 
 1. Stop your schedule :
 

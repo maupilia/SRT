@@ -25,29 +25,38 @@ $ : commands to insert in a shell
 ==============================
 
 
-On nuraghe-obs2
---------------
+.. On nuraghe-obs2 ---------------
 
-#. Check that the data are correctly written in your project section :
+.. #. Check that the data are correctly written in your project section :
 
-    ``$ cd /archive/data/[projectID]/``   
+..    $ cd /archive/data/[projectID]/``   
 
 
-#. Look at the Quick-look of the data :
+.. #. Look at the Quick-look of the data :
 
-    ``$ idl``             
+..    $ idl``             
 
-    ``IDL> .r fitslook``
+..    IDL> .r fitslook``
 
-    ``IDL> fitslook``
+..    IDL> fitslook``
 	
-Note that the subscans are shown with a short delay in the quick-look
-plots with respect to the real observations.
+.. Note that the subscans are shown with a short delay in the
+.. quick-look plots with respect to the real observations.
 
 
 
 On nuraghe-mng
 --------------
+
+#. Check that the data are correctly written in your project section (Maintenance) :
+
+    ``$ cd /archive/data/Maintenance/yyyymmdd``   
+
+
+#. Look at the Quick-look of the data :
+
+      TBD (tool M. Bachetti)
+
 
 #. **jlog**
 
@@ -64,15 +73,16 @@ On nuraghe-mng
 #. **Meteo client**
 
      Check the wind speed on the Meteo client. If it exceeds 60 km/h,
-     the antenna must be stowed |logo| :numref:`srt_windspeed`. 
+     the antenna is automatically stowed. For observations in K-band,
+     the wind speed should not exceed 30 km/h (value to be checked)
+     otherwise the pointing accuracy will probably be lost. |logo| :numref:`srt_windspeed`
 
   
-On nuraghe-obs1
---------------
+     .. On nuraghe-obs1 --------------
 
 #. **Scheduler**
 
-     Check the status of the Scheduler is ok (green).
+     Check the status of the Scheduler is OK (green).
      During the tracking, @ is green while it is red during the
      slewing of the antenna. |logo| :numref:`srt_scheduler`
 
@@ -125,20 +135,23 @@ On nuraghe-obs1
      choice (shaped, shaped fixed, parabolic, parabolic fixed). |logo|
      :numref:`srt_activesurface`
 
-     "Ok" should be green during the observations. 
+     "OK" should be green during the observations. 
 
      Sometimes, not all of the small squares of the active surface are
-     green. Do not worry for that. Instead, it can be problematic if a
-     large fraction of the active surface becomes red.
-
+     green. Do not worry for that if they are spread randomly. Instead, it can be problematic if a
+     large fraction (a whole sector) of the active surface becomes
+     red, in particular in K-band (see |logo|
+     :numref:`srt_AS-fraction-red`).
+     Contact the responsible of the observation (observer friend).
 
 
 Primary Control Panel ACU
 ---------------------
 
-Check that everything appears in green. If a red box appears, put the cursor
+Check that everything appears in green (see |logo|
+:numref:`srt_ACU_green`). 
+If a red box appears, put the cursor
 on it and look at the error message.
-
 
 Contact and report the error messages to the responsible of the observation (observer friend).
 

@@ -16,30 +16,38 @@ $ : commands to insert in a shell
  
 > : commands to insert in the operatorInput panel
 
+.. |logo| image:: monocle_.png
+..    :width: 20pt
+..    :height: 20pt
+..   :align: left
+|logo|: check on the monitor
+
+
+======================
 
 #. Insert your project number
 
-    ``> project=[projectID]``
+    ``> project=[projectID]``    |logo| :numref:`srt_scheduler`
 
 #. Initial setup
 
     ``> antennaReset``
 
-    ``> setupKKG``
+    ``> setupKKG``  |logo| :numref:`srt_receivers`
 
 #. Select the active surface shape (Shaped configuration for K-band observations)
 
-    ``> asSetup=S``
+    ``> asSetup=S``   |logo| :numref:`srt_activesurface`
 
 #. Insert the Local Oscillator value in MHz
 
-    ``> setLO=[freq]``
+    ``> setLO=[freq]``  |logo| :numref:`srt_receivers`
 
 #. Select and configure the XARCOS backend in K-band 
 
-    ``> chooseBackend=BACKENDS/XBackends`` 
+    ``> chooseBackend=BACKENDS/XBackends``   |logo| :numref:`srt_scheduler`
 
-    ``$ genericBackendTui BACKENDS/XBackends``
+    ``$ genericBackendTui BACKENDS/XBackends``  |logo| :numref:`srt_backendXarcos`
 
     ``> initialize=[code]``    
 
@@ -112,4 +120,4 @@ $ : commands to insert in a shell
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 
-    ``> startSchedule=[projectID]/[schedulename].scd,[N]``
+    ``> startSchedule=[projectID]/[schedulename].scd,[N]`` |logo| :numref:`srt_scheduler`
