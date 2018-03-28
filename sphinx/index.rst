@@ -50,7 +50,9 @@ Observation modes
    VLBI/index.rst
 
 
-.. important:: At the end of the session, please fill the `LOG file <https://goo.gl/forms/GBZqRw4x4FxgCD033>`_.
+.. important:: At the end of the session, please fill the `LOG file <https://goo.gl/forms/7tA8cRKhuzoUAJMg2>`_.
+
+.. ttps://goo.gl/forms/GBZqRw4x4FxgCD033
 
 
 Troubleshooting
