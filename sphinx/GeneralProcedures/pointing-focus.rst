@@ -61,7 +61,9 @@ Pointing
     * ``sector``: to force the cable wrap sector, if needed. Its value
       can be CW, CCW or neutral. Usually, use *neutral*.
 
-     e.g. ``> sidereal=src12,319.256d,70.864d,2000,neutral``
+     e.g. ``> sidereal=3c84,03:19:48.16h,41:30:42.1,2000,neutral``
+     or   ``> sidereal=3c84,49.951d,41.512d,2000,neutral``
+
 
 #. Choose the recorder :
 
