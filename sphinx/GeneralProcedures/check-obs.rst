@@ -94,11 +94,11 @@ On nuraghe-mng
      tracking is red while the antenna is tracking the source, stop
      the on-going schedule with:
 
-     ``> antennaStop``    (in the operatorInput)
+     ``> stopSchedule``    (in the operatorInput)
 
      then start again the schedule:
 
-     ``> antennaStart=[projectID]/…scd,n``    (with n the number of scan)
+     ``> startSchedule=[projectID]/…scd,n``    (with n the number of scan)
 
 
 #. **MinorServo**
