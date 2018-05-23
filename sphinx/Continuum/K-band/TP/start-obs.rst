@@ -34,7 +34,7 @@ $ : commands to insert in a shell
 
     ``> antennaReset``
 
-    ``> setupKKG``  |logo| :numref:`srt_receivers`
+    ``> setupKKG``  |logo| :numref:`srt_receivers_KKG`
 
 
 #. Select the active surface shape (Shaped configuration for K-band observations) :
@@ -43,7 +43,7 @@ $ : commands to insert in a shell
 
 #. Insert the Local Oscillator value in MHz :
 
-    ``> setLO=[freq]``  |logo| :numref:`srt_receivers`
+    ``> setLO=[freq]``  |logo| :numref:`srt_receivers_KKG`
 
 #. Select the Total Power backend :
 
@@ -51,14 +51,14 @@ $ : commands to insert in a shell
 
 #. For each section [sect], insert the bandwidth ([bw]=300, 730, 1250 or 2000 MHz) and the sample rate (in MHz) :
 
-    ``> setSection=[sect],*,[bw],*,*,[sampleRate],*`` |logo| :numref:`srt_genericBackend`
+    ``> setSection=[sect],*,[bw],*,*,[sampleRate],*`` |logo| :numref:`srt_genericBackend_KKG`
 
     Reminder : in K-band there are 7 feeds, so 14 sections with
     ``[sect]`` = 0, 1 , 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13.
 
 #. If you want to use the multi-feed derotator to prevent field rotation during long acquisition, select the derotator configuration :
 
-    ``> derotatorSetConfiguration=[config]``   with ``[config]`` = BSC, CUSTOM or FIXED. |logo| :numref:`srt_receivers`
+    ``> derotatorSetConfiguration=[config]``   with ``[config]`` = BSC, CUSTOM or FIXED. |logo| :numref:`srt_receivers_KKG`
 
         - BSC is for Best Coverage Space (automatic rotation of the
           dewar in order to best cover the scanned area).
@@ -77,7 +77,7 @@ $ : commands to insert in a shell
 
     To read back the position of the dewar :
 
-    ``> derotatorGetPosition``  |logo| :numref:`srt_receivers`
+    ``> derotatorGetPosition``  |logo| :numref:`srt_receivers_KKG`
 
 #. Put the antenna at 45 deg of elevation and attenuate the signal for the 14 sections [sect] in order to obtain values between 750 and 1100 counts (linear range of the backend) :
 
@@ -85,13 +85,13 @@ $ : commands to insert in a shell
 
      ``> getTpi``
 
-     ``> setAttenuation=[sect],[att]``	with [att] between 0 and 15 dB |logo| :numref:`srt_genericBackend`
+     ``> setAttenuation=[sect],[att]``	with [att] between 0 and 15 dB |logo| :numref:`srt_genericBackend_KKG`
 
      ``> getTpi``
 
 #. Check the tsys (typical values to be inserted) :
 
-    ``> tsys`` |logo| :numref:`srt_genericBackend`
+    ``> tsys`` |logo| :numref:`srt_genericBackend_KKG`
 
 #. Report the ground temperature, relative humidity, atmospheric pressure, and wind speed :
 

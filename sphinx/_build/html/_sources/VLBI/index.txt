@@ -7,7 +7,7 @@
 VLBI
 =========
 
-Follow the procedure `here <https://drive.google.com/drive/folders/1JGBVO2CE_KvG2Ye14b5KikkUnG1fLxDw>`_
+Follow the procedure `here <https://drive.google.com/drive/folders/1wwZpTJa63bagcsLdPJ4f02ff8HAVX1UP>`_
 
 
 

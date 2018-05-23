@@ -20,7 +20,7 @@ $ : commands to insert in a shell
 ..    :width: 20pt
 ..    :height: 20pt
 ..   :align: left
-|logo|: check on the monitor
+|logo|: check the execution on the monitor
 
 
 ======================

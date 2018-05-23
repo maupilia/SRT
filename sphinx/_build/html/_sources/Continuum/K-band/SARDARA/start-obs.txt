@@ -33,7 +33,7 @@ $ : commands to insert in a shell
 
     ``> antennaReset``
 
-    ``> setupKKG``  |logo| :numref:`srt_receivers`
+    ``> setupKKG``  |logo| :numref:`srt_receivers_KKG`
 
 #. Select the active surface shape (Shaped configuration for K-band observations) :
 
@@ -41,7 +41,7 @@ $ : commands to insert in a shell
 
 #. Insert the Local Oscillator value in MHz :
 
-    ``> setLO=[freq]`` |logo| :numref:`srt_receivers`
+    ``> setLO=[freq]`` |logo| :numref:`srt_receivers_KKG`
 
 #. Select and configure the SARDARA backend in K-band :
 
@@ -58,7 +58,7 @@ $ : commands to insert in a shell
 
 #. Set the different parameters of the backend:
 
-   ``> setSection=[sect],[startFreq],[bw],[num-feed],[polarization],[sampleRate],[bin]``  |logo| :numref:`srt_genericBackend`
+   ``> setSection=[sect],[startFreq],[bw],[num-feed],[polarization],[sampleRate],[bin]``  |logo| :numref:`srt_genericBackend_KKG`
 
      with : 
 
@@ -104,11 +104,11 @@ $ : commands to insert in a shell
 
    ``> getrms``  **(ASK A. MELIS)**
 
-   ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB. |logo| :numref:`srt_genericBackend`
+   ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB. |logo| :numref:`srt_genericBackend_KKG`
 
 #. Check the tsys (typical values to be inserted)
 
-    ``> tsys`` |logo| :numref:`srt_genericBackend`
+    ``> tsys`` |logo| :numref:`srt_genericBackend_KKG`
 
 #. Report the ground temperature, relative humidity, atmospheric pressure, and wind speed :
 

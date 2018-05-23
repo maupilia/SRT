@@ -23,7 +23,7 @@ $  : commands to insert in a shell
 ..    :width: 20pt
 ..    :height: 20pt
 ..   :align: left
-|logo|: check on the monitor
+|logo|: check the execution on the monitor
 
 
 ======================
@@ -108,7 +108,7 @@ Focus
     The first number should be three times the wavelength of
     observation in mm (e.g. in C-Band 3*5cm = 150mm).
 
-#. Look at the calibrationtool client to check the focus measurements.
+#. Look at the calibrationtool client to check the focus measurements. |logo| :numref:`srt_focus`
 
     The focus is correct if you see a Gaussian with an offset lower
     than a few tenth of  mm with respect to the zero.

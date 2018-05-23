@@ -18,7 +18,7 @@ End of the session
 ..    :width: 20pt
 ..    :height: 20pt
 ..   :align: left
-|logo|: check on the monitor
+|logo|: check the execution on the monitor
 
 ======================
 
@@ -32,7 +32,7 @@ On nuraghe-mng
 
 1. Stop your schedule :
 
-   ``> stopSchedule``   *interruption of the current subscan*  |logo| :numref:`srt_scheduler`
+   ``> stopSchedule``   *interruption of the current subscan*  |logo| :numref:`srt_scheduler_end`
 or
    ``> haltSchedule``    *the schedule stops at the end of the on-going subscan.* 
 
@@ -43,11 +43,11 @@ or
 
    ``> goTo=180d,89d`` |logo| :numref:`srt_mount_ok`
 
-   ``> servoPark`` |logo| :numref:`srt_minorservo`
+   ``> servoPark`` |logo| :numref:`srt_minorservo_end`
 
    ``> asPark`` |logo| :numref:`srt_activesurface`
 
-   ``> antennaPark`` |logo| :numref:`srt_mount_ok`
+   ``> antennaPark`` |logo| :numref:`srt_mount_antennareset`
 
 
 

@@ -20,7 +20,7 @@ $ : commands to insert in a shell
 ..    :width: 20pt
 ..    :height: 20pt
 ..   :align: left
-|logo|: check on the monitor
+|logo|: check the execution on the monitor
 
 ==============================
 
@@ -126,7 +126,7 @@ On nuraghe-mng
 
      Check the commanded azimuth and elevation of the antenna and
      its real position (in blue). The status must be green. 
-     |logo| :numref:`srt_mount`
+     |logo| :numref:`srt_mount_ok`
 
 
 #. **Active surface**

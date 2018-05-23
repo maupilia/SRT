@@ -21,7 +21,7 @@ $  : commands to insert in a shell
 ..    :width: 20pt
 ..    :height: 20pt
 ..   :align: left
-|logo|: check on the monitor
+|logo|: check the execution on the monitor
 
 
 ======================
@@ -82,6 +82,11 @@ $  : commands to insert in a shell
 
 
       :ref:`pointing-focus`
+
+
+#. Open the calibrationtool client in a terminal to display the pointing and focus plots in real time :
+
+    ``$ calibrationtoolclient MANAGEMENT/CalibrationTool``  |logo| :numref:`srt_calibrationtool`
 
 
 #. Begin the schedule by indicating the start scan [N] or subscan

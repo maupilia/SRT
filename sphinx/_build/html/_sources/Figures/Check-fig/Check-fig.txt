@@ -13,9 +13,9 @@
 ACS Command Center
 ========
 
-       .. _srt_acs:
+       .. _srt_acs_containers:
 
-       .. figure:: srt_acs.png 
+       .. figure:: srt_acs_containers.png 
 	  :align: center
   
           The **ACS** monitor shows the state of the containers related to each DISCOS component.
@@ -24,9 +24,9 @@ ACS Command Center
 Active Surface
 =========
 
-       .. _srt_activesurface:
+       .. _srt_activesurface_2:
 
-       .. figure:: srt_activesurface.png 
+       .. figure:: srt_activesurface_2.png 
 	   :align: center
 
 	   This monitor shows the status of the actuators in a graphical representation of the **Active Surface** and its configuration. 
@@ -53,14 +53,14 @@ Meteo Client
        .. figure:: srt_meteo.png 
 	   :align: center
 
-       The **Meteo Client** window shows the atmospheric temperature
-       and the wind parameters (including wind direction) using a
-       graphic  interface.
+           The **Meteo Client** window shows the atmospheric temperature
+           and the wind parameters (including wind direction) using a
+           graphic  interface.
 
 
 
 
-Nuraghe-obs1
+Nuraghe-mng
 ========
 
        .. _srt_vistaglobale:
@@ -68,7 +68,7 @@ Nuraghe-obs1
        .. figure:: srt_vistaglobale.png
 	  :align: center
 
-          **Nuraghe-obs1** is the destination for your schedules, and is the machine where you run the system and 
+          **Nuraghe-mng** is the destination for your schedules, and is the machine where you run the system and 
           where you should find the  input terminal and all the monitors.
 
 
@@ -92,6 +92,7 @@ AntennaBoss
        .. _srt_antennaboss:
 
        .. figure:: srt_antennaboss.png 
+           :width: 15cm
 	   :align: center
           
            The **AntennaBoss** monitor shows the target info, indicating the commanded and actual positions pointed by     
@@ -109,17 +110,32 @@ GenericBackend
 
 	   The monitor **GenericBackend** shows the backend setup parameters related to each section.
 
+       .. _srt_genericBackend_KKG:
+
+       .. figure:: srt_genericBackend_KKG.png 
+	   :align: center
+
+       The monitor **GenericBackend** in the K-band configuration.
+
 
 Mount
 ====
 
        .. _srt_mount_ok:
 
-       .. figure:: srt_mount.png 
+       .. figure:: srt_mount.png
+           :width: 15cm 
 	   :align: center
 
-	   Observers must focus only on the **Mount** status and on the online readouts for the Azimuth and Elevation axes, 
-           compared to the commanded positions, located in the top left section.
+	   Observers need to focus only on the **Mount** status (that you can see indicated by the green box) and on the actual position of the axis expressed in Azimuth and 		   Elevation (shown in blue), compared to the commanded positions (which are referred to under the actual positions with the label "Cmd Az." and "Cmd El.").
+
+       .. _srt_mount_antennareset:
+
+       .. figure:: srt_mount_antennareset.png 
+           :width: 15cm
+	   :align: center
+  
+           The **Mount** monitor after the park of the antenna by using ``> antennaPark``
 
 
 Observatory
@@ -127,7 +143,8 @@ Observatory
 
        .. _srt_observatory:
 
-       .. figure:: srt_observatory.png 
+       .. figure:: srt_observatory.png
+           :width: 15cm 
 	   :align: center
 
            The **Observatory** monitor shows the station coordinates and times.
@@ -140,10 +157,31 @@ ReceiversBoss
        .. _srt_receivers:
 
        .. figure:: srt_receivers.png 
+           :width: 15cm
 	   :align: center
 
 	   The **ReceiverBoss** monitor summarizes the frontend setup parameters. 
            The bottom part is devoted to the derotator (dewar positioner),  when available.
+
+
+       .. _srt_receivers_LLP:
+
+       .. figure:: srt_receivers_LLP.png 
+           :width: 15cm
+	   :align: center
+
+       The **ReceiverBoss** monitor in the L-band configuration.
+
+
+       .. _srt_receivers_KKG:
+
+       .. figure:: srt_receivers_KKG.png
+           :width: 15cm 
+	   :align: center
+
+       The **ReceiverBoss** monitor in the K-band configuration.
+
+
 
 Scheduler
 ======
@@ -151,9 +189,18 @@ Scheduler
         .. _srt_scheduler:
 
      	.. figure:: srt_scheduler.png 
+           :width: 15cm
 	   :align: center
           
            The **Scheduler** monitor shows details on the selected data acquisition devices and on the running schedule, if any.
+
+        .. _srt_scheduler_end:
+
+     	.. figure:: srt_scheduler_end.png
+           :width: 15cm 
+	   :align: center
+
+           The **Scheduler** monitor after the interruption of the current subscan by using ``> stopSchedule`` or ``> haltSchedule``
 
 
 MinorServo
@@ -161,10 +208,35 @@ MinorServo
 
        .. _srt_minorservo:
 
-       .. figure:: srt_minorservo.png 
+       .. figure:: srt_minorservo.png
+           :width: 15cm 
 	   :align: center
 
-	   The **MinorServo** monitor shows the current setup code and the minor servo status and movement.
+	   The **MinorServo** monitor shows the current setup code and the minor servo status and movement. In this case the image refered to the C-band configuration.
+
+       .. _srt_minorservo_LLP:
+
+       .. figure:: srt_minorservo_LLP.png 
+           :width: 15cm
+	   :align: center
+
+           The **MinorServo** monitor in the L-band configuration.
+
+       .. _srt_minorservo_KKG:
+
+       .. figure:: srt_minorservo_KKG.png 
+           :width: 15cm
+	   :align: center
+
+           The **MinorServo** monitor in the K-band configuration.
+
+       .. _srt_minorservo_end:
+
+       .. figure:: srt_minorservo_end.png 
+           :width: 15cm
+	   :align: center
+
+           The **MinorServo** monitor after the park of the minor servos by using ``> servoPark``
 
 
 
@@ -183,6 +255,12 @@ Calibration tool client
            shown. We can read the information about the pointing
            of focus offsets (peakoffsets), the beam size (HPBW), etc.
 
+       .. _srt_focus:
+
+       .. figure:: srt_focus.png 
+	   :align: center
+
+           **Calibration tool client** window related to a focus subscan.
 
 GenericBackendX
 ===========

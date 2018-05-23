@@ -21,7 +21,7 @@ $ : commands to insert in a shell
 ..    :width: 20pt
 ..    :height: 20pt
 ..   :align: left
-|logo|: check on the monitor
+|logo|: check the execution on the monitor
 
 
 ======================
@@ -35,7 +35,7 @@ $ : commands to insert in a shell
 
     ``> antennaReset``
 
-    ``> setupLLP`` |logo| :numref:`srt_receivers`
+    ``> setupLLP`` |logo| :numref:`srt_receivers_LLP`
 
 #. Select the receiver mode :
 
@@ -58,7 +58,7 @@ $ : commands to insert in a shell
 
 #. Insert the Local Oscillator value in MHz
 
-    ``> setLO=[freq]`` |logo| :numref:`srt_receivers`
+    ``> setLO=[freq]`` |logo| :numref:`srt_receivers_LLP`
 
 #. Select and configure the SARDARA backend in L-band
 
@@ -69,7 +69,7 @@ $ : commands to insert in a shell
 
 #. Set the different parameters of the backend :
 
-    ``> setSection=[sect],[startFreq],[bw],[num-feed],[polarization],[sampleRate],[bin]``  |logo| :numref:`srt_genericBackend`
+    ``> setSection=[sect],[startFreq],[bw],[num-feed],[polarization],[sampleRate],[bin]``  |logo| :numref:`srt_genericBackend_LLP`
 
      with : 
 
@@ -92,11 +92,11 @@ $ : commands to insert in a shell
 
     ``> getrms``  **(ASK A. MELIS)**
 
-    ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.    |logo| :numref:`srt_genericBackend`
+    ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.    |logo| :numref:`srt_genericBackend_LLP`
 
 #. Check the tsys (typical values to be inserted)
 
-     ``> tsys`` |logo| :numref:`srt_genericBackend`
+     ``> tsys`` |logo| :numref:`srt_genericBackend_LPP`
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 

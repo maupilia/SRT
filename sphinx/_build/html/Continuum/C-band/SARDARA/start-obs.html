@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -23,22 +25,17 @@
   
 
   
-  
     <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="SRT procedures 1 documentation" href="../../../index.html"/> 
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" /> 
 
   
   <script src="../../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -79,7 +76,10 @@
           
             
             
-                <ul>
+              
+            
+            
+              <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../before-obs.html">Important checks</a></li>
 </ul>
 <ul>
@@ -105,34 +105,54 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../../index.html">SRT procedures</a>
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">SRT procedures</a>
+        
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../../index.html">Docs</a> &raquo;</li>
-      
-    <li>Start the observations</li>
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Start the observations</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="../../../_sources/Continuum/C-band/SARDARA/start-obs.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -146,18 +166,18 @@
 <span id="start-cocsa"></span><h1>Start the observations<a class="headerlink" href="#start-the-observations" title="Permalink to this headline">¶</a></h1>
 <p>$ : commands to insert in a shell</p>
 <p>&gt; : commands to insert in the operatorInput panel</p>
-<p><img alt="logo" src="../../../_images/monocle_.png" />: check on the monitor</p>
+<p><img alt="logo" src="../../../_images/monocle_.png" />: check the execution on the monitor</p>
 <hr class="docutils" />
 <ol class="arabic">
 <li><p class="first">Insert your project number :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.12</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.16</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Initial setup :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setupCCB</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span>Fig.11</span></a></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setupCCB</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span>Fig.13</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Select the active surface shape (Shaped configuration for C-band observations) :</p>
@@ -167,12 +187,12 @@
 </li>
 <li><p class="first">Insert the Local Oscillator value in MHz :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setLO=[freq]</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span>Fig.11</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setLO=[freq]</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span>Fig.13</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Select and configure the SARDARA backend :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/Sardara</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.12</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/Sardara</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.16</span></a></p>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">initialize=SC00</span></code></p>
 </div></blockquote>
 </li>
@@ -221,7 +241,7 @@
 </li>
 <li><p class="first">Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">startSchedule=[projectID]/[schedulename].scd,[N]</span></code>  <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.12</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">startSchedule=[projectID]/[schedulename].scd,[N]</span></code>  <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.16</span></a></p>
 </div></blockquote>
 </li>
 </ol>
@@ -229,6 +249,7 @@
 
 
            </div>
+           
           </div>
           <footer>
   
@@ -241,7 +262,7 @@
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -260,9 +281,11 @@
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../../',
             VERSION:'1',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: ''
         };
     </script>
       <script type="text/javascript" src="../../../_static/jquery.js"></script>
@@ -276,14 +299,11 @@
     <script type="text/javascript" src="../../../_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

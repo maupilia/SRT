@@ -52,10 +52,7 @@ Observatory
 Mount
 ====
 
-        .. _srt_mount:
 
-    	.. figure:: srt_mount.png
-	   :align: center
 
 
 GenericBackend
@@ -93,7 +90,12 @@ MinorServo
 Logging Display
 ==========
 
+        .. _jlog-err:
 
+     	.. figure:: jlog-err.png
+	   :align: center
+
+           The error messages are show in the Logging Display with a short explanation of the related problem.
 
 
 Active Surface
