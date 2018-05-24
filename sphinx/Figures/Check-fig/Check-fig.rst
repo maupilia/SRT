@@ -13,9 +13,9 @@
 ACS Command Center
 ========
 
-       .. _srt_acs_containers:
+       .. _srt_acs:
 
-       .. figure:: srt_acs_containers.png 
+       .. figure:: srt_acs.png 
 	  :align: center
   
           The **ACS** monitor shows the state of the containers related to each DISCOS component.
@@ -24,9 +24,9 @@ ACS Command Center
 Active Surface
 =========
 
-       .. _srt_activesurface_2:
+       .. _srt_activesurface:
 
-       .. figure:: srt_activesurface_2.png 
+       .. figure:: srt_activesurface.png 
 	   :align: center
 
 	   This monitor shows the status of the actuators in a graphical representation of the **Active Surface** and its configuration. 
