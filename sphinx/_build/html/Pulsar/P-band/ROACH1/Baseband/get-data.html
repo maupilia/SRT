@@ -25,17 +25,27 @@
   
 
   
+  
     <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-    <link rel="next" title="End of the session" href="stop-session.html" />
-    <link rel="prev" title="Check during the observations" href="check-obs.html" /> 
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../../search.html"/>
+    <link rel="top" title="SRT procedures 1 documentation" href="../../../../index.html"/>
+        <link rel="up" title="Baseband Mode" href="index.html"/>
+        <link rel="next" title="End of the session" href="stop-session.html"/>
+        <link rel="prev" title="Check during the observations" href="check-obs.html"/> 
 
   
   <script src="../../../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" role="document">
 
    
   <div class="wy-grid-for-nav">
@@ -122,7 +132,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../../index.html">SRT procedures</a>
@@ -130,10 +140,9 @@
       </nav>
 
 
+      
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -170,7 +179,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../../_sources/Pulsar/P-band/ROACH1/Baseband/get-data.txt" rel="nofollow"> View page source</a>
+            <a href="../../../../_sources/Pulsar/P-band/ROACH1/Baseband/get-data.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -186,8 +195,6 @@
   <div class="section" id="getting-your-data">
 <h1>Getting your data<a class="headerlink" href="#getting-your-data" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
-<ul class="simple">
-</ul>
 </div>
 <p>The data have been written on the nodes of the LEAP cluster. After the observation run, this baseband data needs to be de-dispersed and folded (it may take a few hours and no other observations with the ROACH1 can take place while the cluster is being used). There are various codes in leap0 (the head node) in ~/roach/scripts/ that do this and that can be launched in W1 after the daemons are closed.</p>
 <p>For example for each node, one can launch:</p>
@@ -196,13 +203,15 @@
 <p>This data (in .ar format) can then be transferred to <em>nuraghe-obs1</em> or a
 personal computer using “scp”. In LEAP cluster VNC:</p>
 <blockquote>
-<div><code class="docutils literal"><span class="pre">$</span> <span class="pre">scp</span> <span class="pre">-r</span> <span class="pre">~/DATA/[today’s</span> <span class="pre">date]</span>&nbsp; <span class="pre">[projectID]&#64;nuraghe-obs2:/archive/data/[projectID]/</span></code></div></blockquote>
+<div><code class="docutils literal"><span class="pre">$</span> <span class="pre">scp</span> <span class="pre">-r</span> <span class="pre">~/DATA/[today’s</span> <span class="pre">date]</span>&#160; <span class="pre">[projectID]&#64;nuraghe-obs2:/archive/data/[projectID]/</span></code></div></blockquote>
 <p>Go ahead and delete the baseband data on the cluster nodes after all of it has been folded.</p>
 </div>
 
 
            </div>
-           
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
@@ -224,7 +233,7 @@ personal computer using “scp”. In LEAP cluster VNC:</p>
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -243,11 +252,10 @@ personal computer using “scp”. In LEAP cluster VNC:</p>
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../../../',
             VERSION:'1',
-            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../../../_static/jquery.js"></script>
@@ -261,11 +269,14 @@ personal computer using “scp”. In LEAP cluster VNC:</p>
     <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
   
 
+  
+  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
+          SphinxRtdTheme.StickyNav.enable();
       });
-  </script> 
+  </script>
+   
 
 </body>
 </html>

@@ -25,15 +25,24 @@
   
 
   
+  
     <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" /> 
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="SRT procedures 1 documentation" href="../../../index.html"/> 
 
   
   <script src="../../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" role="document">
 
    
   <div class="wy-grid-for-nav">
@@ -105,7 +114,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../index.html">SRT procedures</a>
@@ -113,10 +122,9 @@
       </nav>
 
 
+      
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -145,7 +153,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/SpectralLine/K-band/Xarcos/start-obs.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/SpectralLine/K-band/Xarcos/start-obs.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -159,41 +167,39 @@
            <div itemprop="articleBody">
             
   <div class="toctree-wrapper compound">
-<ul class="simple">
-</ul>
 </div>
 <div class="section" id="start-the-observations">
 <span id="start-slkxa"></span><h1>Start the observations<a class="headerlink" href="#start-the-observations" title="Permalink to this headline">¶</a></h1>
 <p>$ : commands to insert in a shell</p>
 <p>&gt; : commands to insert in the operatorInput panel</p>
-<p><img alt="logo" src="../../../_images/monocle_8.png" />: check the execution on the monitor</p>
+<p><img alt="logo" src="../../../_images/monocle_10.png" />: check the execution on the monitor</p>
 <hr class="docutils" />
 <ol class="arabic">
 <li><p class="first">Insert your project number</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code>    <img alt="logo" src="../../../_images/monocle_8.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.16</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code>    <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.16</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Initial setup</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setupKKG</span></code>  <img alt="logo" src="../../../_images/monocle_8.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span>Fig.13</span></a></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setupKKG</span></code>  <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span class="std std-numref">Fig.13</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Select the active surface shape (Shaped configuration for K-band observations)</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asSetup=S</span></code>   <img alt="logo" src="../../../_images/monocle_8.png" /> <code class="xref std std-numref docutils literal"><span class="pre">srt_activesurface</span></code></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asSetup=S</span></code>   <img alt="logo" src="../../../_images/monocle_10.png" /> <code class="xref std std-numref docutils literal"><span class="pre">srt_activesurface</span></code></p>
 </div></blockquote>
 </li>
 <li><p class="first">Insert the Local Oscillator value in MHz</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setLO=[freq]</span></code>  <img alt="logo" src="../../../_images/monocle_8.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span>Fig.13</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setLO=[freq]</span></code>  <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span class="std std-numref">Fig.13</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Select and configure the XARCOS backend in K-band</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/XBackends</span></code>   <img alt="logo" src="../../../_images/monocle_8.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.16</span></a></p>
-<p><code class="docutils literal"><span class="pre">$</span> <span class="pre">genericBackendTui</span> <span class="pre">BACKENDS/XBackends</span></code>  <img alt="logo" src="../../../_images/monocle_8.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-backendxarcos"><span>Fig.24</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/XBackends</span></code>   <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.16</span></a></p>
+<p><code class="docutils literal"><span class="pre">$</span> <span class="pre">genericBackendTui</span> <span class="pre">BACKENDS/XBackends</span></code>  <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-backendxarcos"><span class="std std-numref">Fig.24</span></a></p>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">initialize=[code]</span></code></p>
 <p>with :</p>
 <ul class="simple">
@@ -238,11 +244,11 @@ dewar in order to best cover the scanned area).</li>
 <li>CUSTOM : the user has to choose the angle of the dewar axis
 with the y-axis of the scanning frame that will be kept
 during the whole duration of the acquisition :
-<code class="docutils literal"><span class="pre">&gt;</span>&nbsp; <span class="pre">derotatorSetPosition=[ang]d</span></code>     with <code class="docutils literal"><span class="pre">[ang]</span></code> the
+<code class="docutils literal"><span class="pre">&gt;</span>&#160; <span class="pre">derotatorSetPosition=[ang]d</span></code>     with <code class="docutils literal"><span class="pre">[ang]</span></code> the
 dewar angle in degrees.</li>
 <li>FIXED : the dewar keeps a fixed postion w.r.t the horizon,
 no rotation is applied. To specify a static angle :
-<code class="docutils literal"><span class="pre">&gt;</span>&nbsp; <span class="pre">derotatorSetPosition=[ang]d</span></code>     with <code class="docutils literal"><span class="pre">[ang]</span></code> the
+<code class="docutils literal"><span class="pre">&gt;</span>&#160; <span class="pre">derotatorSetPosition=[ang]d</span></code>     with <code class="docutils literal"><span class="pre">[ang]</span></code> the
 dewar angle in degrees.</li>
 </ul>
 </div></blockquote>
@@ -259,13 +265,13 @@ dewar angle in degrees.</li>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/TotalPower</span></code></p>
 <blockquote>
-<div><p><a class="reference internal" href="../../../GeneralProcedures/pointing-focus.html#pointing-focus"><span>Pointing and Focus optimization</span></a></p>
+<div><p><a class="reference internal" href="../../../GeneralProcedures/pointing-focus.html#pointing-focus"><span class="std std-ref">Pointing and Focus optimization</span></a></p>
 </div></blockquote>
 </div></blockquote>
 </li>
 <li><p class="first">Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">startSchedule=[projectID]/[schedulename].scd,[N]</span></code> <img alt="logo" src="../../../_images/monocle_8.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.16</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">startSchedule=[projectID]/[schedulename].scd,[N]</span></code> <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.16</span></a></p>
 </div></blockquote>
 </li>
 </ol>
@@ -273,7 +279,9 @@ dewar angle in degrees.</li>
 
 
            </div>
-           
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
@@ -286,7 +294,7 @@ dewar angle in degrees.</li>
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -305,11 +313,10 @@ dewar angle in degrees.</li>
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../../',
             VERSION:'1',
-            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../../_static/jquery.js"></script>
@@ -323,11 +330,14 @@ dewar angle in degrees.</li>
     <script type="text/javascript" src="../../../_static/js/theme.js"></script>
   
 
+  
+  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
+          SphinxRtdTheme.StickyNav.enable();
       });
-  </script> 
+  </script>
+   
 
 </body>
 </html>

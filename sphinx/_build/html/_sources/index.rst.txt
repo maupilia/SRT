@@ -32,10 +32,9 @@ Before observing
 
    Important check <before-obs.rst>
 
+.. warning:: Check also the `update and temporary modifications <https://docs.google.com/document/d/17MUX9V-pz2ID0LlpDnsqPeehgkZu21FcgLALAc1Bbvc/edit?usp=sharing>`_
 
-.. warning:: Check also the `update and temporary modifications <http://discos.readthedocs.io/en/latest/user/srt/source/Troubleshooting.html>`_
-.. before proceeding!
-
+.. discos.readthedocs.io/en/latest/user/srt/source/Troubleshooting.html
 
 
 Observation modes
@@ -48,6 +47,12 @@ Observation modes
    Pulsar/index.rst
    SpectralLine/index.rst
    SpectroPol/index.rst
+   VLBI/index.rst
+
+
+.. important:: At the end of the session, please fill the `LOG file <https://goo.gl/forms/7tA8cRKhuzoUAJMg2>`_.
+
+.. ttps://goo.gl/forms/GBZqRw4x4FxgCD033
 
 
 Troubleshooting

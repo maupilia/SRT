@@ -10,7 +10,7 @@
 .. _before-obs:
 
 ======================
-Before observing
+Important checks
 ======================
 
 Some checks need to be performed before starting the observations.
@@ -20,46 +20,52 @@ On nuraghe-mng
 ------------------
 
 Check that :
-   - all of the 31 containers are active on ACS ;
-   - the active surface is green on AS ;
-   - the jlog is open in order to track possible error messages ;
-   - the interface of the Meteo client is open to check the wind velocity in real time (< 60 km/h).
+   - all of the **31 containers** are active on ACS (MNG virtual desktop) (:numref:`srt_acs`);
+   - the **active surface** is green on the AS virtual desktop (:numref:`srt_activesurface`);
+   - the log client **jlog** is open in order to track possible error
+     messages (:numref:`srt_jlog`). In case it is not open, type ``$
+     jlog &`` on a shell;
+   - the interface of the **Meteo client** is open to check the wind
+     velocity in real time (< 50 km/h) (:numref:`srt_meteo`). If it is
+     close, type ``$ meteoClient &`` on a shell.
 
 
-On nuraghe-obs1
-------------------
+
+.. On nuraghe-obs1 ------------------
 
 
-1. Check the presence of the 8 panels : 
+Check the presence of the 8 panels (:numref:`srt_vistaglobale`): 
+   - **operatorInput** (:numref:`srt_operatorinput`)
+   - **AntennaBoss** (:numref:`srt_antennaboss`)
+   - **GenericBackend** (:numref:`srt_genericBackend`)
+   - **Mount** (:numref:`srt_mount_ok`)
+   - **Observatory** (:numref:`srt_observatory`)
+   - **Receivers** (:numref:`srt_receivers`)
+   - **Scheduler** (:numref:`srt_scheduler`)
+   - **MinorServo** (:numref:`srt_minorservo`)
 
-   - **operatorInput**
 
-   - **AntennaBoss**
-
-   - **GenericBackend**
-
-   - **Mount**
-
-   - **Observatory**
-
-   - **Receivers**
-
-   - **Scheduler**
-
-   - **MinorServo**
-
-----------
-----------
-
-2. Upload your shedules (.scd, .lis, .bck and .cfg files) and check them :
+**Upload your shedules (.scd, .lis, .bck and .cfg files) and check them:**
 
    *From your computer:*
 
-   ``$ scp  [schedulename.*] observer@nuraghe-obs1:/archive/schedules/[projectID]``
+   ``$ scp  [schedulename.*] gavino@nuraghe-mng:/archive/schedules/[projectID]``
 
-
-   *On nuraghe-obs1:*
+   *On nuraghe-mng:*
 
    ``$ cd /archive/schedules/[projectID]``
 
    ``$ scheduleChecker [schedulename.scd]``
+
+
+.. Upload your shedules (.scd, .lis, .bck and .cfg files) and check them :
+
+..   *From your computer:*
+
+..   $ scp  [schedulename.*] observer@nuraghe-obs1:/archive/schedules/[projectID]``
+
+..   *On nuraghe-obs1:*
+
+..   $ cd /archive/schedules/[projectID]``
+
+..   $ scheduleChecker [schedulename.scd]``

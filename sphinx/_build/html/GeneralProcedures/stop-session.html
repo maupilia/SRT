@@ -25,15 +25,24 @@
   
 
   
+  
     <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" /> 
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="SRT procedures 1 documentation" href="../index.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" role="document">
 
    
   <div class="wy-grid-for-nav">
@@ -105,7 +114,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">SRT procedures</a>
@@ -113,10 +122,9 @@
       </nav>
 
 
+      
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -145,7 +153,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/GeneralProcedures/stop-session.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/GeneralProcedures/stop-session.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -159,13 +167,11 @@
            <div itemprop="articleBody">
             
   <div class="toctree-wrapper compound">
-<ul class="simple">
-</ul>
 </div>
 <div class="section" id="end-of-the-session">
 <span id="stop-session"></span><h1>End of the session<a class="headerlink" href="#end-of-the-session" title="Permalink to this headline">¶</a></h1>
 <p>&gt;  : commands to insert in the operatorInput panel</p>
-<p><img alt="logo" src="../_images/monocle_5.png" />: check the execution on the monitor</p>
+<p><img alt="logo" src="../_images/monocle_6.png" />: check the execution on the monitor</p>
 <hr class="docutils" />
 <p>Your observations are now finished, we can stop the schedule and park
 the antenna.</p>
@@ -173,7 +179,7 @@ the antenna.</p>
 <h2>On nuraghe-mng<a class="headerlink" href="#on-nuraghe-mng" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first">Stop your schedule :</p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">stopSchedule</span></code>   <em>interruption of the current subscan</em>  <img alt="logo" src="../_images/monocle_5.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-scheduler-end"><span>Fig.17</span></a></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">stopSchedule</span></code>   <em>interruption of the current subscan</em>  <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-scheduler-end"><span class="std std-numref">Fig.17</span></a></p>
 </li>
 </ol>
 <dl class="docutils">
@@ -182,10 +188,10 @@ the antenna.</p>
 </dl>
 <ol class="arabic" start="2">
 <li><p class="first">Park the minor servo, active surface and antenna</p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">goTo=180d,89d</span></code> <img alt="logo" src="../_images/monocle_5.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-mount-ok"><span>Fig.10</span></a></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">servoPark</span></code> <img alt="logo" src="../_images/monocle_5.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-minorservo-end"><span>Fig.21</span></a></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asPark</span></code> <img alt="logo" src="../_images/monocle_5.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-activesurface"><span>Fig.2</span></a></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaPark</span></code> <img alt="logo" src="../_images/monocle_5.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-mount-antennareset"><span>Fig.11</span></a></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">goTo=180d,89d</span></code> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-mount-ok"><span class="std std-numref">Fig.10</span></a></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">servoPark</span></code> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-minorservo-end"><span class="std std-numref">Fig.21</span></a></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asPark</span></code> <img alt="logo" src="../_images/monocle_6.png" /> <code class="xref std std-numref docutils literal"><span class="pre">srt_activesurface</span></code></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaPark</span></code> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-mount-antennareset"><span class="std std-numref">Fig.11</span></a></p>
 </li>
 </ol>
 </div>
@@ -193,15 +199,17 @@ the antenna.</p>
 <h2>Block the axes of the antenna<a class="headerlink" href="#block-the-axes-of-the-antenna" title="Permalink to this headline">¶</a></h2>
 <p>Look at the ACU monitor, wait until
 <strong>Axis blocked</strong> appears in red. It can take a few minutes after the command
-<code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaPark</span></code> has been given (<a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-acu-axisblocked"><span>Fig.27</span></a>).</p>
+<code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaPark</span></code> has been given (<a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-acu-axisblocked"><span class="std std-numref">Fig.27</span></a>).</p>
 <p>Only at this moment, you can press on the emergency stop button
-(<a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-acu-redbutton"><span>Fig.28</span></a>).</p>
+(<a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-acu-redbutton"><span class="std std-numref">Fig.28</span></a>).</p>
 </div>
 </div>
 
 
            </div>
-           
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
@@ -214,7 +222,7 @@ the antenna.</p>
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -233,11 +241,10 @@ the antenna.</p>
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
             VERSION:'1',
-            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../_static/jquery.js"></script>
@@ -251,11 +258,14 @@ the antenna.</p>
     <script type="text/javascript" src="../_static/js/theme.js"></script>
   
 
+  
+  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
+          SphinxRtdTheme.StickyNav.enable();
       });
-  </script> 
+  </script>
+   
 
 </body>
 </html>

@@ -11,6 +11,19 @@ End of the session
 .. toctree::
    :maxdepth:1
 
+
+$  : commands to insert in a shell
+
+>  : commands to insert in the operatorInput panel
+
+.. |logo| image:: monocle_.png
+..    :width: 20pt
+..    :height: 20pt
+..   :align: left
+|logo|: check the execution on the monitor
+
+======================
+
 Your observations are now finished, we can stop the schedule and park
 the antenna.
 
@@ -23,12 +36,12 @@ In LEAP VNC
 2. W2: ``$./end.csh`` to end data acquisition and close the daemons.
 
 
-On nuraghe-obs1
-------------------
+On nuraghe-mng
+----------------
 
 1. Stop your schedule :
 
-    ``> stopSchedule``   *interruption of the current subscan*
+    ``> stopSchedule``   *interruption of the current subscan* |logo| :numref:`srt_scheduler_end`
 
       or
 
@@ -39,21 +52,24 @@ On nuraghe-obs1
 
 2. Park the minor servo, active surface and antenna
 
-   ``> goTo=180d,89d``
+   ``> goTo=180d,89d`` |logo| :numref:`srt_mount_ok`
 
-   ``> servoPark``
+   ``> servoPark`` |logo| :numref:`srt_minorservo_end`
 
-   ``> asPark``
+   ``> asPark`` |logo| :numref:`srt_activesurface`
 
-   ``> antennaPark``
+   ``> antennaPark`` |logo| :numref:`srt_mount_antennareset`
+
 
 
 
 Block the axes of the antenna
---------------------------
+------------------------------
 
-Look at the monitor of the antenna and wait until the upper right
-panel becomes red. It can take a few minutes after the command
-``> antennaPark`` has been given. 
+Look at the ACU monitor, wait until
+**Axis blocked** appears in red. It can take a few minutes after the command
+``> antennaPark`` has been given (:numref:`srt_ACU_axisblocked`).
 
-Only at this moment, you can press on the emergency stop button.
+Only at this moment, you can press on the emergency stop button
+(:numref:`srt_ACU_redbutton`).
+

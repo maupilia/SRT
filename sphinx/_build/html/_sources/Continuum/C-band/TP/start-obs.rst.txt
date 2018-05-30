@@ -21,7 +21,7 @@ $  : commands to insert in a shell
 ..    :width: 20pt
 ..    :height: 20pt
 ..   :align: left
-|logo|: check on the monitor
+|logo|: check the execution on the monitor
 
 
 ======================
@@ -68,10 +68,28 @@ $  : commands to insert in a shell
 
     ``> getTpi``
 
-#. Check the tsys (typical values)
+#. Check the tsys (typical values 35,29 K)
 
     ``> tsys`` |logo| :numref:`srt_genericBackend`
 
-#. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the .scd file :
+
+#. Report the ground temperature, relative humidity, atmospheric pressure, and wind speed :
+
+    ``> wx``
+
+
+#. Follow the link below to perform the pointing and focus optimization (if not already included in your schedule) :
+
+
+      :ref:`pointing-focus`
+
+
+#. Open the calibrationtool client in a terminal to display the pointing and focus plots in real time :
+
+    ``$ calibrationtoolclient MANAGEMENT/CalibrationTool``  |logo| :numref:`srt_calibrationtool`
+
+
+#. Begin the schedule by indicating the start scan [N] or subscan
+ [N_n] in the .scd file :
 
     ``> startSchedule=[projectID]/[schedulename].scd,[N]`` |logo| :numref:`srt_scheduler`

@@ -11,7 +11,7 @@
 ..    :width: 20pt
 ..    :height: 20pt
 ..   :align: left
-|logo|:check on the monitor
+|logo|: check on the monitor
   
 .. _start-CoKSa:
 
@@ -23,6 +23,8 @@ $ : commands to insert in a shell
 > : commands to insert in the operatorInput panel
 
 
+======================
+
 #. Insert your project number :
 
     ``> project=[projectID]`` |logo| :numref:`srt_scheduler` 
@@ -31,17 +33,15 @@ $ : commands to insert in a shell
 
     ``> antennaReset``
 
-    ``> setupKKG``  |logo| :numref:`srt_receivers`
+    ``> setupKKG``  |logo| :numref:`srt_receivers_KKG`
 
-
-#. Select the active surface shape (Shaped configuration for K-band
- observations) :
+#. Select the active surface shape (Shaped configuration for K-band observations) :
 
     ``> asSetup=S``  |logo| :numref:`srt_activesurface`
 
 #. Insert the Local Oscillator value in MHz :
 
-    ``> setLO=[freq]`` |logo| :numref:`srt_receivers`
+    ``> setLO=[freq]`` |logo| :numref:`srt_receivers_KKG`
 
 #. Select and configure the SARDARA backend in K-band :
 
@@ -56,11 +56,9 @@ $ : commands to insert in a shell
        - ``[code]`` = SK03 : feeds 0 and 3 only ;
        - ``[code]`` = SK06 : feeds 0 and 6 only.
 
-
-
 #. Set the different parameters of the backend:
 
-   ``> setSection=[sect],[startFreq],[bw],[num-feed],[polarization],[sampleRate],[bin]``  |logo| :numref:`srt_genericBackend`
+   ``> setSection=[sect],[startFreq],[bw],[num-feed],[polarization],[sampleRate],[bin]``  |logo| :numref:`srt_genericBackend_KKG`
 
      with : 
 
@@ -76,11 +74,9 @@ $ : commands to insert in a shell
         - ``[sampleRate]`` in MHz ;
         - ``[bin]`` the frequency channels (1024, 2048, 4096, 8192, 16384).
 
-    
 #. Choose the integration time in ms (e.g. n=10 corresponds to 100 spectra/sec):
 
    ``> integration=[n]``
-
 
 #. If you want to use the multi-feed derotator to prevent field rotation during long acquisition, select the derotator configuration :
 
@@ -100,23 +96,27 @@ $ : commands to insert in a shell
           ``>  derotatorSetPosition=[ang]d``     with ``[ang]`` the
           dewar angle in degrees.
 
-
     To read back the position of the dewar :
 
     ``> derotatorGetPosition`` 
 
-
 #. Attenuate the signal based on the rms range [-128 ;128] and check the value on the interface.
 
-   ``> getrms``  ???
+   ``> getrms``  **(ASK A. MELIS)**
 
-   ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB. |logo| :numref:`srt_genericBackend`
+   ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB. |logo| :numref:`srt_genericBackend_KKG`
 
+#. Check the tsys (typical values to be inserted)
 
-#. Check the tsys (typical values)
+    ``> tsys`` |logo| :numref:`srt_genericBackend_KKG`
 
-    ``> tsys`` |logo| :numref:`srt_genericBackend`
+#. Report the ground temperature, relative humidity, atmospheric pressure, and wind speed :
 
+    ``> wx``
+
+#. Follow the link below to perform the pointing and focus optimization (if not already included in your schedule) :
+
+      :ref:`pointing-focus`
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 
