@@ -19,7 +19,7 @@ Some checks need to be performed before starting the observations.
 On nuraghe-mng
 ------------------
 
-Check that :
+Check that SARAAAAAAAAAAAAAAAAAAAAAA :
    - all of the **31 containers** are active on ACS (MNG virtual desktop) (:numref:`srt_acs`);
    - the **active surface** is green on the AS virtual desktop (:numref:`srt_activesurface`);
    - the log client **jlog** is open in order to track possible error
