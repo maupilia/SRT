@@ -21,7 +21,7 @@ Before observing, check that the system is ready. Then select the
 **observation mode** you want, a menu will appear with the different receivers (**C-**,
 **K-** and **L-bands**) and the associated backends (**Total Power**, **SARDARA**,
 **Xarcos**, **DFB**, **Roach1**). You can simply follow the different steps in
-order to carry out safety observations. SARAAAAAAA
+order to carry out safety observations.
 
 
 Before observing
