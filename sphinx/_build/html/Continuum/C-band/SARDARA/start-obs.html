@@ -171,13 +171,13 @@
 <ol class="arabic">
 <li><p class="first">Insert your project number :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.17</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.18</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Initial setup :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Err-fig/Err-fig.html#srt-acu-axis-blocked"><span>Fig.28</span></a></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setupCCB</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span>Fig.14</span></a> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-acu-green"><span>Fig.26</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Err-fig/Err-fig.html#srt-acu-axis-blocked"><span>Fig.29</span></a></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setupCCB</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span>Fig.15</span></a> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-acu-green"><span>Fig.27</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Select the active surface shape (Shaped configuration for C-band observations) :</p>
@@ -187,18 +187,18 @@
 </li>
 <li><p class="first">Insert the Local Oscillator value in MHz :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setLO=[freq]</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span>Fig.14</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setLO=[freq]</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span>Fig.15</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Select and configure the SARDARA backend :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/Sardara</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.17</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/Sardara</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.18</span></a></p>
 <p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">initialize=SC00</span></code></p>
 </div></blockquote>
 </li>
 <li><p class="first">Set the different parameters of the backend :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setSection=[sect],[startFreq],[bw],[num-feed],[polarization],[sampleRate],[bin]</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span>Fig.9</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setSection=[sect],[startFreq],[bw],[num-feed],[polarization],[sampleRate],[bin]</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span>Fig.10</span></a></p>
 <p>with :</p>
 <blockquote>
 <div><ul class="simple">
@@ -221,12 +221,12 @@
 <li><p class="first">Attenuate the signal based on the rms range [-128 ;128] and check the value on the interface :</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">getrms</span></code>  <strong>(ASK A. MELIS)</strong></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setAttenuation=[sect],[att]</span></code>    with [att] the attenuation from 0 to 15 dB.  <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span>Fig.9</span></a></p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setAttenuation=[sect],[att]</span></code>    with [att] the attenuation from 0 to 15 dB.  <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span>Fig.10</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Check the tsys (typical values to be inserted) :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">tsys</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span>Fig.9</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">tsys</span></code> <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span>Fig.10</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Report the ground temperature, relative humidity, atmospheric pressure, and wind speed :</p>
@@ -241,7 +241,7 @@
 </li>
 <li><p class="first">Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">startSchedule=[projectID]/[schedulename].scd,[N]</span></code>  <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.17</span></a></p>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">startSchedule=[projectID]/[schedulename].scd,[N]</span></code>  <img alt="logo" src="../../../_images/monocle_.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.18</span></a></p>
 </div></blockquote>
 </li>
 </ol>

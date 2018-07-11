@@ -20,13 +20,13 @@ On nuraghe-mng
 ------------------
 
 Check that :
-   - all of the **32 containers** are active on ACS (MNG virtual desktop) (:numref:`srt_acs`);
+   - all of the **31 containers** are active on ACS (MNG virtual desktop) (:numref:`srt_acs`);
    - the **active surface** is green on the AS virtual desktop (:numref:`srt_activesurface`);
    - the log client **jlog** is open in order to track possible error
      messages (:numref:`srt_jlog`). In case it is not open, type ``$
      jlog &`` on a shell;
    - the interface of the **Meteo client** is open to check the wind
-     velocity in real time (< 60 km/h) (:numref:`srt_meteo`). If it is
+     velocity in real time (< 50 km/h) (:numref:`srt_meteo`). If it is
      close, type ``$ meteoClient &`` on a shell.
 
 
