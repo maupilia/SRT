@@ -57,7 +57,7 @@ $ : commands to insert in a shell
 
 #. Insert the Local Oscillator value in MHz :
 
-    ``> setLO=[freq]`` |logo| :numref:`srt_receivers_LLP`
+    ``> setLO=[freq]`` |logo| :numref:`srt_receivers`
 
 #. Select and configure the SARDARA backend in L-band :
 
@@ -68,7 +68,7 @@ $ : commands to insert in a shell
 
 #. Set the different parameters of the backend :
 
-    ``> setSection=[sect],[startFreq],[bw],[num-feed],[polarization], [sampleRate], [bin]`` |logo| :numref:`srt_genericBackend_LLP`
+    ``> setSection=[sect],[startFreq],[bw],[num-feed],[polarization], [sampleRate], [bin]`` |logo| :numref:`srt_genericBackend`
 
      with : 
 
@@ -90,11 +90,11 @@ $ : commands to insert in a shell
 
     ``> getrms``  **ASK A. MELIS**
 
-    ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.  |logo| :numref:`srt_genericBackend_LLP`
+    ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.  |logo| :numref:`srt_genericBackend`
 
 #. Check the tsys (typical values to be inserted)
 
-     ``> tsys`` |logo| :numref:`srt_genericBackend_LLP`
+     ``> tsys`` |logo| :numref:`srt_genericBackend`
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 

@@ -31,9 +31,9 @@ $ : commands to insert in a shell
 
 #. Initial setup
 
-    ``> antennaReset``
+    ``> antennaReset`` |logo| :numref:`srt_ACU_axis_blocked` 
 
-    ``> setupKKG``  |logo| :numref:`srt_receivers`
+    ``> setupKKG``  |logo| :numref:`srt_receivers_KKG` |logo| :numref:`srt_ACU_green`
 
 #. Select the active surface shape (Shaped configuration for K-band observations)
 
@@ -41,7 +41,7 @@ $ : commands to insert in a shell
 
 #. Insert the Local Oscillator value in MHz
 
-    ``> setLO=[freq]``  |logo| :numref:`srt_receivers`
+    ``> setLO=[freq]``  |logo| :numref:`srt_receivers_KKG`
 
 #. Select and configure the XARCOS backend in K-band 
 

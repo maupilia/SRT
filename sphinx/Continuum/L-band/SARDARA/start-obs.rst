@@ -32,9 +32,9 @@ $ : commands to insert in a shell
 
 #. Initial setup 
 
-    ``> antennaReset``
+    ``> antennaReset`` |logo| :numref:`srt_ACU_axis_blocked` 
 
-    ``> setupLLP``  |logo| :numref:`srt_receivers_LLP`
+    ``> setupLLP``  |logo| :numref:`srt_receivers_KKG` |logo| :numref:`srt_ACU_green`
 
 
 #. Select the receiver mode 
@@ -53,7 +53,7 @@ $ : commands to insert in a shell
 
 #. Select the active surface shape (Parabolic for L-band observations)
 
-    ``> asSetup=P`` |logo| :numref:`srt_activesurface`
+    ``> asSetup=P`` |logo| :numref:`srt_as_parabolic`
 
 
 #. Insert the Local Oscillator value in MHz
@@ -69,7 +69,7 @@ $ : commands to insert in a shell
 
 #. Set the different parameters of the backend 
 
-    ``> setSection=[sect],[startFreq],[bw],[num-feed],[polarization],[sampleRate],[bin]`` |logo| :numref:`srt_genericBackend_LLP`
+    ``> setSection=[sect],[startFreq],[bw],[num-feed],[polarization],[sampleRate],[bin]`` |logo| :numref:`srt_genericBackend`
 
      with : 
 
@@ -92,11 +92,11 @@ $ : commands to insert in a shell
 
     ``> getrms``  **(A. MELIS)**
 
-    ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB. |logo| :numref:`srt_genericBackend_LLP`
+    ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB. |logo| :numref:`srt_genericBackend`
 
 #. Check the tsys (typical values to be inserted)
 
-     ``> tsys`` |logo| :numref:`srt_genericBackend_LLP`
+     ``> tsys`` |logo| :numref:`srt_genericBackend`
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file 
 

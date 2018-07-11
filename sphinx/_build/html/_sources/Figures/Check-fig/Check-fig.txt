@@ -19,6 +19,7 @@ ACS Command Center
 	  :align: center
   
           The **ACS** monitor shows the state of the containers related to each DISCOS component.
+          The state of each container can be verified in the section highlighted in blue.
 
 
 Active Surface
@@ -30,6 +31,27 @@ Active Surface
 	   :align: center
 
 	   This monitor shows the status of the actuators in a graphical representation of the **Active Surface** and its configuration. 
+
+
+Active Surface
+=========
+
+       .. _srt_as_park:
+
+       .. figure:: srt_as_park.png 
+	   :align: center
+
+	   The **Active Surface** monitor after the park of the active surface by using ``> asPark`` 
+
+Active Surface
+=========
+
+       .. _srt_as_parabolic:
+
+       .. figure:: srt_as_parabolic.png 
+	   :align: center
+
+	   The **Active Surface** monitor in the configuration parabolic 
 
 
 Logging Display
@@ -121,7 +143,7 @@ GenericBackend
 Mount
 ====
 
-       .. _srt_mount_ok:
+       .. _srt_mount:
 
        .. figure:: srt_mount.png
            :width: 15cm 
