@@ -35,11 +35,12 @@ $ : commands to insert in a shell
 
     ``> project=[projectID]`` |logo| :numref:`srt_scheduler`
 
+
 #. Initial setup :
 
-    ``> antennaReset``
+    ``> antennaReset`` |logo| :numref:`srt_ACU_axis_blocked` 
 
-    ``> setupCCB`` |logo| :numref:`srt_receivers`
+    ``> setupCCB`` |logo| :numref:`srt_receivers` |logo| :numref:`srt_ACU_green`
 
 #. Select the active surface shape (Shaped configuration for C-band observations) :
 

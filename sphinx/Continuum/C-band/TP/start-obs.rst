@@ -33,9 +33,9 @@ $  : commands to insert in a shell
 
 #. Initial setup
 
-    ``> antennaReset``
+    ``> antennaReset``   |logo| :numref:`srt_ACU_axis_blocked`
 
-    ``> setupCCB`` |logo| :numref:`srt_receivers`
+    ``> setupCCB`` |logo| :numref:`srt_receivers`  |logo| :numref:`srt_ACU_green`
 
 
 #. Select the active surface shape (Shaped configuration for C-band observations)
@@ -58,7 +58,7 @@ $  : commands to insert in a shell
 
 #. Put the antenna at 45 deg of elevation and attenuate the signal in order to obtain values between 750 and 1100 counts (linear range of the backend) :
 
-    ``> goTo=*,45d`` |logo| :numref:`srt_mount_ok`
+    ``> goTo=*,45d`` |logo| :numref:`srt_mount`
 
     ``> getTpi``
 

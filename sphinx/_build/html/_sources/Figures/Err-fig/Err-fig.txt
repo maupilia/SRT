@@ -12,7 +12,7 @@ the **Stow Pin Motion** is yellow as below.
 
         .. _srt_ACU_stowpin:
 
-    	.. figure:: ACU-stow.png
+    	.. figure:: srt_ACU_stowpin.png
 	   :align: center
 
            ACU panel after ``> antennaPark``.
@@ -20,9 +20,9 @@ the **Stow Pin Motion** is yellow as below.
 
 Wait until **Axis blocked** appears in red before pressing the emergency stop, as in the following figure:
 
-        .. _srt_ACU_axisblocked:
+        .. _srt_ACU_axis_blocked:
 
-    	.. figure:: ACU-axis-blocked.png
+    	.. figure:: srt_ACU_axis_blocked.png
 	   :align: center
 
            ACU panel when the antenna is correctly parked.

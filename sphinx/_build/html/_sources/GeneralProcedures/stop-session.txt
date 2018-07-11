@@ -33,21 +33,21 @@ On nuraghe-mng
 1. Stop your schedule :
 
    ``> stopSchedule``   *interruption of the current subscan*  |logo| :numref:`srt_scheduler_end`
-or
-   ``> haltSchedule``    *the schedule stops at the end of the on-going subscan.* 
+
+or ``> haltSchedule``    *the schedule stops at the end of the on-going subscan.* 
 
 
 
 
 2. Park the minor servo, active surface and antenna
 
-   ``> goTo=180d,89d`` |logo| :numref:`srt_mount_ok`
+   ``> goTo=180d,89d`` |logo| :numref:`srt_mount`
 
    ``> servoPark`` |logo| :numref:`srt_minorservo_end`
 
-   ``> asPark`` |logo| :numref:`srt_activesurface`
+   ``> asPark`` |logo| :numref:`srt_as_park`
 
-   ``> antennaPark`` |logo| :numref:`srt_mount_antennareset`
+   ``> antennaPark`` |logo| :numref:`srt_mount_antennareset`  |logo| :numref:`srt_ACU_stowpin`
 
 
 
@@ -56,7 +56,7 @@ Block the axes of the antenna
 
 Look at the ACU monitor, wait until
 **Axis blocked** appears in red. It can take a few minutes after the command
-``> antennaPark`` has been given (:numref:`srt_ACU_axisblocked`).
+``> antennaPark`` has been given (:numref:`srt_ACU_axis_blocked`).
 
 Only at this moment, you can press on the emergency stop button
 (:numref:`srt_ACU_redbutton`).

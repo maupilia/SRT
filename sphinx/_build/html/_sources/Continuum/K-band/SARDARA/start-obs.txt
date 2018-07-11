@@ -31,9 +31,9 @@ $ : commands to insert in a shell
 
 #. Initial setup :
 
-    ``> antennaReset``
+    ``> antennaReset`` |logo| :numref:`srt_ACU_axis_blocked`
 
-    ``> setupKKG``  |logo| :numref:`srt_receivers_KKG`
+    ``> setupKKG``  |logo| :numref:`srt_receivers_KKG` |logo| :numref:`srt_ACU_green`
 
 #. Select the active surface shape (Shaped configuration for K-band observations) :
 
