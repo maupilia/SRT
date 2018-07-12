@@ -77,6 +77,5 @@ The active surface does not work properly if a large fraction (a whole
 sector) becomes red. It is a problem in K-band observations (:numref:`srt_AS-fraction-red`).
 
 
-.. warning:: If the number of containers is 0 instead of 31 in ACS,
-.. `you have to start ACS <https://srtsupervisoronduty.readthedocs.io/it/latest/sd/srt/procedures/nuraghe.html#shutdown-di-nuraghe>`_
+.. warning:: If the number of containers is 0 instead of 31 in ACS, `you have to start ACS <https://srtsupervisoronduty.readthedocs.io/it/latest/sd/srt/procedures/nuraghe.html#shutdown-di-nuraghe>`_
 
