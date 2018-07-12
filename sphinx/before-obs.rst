@@ -25,8 +25,10 @@ Check that:
      messages (:numref:`srt_jlog`). In case it is not open, type ``$
      jlog &`` on a shell;
    - the interface of the **Meteo client** is open to check the wind
-     velocity in real time (< 50 km/h) (:numref:`srt_meteo`). If it is
-     close, type ``$ meteoClient &`` on a shell.
+     velocity in real time (it should be < 60 km/h)
+     (:numref:`srt_meteo`). If the interface is closed, type ``$
+     meteoClient &`` on a shell.
+
 
 .. On nuraghe-obs1 ------------------
 
@@ -73,3 +75,8 @@ On nuraghe-AS (active surface computer)
 Check that the **active surface** is green (:numref:`srt_activesurface`).
 The active surface does not work properly if a large fraction (a whole
 sector) becomes red. It is a problem in K-band observations (:numref:`srt_AS-fraction-red`).
+
+
+.. warning:: If the number of containers is 0 instead of 31 in ACS,
+.. `you have to start ACS <https://srtsupervisoronduty.readthedocs.io/it/latest/sd/srt/procedures/nuraghe.html#shutdown-di-nuraghe>`_
+
