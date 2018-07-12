@@ -41,7 +41,7 @@ Active Surface
        .. figure:: srt_as_park.png 
 	   :align: center
 
-	   The **Active Surface** monitor after the park of the active surface by using ``> asPark`` 
+	   The **Active Surface** monitor after parking the active surface by using ``> asPark`` 
 
 Active Surface
 =========
@@ -51,7 +51,7 @@ Active Surface
        .. figure:: srt_as_parabolic.png 
 	   :align: center
 
-	   The **Active Surface** monitor in the configuration parabolic 
+	   The **Active Surface** monitor in the parabolic configuration.
 
 
 Logging Display
@@ -63,7 +63,7 @@ Logging Display
 	   :align: center
 
 	   The **Logging Display** shows the log messages related to
-	   the observation. New messages are shown on top of the
+	   the observation. New messages are shown over the
 	   previous ones. 
 
 
@@ -76,8 +76,8 @@ Meteo Client
 	   :align: center
 
            The **Meteo Client** window shows the atmospheric temperature
-           and the wind parameters (including wind direction) using a
-           graphic  interface.
+           and wind parameters (including wind direction) using a
+           graphic interface.
 
 
 
@@ -90,9 +90,9 @@ Nuraghe-mng
        .. figure:: srt_vistaglobale.png
 	  :align: center
 
-          **Nuraghe-mng** is the destination for your schedules, and is the machine where you run the system and 
-          where you should find the  input terminal and all the monitors.
-
+          **Nuraghe-mng** is the machine where you run the system and where 
+	  you should find the input terminal and all the monitors. It is also 
+	  the destination for your schedules.
 
 
 OperatorInput
@@ -104,7 +104,7 @@ OperatorInput
 	   :align: center
 
            In the **input console** the users can write Nuraghe commands. The prompt is just a sequential number enclosed in <>. 
-           If a command is properly read, the system replies repeating the command itself, followed by the operation results 
+           If a command is properly read, the system replies by repeating the command itself, followed by the operation results 
            (if they are foreseen).
 
 
@@ -149,7 +149,7 @@ Mount
            :width: 15cm 
 	   :align: center
 
-	   Observers need to focus only on the **Mount** status (that you can see indicated by the green box) and on the actual position of the axis expressed in Azimuth and 		   Elevation (shown in blue), compared to the commanded positions (which are referred to under the actual positions with the label "Cmd Az." and "Cmd El.").
+	   Observers need to focus only on the **Mount** status (indicated by the green box) and on the actual position of the axis expressed in Azimuth and Elevation (shown in blue), compared to the commanded positions (actual positions with the label "Cmd Az." and "Cmd El.").
 
        .. _srt_mount_antennareset:
 
@@ -169,7 +169,7 @@ Observatory
            :width: 15cm 
 	   :align: center
 
-           The **Observatory** monitor shows the station coordinates and times.
+           The **Observatory** monitor shows the station time and coordinates.
 
 
 
@@ -183,7 +183,7 @@ ReceiversBoss
 	   :align: center
 
 	   The **ReceiverBoss** monitor summarizes the frontend setup parameters. 
-           The bottom part is devoted to the derotator (dewar positioner),  when available.
+           The bottom part is devoted to the derotator (dewar positioner), when available.
 
 
        .. _srt_receivers_LLP:
@@ -214,7 +214,7 @@ Scheduler
            :width: 15cm
 	   :align: center
           
-           The **Scheduler** monitor shows details on the selected data acquisition devices and on the running schedule, if any.
+           The **Scheduler** monitor shows the details on the selected data acquisition devices and on the running schedule, if any.
 
         .. _srt_scheduler_end:
 
@@ -234,7 +234,7 @@ MinorServo
            :width: 15cm 
 	   :align: center
 
-	   The **MinorServo** monitor shows the current setup code and the minor servo status and movement. In this case the image refered to the C-band configuration.
+	   The **MinorServo** monitor shows the current setup code and the minor-servo status and movement. In this case the image refers to the C-band configuration.
 
        .. _srt_minorservo_LLP:
 
@@ -275,7 +275,7 @@ Calibration tool client
            plot), even if in a low-resoltution. In the lower plot, the
            last completed subscan - in its full sampling - is
            shown. We can read the information about the pointing
-           of focus offsets (peakoffsets), the beam size (HPBW), etc.
+           of focus offsets ("peakoffsets"), the beam size ("HPBW"), etc.
 
        .. _srt_focus:
 
