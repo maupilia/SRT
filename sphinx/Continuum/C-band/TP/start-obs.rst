@@ -12,8 +12,9 @@
 Start the observations
 ======================
 
-$  : commands to insert in a shell
+All of the following commands are given on nuraghe-mng.
 
+$  : commands to insert in a shell
 >  : commands to insert in the operatorInput panel
 
 
@@ -64,7 +65,7 @@ $  : commands to insert in a shell
 
     ``> setAttenuation=0,[att]``          with [att] between 0 and 15 dB |logo| :numref:`srt_genericBackend`
 
-    ``> setAttenuation=1,[att]``	with [att] between 0 and 15 dB 
+    ``> setAttenuation=1,[att]``	with [att] between 0 and 15 dB (only integers)
 
     ``> getTpi``
 
@@ -84,7 +85,7 @@ $  : commands to insert in a shell
       :ref:`pointing-focus`
 
 
-#. Open the calibrationtool client in a terminal to display the pointing and focus plots in real time :
+#. Open the calibrationtool client in a terminal to display the pointing and focus plots in real time (if not already open) :
 
     ``$ calibrationtoolclient MANAGEMENT/CalibrationTool``  |logo| :numref:`srt_calibrationtool`
 
