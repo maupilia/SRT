@@ -16,12 +16,11 @@ Important checks
 Some checks need to be performed before starting the observations.
 
 
-On nuraghe-mng
+On nuraghe-mng (observer computer)
 ------------------
 
-Check that :
+Check that:
    - all of the **31 containers** are active on ACS (MNG virtual desktop) (:numref:`srt_acs`);
-   - the **active surface** is green on the AS virtual desktop (:numref:`srt_activesurface`);
    - the log client **jlog** is open in order to track possible error
      messages (:numref:`srt_jlog`). In case it is not open, type ``$
      jlog &`` on a shell;
@@ -29,16 +28,13 @@ Check that :
      velocity in real time (< 50 km/h) (:numref:`srt_meteo`). If it is
      close, type ``$ meteoClient &`` on a shell.
 
-
-
 .. On nuraghe-obs1 ------------------
-
 
 Check the presence of the 8 panels (:numref:`srt_vistaglobale`): 
    - **operatorInput** (:numref:`srt_operatorinput`)
    - **AntennaBoss** (:numref:`srt_antennaboss`)
    - **GenericBackend** (:numref:`srt_genericBackend`)
-   - **Mount** (:numref:`srt_mount`)
+   - **Mount** (:numref:`srt_mount_ok`)
    - **Observatory** (:numref:`srt_observatory`)
    - **Receivers** (:numref:`srt_receivers`)
    - **Scheduler** (:numref:`srt_scheduler`)
@@ -69,3 +65,11 @@ Check the presence of the 8 panels (:numref:`srt_vistaglobale`):
 ..   $ cd /archive/schedules/[projectID]``
 
 ..   $ scheduleChecker [schedulename.scd]``
+
+
+On nuraghe-AS (active surface computer)
+------------------
+
+Check that the **active surface** is green (:numref:`srt_activesurface`).
+The active surface does not work properly if a large fraction (a whole
+sector) becomes red. It is a problem in K-band observations (:numref:`srt_AS-fraction-red`).
