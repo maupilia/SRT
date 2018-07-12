@@ -99,10 +99,9 @@ Logging Display
 
 
 Active Surface
-=========
+=============
 
-The active surface does not work properly if a large fraction (a whole
-     sector) becomes red. It is a problem in K-band observations.
+The active surface does not work properly if a large fraction (a whole sector) becomes red. It is a problem in K-band observations.
 
         .. _srt_AS-fraction-red:
 
