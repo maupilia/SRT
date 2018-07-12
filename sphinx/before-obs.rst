@@ -15,12 +15,18 @@ Important checks
 
 Some checks need to be performed before starting the observations.
 
+On nuraghe-AS (active surface computer)
+------------------
+
+Check that the **active surface** is green (:numref:`srt_activesurface`).
+The active surface does not work properly if a large fraction (a whole
+sector) becomes red. It is a problem in K-band observations (:numref:`srt_AS-fraction-red`).
+
 
 On nuraghe-mng (observer computer)
 ------------------
 
 Check that:
-   - all of the **31 containers** are active on ACS (MNG virtual desktop) (:numref:`srt_acs`);
    - the log client **jlog** is open in order to track possible error
      messages (:numref:`srt_jlog`). In case it is not open, type ``$
      jlog &`` on a shell;
@@ -28,11 +34,16 @@ Check that:
      velocity in real time (it should be < 60 km/h)
      (:numref:`srt_meteo`). If the interface is closed, type ``$
      meteoClient &`` on a shell.
+   - all of the **31 containers** are active on ACS (MNG virtual desktop) (:numref:`srt_acs`);
+
+
+.. warning:: If the number of containers is 0 instead of 31 in ACS, `you have to start ACS <https://srtsupervisoronduty.readthedocs.io/it/latest/sd/srt/procedures/nuraghe.html#shutdown-di-nuraghe>`_
+
 
 
 .. On nuraghe-obs1 ------------------
 
-Check the presence of the 8 panels (:numref:`srt_vistaglobale`): 
+On the nuraghe CONSOLE virtual desktop, check the presence of the 8 panels (:numref:`srt_vistaglobale`): 
    - **operatorInput** (:numref:`srt_operatorinput`)
    - **AntennaBoss** (:numref:`srt_antennaboss`)
    - **GenericBackend** (:numref:`srt_genericBackend`)
@@ -68,14 +79,4 @@ Check the presence of the 8 panels (:numref:`srt_vistaglobale`):
 
 ..   $ scheduleChecker [schedulename.scd]``
 
-
-On nuraghe-AS (active surface computer)
-------------------
-
-Check that the **active surface** is green (:numref:`srt_activesurface`).
-The active surface does not work properly if a large fraction (a whole
-sector) becomes red. It is a problem in K-band observations (:numref:`srt_AS-fraction-red`).
-
-
-.. warning:: If the number of containers is 0 instead of 31 in ACS, `you have to start ACS <https://srtsupervisoronduty.readthedocs.io/it/latest/sd/srt/procedures/nuraghe.html#shutdown-di-nuraghe>`_
 
