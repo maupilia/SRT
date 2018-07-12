@@ -19,7 +19,8 @@ ACS Command Center
 	  :align: center
   
           The **ACS** monitor shows the state of the containers related to each DISCOS component.
-          The state of each container can be verified in the section highlighted in blue.
+          The state of each container can be verified in the section highlighted in blue. 
+	  The blue arrow indicates the number of containers (31 when the system is ready).
 
 
 Active Surface
