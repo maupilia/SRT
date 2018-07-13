@@ -30,17 +30,17 @@ Please, follow the steps in the order.
 #. In the *Containers* section, click on the single green triangles to start each container. It is not necessary to wait for the closing of the Deployment info window of each container. The name of the containers appear progressively in the log tab with the message ``ContainerStatusMsg: Ready``. 
 
 
-#. On **nuraghe-AS**, open two shells if they are not already present. On the first shell, write 
+#. On **nuraghe-AS**, open two shells if they are not already there. On the first one, write 
 
     ``asContainers``
 
-    On the second shell, write  ``SRTActiveSurfaceGUIClient &``
+    On the second one, write  ``SRTActiveSurfaceGUIClient &``
 
     The graphical interface of the active surface appears. The active
     surface is ready when it is green (it takes several minutes).
 
 
-#. On **nuraghe-mng**, check that the number of containers is now *31*.
+#. On **nuraghe-mng**, check that the you have now **31 containers**.
 
 
 #. Go on the CONSOLE virtual desktop of **nuraghe-mng**. Open a shell and execute the following command
