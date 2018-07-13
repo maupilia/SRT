@@ -13,9 +13,10 @@ Software), commanding all the devices of the telescope and allowing
 the user to perform single-dish observations.
 
 If the system has some problems that cannot be resolved with the help
-of the previous section, you probably need to restart Nuraghe. Before
-restarting Nuraghe, you have to follow the procedure of shutdown
-of Nuraghe.
+of the previous section, you probably need to restart Nuraghe. 
+
+**Before restarting Nuraghe, you have to follow the procedure of shutdown
+of Nuraghe.**
 
 
 .. toctree::
