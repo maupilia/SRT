@@ -7,7 +7,7 @@
 Shutdown of Nuraghe
 ===================
 
-Please, follow the steps in the indicated order.
+Please, follow the steps in the order.
 
 #. On **nuraghe-mng**, open a shell on the CONSOLE virtual desktop and close the Nuraghe console
 
