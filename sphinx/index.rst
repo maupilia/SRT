@@ -62,6 +62,7 @@ Troubleshooting
    :maxdepth: 1
 
    Problems/index.rst
+   NuragheScratch/index.rst
 
 
 Indices and figures
