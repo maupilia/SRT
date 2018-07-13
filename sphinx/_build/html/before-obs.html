@@ -25,26 +25,17 @@
   
 
   
-  
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="SRT procedures 1 documentation" href="index.html"/>
-        <link rel="next" title="Continuum" href="Continuum/index.html"/>
-        <link rel="prev" title="Observing with SRT" href="index.html"/> 
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="next" title="Continuum" href="Continuum/index.html" />
+    <link rel="prev" title="Observing with SRT" href="index.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -91,8 +82,9 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Important checks</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#on-nuraghe-mng">On nuraghe-mng</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Important checks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#on-nuraghe-as-active-surface-computer">On nuraghe-AS (active surface computer)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#on-nuraghe-mng-observer-computer">On nuraghe-mng (observer computer)</a></li>
 </ul>
 </li>
 </ul>
@@ -119,7 +111,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">SRT procedures</a>
@@ -127,9 +119,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -158,7 +151,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/before-obs.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/before-obs.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -172,64 +165,56 @@
            <div itemprop="articleBody">
             
   <div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
 </div>
 <div class="section" id="important-checks">
 <span id="before-obs"></span><h1>Important checks<a class="headerlink" href="#important-checks" title="Permalink to this headline">¶</a></h1>
 <p>Some checks need to be performed before starting the observations.</p>
-<div class="section" id="on-nuraghe-mng">
-<h2>On nuraghe-mng<a class="headerlink" href="#on-nuraghe-mng" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="on-nuraghe-as-active-surface-computer">
+<h2>On nuraghe-AS (active surface computer)<a class="headerlink" href="#on-nuraghe-as-active-surface-computer" title="Permalink to this headline">¶</a></h2>
+<p>Check that the <strong>active surface</strong> is green (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-activesurface"><span>Fig.2</span></a>).
+The active surface does not work properly if a large fraction (a whole
+sector) becomes red. It is a problem in K-band observations (<a class="reference internal" href="Figures/Err-fig/Err-fig.html#srt-as-fraction-red"><span>Fig.33</span></a>).</p>
+</div>
+<div class="section" id="on-nuraghe-mng-observer-computer">
+<h2>On nuraghe-mng (observer computer)<a class="headerlink" href="#on-nuraghe-mng-observer-computer" title="Permalink to this headline">¶</a></h2>
 <dl class="docutils">
-<dt>Check that :</dt>
+<dt>Check that:</dt>
 <dd><ul class="first last simple">
-<li>all of the <strong>31 containers</strong> are active on ACS (MNG virtual desktop) (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-acs"><span>Fig.1</span></a>);</li>
-<li>the <strong>active surface</strong> is green on the AS virtual desktop (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-activesurface"><span>Fig.2</span></a>);</li>
 <li>the log client <strong>jlog</strong> is open in order to track possible error
-<<<<<<< HEAD
-messages (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-jlog"><span class="std std-numref">Fig.3</span></a>). In case it is not open, type <code class="docutils literal"><span class="pre">$</span>
-<span class="pre">jlog</span> <span class="pre">&amp;</span></code> on a shell;</li>
-<li>the interface of the <strong>Meteo client</strong> is open to check the wind
-velocity in real time (&lt; 60 km/h) (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-meteo"><span class="std std-numref">Fig.4</span></a>). If it is
-=======
 messages (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-jlog"><span>Fig.5</span></a>). In case it is not open, type <code class="docutils literal"><span class="pre">$</span>
 <span class="pre">jlog</span> <span class="pre">&amp;</span></code> on a shell;</li>
 <li>the interface of the <strong>Meteo client</strong> is open to check the wind
-velocity in real time (&lt; 50 km/h) (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-meteo"><span>Fig.6</span></a>). If it is
->>>>>>> master
-close, type <code class="docutils literal"><span class="pre">$</span> <span class="pre">meteoClient</span> <span class="pre">&amp;</span></code> on a shell.</li>
+velocity in real time (it should be &lt; 60 km/h)
+(<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-meteo"><span>Fig.6</span></a>). If the interface is closed, type <code class="docutils literal"><span class="pre">$</span>
+<span class="pre">meteoClient</span> <span class="pre">&amp;</span></code> on a shell.</li>
+<li>all of the <strong>31 containers</strong> are active on ACS (MNG virtual desktop) (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-acs"><span>Fig.1</span></a>);</li>
 </ul>
 </dd>
 </dl>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">If the number of containers is 0 instead of 31 in ACS, <a class="reference external" href="https://srtsupervisoronduty.readthedocs.io/it/latest/sd/srt/procedures/nuraghe.html#avvio-di-nuraghe">you have to start ACS</a></p>
+</div>
 <dl class="docutils">
-<<<<<<< HEAD
-<dt>Check the presence of the 8 panels (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-vistaglobale"><span class="std std-numref">Fig.5</span></a>):</dt>
-<dd><ul class="first last simple">
-<li><strong>operatorInput</strong> (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-operatorinput"><span class="std std-numref">Fig.6</span></a>)</li>
-<li><strong>AntennaBoss</strong> (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-antennaboss"><span class="std std-numref">Fig.7</span></a>)</li>
-<li><strong>GenericBackend</strong> (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.8</span></a>)</li>
-<li><strong>Mount</strong> (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-mount-ok"><span class="std std-numref">Fig.10</span></a>)</li>
-<li><strong>Observatory</strong> (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-observatory"><span class="std std-numref">Fig.12</span></a>)</li>
-<li><strong>Receivers</strong> (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-receivers"><span class="std std-numref">Fig.13</span></a>)</li>
-<li><strong>Scheduler</strong> (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.16</span></a>)</li>
-<li><strong>MinorServo</strong> (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-minorservo"><span class="std std-numref">Fig.18</span></a>)</li>
-=======
-<dt>Check the presence of the 8 panels (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-vistaglobale"><span>Fig.7</span></a>):</dt>
+<dt>On the nuraghe CONSOLE virtual desktop, check the presence of the 8 panels (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-vistaglobale"><span>Fig.7</span></a>):</dt>
 <dd><ul class="first last simple">
 <li><strong>operatorInput</strong> (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-operatorinput"><span>Fig.8</span></a>)</li>
 <li><strong>AntennaBoss</strong> (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-antennaboss"><span>Fig.9</span></a>)</li>
 <li><strong>GenericBackend</strong> (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-genericbackend"><span>Fig.10</span></a>)</li>
-<li><strong>Mount</strong> (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-mount"><span>Fig.12</span></a>)</li>
+<li><strong>Mount</strong> (<code class="xref std std-numref docutils literal"><span class="pre">srt_mount_ok</span></code>)</li>
 <li><strong>Observatory</strong> (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-observatory"><span>Fig.14</span></a>)</li>
 <li><strong>Receivers</strong> (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-receivers"><span>Fig.15</span></a>)</li>
 <li><strong>Scheduler</strong> (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.18</span></a>)</li>
 <li><strong>MinorServo</strong> (<a class="reference internal" href="Figures/Check-fig/Check-fig.html#srt-minorservo"><span>Fig.20</span></a>)</li>
->>>>>>> master
 </ul>
 </dd>
 </dl>
 <p><strong>Upload your shedules (.scd, .lis, .bck and .cfg files) and check them:</strong></p>
 <blockquote>
 <div><p><em>From your computer:</em></p>
-<p><code class="docutils literal"><span class="pre">$</span> <span class="pre">scp</span>&#160; <span class="pre">[schedulename.*]</span> <span class="pre">gavino&#64;nuraghe-mng:/archive/schedules/[projectID]</span></code></p>
+<p><code class="docutils literal"><span class="pre">$</span> <span class="pre">scp</span>&nbsp; <span class="pre">[schedulename.*]</span> <span class="pre">gavino&#64;nuraghe-mng:/archive/schedules/[projectID]</span></code></p>
 <p><em>On nuraghe-mng:</em></p>
 <p><code class="docutils literal"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">/archive/schedules/[projectID]</span></code></p>
 <p><code class="docutils literal"><span class="pre">$</span> <span class="pre">scheduleChecker</span> <span class="pre">[schedulename.scd]</span></code></p>
@@ -239,9 +224,7 @@ close, type <code class="docutils literal"><span class="pre">$</span> <span clas
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -263,7 +246,7 @@ close, type <code class="docutils literal"><span class="pre">$</span> <span clas
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -282,10 +265,11 @@ close, type <code class="docutils literal"><span class="pre">$</span> <span clas
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
             VERSION:'1',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            SOURCELINK_SUFFIX: ''
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
@@ -299,14 +283,11 @@ close, type <code class="docutils literal"><span class="pre">$</span> <span clas
     <script type="text/javascript" src="_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

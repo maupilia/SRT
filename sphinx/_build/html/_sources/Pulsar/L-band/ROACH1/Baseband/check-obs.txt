@@ -5,13 +5,25 @@
 
 
 
-===================
+==============================
 Check during the observations
-===================
+==============================
 
 .. toctree::
-   :maxdepth:1
+   :maxdepth: 1
   
+
+$ : commands to insert in a shell
+
+> : commands to insert in the operatorInput panel
+
+.. |logo| image:: monocle_.png
+..    :width: 20pt
+..    :height: 20pt
+..   :align: left
+|logo|: check the execution on the monitor
+
+==============================
 
 Data quality
 ------------
@@ -26,7 +38,7 @@ Data quality
 #. In each node, check that the right folders (source and timestamp) are being created and that “dada” files are being written every 10 seconds. If no dada files are being written, there could be something wrong with the IP table.  For example, if one node is malfunctioning (e.g. is turned off) but is listed in the IP table as one would expect, it will cause packet loss or possibly even not write any dada files in the other nodes. In that case, check that all nodes are functioning correctly (see daemons in W1). If the node is definitely not working, you will need to ask a qualified person to look into it [this will involve taking the node out in the IP table before re-starting data acquisition].
       
 
-#. Check for any packet loss with ``dadatest``. Find the last dada file in each folder and check  that no packet loss has occurred so far:
+#. UPDATE!!! Check for any packet loss with ``dadatest``. Find the last dada file in each folder and check  that no packet loss has occurred so far:
 
     ``$ dadatest nameoflastdadafile.dada`` 
 
@@ -62,7 +74,7 @@ Data quality
 
 
 External client
-------------
+---------------
 
 #. If something goes wrong with the external client (e.g. failing to give you antenna parameters), you should kill (using ``Control-C``) the control.csh code.
  
@@ -81,116 +93,104 @@ External client
      - at the end of the session, use ``./end.csh`` to stop data acquisition and close the daemons (W2)
 
 
-#. If the external client is working and you are just doing some tests, you can use:
- 
-     - at the beginning of the session, set up the ROACH using: ``./control_init.csh`` (W2)
-     - Launch the daemons in all 8 nodes (W1)
-     - Use ``./start.csh`` to launch data acquisition (W2)
-     - Use ``./stop.csh`` to stop data acquisition without closing the daemons (W2)
-     - Use ``./start.csh`` and ``./stop.csh`` for each source (W2)
-     - At the end of the session, use ``./end.csh`` to stop data acquisition and close the daemons (W2)
- 
 The difference between ``./start.csh`` and ``./start_simple.csh`` is that ``./start_simple.csh`` does not call the external client to get information about the source. If the external client is working, use ``./start.csh`` and the right folders will be automatically created using the name of the source that is being tracked and the most recent timestamp.
 
 
-Antenna tracking
--------------
+On nuraghe-mng
+--------------
 
-#. Antenna monitors
+#. Check that the data are correctly written in your project section (Rescicom) :
 
-	Check that everything section is green. If a red box appears, put the cursor on it and look at the error message.
-
-	Contact and report the error messages to the responsible of
-	the observation (observer friend?).
-
-#. Panels
-
-        * Scheduler : status OK, green
-
-	During the tracking, @ is green while it is red during the slewing of the antenna.
-
-	Check the update of the number of scan/subscan according to your schedule. Scans will be skipped if the target is not visible at the moment of the observations.
-
-	If you realize that the scan/subscan number is frozen or that the tracking @ is red while the antenna is tracking the source, stop the on-going schedule with 
-
-	``> antennaStop``    (in the operatorInput)
-
-	then start again the schedule:
-
-	``> antennaStart=[projectID]/…scd,n``     (with n the number of scan)
-
-     	.. image:: srt_scheduler.png 
-	   :align: center
-
- 	* AntennaBoss : status OK, green.
-		
-     	.. image:: srt_antennaboss.png 
-	   :align: center
+    ``$ cd /archive/data/Rescicom/yyyymmdd``
 
 
- 	* Mount : READY, READY, OK green (CHECK!!!!) while the antenna is pointing a source.
+#. **jlog**
 
-    	.. image:: srt_mount.png 
-	   :align: center
+     The logging display shows warning and error messages. Warning
+     messages are indicated in yellow while error messages are in red
+     |logo| :numref:`srt_jlog`.
 
- 
- 	* MinorServo; tracking @ is green, the status ids OK and green.
-
-    	.. image:: srt_minorservo.png 
-	   :align: center
-
-
- 	* Receivers : status OK, green.
-
-	If the derotator (dewar) is used, check the configuration and status (ready green).
-
-    	.. image:: srt_receivers.png 
-	   :align: center
+     Check the possible error messages. Try to understand the origin
+     of the problem and to solve it. In case of persistent/complex
+     problem, contact and report the error messages and the associated
+     UT time (into the web page .......).
 
 
-#. Active surface
+#. **Meteo client**
 
- 	Sometimes, not all of the small squares of the active surface are green. Do not worry for that. Instead, it can be problematic if a large fraction of the active surface becomes red.
-
-
-	* Check that the state of the active surface corresponds to your choice (shaped, shaped fixed, parabolic, parabolic fixed).
+     Check the wind speed on the Meteo client. If it exceeds 60 km/h,
+     the antenna is automatically stowed. |logo| :numref:`srt_windspeed`
 
 
- 	* “Ok” should be green during the observations.
+     .. On nuraghe-obs1 --------------
 
-    	.. image:: srt_activesurface.png 
-	   :align: center
+#. **Scheduler**
 
+     Check the status of the Scheduler is OK (green).
+     During the tracking, @ is green while it is red during the
+     slewing of the antenna. |logo| :numref:`srt_scheduler`
 
-#. Log
+     Check the update of the number of scan/subscan according to your
+     schedule (.scd). Scans will be skipped if the target is not
+     visible at the moment of the observations.
 
- 	* The log file (jlog) contains warning and error messages. Warning messages are indicated in yellow while error messages are in red.
+     If you realize that the scan/subscan number is frozen or that the
+     tracking is red while the antenna is tracking the source, stop
+     the on-going schedule with:
 
- 
- 	* Check the possible error messages. Try to understand the origin of the problem and to solve it. In case of persistent/complex problem, contact and report the error messages and the associated UT to the responsible of the observation (observer friend?).
+     ``> stopSchedule``    (in the operatorInput)
 
+     then start again the schedule:
 
-
-    	.. image:: srt_jlog.png 
-	   :align: center
-
-
-#. Calibration tool client
-
-
-    	.. image:: srt_calibrationtool.png 
-	   :align: center
+     ``> startSchedule=[projectID]/…scd,n``    (with n the number of scan)
 
 
-#. Weather parameters
+#. **MinorServo**
 
- 	 On nuraghe-obs1, activate the meteo client:
+     Check the status and the tracking are green |logo| :numref:`srt_minorservo_LLP`.
 
-	``$ meteoClient``
 
-         If the wind speed exceeds 61 km/h, the antenna must be stowed.
+#. **ReceiverBoss**
 
-         .. image:: srt_meteo.png 
-	    :align: center
+     Check the status is OK (green). |logo| :numref:`srt_receivers_LLP`
 
-	
+
+#. **AntennaBoss**
+
+     Check the status is OK (green), the coordinates of the source and
+     the beam size value are correct (FWHM in degrees).
+     The tracking @ is green when the source is correctly pointed at
+     (within 1/10 of the beam), while a red circle appears when the
+     telescope is slewing. |logo| :numref:`srt_antennaboss`
+
+
+#. **Mount**
+
+     Check the commanded azimuth and elevation of the antenna and
+     its real position (in blue). The status must be green.
+     |logo| :numref:`srt_mount_ok`
+
+
+#. **Active surface**
+
+     Check that the state of the active surface corresponds to your
+     choice (shaped, shaped fixed, parabolic, parabolic fixed). |logo|
+     :numref:`srt_activesurface`
+
+     "OK" should be green during the observations.
+
+     Sometimes, not all of the small squares of the active surface are
+     green. Do not worry for that if they are spread randomly. Instead, it can be problematic if a
+     large fraction (a whole sector) of the active surface becomes
+     red, in particular in K-band (see |logo|
+     :numref:`srt_AS-fraction-red`).
+     Contact the responsible of the observation (observer friend).
+
+
+Primary Control Panel ACU
+-------------------------
+
+Check that everything appears in green (see |logo| :numref:`srt_ACU_green`).
+If a red box appears, put the cursor on it and look at the error message.
+
+Contact and report the error messages to the responsible of the observation (observer friend).

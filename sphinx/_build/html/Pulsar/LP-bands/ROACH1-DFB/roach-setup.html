@@ -25,27 +25,17 @@
   
 
   
-  
     <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../../genindex.html"/>
-        <link rel="search" title="Search" href="../../../search.html"/>
-    <link rel="top" title="SRT procedures 1 documentation" href="../../../index.html"/>
-        <link rel="up" title="ROACH1 (baseband) in P-band + DFB (folding) in L-band" href="index.html"/>
-        <link rel="next" title="Start the observations" href="start-obs.html"/>
-        <link rel="prev" title="Before observing" href="before-obs.html"/> 
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="next" title="Start the observations" href="start-obs.html" />
+    <link rel="prev" title="Before observing" href="before-obs.html" /> 
 
   
   <script src="../../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -103,7 +93,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">LP-bands</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">ROACH1 + DFB</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="before-obs.html">Before observing</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">Roach setup</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="">Roach setup</a></li>
 <li class="toctree-l4"><a class="reference internal" href="start-obs.html">Start the observations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="check-obs.html">Check during the observations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="get-data.html">Getting your data</a></li>
@@ -135,7 +125,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../index.html">SRT procedures</a>
@@ -143,9 +133,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -180,7 +171,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/Pulsar/LP-bands/ROACH1-DFB/roach-setup.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/Pulsar/LP-bands/ROACH1-DFB/roach-setup.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -194,6 +185,8 @@
            <div itemprop="articleBody">
             
   <div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
 </div>
 <div class="section" id="roach-setup">
 <h1>Roach setup<a class="headerlink" href="#roach-setup" title="Permalink to this headline">¶</a></h1>
@@ -204,7 +197,7 @@
 <li><p class="first">Open a window (W1) with 8 tabs. Each tab will be connected to each of the 8 cluster nodes and will be used to launch the daemons. In the first tab, type:</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">$</span> <span class="pre">ssh</span> <span class="pre">-X</span> <span class="pre">node1</span></code></p>
-<p><code class="docutils literal"><span class="pre">$</span> <span class="pre">ssh</span> <span class="pre">-X</span> <span class="pre">node2</span></code>   in the second tab, etc… for the 8 tabs.</p>
+<p><code class="docutils literal"><span class="pre">$</span> <span class="pre">ssh</span> <span class="pre">-X</span> <span class="pre">node2</span></code>   in the second tab, etc... for the 8 tabs.</p>
 </div></blockquote>
 </li>
 <li><p class="first">Open a second window (W2) and go to :</p>
@@ -235,9 +228,7 @@ That code basically changes the IP table so that we are selecting the desired 8 
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -259,7 +250,7 @@ That code basically changes the IP table so that we are selecting the desired 8 
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -278,10 +269,11 @@ That code basically changes the IP table so that we are selecting the desired 8 
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../../',
             VERSION:'1',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            SOURCELINK_SUFFIX: ''
         };
     </script>
       <script type="text/javascript" src="../../../_static/jquery.js"></script>
@@ -295,14 +287,11 @@ That code basically changes the IP table so that we are selecting the desired 8 
     <script type="text/javascript" src="../../../_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

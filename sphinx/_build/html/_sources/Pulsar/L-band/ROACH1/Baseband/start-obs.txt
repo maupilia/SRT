@@ -14,55 +14,67 @@ Start the observations
   
 
 $ : commands to insert in a shell   
+
+>  : commands to insert in the operatorInput panel
+
+
+.. |logo| image:: monocle_.png
+..    :width: 20pt
+..    :height: 20pt
+..   :align: left
+|logo|: check the execution on the monitor
+
+
+======================
  
 
 In the operatorInput panel
----------------------
+--------------------------
 
 
 #. Insert your project number :
 
-    ``> project=[projectID]``
+    ``> project=[projectID]``    |logo| :numref:`srt_scheduler`
 
 
 #. Initial setup :
 
     ``> antennaReset``
 
-    ``> setupLLP``
+    ``> setupLLP`` |logo| :numref:`srt_receivers_LLP`
 
 
 #. Select the active surface shape (Parabolic for L and P-band observations) :
 
-    ``> asSetup=P``
+    ``> asSetup=P``  |logo| :numref:`srt_activesurface`
 
 
 #. Insert the Local Oscillator value in MHz (this value may change) :
 
-    ``> setLO=2188``
+    ``> setLO=2188`` |logo| :numref:`srt_receivers_LLP`
 
 
 #. Choose the relevant L-band filter (linear filter for 1300-1800 MHz)
 
-    ``> receiversMode=XXL4``
+    ``> receiversMode=XXL4`` |logo| :numref:`srt_receivers_LLP`
 
 
 #. Set the attenuations (to zero) for the 2 polarizations arriving at the Total Power backend (this may change depending on the settings of the new IF distributor).
 
-    ``> setAttenuation=0,0``
+    ``> setAttenuation=0,0`` |logo| :numref:`srt_genericBackend`
 
-    ``> setAttenuation=1,0``
+    ``> setAttenuation=1,0`` |logo| :numref:`srt_genericBackend`
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 
-    ``> startSchedule=[projectID]/[schedulename].scd,[N_n]``
+    ``> startSchedule=[projectID]/[schedulename].scd,[N_n]`` |logo| :numref:`srt_scheduler`
 
      If your schedule is LST-based (like for LEAP schedules), the antenna points to the relevant source as soon as you launch the schedule, even before the designated start time of observations (but you can start data acquisition with the ROACH1 at a later time). Check on the monitor each time that the antenna is pointing at and **TRACKING** the right source. 
 
 
 
 On the LEAP cluster (using VNC):
---------------------------
+---------------------------------
 
 Before starting data acquisition, do the following:
 
