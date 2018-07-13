@@ -34,9 +34,7 @@ Please, follow the steps in the order.
 
     ``asContainers``
 
-    On the second shell, write
-
-    ``SRTActiveSurfaceGUIClient &``
+    On the second shell, write  ``SRTActiveSurfaceGUIClient &``
 
     The graphical interface of the active surface appears. The active
     surface is ready when it is green (it takes several minutes).
@@ -50,14 +48,15 @@ Please, follow the steps in the order.
     ``nuragheConsole``
 
     Eight panels appear:
-    - **operatorInput** (:numref:`srt_operatorinput`)
-    - **AntennaBoss** (:numref:`srt_antennaboss`)
-    - **GenericBackend** (:numref:`srt_genericBackend`)
-    - **Mount** (:numref:`srt_mount_ok`)
-    - **Observatory** (:numref:`srt_observatory`)
-    - **Receivers** (:numref:`srt_receivers`)
-    - **Scheduler** (:numref:`srt_scheduler`)
-    - **MinorServo** (:numref:`srt_minorservo`)
+
+     - **operatorInput** (:numref:`srt_operatorinput`)
+     - **AntennaBoss** (:numref:`srt_antennaboss`)
+     - **GenericBackend** (:numref:`srt_genericBackend`)
+     - **Mount** (:numref:`srt_mount_ok`)
+     - **Observatory** (:numref:`srt_observatory`)
+     - **Receivers** (:numref:`srt_receivers`)
+     - **Scheduler** (:numref:`srt_scheduler`)
+     - **MinorServo** (:numref:`srt_minorservo`)
 
 
 Nuraghe is now ready! 
