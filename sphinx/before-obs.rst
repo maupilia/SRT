@@ -37,7 +37,7 @@ Check that:
    - all of the **31 containers** are active on ACS (MNG virtual desktop) (:numref:`srt_acs`);
 
 
-.. warning:: If the number of containers is 0 instead of 31 in ACS, `you have to start ACS <https://srtsupervisoronduty.readthedocs.io/it/latest/sd/srt/procedures/nuraghe.html#shutdown-di-nuraghe>`_
+.. warning:: If the number of containers is 0 instead of 31 in ACS, `you have to start ACS <https://srtsupervisoronduty.readthedocs.io/it/latest/sd/srt/procedures/nuraghe.html#avvio-di-nuraghe>`_
 
 
 
