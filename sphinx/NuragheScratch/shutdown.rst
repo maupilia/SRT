@@ -13,7 +13,7 @@ Please, follow the steps in the indicated order.
 
     ``nuragheConsole --stop``
 
-#. On **nuraghe-AS**, close the graphical interface of the active surface with a click on the ``Quit`` button (bottom right)
+#. On **nuraghe-AS**, close the graphical interface of the active surface with a click on the ``Quit`` button (bottom right).
 
 
 #. On **nuraghe-mng**, go on the ACS Command Center, which is in the MANAGER virtual desktop. Click on the collective stop button ``(black square)`` located under the list of all of the containers to close them. It is also possible to close each container individually.
