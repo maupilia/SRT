@@ -7,7 +7,7 @@
 .. toctree::
    :maxdepth: 1
 
-.. _stop-session:
+.. _stop-session-Xarcos:
 
 End of the session
 ======================
