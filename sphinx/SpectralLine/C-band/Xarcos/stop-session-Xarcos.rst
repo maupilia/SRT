@@ -34,8 +34,7 @@ On nuraghe-mng
 
    ``> haltSchedule``    *the schedule stops at the end of the on-going subscan.* 
 
-   Important note: do not stop the schedule with **stopSchedule** with
-   Xarcos, but only with **haltSchedule**.
+   Important note: do not stop Xarcos schedule with **stopSchedule**.
 
 
 2. Park the minor servo, active surface and antenna
