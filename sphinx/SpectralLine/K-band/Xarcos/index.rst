@@ -13,6 +13,6 @@ Xarcos
 *  :ref:`start-SLKXa`
 *  :ref:`check-obs`
 *  :ref:`get-data`
-*  :ref:`stop-session` 
+*  :ref:`stop-session-Xarcos` 
 
 
