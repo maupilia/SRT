@@ -31,10 +31,11 @@ the antenna.
 In LEAP VNC
 ------------------
 
-1. W2: Do a ``Control-C`` to end the ./control.csh script.
+1. W: Do a ``Control-C`` to end the ./control.csh script.
 
-2. W2: ``$./end.csh`` to end data acquisition and close the daemons.
+2. W: ``$ ./end.csh`` to end data acquisition and close the daemons.
 
+3. In each node: ``$ sudo halt``
 
 On nuraghe-mng
 ----------------

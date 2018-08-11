@@ -49,14 +49,14 @@ In the operatorInput panel
     ``> asSetup=P``  |logo| :numref:`srt_activesurface`
 
 
-#. Insert the Local Oscillator value in MHz (this value may change) :
-
-    ``> setLO=2188`` |logo| :numref:`srt_receivers_LLP`
-
-
 #. Choose the relevant L-band filter (linear filter for 1300-1800 MHz)
 
     ``> receiversMode=XXL4`` |logo| :numref:`srt_receivers_LLP`
+
+
+#. In a shell: insert the Local Oscillator value in MHz (this value may change) :
+
+    ``$ setLOLP.py 2316`` |logo| :numref:`srt_receivers_LLP`
 
 
 #. Set the attenuations (to zero) for the 2 polarizations arriving at the Total Power backend (this may change depending on the settings of the new IF distributor).
@@ -76,23 +76,32 @@ In the operatorInput panel
 On the LEAP cluster (using VNC):
 ---------------------------------
 
+
+#. In W: type a command here to select baseband mode:
+
+    ``$ ~/roach/scripts/baseband.sh``
+
+
+#. In W: type a command here to select folding mode:
+
+    ``$ ~/roach/scripts/folding.sh``
+
+
 Before starting data acquisition, do the following:
 
-#. W2: initial setup in Control directory:
+#. W: initial setup in Control directory:
 
     ``$ ./control_init.sh`` 
 
-#. W1: in each of the 8 tabs, launch the daemons:
+This will ssh to all 8 nodes and start the daemons.
 
-    ``$ ~/roach/scripts/daemon.sh``
-
-#. When the antenna is tracking the first source and you are ready to start data acquisition, go to W2 and type:
+#. When the antenna is tracking the first source and you are ready to start data acquisition, go to W and type:
 
     ``$ ./start.csh``
 
      Data acquisition has now started with the ROACH1. 
 
-#. Immediately launch the control software (in W2) which obtains parameters from the antenna and automatically starts and stops observations, depending on whether the antenna is **TRACKING** or **SLEWING**:
+#. Immediately launch the control software (in W) which obtains parameters from the antenna and automatically starts and stops observations, depending on whether the antenna is **TRACKING** or **SLEWING**:
 
     ``$ ./control.csh``
 

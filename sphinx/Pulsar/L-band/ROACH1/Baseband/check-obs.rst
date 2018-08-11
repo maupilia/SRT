@@ -38,18 +38,6 @@ Data quality
 #. In each node, check that the right folders (source and timestamp) are being created and that “dada” files are being written every 10 seconds. If no dada files are being written, there could be something wrong with the IP table.  For example, if one node is malfunctioning (e.g. is turned off) but is listed in the IP table as one would expect, it will cause packet loss or possibly even not write any dada files in the other nodes. In that case, check that all nodes are functioning correctly (see daemons in W1). If the node is definitely not working, you will need to ask a qualified person to look into it [this will involve taking the node out in the IP table before re-starting data acquisition].
       
 
-#. UPDATE!!! Check for any packet loss with ``dadatest``. Find the last dada file in each folder and check  that no packet loss has occurred so far:
-
-    ``$ dadatest nameoflastdadafile.dada`` 
-
-     The numbers on the left should give you: 0, 2000000, 4000000, 6000000, 8000000, 1000000, 12000000, 14000000, 16000000, 18000000. If not, there has been packet loss and there could be something wrong going on with the cluster. In this case, you can investigate where the packet loss happened using:
-
-    ``$ for i in $(ls *dada); do dadatest $i; done``   (to test all dada files)  
-
-     Occasional packet loss is nothing to worry about. However if the numbers are completely random and the cluster is losing packets in all nodes, we’re in trouble [ask a qualified person to go and manually reset the LEAP switch while data acquisition is  ongoing]. Once that is done, stop data acquisition (with ``Control-C`` and ``./stop.csh``) and re-start with ``./start.csh``. You can then check ``dadatest`` in the newly created folder.
-
-     Note: ``dadatest`` can be done even if we’re not tracking a particular source.
-
 #. Check the data quality with ``digistat``. Type:
 
     ``$ digistat *dada`` 
@@ -73,6 +61,17 @@ Data quality
 
 
 
+#. At the end of the session, in each node, check for any packet loss with:
+
+    ``$ ~/roach/scripts/packetloss.sh`` 
+
+
+     It counts how many times the number is not zero, meaning there has been packet loss.
+
+     Occasional packet loss is nothing to worry about. However if the numbers are completely random and the cluster is losing packets in all nodes, we’re in trouble [ask a qualified person to go and manually reset the LEAP switch while data acquisition is  ongoing].
+
+
+
 External client
 ---------------
 
@@ -85,12 +84,11 @@ External client
 
 #. If the external client is not working at all and you need to manually launch data acquisition (i.e. you cannot use the ``./control.csh`` script that is normally used during LEAP to automate data acquisition), you can do the following:
 
-     - at the beginning of the session, set up the ROACH using: ``./control_init.csh`` (W2)
-     - Launch the daemons in all 8 nodes (W1)
-     - Use ``./start_simple.csh`` to launch data acquisition (instead of ``./start.csh``) (W2)
-     - Use ``./stop.csh`` to stop data acquisition without closing the daemons (W2)
-     - Use ``./start_simple.csh`` for next source etc. (W2)
-     - at the end of the session, use ``./end.csh`` to stop data acquisition and close the daemons (W2)
+     - at the beginning of the session, set up the ROACH using: ``./control_init.csh`` (W)
+     - Use ``./start_simple.csh`` to launch data acquisition (instead of ``./start.csh``) (W)
+     - Use ``./stop.csh`` to stop data acquisition without closing the daemons (W)
+     - Use ``./start_simple.csh`` for next source etc. (W)
+     - at the end of the session, use ``./end.csh`` to stop data acquisition and close the daemons (W)
 
 
 The difference between ``./start.csh`` and ``./start_simple.csh`` is that ``./start_simple.csh`` does not call the external client to get information about the source. If the external client is working, use ``./start.csh`` and the right folders will be automatically created using the name of the source that is being tracked and the most recent timestamp.

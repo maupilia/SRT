@@ -34,7 +34,7 @@ $ : commands to insert in a shell
 
 #. Initial setup :
 
-    ``> antennaReset``
+    ``> antennaReset`` |logo| :numref:`srt_ACU_axis_blocked` |logo| :numref:`srt_ACU_green`
 
     ``> setupCCB`` |logo| :numref:`srt_receivers`
 

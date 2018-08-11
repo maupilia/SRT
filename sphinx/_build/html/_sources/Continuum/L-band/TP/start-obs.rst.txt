@@ -32,9 +32,9 @@ $ : commands to insert in a shell
 
 #. Initial setup :
 
-    ``> antennaReset``
+    ``> antennaReset`` |logo| :numref:`srt_ACU_axis_blocked`
 
-    ``> setupLLP``  |logo| :numref:`srt_receivers_LLP`
+    ``> setupLLP``  |logo| :numref:`srt_receivers_LLP`  |logo| :numref:`srt_ACU_green`
 
 
 #. Select the receiver mode :
@@ -54,7 +54,7 @@ $ : commands to insert in a shell
 
 #. Select the active surface shape (Parabolic for L-band observations) :
 
-    ``> asSetup=P`` |logo| :numref:`srt_activesurface`
+    ``> asSetup=P`` |logo| :numref:`srt_as_parabolic`
 
 #. Insert the Local Oscillator value in MHz :
 
@@ -67,9 +67,9 @@ $ : commands to insert in a shell
 
 #. Insert the bandwidth for the focus selector (always 2000 MHz in L-band) and choose the sample rate (in MHz) :
 
-    ``> setSection=0,*,2000.000000,*,*,[sampleRate],*``  |logo| :numref:`srt_genericBackend_LLP`
+    ``> setSection=0,*,2000.000000,*,*,[sampleRate],*``  |logo| :numref:`srt_genericBackend`
 
-    ``> setSection=1,*,2000.000000,*,*,[sampleRate],*``  |logo| :numref:`srt_genericBackend_LLP`
+    ``> setSection=1,*,2000.000000,*,*,[sampleRate],*``  |logo| :numref:`srt_genericBackend`
 
 
 #. Put the antenna at 45 deg of elevation and attenuate the signal in order to obtain values between 750 and 1100 counts (linear range of the backend) :
@@ -78,15 +78,15 @@ $ : commands to insert in a shell
 
     ``> getTpi``
 
-    ``> setAttenuation=0,[att]``	with [att] between 0 and 15 dB |logo| :numref:`srt_genericBackend_LLP`
+    ``> setAttenuation=0,[att]``	with [att] between 0 and 15 dB |logo| :numref:`srt_genericBackend`
 
-    ``> setAttenuation=1,[att]``	with [att] between 0 and 15 dB |logo| :numref:`srt_genericBackend_LLP`
+    ``> setAttenuation=1,[att]``	with [att] between 0 and 15 dB |logo| :numref:`srt_genericBackend`
 
     ``> getTpi``
 
 #. Check the tsys (typical values to be inserted)
 
-    ``> tsys`` |logo| :numref:`srt_genericBackend_LLP`
+    ``> tsys`` |logo| :numref:`srt_genericBackend`
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 

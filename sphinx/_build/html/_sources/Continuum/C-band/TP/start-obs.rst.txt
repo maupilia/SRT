@@ -12,8 +12,9 @@
 Start the observations
 ======================
 
-$  : commands to insert in a shell
+All of the following commands are given on nuraghe-mng.
 
+$  : commands to insert in a shell
 >  : commands to insert in the operatorInput panel
 
 
@@ -33,9 +34,9 @@ $  : commands to insert in a shell
 
 #. Initial setup
 
-    ``> antennaReset``
+    ``> antennaReset``   |logo| :numref:`srt_ACU_axis_blocked`
 
-    ``> setupCCB`` |logo| :numref:`srt_receivers`
+    ``> setupCCB`` |logo| :numref:`srt_receivers`  |logo| :numref:`srt_ACU_green`
 
 
 #. Select the active surface shape (Shaped configuration for C-band observations)
@@ -58,13 +59,13 @@ $  : commands to insert in a shell
 
 #. Put the antenna at 45 deg of elevation and attenuate the signal in order to obtain values between 750 and 1100 counts (linear range of the backend) :
 
-    ``> goTo=*,45d`` |logo| :numref:`srt_mount_ok`
+    ``> goTo=*,45d`` |logo| :numref:`srt_mount`
 
     ``> getTpi``
 
     ``> setAttenuation=0,[att]``          with [att] between 0 and 15 dB |logo| :numref:`srt_genericBackend`
 
-    ``> setAttenuation=1,[att]``	with [att] between 0 and 15 dB 
+    ``> setAttenuation=1,[att]``	with [att] between 0 and 15 dB (only integers)
 
     ``> getTpi``
 
@@ -84,7 +85,7 @@ $  : commands to insert in a shell
       :ref:`pointing-focus`
 
 
-#. Open the calibrationtool client in a terminal to display the pointing and focus plots in real time :
+#. Open the calibrationtool client in a terminal to display the pointing and focus plots in real time (if not already open) :
 
     ``$ calibrationtoolclient MANAGEMENT/CalibrationTool``  |logo| :numref:`srt_calibrationtool`
 

@@ -33,6 +33,22 @@ If it is not active:
 
 
 
+On the LEAP cluster (using VNC):
+---------------------------------
+
+Initial setup for the LEAP cluster:
+
+
+#. Open a window (W) and go to :
+
+    ``$ ~/externalClient/Control/``
+
+     This window will be used to start and stop data acquisition.
+
+#. In W: type a command here to select L-band (and not P-band):
+
+    ``$ ~/roach/scripts/setLband.sh``
+
 
 
 

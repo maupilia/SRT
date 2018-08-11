@@ -25,17 +25,27 @@
   
 
   
+  
     <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <link rel="next" title="Getting your data" href="get-data.html" />
-    <link rel="prev" title="Start the observations" href="start-obs.html" /> 
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="SRT procedures 1 documentation" href="../../../index.html"/>
+        <link rel="up" title="ROACH1 (baseband) in P-band + DFB (folding) in L-band" href="index.html"/>
+        <link rel="next" title="Getting your data" href="get-data.html"/>
+        <link rel="prev" title="Start the observations" href="start-obs.html"/> 
 
   
   <script src="../../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" role="document">
 
    
   <div class="wy-grid-for-nav">
@@ -95,7 +105,7 @@
 <li class="toctree-l4"><a class="reference internal" href="before-obs.html">Before observing</a></li>
 <li class="toctree-l4"><a class="reference internal" href="roach-setup.html">Roach setup</a></li>
 <li class="toctree-l4"><a class="reference internal" href="start-obs.html">Start the observations</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="">Check during the observations</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Check during the observations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="get-data.html">Getting your data</a></li>
 <li class="toctree-l4"><a class="reference internal" href="stop-session.html">End of the session</a></li>
 </ul>
@@ -111,6 +121,7 @@
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../Problems/index.html">Problems during the observations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../NuragheScratch/index.html">Nuraghe from Scratch</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../Figures/index.html">Figures</a></li>
@@ -125,7 +136,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../index.html">SRT procedures</a>
@@ -133,10 +144,9 @@
       </nav>
 
 
+      
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -171,7 +181,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/Pulsar/LP-bands/ROACH1-DFB/check-obs.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/Pulsar/LP-bands/ROACH1-DFB/check-obs.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -187,8 +197,6 @@
   <div class="section" id="check-during-the-observations">
 <h1>Check during the observations<a class="headerlink" href="#check-during-the-observations" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
-<ul class="simple">
-</ul>
 </div>
 <div class="section" id="data-quality">
 <h2>Data quality<a class="headerlink" href="#data-quality" title="Permalink to this headline">¶</a></h2>
@@ -196,7 +204,7 @@
 <li><p class="first">In the leap0 VNC, go to W3 to check on data quality. Each tab is connected to a cluster node, i.e. a particular 16 MHz sub-band. In each node, go to the data directory:</p>
 <blockquote>
 <div><p><code class="docutils literal"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">/data-001</span></code>   for node1</p>
-<p><code class="docutils literal"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">/data-002</span></code>   for node2, etc...</p>
+<p><code class="docutils literal"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">/data-002</span></code>   for node2, etc…</p>
 </div></blockquote>
 </li>
 <li><p class="first">In each node, check that the right folders (source and timestamp) are being created and that “dada” files are being written every 10 seconds. If no dada files are being written, there could be something wrong with the IP table.  For example, if one node is malfunctioning (e.g. is turned off) but is listed in the IP table as one would expect, it will cause packet loss or possibly even not write any dada files in the other nodes. In that case, check that all nodes are functioning correctly (see daemons in W1). If the node is definitely not working, you will need to ask a qualified person to look into it [this will involve taking the node out in the IP table before re-starting data acquisition].</p>
@@ -350,7 +358,9 @@ the observation (observer friend?).</p>
 
 
            </div>
-           
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
@@ -372,7 +382,7 @@ the observation (observer friend?).</p>
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -391,11 +401,10 @@ the observation (observer friend?).</p>
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../../',
             VERSION:'1',
-            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../../_static/jquery.js"></script>
@@ -409,11 +418,14 @@ the observation (observer friend?).</p>
     <script type="text/javascript" src="../../../_static/js/theme.js"></script>
   
 
+  
+  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
+          SphinxRtdTheme.StickyNav.enable();
       });
-  </script> 
+  </script>
+   
 
 </body>
 </html>

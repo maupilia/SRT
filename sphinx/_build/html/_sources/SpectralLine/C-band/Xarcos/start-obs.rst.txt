@@ -32,9 +32,9 @@ $ : commands to insert in a shell
 
 #. Initial setup :
 
-    ``> antennaReset``
+    ``> antennaReset`` |logo| :numref:`srt_scheduler`
 
-    ``> setupCCB``  |logo| :numref:`srt_receivers`
+    ``> setupCCB``  |logo| :numref:`srt_receivers` |logo| :numref:`srt_ACU_green`
 
 #. Select the active surface shape (Shaped configuration for C-band observations) :
 

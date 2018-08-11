@@ -54,10 +54,10 @@ $ : commands to insert in a shell
 
      with :
 
-       - ``[code]`` = SK00 : central feed only ;
-       - ``[code]`` = SK77 : 7 feeds ;
-       - ``[code]`` = SK03 : feeds 0 and 3 only ;
-       - ``[code]`` = SK06 : feeds 0 and 6 only.
+       - ``[code]`` = SK00S : central feed only ;
+       - ``[code]`` = SK77S : 7 feeds ;
+       - ``[code]`` = SK03S : feeds 0 and 3 only ;
+       - ``[code]`` = SK06S : feeds 0 and 6 only.
 
 
 #. Set the different parameters of the backend:
@@ -76,7 +76,7 @@ $ : commands to insert in a shell
         - ``[num-feed]`` the number of feeds (from 1 to 7) ;
         - ``[polarization]`` : 2  for full Stokes observations ;
         - ``[sampleRate]`` in MHz ;
-        - ``[bin]`` the frequency channels (1024, 2048, 4096, 8192, 16384).
+        - ``[bin]`` the frequency channels (1024,  16384).
 
 #. Choose the integration time in ms (e.g. n=10 corresponds to 100 spectra/sec)
 

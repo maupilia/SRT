@@ -25,17 +25,27 @@
   
 
   
+  
     <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <link rel="next" title="End of the session" href="stop-session.html" />
-    <link rel="prev" title="Check during the observations" href="check-obs.html" /> 
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="SRT procedures 1 documentation" href="../../../index.html"/>
+        <link rel="up" title="ROACH1 (baseband) in P-band + DFB (folding) in L-band" href="index.html"/>
+        <link rel="next" title="End of the session" href="stop-session.html"/>
+        <link rel="prev" title="Check during the observations" href="check-obs.html"/> 
 
   
   <script src="../../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" role="document">
 
    
   <div class="wy-grid-for-nav">
@@ -96,7 +106,7 @@
 <li class="toctree-l4"><a class="reference internal" href="roach-setup.html">Roach setup</a></li>
 <li class="toctree-l4"><a class="reference internal" href="start-obs.html">Start the observations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="check-obs.html">Check during the observations</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="">Getting your data</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Getting your data</a></li>
 <li class="toctree-l4"><a class="reference internal" href="stop-session.html">End of the session</a></li>
 </ul>
 </li>
@@ -111,6 +121,7 @@
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../Problems/index.html">Problems during the observations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../NuragheScratch/index.html">Nuraghe from Scratch</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../Figures/index.html">Figures</a></li>
@@ -125,7 +136,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../index.html">SRT procedures</a>
@@ -133,10 +144,9 @@
       </nav>
 
 
+      
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -171,7 +181,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/Pulsar/LP-bands/ROACH1-DFB/get-data.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/Pulsar/LP-bands/ROACH1-DFB/get-data.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -187,8 +197,6 @@
   <div class="section" id="getting-your-data">
 <h1>Getting your data<a class="headerlink" href="#getting-your-data" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
-<ul class="simple">
-</ul>
 </div>
 <p>The data have been written on the nodes of the LEAP cluster. After the
 observation run, this baseband data needs to be de-dispersed and
@@ -201,16 +209,18 @@ this and that can be launched in W1 after the daemons are closed.</p>
 <div><code class="docutils literal"><span class="pre">$~/roach/scripts/dspsr.sh</span></code>  (as of October 2017, this code needs to be upgraded; update to follow).</div></blockquote>
 <p>The final archive data will be stored on the head node of the LEAP cluster (leap0) in ~/DATA/.</p>
 <p>This data (in .ar format) can then be transferred to nuraghe-obs1 or a
-personal computer using &#8220;scp&#8221;. In LEAP cluster VNC:</p>
+personal computer using “scp”. In LEAP cluster VNC:</p>
 <blockquote>
-<div><code class="docutils literal"><span class="pre">$</span> <span class="pre">scp</span> <span class="pre">-r</span> <span class="pre">~/DATA/[today’s</span> <span class="pre">date]</span>&nbsp; <span class="pre">[projectID]&#64;nuraghe-obs2:/archive/data/[projectID]/</span></code></div></blockquote>
+<div><code class="docutils literal"><span class="pre">$</span> <span class="pre">scp</span> <span class="pre">-r</span> <span class="pre">~/DATA/[today’s</span> <span class="pre">date]</span>&#160; <span class="pre">[projectID]&#64;nuraghe-obs2:/archive/data/[projectID]/</span></code></div></blockquote>
 <p>If you only want to keep the archive files, go ahead and delete the baseband data on the cluster nodes after all of it has been folded.</p>
 <p>As far as the DFB data is concerned, follow the instructions specific to the DFB.</p>
 </div>
 
 
            </div>
-           
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
@@ -232,7 +242,7 @@ personal computer using &#8220;scp&#8221;. In LEAP cluster VNC:</p>
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -251,11 +261,10 @@ personal computer using &#8220;scp&#8221;. In LEAP cluster VNC:</p>
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../../',
             VERSION:'1',
-            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../../_static/jquery.js"></script>
@@ -269,11 +278,14 @@ personal computer using &#8220;scp&#8221;. In LEAP cluster VNC:</p>
     <script type="text/javascript" src="../../../_static/js/theme.js"></script>
   
 
+  
+  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
+          SphinxRtdTheme.StickyNav.enable();
       });
-  </script> 
+  </script>
+   
 
 </body>
 </html>

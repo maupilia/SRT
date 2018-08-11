@@ -126,7 +126,7 @@ On nuraghe-mng
 
      Check the commanded azimuth and elevation of the antenna and
      its real position (in blue). The status must be green. 
-     |logo| :numref:`srt_mount_ok`
+     |logo| :numref:`srt_mount`
 
 
 #. **Active surface**
