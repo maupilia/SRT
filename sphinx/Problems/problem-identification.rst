@@ -108,8 +108,9 @@ to park the antenna. The green button is located close to the red
 emergency stop button in the control-room.
 
 When the antenna is parked, look at the ACU monitor, wait until
-**Axis blocked** appears in red (:numref:`srt_ACU_redbutton`).
-Only at this moment, you can press on the ``emergency stop button``.
+**Axis blocked** appears in red (:numref:`srt_ACU_axisblocked`).
+Only at this moment, you can press on the ``emergency stop button``
+(:numref:`srt_ACU_redbutton`).
 
 
 
