@@ -100,7 +100,7 @@ accuracy will probably be lost. :ref:`srt_windspeed`
 Stow of the antenna
 =============
 
-.. ATTENTION:: **Put in stow the antenna with the green button**
+.. ATTENTION:: **Put the antenna in stow with the green button**
 
 In the case the control software has some problems or is disable and you cannot
 communicate anymore with the antenna, you can use the ``green button``
@@ -108,9 +108,8 @@ to park the antenna. The green button is located close to the red
 emergency stop button in the control-room.
 
 When the antenna is parked, look at the ACU monitor, wait until
-**Axis blocked** appears in red (:numref:`srt_ACU_axisblocked`).
-Only at this moment, you can press on the ``emergency stop button``
-(:numref:`srt_ACU_redbutton`).
+**Axis blocked** appears in red (:numref:`srt_ACU_redbutton`).
+Only at this moment, you can press on the ``emergency stop button``.
 
 
 
