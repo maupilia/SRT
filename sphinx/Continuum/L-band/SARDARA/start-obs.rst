@@ -63,6 +63,8 @@ $ : commands to insert in a shell
 #. Select and configure the SARDARA backend in L-band
 
     ``> chooseBackend=BACKENDS/Sardara`` |logo| :numref:`srt_scheduler`
+    
+    $ genericBackendTui BACKENDS/Sardara
 
     ``> initialize=SL00``
 
@@ -88,9 +90,9 @@ $ : commands to insert in a shell
     ``> integration=[n]``
 
 
-#. Attenuate the signal based on the rms range [-128 ;128] and check the value on the interface
+#. Attenuate the signal based on the rms range [30;33] and check the value on the interface
 
-    ``> getrms``  **(A. MELIS)**
+    ``> getrms``  
 
     ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB. |logo| :numref:`srt_genericBackend`
 
