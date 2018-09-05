@@ -108,7 +108,7 @@ $ : commands to insert in a shell
 
     ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.  |logo| :numref:`srt_genericBackend_KKG`
     
-    Note: you have to set the attenuation for sections 0, 1, 2 and 3 (feeds 0 and 1), but for the other ones, the attenuation is 0 since the rms does not reach 30.
+    Important note: For the sections 0, 1, 2 and 3 (feeds 0 and 1), you have to set the attenuation accordingly to the values obtained with getRms. For the other sections the attenuation has to be set at 0 since the rms does not reach 30.
 
 
 #. Check the tsys (typical values to be inserted)
