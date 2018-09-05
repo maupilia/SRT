@@ -78,7 +78,7 @@ $ : commands to insert in a shell
 
 #. Attenuate the signal based on the rms range [30;33] and check the value on the interface :
 
-     ``> getrms``  
+     ``> getRms``  
 
      ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.  |logo| :numref:`srt_genericBackend`
 
