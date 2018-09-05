@@ -46,6 +46,8 @@ $ : commands to insert in a shell
 #. Select and configure the SARDARA backend in K-band :
 
     ``> chooseBackend=BACKENDS/Sardara``  |logo| :numref:`srt_scheduler`
+    
+    $ genericBackendTui BACKENDS/Sardara
 
     ``> initialize=[code]``
 
@@ -100,13 +102,13 @@ $ : commands to insert in a shell
 
     ``> derotatorGetPosition`` 
 
-#. Attenuate the signal based on the rms range [-128 ;128] and check the value on the interface.
+#. Attenuate the signal based on the rms range [30;33] and check the value on the interface.
 
-   ``> getrms``  **(ASK A. MELIS)**
+   ``> getRms``  
 
    ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB. |logo| :numref:`srt_genericBackend_KKG`
 
-#. Check the tsys (typical values to be inserted)
+#. Check the tsys (typical values: 110-120 K for bw=1500MHz and 120-130 K for bw=420MHz)
 
     ``> tsys`` |logo| :numref:`srt_genericBackend_KKG`
 
