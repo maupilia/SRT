@@ -62,27 +62,23 @@ $ : commands to insert in a shell
 
 #. Select and configure the SARDARA backend in L-band
 
-    ``> chooseBackend=BACKENDS/Sardara`` |logo| :numref:`srt_scheduler`
+    ``> chooseBackend=Sardara`` |logo| :numref:`srt_scheduler`
     
     $ genericBackendTui BACKENDS/Sardara
 
-    ``> initialize=SL00``
+    ``> initialize=SL00S``
 
 
 #. Set the different parameters of the backend :
 
-    ``> setSection=[sect],[startFreq],[bw],[num-feed],[polarization],[sampleRate],[bin]``  |logo| :numref:`srt_genericBackend`
+    ``> setSection=[sect],*,1500,*,*,[sampleRate],[bin]``  |logo| :numref:`srt_genericBackend`
 
      with : 
 
        - ``[sect]`` : 0 in full Stokes observations and ``[sect]`` :
          0, 1 in non full-stokes observations ;
-       - ``[startFreq]`` corresponds to the initial frequency in MHz from the LO value ; 
-       - ``[bw]`` the bandwidth in MHz ; 
-       - ``[num-feed]``: the number of feed : 1 in L-band ;
-       - ``[polarization]`` = 0 or 1 : Left and Right ; 2 : full Stokes) ;
-       - ``[sampleRate]`` in MHz ;
-       - ``[bin]`` the frequency channels (1024, 2048, 4096, 8192, 16384).
+       - ``[sampleRate]`` in MHz (3000) ;
+       - ``[bin]`` the frequency channels (1024 or 16384).
 
     
 #. Choose the integration time in ms (e.g. n=10 corresponds to 100 spectra/sec)
@@ -102,4 +98,4 @@ $ : commands to insert in a shell
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 
-     ``> startSchedule=[projectID]/[schedulename].scd,[N]``   |logo| :numref:`srt_scheduler`
+     ``> startSchedule=[schedulename].scd,[N]``   |logo| :numref:`srt_scheduler`
