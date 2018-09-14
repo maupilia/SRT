@@ -69,7 +69,8 @@ $ : commands to insert in a shell
     
     ``$ genericBackendTui BACKENDS/Sardara``
 
-    ``> initialize=SL00S``
+    ``> initialize=SL00S`` for full Stokes observations or
+    ``> initialize=SL00`` for non full Stokes observations
 
 #. Set the different parameters of the backend :
 
