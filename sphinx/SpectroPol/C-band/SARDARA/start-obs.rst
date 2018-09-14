@@ -51,7 +51,7 @@ $ : commands to insert in a shell
     
     ``$ genericBackendTui BACKENDS/Sardara``
 
-    ``> initialize=SC00``
+    ``> initialize=SC00S``
 
 
 #. Set the different parameters of the backend :
@@ -68,7 +68,6 @@ $ : commands to insert in a shell
 #. Choose the integration time in ms (e.g. n=10 corresponds to 100 spectra/sec)
 
     ``> integration=[n]``
-
 
 #. Attenuate the signal based on the rms range [30;33] and check the value on the interface.
 
