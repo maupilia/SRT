@@ -58,6 +58,10 @@ $ : commands to insert in a shell
 #. Insert the Local Oscillator value in MHz :
 
     ``> setLO=[freq]`` |logo| :numref:`srt_receivers`
+    
+#. .......... :
+
+    ``filtre macaferi`` 
 
 #. Select and configure the SARDARA backend in L-band :
 
