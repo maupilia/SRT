@@ -74,13 +74,12 @@ $ : commands to insert in a shell
 
 #. Set the different parameters of the backend :
 
-    ``> setSection=[sect],*,1500,*,*,[sampleRate],[bin]`` |logo| :numref:`srt_genericBackend`
+    ``> setSection=[sect],*,1500,*,*,3000,[bin]`` |logo| :numref:`srt_genericBackend`
 
      with : 
 
        - ``[sect]`` : 0 in full Stokes observations and ``[sect]`` :
          0, 1 in non full-stokes observations ;
-       - ``[sampleRate]`` in MHz (3000) ;
        - ``[bin]`` the frequency channels (1024 or 16384).
     
 #. Choose the integration time in ms (e.g. n=10 corresponds to 100 spectra/sec) :
