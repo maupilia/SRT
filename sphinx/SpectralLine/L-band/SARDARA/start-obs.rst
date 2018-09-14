@@ -37,6 +37,14 @@ $ : commands to insert in a shell
 
     ``> setupLLP``  |logo| :numref:`srt_receivers_LLP`  |logo| :numref:`srt_ACU_green`
 
+#. Select the active surface shape (Parabolic for L-band observations)
+
+    ``> asSetup=P``  |logo| :numref:`srt_activesurface`
+
+#. Insert the Local Oscillator value in MHz
+
+    ``> setLO=[freq]`` |logo| :numref:`srt_receivers_LLP`
+
 #. Select the receiver mode :
 
     ``> receiversMode=[code]`` where ``[code]`` can be ``XXC1``,
@@ -50,15 +58,12 @@ $ : commands to insert in a shell
        - **4** : 1300-1800 MHz (band-pass) ;
        - **5** : 1625-1715 MHz.
 
-
-#. Select the active surface shape (Parabolic for L-band observations)
-
-    ``> asSetup=P``  |logo| :numref:`srt_activesurface`
-
-
-#. Insert the Local Oscillator value in MHz
-
-    ``> setLO=[freq]`` |logo| :numref:`srt_receivers_LLP`
+#. Select the Maccaferri filter :
+    
+    - ``ifd=BW-NARROW`` for 115 MHz of bw ;
+    - ``ifd=BW-MEDIUM`` for 230 MHz of bw ;
+    - ``ifd=BW-WIDE`` for 460 MHz of bw ;
+    - ``ifd=BW-UNFILTERED``.
 
 #. Select and configure the SARDARA backend in L-band
 
