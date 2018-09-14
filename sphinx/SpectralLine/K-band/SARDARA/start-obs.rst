@@ -45,22 +45,22 @@ $ : commands to insert in a shell
 
 #. Select and configure the SARDARA backend in K-band
 
-    ``> chooseBackend=BACKENDS/Sardara``  |logo| :numref:`srt_scheduler`
+    ``> chooseBackend=Sardara``  |logo| :numref:`srt_scheduler`
     
-    $ genericBackendTui BACKENDS/Sardara
+    ``$ genericBackendTui BACKENDS/Sardara``
 
     ``> initialize=[code]``
 
      with :
 
-       - ``[code]`` = SK00 : central feed only ;
-       - ``[code]`` = SK77 : 7 feeds ;
-       - ``[code]`` = SK03 : feeds 0 and 3 only ;
-       - ``[code]`` = SK06 : feeds 0 and 6 only.
+       - ``[code]`` = SK00S : central feed only ;
+       - ``[code]`` = SK77S : 7 feeds ;
+       - ``[code]`` = SK03S : feeds 0 and 3 only ;
+       - ``[code]`` = SK06S : feeds 0 and 6 only.
 
 #. Set the different parameters of the backend:
 
-   ``> setSection=[sect],[startFreq],[bw],[num-feed],[polarization],[sampleRate],[bin]``  |logo| :numref:`srt_genericBackend_KKG`
+   ``> setSection=[sect],*,[bw],*,*,[sampleRate],[bin]``  |logo| :numref:`srt_genericBackend_KKG`
 
      with : 
 
@@ -68,13 +68,9 @@ $ : commands to insert in a shell
           ;
         - ``[sect]`` = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,12, 13 in
           non full Stokes observations ;
-        - ``[startFreq]`` corresponds to the initial frequency in MHz
-          from the LO value ; 
-        - ``[bw]`` the bandwidth in MHz ; 
-        - ``[num-feed]`` the number of feeds (from 1 to 7) ;
-        - ``[polarization]``: the polarization mode ;
-        - ``[sampleRate]`` in MHz ;
-        - ``[bin]`` the frequency channels (1024, 2048, 4096, 8192, 16384).
+        - ``[bw]`` the bandwidth in MHz (420 or 1500) ; 
+        - ``[sampleRate]`` in MHz (840 for 420 MKz of bw or 3000 for 1500 MHz of bw) ;
+        - ``[bin]`` the frequency channels (1024 or 16384).
 
 #. Choose the integration time in ms (e.g. n=10 corresponds to 100 spectra/sec)
 
@@ -125,4 +121,4 @@ $ : commands to insert in a shell
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 
-    ``> startSchedule=[projectID]/[schedulename].scd,[N]`` |logo| :numref:`srt_scheduler`
+    ``> startSchedule=[schedulename].scd,[N]`` |logo| :numref:`srt_scheduler`
