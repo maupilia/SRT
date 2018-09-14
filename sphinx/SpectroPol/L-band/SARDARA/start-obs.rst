@@ -65,7 +65,7 @@ $ : commands to insert in a shell
     
     ``$ genericBackendTui BACKENDS/Sardara``
 
-    ``> initialize=SL00``
+    ``> initialize=SL00S``
 
 #. Set the different parameters of the backend :
 
