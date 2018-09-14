@@ -59,9 +59,12 @@ $ : commands to insert in a shell
 
     ``> setLO=[freq]`` |logo| :numref:`srt_receivers`
     
-#. .......... :
-
-    ``filter maccaferri`` 
+#. Select the Maccaferri filter :
+    
+    - ``ifd=BW-NARROW`` for 115 MHz of bw ;
+    - ``ifd=BW-MEDIUM`` for 230 MHz of bw ;
+    - ``ifd=BW-WIDE`` for 460 MHz of bw ;
+    - ``ifd=BW-UNFILTERED``.
 
 #. Select and configure the SARDARA backend in L-band :
 
