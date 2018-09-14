@@ -48,7 +48,7 @@ $ : commands to insert in a shell
 
 #. Select and configure the SARDARA backend in K-band
 
-    ``> chooseBackend=BACKENDS/Sardara`` |logo| :numref:`srt_scheduler`
+    ``> chooseBackend=Sardara`` |logo| :numref:`srt_scheduler`
     
     ``$ genericBackendTui BACKENDS/Sardara``
 
@@ -128,4 +128,4 @@ $ : commands to insert in a shell
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 
-    ``> startSchedule=[projectID]/[schedulename].scd,[N]``  |logo| :numref:`srt_scheduler`
+    ``> startSchedule=[schedulename].scd,[N]``  |logo| :numref:`srt_scheduler`
