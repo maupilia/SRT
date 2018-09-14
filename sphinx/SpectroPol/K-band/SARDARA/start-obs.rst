@@ -56,10 +56,14 @@ $ : commands to insert in a shell
 
      with :
 
-       - ``[code]`` = SK00S : central feed only ;
-       - ``[code]`` = SK77S : 7 feeds ;
-       - ``[code]`` = SK03S : feeds 0 and 3 only ;
-       - ``[code]`` = SK06S : feeds 0 and 6 only.
+       - ``[code]`` = SK00S : central feed only and full Stokes observations ;
+       - ``[code]`` = SK00  : central feed only and non full Stokes observations ;
+       - ``[code]`` = SK77S : 7 feeds and full Stokes observations ;
+       - ``[code]`` = SK77  : 7 feeds and non full Stokes observations ;
+       - ``[code]`` = SK03S : feeds 0 and 3 only and full Stokes observations ;
+       - ``[code]`` = SK03  : feeds 0 and 3 only and non full Stokes observations ;
+       - ``[code]`` = SK06S : feeds 0 and 6 only and full Stokes observations ;
+       - ``[code]`` = SK06  : feeds 0 and 6 only and non full Stokes observations.
 
 
 #. Set the different parameters of the backend:
