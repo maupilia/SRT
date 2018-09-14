@@ -61,7 +61,7 @@ $ : commands to insert in a shell
     
 #. .......... :
 
-    ``filtre macaferi`` 
+    ``filter maccaferri`` 
 
 #. Select and configure the SARDARA backend in L-band :
 
