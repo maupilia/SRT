@@ -49,25 +49,22 @@ $ : commands to insert in a shell
 
     ``> chooseBackend=BACKENDS/Sardara`` |logo| :numref:`srt_scheduler`
     
-    $ genericBackendTui BACKENDS/Sardara
+    ``$ genericBackendTui BACKENDS/Sardara``
 
     ``> initialize=SC00``
 
 
 #. Set the different parameters of the backend :
 
-    ``> setSection=[sect],[startFreq],[bw],[num-feed],[polarization],[sampleRate],[bin]`` |logo| :numref:`srt_genericBackend`
+    ``> setSection=[sect],*,[bw],*,*,[sampleRate],[bin]`` |logo| :numref:`srt_genericBackend`
 
     with : 
 
-      - ``[sect]``: 0 in full Stokes observations ;
-      - ``[startFreq]`` corresponds to the initial frequency in MHz from the LO value ; 
-      - ``[bw]`` the bandwidth in MHz ; 
-      - ``[num-feed]``: 1 (number of feed in C-band) ;
-      - ``[polarization]``: 2 for full Stokes observations ;
-      - ``[sampleRate]`` in MHz ;
-      - ``[bin]`` the frequency channels (1024, 2048, 4096, 8192, 16384).
-    
+      - ``[sect]``: 0 in full Stokes observations ; 
+      - ``[bw]`` the bandwidth in MHz (420 or 1500 MHz) ; 
+      - ``[sampleRate]`` in MHz (840 for 420 MHz of bw or 3000 for 1500 MHz di bw) ;
+      - ``[bin]`` the frequency channels (1024 or 16384).
+      
 #. Choose the integration time in ms (e.g. n=10 corresponds to 100 spectra/sec)
 
     ``> integration=[n]``
