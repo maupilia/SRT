@@ -64,7 +64,7 @@ $ : commands to insert in a shell
 
     ``> chooseBackend=Sardara`` |logo| :numref:`srt_scheduler`
     
-    $ genericBackendTui BACKENDS/Sardara
+    ``$ genericBackendTui BACKENDS/Sardara``
 
     ``> initialize=SL00S``
 
