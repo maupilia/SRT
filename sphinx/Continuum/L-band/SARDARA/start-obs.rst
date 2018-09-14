@@ -60,6 +60,7 @@ $ : commands to insert in a shell
     - ``ifd=BW-WIDE`` for 460 MHz of bw ;
     - ``ifd=BW-UNFILTERED``.
 
+
 #. Insert the Local Oscillator value in MHz
 
     ``> setLO=[freq]`` |logo| :numref:`srt_receivers_LLP`
