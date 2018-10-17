@@ -35,6 +35,8 @@ On nuraghe-obs1
 
 1. Check the presence of the 8 panels : 
 
+****TEST MAURA****
+
     - operatorInput
     - AntennaBoss
     - GenericBackend
