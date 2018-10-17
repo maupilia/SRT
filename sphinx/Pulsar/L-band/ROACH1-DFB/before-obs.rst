@@ -23,7 +23,7 @@ On nuraghe-mng
 
   Check that :
 
-   - all of the 31 containers are active on ACS ;
+   - all of the 33 containers are active on ACS ;
    - the active surface is green on AS ;
    - the jlog is open in order to track possible error messages ;
    - the interface of the Meteo client is open to check the wind velocity in real time (< 60 km/h).
@@ -34,8 +34,6 @@ On nuraghe-obs1
 
 
 1. Check the presence of the 8 panels : 
-
-****TEST MAURA****
 
     - operatorInput
     - AntennaBoss
