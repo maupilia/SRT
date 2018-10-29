@@ -40,7 +40,7 @@ Please, follow the steps in the order.
     surface is ready when it is green (it takes several minutes).
 
 
-#. On **nuraghe-mng**, check that the you have now **31 containers**.
+#. On **nuraghe-mng**, check that the you have now **33 containers**.
 
 
 #. Go on the CONSOLE virtual desktop of **nuraghe-mng**. Open a shell and execute the following command
