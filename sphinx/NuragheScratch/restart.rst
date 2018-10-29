@@ -52,7 +52,7 @@ Please, follow the steps in the order.
      - **operatorInput** (:numref:`srt_operatorinput`)
      - **AntennaBoss** (:numref:`srt_antennaboss`)
      - **GenericBackend** (:numref:`srt_genericBackend`)
-     - **Mount** (:numref:`srt_mount_ok`)
+     - **Mount** (:numref:`srt_mount`)
      - **Observatory** (:numref:`srt_observatory`)
      - **Receivers** (:numref:`srt_receivers`)
      - **Scheduler** (:numref:`srt_scheduler`)
