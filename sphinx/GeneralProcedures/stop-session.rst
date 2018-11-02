@@ -33,6 +33,7 @@ On nuraghe-mng
 1. Stop your schedule :
 
    ``> haltSchedule``    *the schedule stops at the end of the on-going subscan.*  |logo| :numref:`srt_scheduler_end`
+   
 
 
 
