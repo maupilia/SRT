@@ -58,7 +58,7 @@ On nuraghe-mng
       TBD (tool M. Bachetti)
 
 
-#. **jlog**
+#. **ACS custom logging client**
 
      The logging display shows warning and error messages. Warning
      messages are indicated in yellow while error messages are in red
@@ -84,7 +84,7 @@ On nuraghe-mng
 
      Check the status of the Scheduler is OK (green).
      During the tracking, @ is green while it is red during the
-     slewing of the antenna. |logo| :numref:`srt_scheduler`
+     slewing of the antenna. |logo| :numref:`srt_scheduler_failure`
 
      Check the update of the number of scan/subscan according to your
      schedule (.scd). Scans will be skipped if the target is not
