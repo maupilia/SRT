@@ -107,7 +107,10 @@ $ : commands to insert in a shell
     To read back the position of the dewar :
 
     ``> derotatorGetPosition`` 
+    
+#. Put the antenna at 45 deg of elevation before to check that the signal is in the linear range of the backend:
 
+    ``> goTo=*,45d`` |logo| :numref:`srt_mount`
 
 #. Attenuate the signal based on the rms range [30;33] and check the value on the interface.
 
