@@ -27,14 +27,15 @@ On mng-dev (observer computer)
 ------------------
 
 Check that:
-   - the log client **jlog** is open in order to track possible error
+..   - the log client **jlog** is open in order to track possible error
      messages (:numref:`srt_jlog`). In case it is not open, type ``$
      jlog &`` on a shell;
-   - the interface of the **Meteo client** is open to check the wind
+     
+.   - the interface of the **Meteo client** is open to check the wind
      velocity in real time (it should be < 60 km/h)
      (:numref:`srt_meteo`). If the interface is closed, type ``$
      meteoClient &`` on a shell.
-   - all of the **33 containers** are active on ACS (MNG virtual desktop) (:numref:`srt_acs`);
+    - all of the **33 containers** are active on ACS (MNG virtual desktop)  (:numref:`srt_acs`);
 
 
 .. warning:: If the number of containers is 0 instead of 33 in ACS, `you have to start ACS <https://srtsupervisoronduty.readthedocs.io/it/latest/sd/srt/procedures/nuraghe.html#avvio-di-nuraghe>`_
@@ -43,15 +44,16 @@ Check that:
 
 .. On nuraghe-obs1 ------------------
 
-On the nuraghe CONSOLE virtual desktop, check the presence of the 8 panels (:numref:`srt_vistaglobale`): 
+On the nuraghe CONSOLE virtual desktop, check the presence of the 9 panels (:numref:`srt_vistaglobale`): 
    - **operatorInput** (:numref:`srt_operatorinput`)
    - **AntennaBoss** (:numref:`srt_antennaboss`)
    - **GenericBackend** (:numref:`srt_genericBackend`)
-   - **Mount** (:numref:`srt_mount_ok`)
+   - **Mount** (:numref:`srt_mount`)
    - **Observatory** (:numref:`srt_observatory`)
    - **Receivers** (:numref:`srt_receivers`)
    - **Scheduler** (:numref:`srt_scheduler`)
    - **MinorServo** (:numref:`srt_minorservo`)
+   - **ACS custom logging client** (:numref:`srt_jlog`)
 
 
 **Upload your shedules (.scd, .lis, .bck and .cfg files) and check them:**
