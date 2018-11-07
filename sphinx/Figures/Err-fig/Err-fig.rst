@@ -73,9 +73,9 @@ the position of a target).
 When the status of the scheduler is in FAILURE and the scan/subscan
 number is frozen, stop the schedule.
 
-        .. _srt-scheduler:
+        .. _srt_scheduler_failure:
 
-     	.. figure:: srt_scheduler.png
+     	.. figure:: srt_scheduler_failure.png
 	   :align: center
 
            The scheduler status is in FAILURE (add image!)
