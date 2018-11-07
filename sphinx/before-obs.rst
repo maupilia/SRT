@@ -27,15 +27,15 @@ On mng-dev (observer computer)
 ------------------
 
 Check that:
-..   - the log client **jlog** is open in order to track possible error
+   - the log client **jlog** is open in order to track possible error
      messages (:numref:`srt_jlog`). In case it is not open, type ``$
      jlog &`` on a shell;
      
-.   - the interface of the **Meteo client** is open to check the wind
+   - the interface of the **Meteo client** is open to check the wind
      velocity in real time (it should be < 60 km/h)
      (:numref:`srt_meteo`). If the interface is closed, type ``$
      meteoClient &`` on a shell.
-    - all of the **33 containers** are active on ACS (MNG virtual desktop)  (:numref:`srt_acs`);
+   - all of the **33 containers** are active on ACS (MNG virtual desktop)  (:numref:`srt_acs`);
 
 
 .. warning:: If the number of containers is 0 instead of 33 in ACS, `you have to start ACS <https://srtsupervisoronduty.readthedocs.io/it/latest/sd/srt/procedures/nuraghe.html#avvio-di-nuraghe>`_
