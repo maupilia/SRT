@@ -97,7 +97,7 @@ $ : commands to insert in a shell
           ``>  derotatorSetPosition=[ang]d``     with ``[ang]`` the
           dewar angle in degrees.
 
-    To read back the position of the dewar :
+..    To read back the position of the dewar :
 
     ``> derotatorGetPosition`` 
     
