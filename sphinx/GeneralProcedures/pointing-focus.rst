@@ -48,10 +48,10 @@ Pointing
     
     ``> track=[name]``  if the calibrator is in the SRT database 
     (e.g. 3c147 => note **c** in lower case)
-    
-Important note: the complete list of the sources which are recorded in the SRT database is available `on the page <https://discos.readthedocs.io/en/latest/user/srt/source/Appendix_D.html>`_
 
     otherwise  ``> sidereal=[name],[RA],[Dec],[epoch],[sector]``  
+    
+    Important note: the complete list of the sources which are recorded in the     SRT database is available `on the page <https://discos.readthedocs.io/en/latest/user/srt/source/Appendix_D.html>`_
 
     * ``RA, Dec``: Pay attention to the coordinate formats:
       - decimal degrees, using a **d** suffix, for any coordinate (e.g. 30.00d)
