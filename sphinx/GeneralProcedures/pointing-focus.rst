@@ -106,7 +106,7 @@ Focus
    ``> focusScan=150,00:01:00``
 
     The first number should be three times the wavelength of
-    observation in mm (e.g. in C-Band 3*5cm = 150mm).
+    observation in mm (e.g. in C-Band 3*5cm = 150mm). In the case of K-Band observations this value should be set to 60mm. 
 
 #. Look at the calibrationtool client to check the focus measurements. |logo| :numref:`srt_focus`
 
