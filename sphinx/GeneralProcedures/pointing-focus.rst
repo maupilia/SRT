@@ -37,7 +37,8 @@ Pointing
      and target of your schedules). 
      If the target you plan to observe is too weak to present a good S/N,
      select a calibrator bright enough and located close to your
-     target (`see the internal report N°27 <http://www.oa-cagliari.inaf.it/area.php?page_id=10&skip=4>`_.)
+     target (`see the internal report N°27 <http://www.oa-cagliari.inaf.it/area.php?page_id=10&skip=4>`_.). 
+
 
 #. Set the azimuth and elevation offsets to 0 degree.
 
@@ -47,6 +48,8 @@ Pointing
     
     ``> track=[name]``  if the calibrator is in the SRT database 
     (e.g. 3c147 => note **c** in lower case)
+    
+Important note: the complete list of the sources which are recorded in the SRT database is available `on the page <https://discos.readthedocs.io/en/latest/user/srt/source/Appendix_D.html>`_
 
     otherwise  ``> sidereal=[name],[RA],[Dec],[epoch],[sector]``  
 
