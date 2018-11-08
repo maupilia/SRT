@@ -61,6 +61,8 @@ $ : commands to insert in a shell
        - ``[code]`` = SK03  : feeds 0 and 3 only and total intensity observations ;
        - ``[code]`` = SK06S : feeds 0 and 6 only and full Stokes observations ;
        - ``[code]`` = SK06  : feeds 0 and 6 only and total intensity observations.
+       
+Important note: the *initialize* command requires a few more seconds comapared to the other command in order to operate. 
 
 #. Set the different parameters of the backend:
 
