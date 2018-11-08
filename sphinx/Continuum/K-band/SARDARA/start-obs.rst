@@ -114,8 +114,8 @@ Important note: the *initialize* command requires a few more seconds comapared t
    ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB. |logo| :numref:`srt_genericBackend_KKG`
    
    Important note 1: For the sections 0, 1, 2 and 3 (feeds 0 and 1), you have to set the attenuation accordingly to the values obtained with getRms. For the other sections the attenuation has to be set at 0 since the rms does not reach 30.
-   
-   Important note 2: The feed 10 does not work, do not consider the related    getRms and tsys values.
+    
+    Important note 2: The feed 10 does not work, do not consider the related    getRms and tsys values.
    
 
 #. Check the tsys (typical values: 110-120 K for bw=1500MHz and 120-130 K for bw=420MHz)
