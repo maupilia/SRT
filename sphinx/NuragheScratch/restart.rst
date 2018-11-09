@@ -22,6 +22,7 @@ Restart Discos
    On the **Deployment Info** panel, check that the 33 containers appear progressively.
  
  
+ 
 #. On the **discos-console computer**, open a terminal and give the following command:
 
     ``discosConsole`` 
