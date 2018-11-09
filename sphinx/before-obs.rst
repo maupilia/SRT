@@ -15,36 +15,23 @@ Important checks
 
 Some checks need to be performed before starting the observations.
 
-On nuraghe-AS (active surface desktop)
+On discos-manager (ACS)
 ------------------
 
-Check that the **active surface** is green (:numref:`srt_activesurface`).
-The active surface does not work properly if a large fraction (a whole
-sector) becomes red. It is a problem in K-band observations (:numref:`srt_AS-fraction-red`).
+Check that all of the **33 containers** are active on ACS (:numref:`srt_acs`).
+
+.. warning:: If the number of containers is 0 instead of 33 in ACS, `you have to start ACS (see ...).
+
+.. <https://srtsupervisoronduty.readthedocs.io/it/latest/sd/srt/procedures/nuraghe.html#avvio-di-nuraghe>`_
+
+Check also that the log client **jlog** is open in order to track possible error messages. 
+In case it is not open, type ``$ jlog &`` on a shell.
 
 
-On mng-dev (observer computer)
+On discos-console (observer computer)
 ------------------
 
-Check that:
-   - the log client **jlog** is open in order to track possible error
-     messages (:numref:`srt_jlog`). In case it is not open, type ``$
-     jlog &`` on a shell;
-     
-   - the interface of the **Meteo client** is open to check the wind
-     velocity in real time (it should be < 60 km/h)
-     (:numref:`srt_meteo`). If the interface is closed, type ``$
-     meteoClient &`` on a shell.
-   - all of the **33 containers** are active on ACS (MNG virtual desktop)  (:numref:`srt_acs`);
-
-
-.. warning:: If the number of containers is 0 instead of 33 in ACS, `you have to start ACS <https://srtsupervisoronduty.readthedocs.io/it/latest/sd/srt/procedures/nuraghe.html#avvio-di-nuraghe>`_
-
-
-
-.. On nuraghe-obs1 ------------------
-
-On the nuraghe CONSOLE virtual desktop, check the presence of the 9 panels (:numref:`srt_vistaglobale`): 
+On the CONSOLE virtual desktop, check the presence of the 9 panels (:numref:`srt_vistaglobale`): 
    - **operatorInput** (:numref:`srt_operatorinput`)
    - **AntennaBoss** (:numref:`srt_antennaboss`)
    - **GenericBackend** (:numref:`srt_genericBackend`)
@@ -53,18 +40,32 @@ On the nuraghe CONSOLE virtual desktop, check the presence of the 9 panels (:num
    - **Receivers** (:numref:`srt_receivers`)
    - **Scheduler** (:numref:`srt_scheduler`)
    - **MinorServo** (:numref:`srt_minorservo`)
-   - **ACS custom logging client** (:numref:`srt_jlog`)
+   - **ACS custom logging client** (:numref:`srt_jlog`). In case it is not open, type ``$
+     jlog &`` on a shell;
+
+Check also that:
+     
+   - the **active surface** is green (:numref:`srt_activesurface`).
+The active surface does not work properly if a large fraction (a whole
+sector) becomes red. It is a problem in K-band observations (:numref:`srt_AS-fraction-red`);
+
+   - the interface of the **Meteo client** is open to check the wind
+     velocity in real time (it should be < 60 km/h)
+     (:numref:`srt_meteo`). If the interface is closed, type ``$
+     meteoClient &`` on a shell;
+
+   - the **quicklook** is open.
 
 
 **Upload your shedules (.scd, .lis, .bck and .cfg files) and check them:**
 
    *From your computer:*
 
-   ``$ scp  [schedulename.*] discos@mng-dev:/archive/schedules/[projectID]``
+   ``$ scp  [schedulename.*] discos@discosconsole:/home/[projectID]/schedules/.``
 
-   *On mng-dev:*
+   *On discos-console:*
 
-   ``$ cd /archive/schedules/[projectID]``
+   ``$ cd /home/[projectID]/schedules``
 
    ``$ scheduleChecker [schedulename.scd]``
 
