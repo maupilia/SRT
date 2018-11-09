@@ -14,7 +14,7 @@ Welcome to the user cookbook!
 
 These pages are intended to support the observer when
 performing observations with SRT. For a complete documentation on the
-user guide *Observing at SRT with Nuraghe*, please click
+user guide *Observing at SRT with Discos*, please click
 `here <http://discos.readthedocs.io/en/latest/index.html>`_.
 
 Before observing, check that the system is ready. Then select the
