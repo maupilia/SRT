@@ -53,12 +53,11 @@ Check also that:
    - the **quicklook** is open;
    
    - the **active surface** is green (:numref:`srt_activesurface`).
-The active surface does not work properly if a large fraction (a whole
-sector) becomes red. It is a problem in K-band observations (:numref:`srt_AS-fraction-red`);
+.. warning:: The active surface does not work properly if a large fraction (a whole sector) becomes red. It is a problem in K-band observations (:numref:`srt_AS-fraction-red`);
 
 
 
-**Upload your shedules (.scd, .lis, .bck and .cfg files) and check them:**
+Upload your shedules (.scd, .lis, .bck and .cfg files) and check them:
 
    *From your computer:*
 
