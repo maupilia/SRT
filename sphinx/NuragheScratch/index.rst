@@ -4,25 +4,25 @@
    contain the root `toctree` directive.
 
 =====================
-Nuraghe from Scratch
+Discos from Scratch
 =====================
 
-Nuraghe is the control software produced for the Sardinia Radio
-Telescope. It is a distributed system based on ACS (ALMA Common
+Discos is the control software produced for the Sardinia Radio
+Telescope, Medicina and Noto. It is a distributed system based on ACS (ALMA Common
 Software), commanding all the devices of the telescope and allowing
 the user to perform single-dish observations.
 
 If the system has some problems that cannot be resolved with the help
-of the previous section, you probably need to restart Nuraghe. 
+of the previous section, you probably need to restart Discos. 
 
-**Before restarting Nuraghe, you have to follow the procedure of shutdown
-of Nuraghe.**
+**Before restarting Discos, you have to follow the procedure of shutdown
+of Discos.**
 
 
 .. toctree::
    :maxdepth: 1
 
-   Shutdown of Nuraghe <shutdown.rst>
-   Restart Nuraghe <restart.rst>
+   Shutdown of Discos <shutdown.rst>
+   Restart Discos <restart.rst>
 
 
