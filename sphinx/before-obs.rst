@@ -45,16 +45,17 @@ On the CONSOLE virtual desktop, check the presence of the 9 panels (:numref:`srt
 
 Check also that:
      
-   - the **active surface** is green (:numref:`srt_activesurface`).
-The active surface does not work properly if a large fraction (a whole
-sector) becomes red. It is a problem in K-band observations (:numref:`srt_AS-fraction-red`);
-
    - the interface of the **Meteo client** is open to check the wind
      velocity in real time (it should be < 60 km/h)
      (:numref:`srt_meteo`). If the interface is closed, type ``$
      meteoClient &`` on a shell;
 
-   - the **quicklook** is open.
+   - the **quicklook** is open;
+   
+   - the **active surface** is green (:numref:`srt_activesurface`).
+The active surface does not work properly if a large fraction (a whole
+sector) becomes red. It is a problem in K-band observations (:numref:`srt_AS-fraction-red`);
+
 
 
 **Upload your shedules (.scd, .lis, .bck and .cfg files) and check them:**
