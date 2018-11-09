@@ -41,7 +41,7 @@ Restart Discos
    You can modify the disposition of the individual panels for more clarity.
 
 
-   From a virtual desktop, open a new terminal to start the active surface and write:
+   From a virtual desktop, open a new terminal to start the **active surface** and write:
 
     ``SRTActiveSurfaceGUIClient &``
 
