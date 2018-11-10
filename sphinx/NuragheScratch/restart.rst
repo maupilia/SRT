@@ -37,7 +37,7 @@ Restart Discos
      - **Receivers** (:numref:`srt_receivers`)
      - **Scheduler** (:numref:`srt_scheduler`)
      - **MinorServo** (:numref:`srt_minorservo`)
-     - **ACS custom logging client**
+     - **ACS custom logging client** (:numref:`srt_jlog`)
 
    You can modify the disposition of the individual panels for more clarity.
 
