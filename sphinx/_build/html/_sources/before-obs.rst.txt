@@ -15,7 +15,7 @@ Important checks
 
 Some checks need to be performed before starting the observations.
 
-On nuraghe-AS (active surface computer)
+On nuraghe-AS (active surface desktop)
 ------------------
 
 Check that the **active surface** is green (:numref:`srt_activesurface`).
@@ -23,7 +23,7 @@ The active surface does not work properly if a large fraction (a whole
 sector) becomes red. It is a problem in K-band observations (:numref:`srt_AS-fraction-red`).
 
 
-On nuraghe-mng (observer computer)
+On mng-dev (observer computer)
 ------------------
 
 Check that:
@@ -34,10 +34,10 @@ Check that:
      velocity in real time (it should be < 60 km/h)
      (:numref:`srt_meteo`). If the interface is closed, type ``$
      meteoClient &`` on a shell.
-   - all of the **31 containers** are active on ACS (MNG virtual desktop) (:numref:`srt_acs`);
+   - all of the **33 containers** are active on ACS (MNG virtual desktop) (:numref:`srt_acs`);
 
 
-.. warning:: If the number of containers is 0 instead of 31 in ACS, `you have to start ACS <https://srtsupervisoronduty.readthedocs.io/it/latest/sd/srt/procedures/nuraghe.html#avvio-di-nuraghe>`_
+.. warning:: If the number of containers is 0 instead of 33 in ACS, `you have to start ACS <https://srtsupervisoronduty.readthedocs.io/it/latest/sd/srt/procedures/nuraghe.html#avvio-di-nuraghe>`_
 
 
 
@@ -58,9 +58,9 @@ On the nuraghe CONSOLE virtual desktop, check the presence of the 8 panels (:num
 
    *From your computer:*
 
-   ``$ scp  [schedulename.*] gavino@nuraghe-mng:/archive/schedules/[projectID]``
+   ``$ scp  [schedulename.*] discos@mng-dev:/archive/schedules/[projectID]``
 
-   *On nuraghe-mng:*
+   *On mng-dev:*
 
    ``$ cd /archive/schedules/[projectID]``
 

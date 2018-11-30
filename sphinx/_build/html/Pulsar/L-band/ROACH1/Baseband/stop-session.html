@@ -24,28 +24,19 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../../../genindex.html"/>
-        <link rel="search" title="Search" href="../../../../search.html"/>
-    <link rel="top" title="SRT procedures 1 documentation" href="../../../../index.html"/>
-        <link rel="up" title="Baseband Mode" href="index.html"/>
-        <link rel="next" title="ROACH1 (baseband) + DFB (folding)" href="../../ROACH1-DFB/index.html"/>
-        <link rel="prev" title="Getting your data" href="get-data.html"/> 
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="ROACH1 Manual Procedure" href="../../ROACH1_manual/index.html" />
+    <link rel="prev" title="Getting your data" href="get-data.html" /> 
 
   
   <script src="../../../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -105,6 +96,7 @@
 <li class="toctree-l4 current"><a class="reference internal" href="index.html">Baseband mode</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../ROACH1_manual/index.html">ROACH1 manual procedure (if the above should not work)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../ROACH1-DFB/index.html">ROACH1 + DFB</a></li>
 </ul>
 </li>
@@ -134,7 +126,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../../index.html">SRT procedures</a>
@@ -142,9 +134,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -207,9 +200,9 @@ the antenna.</p>
 <div class="section" id="in-leap-vnc">
 <h2>In LEAP VNC<a class="headerlink" href="#in-leap-vnc" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li>W: Do a <code class="docutils literal"><span class="pre">Control-C</span></code> to end the ./control.csh script.</li>
-<li>W: <code class="docutils literal"><span class="pre">$</span> <span class="pre">./end.csh</span></code> to end data acquisition and close the daemons.</li>
-<li>In each node: <code class="docutils literal"><span class="pre">$</span> <span class="pre">sudo</span> <span class="pre">halt</span></code></li>
+<li>W: Do a <code class="docutils literal notranslate"><span class="pre">Control-C</span></code> to end the ./control.csh script.</li>
+<li>W: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">./end.csh</span></code> to end data acquisition and close the daemons.</li>
+<li>In each node: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">sudo</span> <span class="pre">halt</span></code></li>
 </ol>
 </div>
 <div class="section" id="on-nuraghe-mng">
@@ -217,18 +210,18 @@ the antenna.</p>
 <ol class="arabic">
 <li><p class="first">Stop your schedule :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">stopSchedule</span></code>   <em>interruption of the current subscan</em> <img alt="logo" src="../../../../_images/monocle_7.png" /> <a class="reference internal" href="../../../../Figures/Check-fig/Check-fig.html#srt-scheduler-end"><span class="std std-numref">Fig.19</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">stopSchedule</span></code>   <em>interruption of the current subscan</em> <img alt="logo" src="../../../../_images/monocle_7.png" /> <a class="reference internal" href="../../../../Figures/Check-fig/Check-fig.html#srt-scheduler-end"><span class="std std-numref">Fig.19</span></a></p>
 <blockquote>
 <div><p>or</p>
 </div></blockquote>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">haltSchedule</span></code>    <em>the schedule stops at the end of the on-going subscan.</em></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">haltSchedule</span></code>    <em>the schedule stops at the end of the on-going subscan.</em></p>
 </div></blockquote>
 </li>
 <li><p class="first">Park the minor servo, active surface and antenna</p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">goTo=180d,89d</span></code> <img alt="logo" src="../../../../_images/monocle_7.png" /> <code class="xref std std-numref docutils literal"><span class="pre">srt_mount_ok</span></code></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">servoPark</span></code> <img alt="logo" src="../../../../_images/monocle_7.png" /> <a class="reference internal" href="../../../../Figures/Check-fig/Check-fig.html#srt-minorservo-end"><span class="std std-numref">Fig.23</span></a></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asPark</span></code> <img alt="logo" src="../../../../_images/monocle_7.png" /> <a class="reference internal" href="../../../../Figures/Check-fig/Check-fig.html#srt-activesurface"><span class="std std-numref">Fig.2</span></a></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaPark</span></code> <img alt="logo" src="../../../../_images/monocle_7.png" /> <a class="reference internal" href="../../../../Figures/Check-fig/Check-fig.html#srt-mount-antennareset"><span class="std std-numref">Fig.13</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">goTo=180d,89d</span></code> <img alt="logo" src="../../../../_images/monocle_7.png" /> <code class="xref std std-numref docutils literal notranslate"><span class="pre">srt_mount_ok</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">servoPark</span></code> <img alt="logo" src="../../../../_images/monocle_7.png" /> <a class="reference internal" href="../../../../Figures/Check-fig/Check-fig.html#srt-minorservo-end"><span class="std std-numref">Fig.23</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">asPark</span></code> <img alt="logo" src="../../../../_images/monocle_7.png" /> <a class="reference internal" href="../../../../Figures/Check-fig/Check-fig.html#srt-activesurface"><span class="std std-numref">Fig.2</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaPark</span></code> <img alt="logo" src="../../../../_images/monocle_7.png" /> <a class="reference internal" href="../../../../Figures/Check-fig/Check-fig.html#srt-mount-antennareset"><span class="std std-numref">Fig.13</span></a></p>
 </li>
 </ol>
 </div>
@@ -236,7 +229,7 @@ the antenna.</p>
 <h2>Block the axes of the antenna<a class="headerlink" href="#block-the-axes-of-the-antenna" title="Permalink to this headline">¶</a></h2>
 <p>Look at the ACU monitor, wait until
 <strong>Axis blocked</strong> appears in red. It can take a few minutes after the command
-<code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaPark</span></code> has been given (<code class="xref std std-numref docutils literal"><span class="pre">srt_ACU_axisblocked</span></code>).</p>
+<code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaPark</span></code> has been given (<code class="xref std std-numref docutils literal notranslate"><span class="pre">srt_ACU_axisblocked</span></code>).</p>
 <p>Only at this moment, you can press on the emergency stop button
 (<a class="reference internal" href="../../../../Figures/Err-fig/Err-fig.html#srt-acu-redbutton"><span class="std std-numref">Fig.30</span></a>).</p>
 </div>
@@ -244,15 +237,13 @@ the antenna.</p>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../ROACH1-DFB/index.html" class="btn btn-neutral float-right" title="ROACH1 (baseband) + DFB (folding)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../../ROACH1_manual/index.html" class="btn btn-neutral float-right" title="ROACH1 Manual Procedure" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="get-data.html" class="btn btn-neutral" title="Getting your data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -264,11 +255,11 @@ the antenna.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, E. Egron, M. Pilia, S. Loru.
+        &copy; Copyright 2018, E. Egron, M. Pilia, S. Loru
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -283,35 +274,24 @@ the antenna.</p>
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../../../../',
-            VERSION:'1',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../../../../_static/jquery.js"></script>
-      <script type="text/javascript" src="../../../../_static/underscore.js"></script>
-      <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 
-  
-  
-    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

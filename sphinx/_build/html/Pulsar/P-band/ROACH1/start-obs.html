@@ -1,0 +1,317 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Start the observations &mdash; SRT procedures 1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> SRT procedures
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../before-obs.html">Important checks</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../Continuum/index.html">Continuum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Pulsar observations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../SpectralLine/index.html">Spectral lines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../SpectroPol/index.html">Spectro-polarimetry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../VLBI/index.html">VLBI</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../Problems/index.html">Problems during the observations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../NuragheScratch/index.html">Nuraghe from Scratch</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../Figures/index.html">Figures</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">SRT procedures</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Start the observations</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/Pulsar/P-band/ROACH1/start-obs.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="toctree-wrapper compound">
+</div>
+<div class="section" id="start-the-observations">
+<span id="start-pupro"></span><h1>Start the observations<a class="headerlink" href="#start-the-observations" title="Permalink to this headline">¶</a></h1>
+<p>$ : commands to insert in a shell</p>
+<p>&gt; : commands to insert in the operatorInput panel</p>
+<p><img alt="logo" src="../../../_images/monocle_18.png" />: check the execution on the monitor</p>
+<div class="section" id="on-seadas">
+<h2>On seadas<a class="headerlink" href="#on-seadas" title="Permalink to this headline">¶</a></h2>
+<p>Place your observing files in <a class="reference external" href="mailto:corr&#37;&#52;&#48;seadas">corr<span>&#64;</span>seadas</a> as follows:</p>
+<blockquote>
+<div><ul class="simple">
+<li>your seadas setup file(s) in folder:    <a class="reference external" href="mailto:corr&#37;&#52;&#48;seadas">corr<span>&#64;</span>seadas</a>:/home/corr/setup/[your project code]</li>
+<li>your seadas schedule file(s) in folder: <a class="reference external" href="mailto:corr&#37;&#52;&#48;seadas">corr<span>&#64;</span>seadas</a>:/home/corr/scheds/[your project code]</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="on-mng-dev">
+<h2>On mng-dev<a class="headerlink" href="#on-mng-dev" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Insert your project number</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code>    <img alt="logo" src="../../../_images/monocle_18.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.18</span></a></p>
+</div></blockquote>
+</li>
+<li><p class="first">Initial setup</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code>   <img alt="logo" src="../../../_images/monocle_18.png" /> <a class="reference internal" href="../../../Figures/Err-fig/Err-fig.html#srt-acu-axis-blocked"><span class="std std-numref">Fig.29</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setupPLP</span></code> <img alt="logo" src="../../../_images/monocle_18.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span class="std std-numref">Fig.15</span></a>  <img alt="logo" src="../../../_images/monocle_18.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-acu-green"><span class="std std-numref">Fig.27</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">goTo=*,81.9d</span></code> <img alt="logo" src="../../../_images/monocle_18.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-mount"><span class="std std-numref">Fig.12</span></a></p>
+</div></blockquote>
+</li>
+<li><p class="first">On a terminal open a vnc session for <a class="reference external" href="mailto:corr&#37;&#52;&#48;seadas">corr<span>&#64;</span>seadas</a>:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">vncviewer</span> <span class="pre">seadas:1</span></code></p>
+</div></blockquote>
+</li>
+<li><p class="first">If this fails, start a new vnc session on <a class="reference external" href="mailto:corr&#37;&#52;&#48;seadas">corr<span>&#64;</span>seadas</a>.</p>
+</li>
+<li><p class="first">Type password at prompt.</p>
+</li>
+<li><p class="first">On another workspace, open a new terminal and start a vnc session for the head node leap0:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">vncviewer</span> <span class="pre">leap0:1</span></code></p>
+</div></blockquote>
+</li>
+</ol>
+<p>If it is not active:</p>
+<ol class="arabic" start="7">
+<li><p class="first">Log on to the LEAP cluster :</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">ssh</span> <span class="pre">-X</span> <span class="pre">user&#64;leap0</span></code>     <em>ask for password</em></p>
+</div></blockquote>
+</li>
+<li><p class="first">Launch a VNC session once logged on to leap0 :</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">leap0:</span> <span class="pre">$</span> <span class="pre">vncserver</span> <span class="pre">&amp;</span></code></p>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="in-the-vnc-session-corr-seadas">
+<h2>In the vnc session <a class="reference external" href="mailto:corr&#37;&#52;&#48;seadas">corr<span>&#64;</span>seadas</a><a class="headerlink" href="#in-the-vnc-session-corr-seadas" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">If you do not see the SEADAS interface, open a terminal and start it:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">seadas</span></code></p>
+</div></blockquote>
+</li>
+<li><p class="first">In the log frame of seadas main window check that SEADAS connects to nuraghe</p>
+</li>
+<li><p class="first">Click on the red label at the top right corner of the Antenna and Pointing Management frame.</p>
+</li>
+<li><p class="first">Check that the clicked label becomes green and dislpays the word “ENABLED”</p>
+</li>
+</ol>
+</div>
+<div class="section" id="in-the-vnc-session-leap0">
+<h2>In the vnc session leap0<a class="headerlink" href="#in-the-vnc-session-leap0" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">If you do not see the LEAPCONTROLLER interface, open a new terminal and start it</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">leapcontroller</span></code></p>
+</div></blockquote>
+</li>
+<li><p class="first">In LEAPCONTROLLER window, check that the colored label at the right of the “…” label is green and displays the word “CONNECTED”. If not, click on it.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="inside-seadas-window">
+<h2>Inside SEADAS window<a class="headerlink" href="#inside-seadas-window" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Select “Schedule” in the “Session mode” combo box</li>
+<li>Verify and adjust attenuation levels. You can do so by following the procedure below, using the schedule TEST.scd which you will find under the directory /home/corr/scheds/. Once you have started the schedule (see points below) you need to check the PDFB3 panel in the psrdfb vnc session. Under tab <cite>…</cite> make sure that the RMS level for each channel is around 10. If it is not, go back to the SEADAS interface and select different attenuation values (which can be different for the two channels) and press <cite>set attn.</cite></li>
+<li>Click “View obs list”. A window named “Observations List” pops up</li>
+<li>Click “View schedule”. A window named “Schedule Manager” pops up</li>
+<li>Click “Load sched” in “Schedule Manager” window. A system window pops up for browsing system directories and selecting the schedule file</li>
+<li>In “Schedule manager” window select schedule lines to be done - mouse left click on each single line - or click button “Select all” to load the entire schedule in the “Observations List” window</li>
+<li>If necessary, rearrange the order of the observations in the “Observations List” window  - left button click == cut line ; mid button click == paste line</li>
+<li>Click “Observe”</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, E. Egron, M. Pilia, S. Loru
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

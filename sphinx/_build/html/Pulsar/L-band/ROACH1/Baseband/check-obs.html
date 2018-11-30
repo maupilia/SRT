@@ -24,28 +24,19 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../../../genindex.html"/>
-        <link rel="search" title="Search" href="../../../../search.html"/>
-    <link rel="top" title="SRT procedures 1 documentation" href="../../../../index.html"/>
-        <link rel="up" title="Baseband Mode" href="index.html"/>
-        <link rel="next" title="Getting your data" href="get-data.html"/>
-        <link rel="prev" title="Start the observations" href="start-obs.html"/> 
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Getting your data" href="get-data.html" />
+    <link rel="prev" title="Start the observations" href="start-obs.html" /> 
 
   
   <script src="../../../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -134,7 +125,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../../index.html">SRT procedures</a>
@@ -142,9 +133,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -207,25 +199,25 @@
 <ol class="arabic">
 <li><p class="first">In the leap0 VNC, go to W3 to check on data quality. Each tab is connected to a cluster node, i.e. a particular 16 MHz sub-band. In each node, go to the data directory:</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">/data-001</span></code>   for node1</p>
-<p><code class="docutils literal"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">/data-002</span></code>   for node2, etc…</p>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">/data-001</span></code>   for node1</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">/data-002</span></code>   for node2, etc…</p>
 </div></blockquote>
 </li>
 <li><p class="first">In each node, check that the right folders (source and timestamp) are being created and that “dada” files are being written every 10 seconds. If no dada files are being written, there could be something wrong with the IP table.  For example, if one node is malfunctioning (e.g. is turned off) but is listed in the IP table as one would expect, it will cause packet loss or possibly even not write any dada files in the other nodes. In that case, check that all nodes are functioning correctly (see daemons in W1). If the node is definitely not working, you will need to ask a qualified person to look into it [this will involve taking the node out in the IP table before re-starting data acquisition].</p>
 </li>
-<li><p class="first">Check the data quality with <code class="docutils literal"><span class="pre">digistat</span></code>. Type:</p>
+<li><p class="first">Check the data quality with <code class="docutils literal notranslate"><span class="pre">digistat</span></code>. Type:</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">$</span> <span class="pre">digistat</span> <span class="pre">*dada</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">digistat</span> <span class="pre">*dada</span></code></p>
 <blockquote>
-<div><p>At the prompt, type <code class="docutils literal"><span class="pre">/xs</span></code> or <code class="docutils literal"><span class="pre">/xw</span></code> then <code class="docutils literal"><span class="pre">ENTER</span></code></p>
+<div><p>At the prompt, type <code class="docutils literal notranslate"><span class="pre">/xs</span></code> or <code class="docutils literal notranslate"><span class="pre">/xw</span></code> then <code class="docutils literal notranslate"><span class="pre">ENTER</span></code></p>
 <p>The curve on the right should be a nice Gaussian. If not, something went wrong with the receiver or with the cluster. Check that we are indeed observing L-band.</p>
-<p>To exit the plotting, just press <code class="docutils literal"><span class="pre">CONTROL-C</span></code>.</p>
+<p>To exit the plotting, just press <code class="docutils literal notranslate"><span class="pre">CONTROL-C</span></code>.</p>
 </div></blockquote>
 </div></blockquote>
 </li>
-<li><p class="first">Check the bandpass using <code class="docutils literal"><span class="pre">passband</span></code>. Type:</p>
+<li><p class="first">Check the bandpass using <code class="docutils literal notranslate"><span class="pre">passband</span></code>. Type:</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">$</span> <span class="pre">passband</span> <span class="pre">*dada</span></code> (then <code class="docutils literal"><span class="pre">/xs</span></code> or <code class="docutils literal"><span class="pre">/xw</span></code>)</p>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">passband</span> <span class="pre">*dada</span></code> (then <code class="docutils literal notranslate"><span class="pre">/xs</span></code> or <code class="docutils literal notranslate"><span class="pre">/xw</span></code>)</p>
 <blockquote>
 <div><p>Check for any strange source of RFI. Check in particular the bandpass of node 06. In between 1420 and 1421 MHz you should see the HI line. If it is, the cluster is working properly, giving you the right frequencies.</p>
 <p>In addition, you should see familiar sources of RFI. In node 01, you should see the Total Power line at 1375 MHz.</p>
@@ -234,7 +226,7 @@
 </li>
 <li><p class="first">At the end of the session, in each node, check for any packet loss with:</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">$</span> <span class="pre">~/roach/scripts/packetloss.sh</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">~/roach/scripts/packetloss.sh</span></code></p>
 <blockquote>
 <div><p>It counts how many times the number is not zero, meaning there has been packet loss.</p>
 <p>Occasional packet loss is nothing to worry about. However if the numbers are completely random and the cluster is losing packets in all nodes, we’re in trouble [ask a qualified person to go and manually reset the LEAP switch while data acquisition is  ongoing].</p>
@@ -246,32 +238,32 @@
 <div class="section" id="external-client">
 <h2>External client<a class="headerlink" href="#external-client" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">If something goes wrong with the external client (e.g. failing to give you antenna parameters), you should kill (using <code class="docutils literal"><span class="pre">Control-C</span></code>) the control.csh code.</p>
+<li><p class="first">If something goes wrong with the external client (e.g. failing to give you antenna parameters), you should kill (using <code class="docutils literal notranslate"><span class="pre">Control-C</span></code>) the control.csh code.</p>
 <blockquote>
-<div><p>Then go see what is wrong with the External Client. If you manage to fix it, re-start: <code class="docutils literal"><span class="pre">./control.csh</span></code>.</p>
+<div><p>Then go see what is wrong with the External Client. If you manage to fix it, re-start: <code class="docutils literal notranslate"><span class="pre">./control.csh</span></code>.</p>
 <p>Failure of the external client does not affect data acquisition with the ROACH while the antenna is tracking. The ROACH keeps recording data. The external client only matters when the antenna is going from TRACKING to SLEWING or from SLEWING to TRACKING.</p>
 </div></blockquote>
 </li>
-<li><p class="first">If the external client is not working at all and you need to manually launch data acquisition (i.e. you cannot use the <code class="docutils literal"><span class="pre">./control.csh</span></code> script that is normally used during LEAP to automate data acquisition), you can do the following:</p>
+<li><p class="first">If the external client is not working at all and you need to manually launch data acquisition (i.e. you cannot use the <code class="docutils literal notranslate"><span class="pre">./control.csh</span></code> script that is normally used during LEAP to automate data acquisition), you can do the following:</p>
 <blockquote>
 <div><ul class="simple">
-<li>at the beginning of the session, set up the ROACH using: <code class="docutils literal"><span class="pre">./control_init.csh</span></code> (W)</li>
-<li>Use <code class="docutils literal"><span class="pre">./start_simple.csh</span></code> to launch data acquisition (instead of <code class="docutils literal"><span class="pre">./start.csh</span></code>) (W)</li>
-<li>Use <code class="docutils literal"><span class="pre">./stop.csh</span></code> to stop data acquisition without closing the daemons (W)</li>
-<li>Use <code class="docutils literal"><span class="pre">./start_simple.csh</span></code> for next source etc. (W)</li>
-<li>at the end of the session, use <code class="docutils literal"><span class="pre">./end.csh</span></code> to stop data acquisition and close the daemons (W)</li>
+<li>at the beginning of the session, set up the ROACH using: <code class="docutils literal notranslate"><span class="pre">./control_init.csh</span></code> (W)</li>
+<li>Use <code class="docutils literal notranslate"><span class="pre">./start_simple.csh</span></code> to launch data acquisition (instead of <code class="docutils literal notranslate"><span class="pre">./start.csh</span></code>) (W)</li>
+<li>Use <code class="docutils literal notranslate"><span class="pre">./stop.csh</span></code> to stop data acquisition without closing the daemons (W)</li>
+<li>Use <code class="docutils literal notranslate"><span class="pre">./start_simple.csh</span></code> for next source etc. (W)</li>
+<li>at the end of the session, use <code class="docutils literal notranslate"><span class="pre">./end.csh</span></code> to stop data acquisition and close the daemons (W)</li>
 </ul>
 </div></blockquote>
 </li>
 </ol>
-<p>The difference between <code class="docutils literal"><span class="pre">./start.csh</span></code> and <code class="docutils literal"><span class="pre">./start_simple.csh</span></code> is that <code class="docutils literal"><span class="pre">./start_simple.csh</span></code> does not call the external client to get information about the source. If the external client is working, use <code class="docutils literal"><span class="pre">./start.csh</span></code> and the right folders will be automatically created using the name of the source that is being tracked and the most recent timestamp.</p>
+<p>The difference between <code class="docutils literal notranslate"><span class="pre">./start.csh</span></code> and <code class="docutils literal notranslate"><span class="pre">./start_simple.csh</span></code> is that <code class="docutils literal notranslate"><span class="pre">./start_simple.csh</span></code> does not call the external client to get information about the source. If the external client is working, use <code class="docutils literal notranslate"><span class="pre">./start.csh</span></code> and the right folders will be automatically created using the name of the source that is being tracked and the most recent timestamp.</p>
 </div>
 <div class="section" id="on-nuraghe-mng">
 <h2>On nuraghe-mng<a class="headerlink" href="#on-nuraghe-mng" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first">Check that the data are correctly written in your project section (Rescicom) :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">/archive/data/Rescicom/yyyymmdd</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">/archive/data/Rescicom/yyyymmdd</span></code></p>
 </div></blockquote>
 </li>
 <li><p class="first"><strong>jlog</strong></p>
@@ -302,9 +294,9 @@ visible at the moment of the observations.</p>
 <p>If you realize that the scan/subscan number is frozen or that the
 tracking is red while the antenna is tracking the source, stop
 the on-going schedule with:</p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">stopSchedule</span></code>    (in the operatorInput)</p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">stopSchedule</span></code>    (in the operatorInput)</p>
 <p>then start again the schedule:</p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">startSchedule=[projectID]/…scd,n</span></code>    (with n the number of scan)</p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">startSchedule=[projectID]/…scd,n</span></code>    (with n the number of scan)</p>
 </div></blockquote>
 </li>
 <li><p class="first"><strong>MinorServo</strong></p>
@@ -330,7 +322,7 @@ telescope is slewing. <img alt="logo" src="../../../../_images/monocle_7.png" />
 <blockquote>
 <div><p>Check the commanded azimuth and elevation of the antenna and
 its real position (in blue). The status must be green.
-<img alt="logo" src="../../../../_images/monocle_7.png" /> <code class="xref std std-numref docutils literal"><span class="pre">srt_mount_ok</span></code></p>
+<img alt="logo" src="../../../../_images/monocle_7.png" /> <code class="xref std std-numref docutils literal notranslate"><span class="pre">srt_mount_ok</span></code></p>
 </div></blockquote>
 </li>
 <li><p class="first"><strong>Active surface</strong></p>
@@ -359,9 +351,7 @@ If a red box appears, put the cursor on it and look at the error message.</p>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -379,11 +369,11 @@ If a red box appears, put the cursor on it and look at the error message.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, E. Egron, M. Pilia, S. Loru.
+        &copy; Copyright 2018, E. Egron, M. Pilia, S. Loru
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -398,35 +388,24 @@ If a red box appears, put the cursor on it and look at the error message.</p>
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../../../../',
-            VERSION:'1',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../../../../_static/jquery.js"></script>
-      <script type="text/javascript" src="../../../../_static/underscore.js"></script>
-      <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 
-  
-  
-    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

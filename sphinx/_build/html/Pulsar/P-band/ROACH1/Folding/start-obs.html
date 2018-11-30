@@ -24,28 +24,19 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../../../genindex.html"/>
-        <link rel="search" title="Search" href="../../../../search.html"/>
-    <link rel="top" title="SRT procedures 1 documentation" href="../../../../index.html"/>
-        <link rel="up" title="Folding Mode" href="index.html"/>
-        <link rel="next" title="Check during the observations" href="check-obs.html"/>
-        <link rel="prev" title="Roach setup" href="roach-setup.html"/> 
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Check during the observations" href="check-obs.html" />
+    <link rel="prev" title="Roach setup" href="roach-setup.html" /> 
 
   
   <script src="../../../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -133,7 +124,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../../index.html">SRT procedures</a>
@@ -141,9 +132,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -203,31 +195,31 @@
 <ol class="arabic">
 <li><p class="first">Insert your project number :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code></p>
 </div></blockquote>
 </li>
 <li><p class="first">Initial setup :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setupPPP</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setupPPP</span></code></p>
 </div></blockquote>
 </li>
 <li><p class="first">Select the active surface shape (Parabolic for L and P-band observations) :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asSetup=P</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">asSetup=P</span></code></p>
 </div></blockquote>
 </li>
 <li><p class="first">No need to insert a Local Oscillator value ???</p>
 </li>
 <li><p class="first">Set the attenuations (to 15) for the 2 polarizations arriving at the Total Power backend (this may change depending on the settings of the new IF distributor).</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setAttenuation=0,15</span></code></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setAttenuation=1,15</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setAttenuation=0,15</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setAttenuation=1,15</span></code></p>
 </div></blockquote>
 </li>
 <li><p class="first">Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">startSchedule=[projectID]/[schedulename].scd,[N_n]</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">startSchedule=[projectID]/[schedulename].scd,[N_n]</span></code></p>
 <blockquote>
 <div><p>If your schedule is LST-based (like for LEAP schedules), the antenna points to the relevant source as soon as you launch the schedule, even before the designated start time of observations (but you can start data acquisition with the ROACH1 at a later time). Check on the monitor each time that the antenna is pointing at and <strong>TRACKING</strong> the right source.</p>
 </div></blockquote>
@@ -241,17 +233,17 @@
 <ol class="arabic">
 <li><p class="first">W2: initial setup in Control directory:</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">$</span> <span class="pre">./control_init.sh</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">./control_init.sh</span></code></p>
 </div></blockquote>
 </li>
 <li><p class="first">W1: in each of the 8 tabs, launch the daemons:</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">$</span> <span class="pre">~/roach/scripts/daemon.sh</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">~/roach/scripts/daemon.sh</span></code></p>
 </div></blockquote>
 </li>
 <li><p class="first">When the antenna is tracking the first source and you are ready to start data acquisition, go to W2 and type:</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">$</span> <span class="pre">./start.csh</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">./start.csh</span></code></p>
 <blockquote>
 <div><p>Data acquisition has now started with the ROACH1.</p>
 </div></blockquote>
@@ -259,7 +251,7 @@
 </li>
 <li><p class="first">Immediately launch the control software (in W2) which obtains parameters from the antenna and automatically starts and stops observations, depending on whether the antenna is <strong>TRACKING</strong> or <strong>SLEWING</strong>:</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">$</span> <span class="pre">./control.csh</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">./control.csh</span></code></p>
 </div></blockquote>
 </li>
 </ol>
@@ -270,9 +262,7 @@
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -290,11 +280,11 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, E. Egron, M. Pilia, S. Loru.
+        &copy; Copyright 2018, E. Egron, M. Pilia, S. Loru
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -309,35 +299,24 @@
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../../../../',
-            VERSION:'1',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../../../../_static/jquery.js"></script>
-      <script type="text/javascript" src="../../../../_static/underscore.js"></script>
-      <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 
-  
-  
-    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

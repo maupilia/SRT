@@ -30,8 +30,7 @@ the different panels (Scheduler, MinorServo, Receivers, etc...) and the jlog.
 :ref:`srt-scheduler` when the schedule is not running
 correctly. If the Scan/SubScan number is proceeding correctly, the
 FAILURE can be associated with skipped scans because of the too high
-or too low
-elevation of the source (> 85° or < 5°). 
+or too low elevation of the source (> 85° or < 5°). 
 
 *Solution*: Stop the schedule with  ``> stopSchedule`` and 
 check the elevation of the target with `CASTIA <http://www.ira.inaf.it/Observing/castia/site/index.php>`_.
@@ -98,8 +97,20 @@ should not exceed 30 km/h (value to be checked) otherwise the pointing
 accuracy will probably be lost. :ref:`srt_windspeed`
 
 
+Stow of the antenna
+=============
 
+.. ATTENTION:: **Put the antenna in stow with the green button**
 
+In the case the control software has some problems or is disable and you cannot
+communicate anymore with the antenna, you can use the ``green button``
+to park the antenna. The green button is located close to the red
+emergency stop button in the control-room.
+
+When the antenna is parked, look at the ACU monitor, wait until
+**Axis blocked** appears in red (:numref:`srt_ACU_axis_blocked`).
+Only at this moment, you can press on the ``emergency stop button``
+(:numref:`srt_ACU_redbutton`).
 
 
 

@@ -24,25 +24,17 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../../genindex.html"/>
-        <link rel="search" title="Search" href="../../../search.html"/>
-    <link rel="top" title="SRT procedures 1 documentation" href="../../../index.html"/> 
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
 
   
   <script src="../../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -115,7 +107,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../index.html">SRT procedures</a>
@@ -123,9 +115,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -178,69 +171,69 @@
 <ol class="arabic">
 <li><p class="first">Insert your project number</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code> <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.18</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code> <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.18</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Initial setup</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code> <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Err-fig/Err-fig.html#srt-acu-axis-blocked"><span class="std std-numref">Fig.29</span></a></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setupKKG</span></code>  <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers-kkg"><span class="std std-numref">Fig.17</span></a> <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-acu-green"><span class="std std-numref">Fig.27</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code> <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Err-fig/Err-fig.html#srt-acu-axis-blocked"><span class="std std-numref">Fig.29</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setupKKG</span></code>  <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers-kkg"><span class="std std-numref">Fig.17</span></a> <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-acu-green"><span class="std std-numref">Fig.27</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Select the active surface shape (Shaped configuration for K-band observations)</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">asSetup=S</span></code>  <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-activesurface"><span class="std std-numref">Fig.2</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">asSetup=S</span></code>  <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-activesurface"><span class="std std-numref">Fig.2</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Insert the Local Oscillator value in MHz</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setLO=[freq]</span></code> <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers-kkg"><span class="std std-numref">Fig.17</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setLO=[freq]</span></code> <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers-kkg"><span class="std std-numref">Fig.17</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Select and configure the SARDARA backend in K-band</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/Sardara</span></code>  <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.18</span></a></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">initialize=[code]</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">chooseBackend=Sardara</span></code>  <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.18</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">genericBackendTui</span> <span class="pre">BACKENDS/Sardara</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">initialize=[code]</span></code></p>
 <blockquote>
 <div><p>with :</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">[code]</span></code> = SK00 : central feed only ;</li>
-<li><code class="docutils literal"><span class="pre">[code]</span></code> = SK77 : 7 feeds ;</li>
-<li><code class="docutils literal"><span class="pre">[code]</span></code> = SK03 : feeds 0 and 3 only ;</li>
-<li><code class="docutils literal"><span class="pre">[code]</span></code> = SK06 : feeds 0 and 6 only.</li>
+<li><code class="docutils literal notranslate"><span class="pre">[code]</span></code> = SK00S : central feed only and full Stokes observations ;</li>
+<li><code class="docutils literal notranslate"><span class="pre">[code]</span></code> = SK00 : central feed only and non full Stokes observations ;</li>
+<li><code class="docutils literal notranslate"><span class="pre">[code]</span></code> = SK77S : 7 feeds and full Stokes observations ;</li>
+<li><code class="docutils literal notranslate"><span class="pre">[code]</span></code> = SK77 : 7 feeds and non full Stokes observations ;</li>
+<li><code class="docutils literal notranslate"><span class="pre">[code]</span></code> = SK03S : feeds 0 and 3 only and full Stokes observations ;</li>
+<li><code class="docutils literal notranslate"><span class="pre">[code]</span></code> = SK03 : feeds 0 and 3 only and non full Stokes observations ;</li>
+<li><code class="docutils literal notranslate"><span class="pre">[code]</span></code> = SK06S : feeds 0 and 6 only and full Stokes observations ;</li>
+<li><code class="docutils literal notranslate"><span class="pre">[code]</span></code> = SK06 : feeds 0 and 6 only and non full Stokes observations.</li>
 </ul>
 </div></blockquote>
 </div></blockquote>
 </div></blockquote>
 </li>
 <li><p class="first">Set the different parameters of the backend:</p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setSection=[sect],[startFreq],[bw],[num-feed],[polarization],[sampleRate],[bin]</span></code>  <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend-kkg"><span class="std std-numref">Fig.11</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setSection=[sect],*,[bw],*,*,[sampleRate],[bin]</span></code>  <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend-kkg"><span class="std std-numref">Fig.11</span></a></p>
 <blockquote>
 <div><p>with :</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">[sect]</span></code> = 0, 1, 2, 3, 4, 5, 6 in full Stokes observations
-;</li>
-<li><code class="docutils literal"><span class="pre">[sect]</span></code> = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,12, 13 in
+<li><code class="docutils literal notranslate"><span class="pre">[sect]</span></code> = 0, 1, 2, 3, 4, 5, 6 in full Stokes observations ;</li>
+<li><code class="docutils literal notranslate"><span class="pre">[sect]</span></code> = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,12, 13 in
 non full Stokes observations ;</li>
-<li><code class="docutils literal"><span class="pre">[startFreq]</span></code> corresponds to the initial frequency in MHz
-from the LO value ;</li>
-<li><code class="docutils literal"><span class="pre">[bw]</span></code> the bandwidth in MHz ;</li>
-<li><code class="docutils literal"><span class="pre">[num-feed]</span></code> the number of feeds (from 1 to 7) ;</li>
-<li><code class="docutils literal"><span class="pre">[polarization]</span></code>: the polarization mode ;</li>
-<li><code class="docutils literal"><span class="pre">[sampleRate]</span></code> in MHz ;</li>
-<li><code class="docutils literal"><span class="pre">[bin]</span></code> the frequency channels (1024, 2048, 4096, 8192, 16384).</li>
+<li><code class="docutils literal notranslate"><span class="pre">[bw]</span></code> the bandwidth in MHz (420 or 1500) ;</li>
+<li><code class="docutils literal notranslate"><span class="pre">[sampleRate]</span></code> in MHz (840 for 420 MKz of bw or 3000 for 1500 MHz of bw) ;</li>
+<li><code class="docutils literal notranslate"><span class="pre">[bin]</span></code> the frequency channels (1024 or 16384).</li>
 </ul>
 </div></blockquote>
 </div></blockquote>
 </li>
 <li><p class="first">Choose the integration time in ms (e.g. n=10 corresponds to 100 spectra/sec)</p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">integration=[n]</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">integration=[n]</span></code></p>
 </li>
 <li><p class="first">If you want to use the multi-feed derotator to prevent field rotation during long acquisition, select the derotator configuration :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">derotatorSetConfiguration=[config]</span></code>   with <code class="docutils literal"><span class="pre">[config]</span></code> = BSC, CUSTOM or FIXED.</p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">derotatorSetConfiguration=[config]</span></code>   with <code class="docutils literal notranslate"><span class="pre">[config]</span></code> = BSC, CUSTOM or FIXED.</p>
 <blockquote>
 <div><ul class="simple">
 <li>BSC is for Best Coverage Space (automatic rotation of the
@@ -248,32 +241,33 @@ dewar in order to best cover the scanned area).</li>
 <li>CUSTOM : the user has to choose the angle of the dewar axis
 with the y-axis of the scanning frame that will be kept
 during the whole duration of the acquisition :
-<code class="docutils literal"><span class="pre">&gt;</span>&#160; <span class="pre">derotatorSetPosition=[ang]d</span></code>     with <code class="docutils literal"><span class="pre">[ang]</span></code> the
+<code class="docutils literal notranslate"><span class="pre">&gt;</span>&#160; <span class="pre">derotatorSetPosition=[ang]d</span></code>     with <code class="docutils literal notranslate"><span class="pre">[ang]</span></code> the
 dewar angle in degrees.</li>
 <li>FIXED : the dewar keeps a fixed postion w.r.t the horizon,
 no rotation is applied. To specify a static angle :
-<code class="docutils literal"><span class="pre">&gt;</span>&#160; <span class="pre">derotatorSetPosition=[ang]d</span></code>     with <code class="docutils literal"><span class="pre">[ang]</span></code> the
+<code class="docutils literal notranslate"><span class="pre">&gt;</span>&#160; <span class="pre">derotatorSetPosition=[ang]d</span></code>     with <code class="docutils literal notranslate"><span class="pre">[ang]</span></code> the
 dewar angle in degrees.</li>
 </ul>
 </div></blockquote>
 <p>To read back the position of the dewar :</p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">derotatorGetPosition</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">derotatorGetPosition</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">Attenuate the signal based on the rms range [-128 ;128] and check the value on the interface.</p>
+<li><p class="first">Attenuate the signal based on the rms range [30;33] and check the value on the interface.</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">getrms</span></code>  <strong>(ASK A. MELIS)</strong></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">setAttenuation=[sect],[att]</span></code>    with [att] the attenuation from 0 to 15 dB.  <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend-kkg"><span class="std std-numref">Fig.11</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">getRms</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setAttenuation=[sect],[att]</span></code>    with [att] the attenuation from 0 to 15 dB.  <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend-kkg"><span class="std std-numref">Fig.11</span></a></p>
+<p>Important note: For the sections 0, 1, 2 and 3 (feeds 0 and 1), you have to set the attenuation accordingly to the values obtained with getRms. For the other sections the attenuation has to be set at 0 since the rms does not reach 30.</p>
 </div></blockquote>
 </li>
 <li><p class="first">Check the tsys (typical values to be inserted)</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">tsys</span></code> <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend-kkg"><span class="std std-numref">Fig.11</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">tsys</span></code> <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend-kkg"><span class="std std-numref">Fig.11</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Report the ground temperature, relative humidity, atmospheric pressure, and wind speed :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">wx</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">wx</span></code></p>
 </div></blockquote>
 </li>
 <li><p class="first">Follow the link below to perform the pointing and focus optimization (if not already included in your schedule) :</p>
@@ -283,7 +277,7 @@ dewar angle in degrees.</li>
 </li>
 <li><p class="first">Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">startSchedule=[projectID]/[schedulename].scd,[N]</span></code> <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.18</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">startSchedule=[schedulename].scd,[N]</span></code> <img alt="logo" src="../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.18</span></a></p>
 </div></blockquote>
 </li>
 </ol>
@@ -291,9 +285,7 @@ dewar angle in degrees.</li>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -302,11 +294,11 @@ dewar angle in degrees.</li>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, E. Egron, M. Pilia, S. Loru.
+        &copy; Copyright 2018, E. Egron, M. Pilia, S. Loru
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -321,35 +313,24 @@ dewar angle in degrees.</li>
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../../../',
-            VERSION:'1',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../../../_static/jquery.js"></script>
-      <script type="text/javascript" src="../../../_static/underscore.js"></script>
-      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 
-  
-  
-    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

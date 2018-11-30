@@ -6,16 +6,22 @@
 
 .. toctree::
    :maxdepth: 1
-  
+
 
 .. _start-PuCDF:
 
 Start the observations
 ======================
 
-$ : commands to insert in a shell   
- 
+$ : commands to insert in a shell
+
 > : commands to insert in the operatorInput panel
+
+.. |logo| image:: monocle_.png
+..    :width: 20pt
+..    :height: 20pt
+..   :align: left
+|logo|: check the execution on the monitor
 
 
 
@@ -30,29 +36,29 @@ Place your observing files in corr@seadas as follows:
 
 
 
-On nuraghe-obs1
+On mng-dev
 ------------------
 
 #. Insert your project number
 
-    ``> project=[projectID]``
+    ``> project=[projectID]``    |logo| :numref:`srt_scheduler`
 
 #. Initial setup
 
-    ``> antennaReset``
+    ``> antennaReset``   |logo| :numref:`srt_ACU_axis_blocked`
 
-    ``> setupCCB``
+    ``> setupCCB`` |logo| :numref:`srt_receivers`  |logo| :numref:`srt_ACU_green`
 
-    ``> goTo=*,81.9d``
+    ``> goTo=*,81.9d`` |logo| :numref:`srt_mount`
 
 
 #. On a terminal open a vnc session for corr@seadas:
 
     ``$ vncviewer seadas:1``
 
-#. If this fails, start a new vnc session on corr@seadas. 
+#. If this fails, start a new vnc session on corr@seadas.
 
-#. Type password at prompt. 
+#. Type password at prompt.
 
 
 
@@ -60,15 +66,15 @@ On nuraghe-obs1
 
     ``$ vncviewer psrdfb:2``
 
-#. If this fails, start a new vnc session on corr@psrdfb. 
+#. If this fails, start a new vnc session on corr@psrdfb.
 
-#. Type password at prompt. 
+#. Type password at prompt.
 
 
 In the vnc session corr@seadas
 ----------------------------------
 
-#. Open a terminal and start SEADAS
+#. If you do not see the SEADAS interface, open a terminal and start it:
 
     ``$ seadas``
 
@@ -86,20 +92,19 @@ In the vnc session corr@psrdfb
 
     ``$ atdc``
 
-#. Open a new terminal and start DFBCONTROLLER
+#. If you do not see the DFBCONTROLLER interface, open a new terminal and start it
 
     ``$ /home/corr/software/seadas/bin/dfbcontroller``
 
-#. In DFBCONTROLLER window, check that the colored label at the right of the
-  "tkds" label is green and displays the word "CONNECTED". If not, click on it.
+#. In DFBCONTROLLER window, check that the colored label at the right of the "tkds" label is green and displays the word "CONNECTED". If not, click on it.
 
 
 Inside SEADAS window
 ------------------------
 
-#. Verify and adjust attenuation levels
-
 #. Select "Schedule" in the "Session mode" combo box
+
+#. Verify and adjust attenuation levels. You can do so by following the procedure below, using the schedule TEST.scd which you will find under the directory /home/corr/scheds/. Once you have started the schedule (see points below) you need to check the PDFB3 panel in the psrdfb vnc session. Under tab `...` make sure that the RMS level for each channel is around 10. If it is not, go back to the SEADAS interface and select different attenuation values (which can be different for different channels) and press `set attn.`
 
 #. Click "View obs list". A window named "Observations List" pops up
 
@@ -107,7 +112,7 @@ Inside SEADAS window
 
 #. Click "Load sched" in "Schedule Manager" window. A system window pops up for browsing system directories and selecting the schedule file
 
-#. In "Schedule manager" window select schedule lines to be done - mouse left click on each single line - or click button "Select all" for loading the entire schedule in the "Observations List" window
+#. In "Schedule manager" window select schedule lines to be done - mouse left click on each single line - or click button "Select all" to load the entire schedule in the "Observations List" window
 
 #. If necessary, rearrange the order of the observations in the "Observations List" window  - left button click == cut line ; mid button click == paste line
 

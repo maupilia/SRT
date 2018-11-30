@@ -24,25 +24,17 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="../genindex.html"/>
-        <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="SRT procedures 1 documentation" href="../index.html"/> 
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -115,7 +107,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">SRT procedures</a>
@@ -123,9 +115,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -187,48 +180,48 @@ target (<a class="reference external" href="http://www.oa-cagliari.inaf.it/area.
 <ol class="arabic">
 <li><p class="first">Set the azimuth and elevation offsets to 0 degree.</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">azelOffsets=0d,0d</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">azelOffsets=0d,0d</span></code></p>
 </div></blockquote>
 </li>
 <li><p class="first">Choose and track a proper calibrator.</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">track=[name]</span></code>  if the calibrator is in the SRT database
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">track=[name]</span></code>  if the calibrator is in the SRT database
 (e.g. 3c147 =&gt; note <strong>c</strong> in lower case)</p>
-<p>otherwise  <code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">sidereal=[name],[RA],[Dec],[epoch],[sector]</span></code></p>
+<p>otherwise  <code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">sidereal=[name],[RA],[Dec],[epoch],[sector]</span></code></p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">RA,</span> <span class="pre">Dec</span></code>: Pay attention to the coordinate formats:
+<li><code class="docutils literal notranslate"><span class="pre">RA,</span> <span class="pre">Dec</span></code>: Pay attention to the coordinate formats:
 - decimal degrees, using a <strong>d</strong> suffix, for any coordinate (e.g. 30.00d)
 - sexagesimal degrees, with no suffix, for any coordinate (30:00:00)
 - hh:mm:ss, with a <strong>h</strong> suffix, for longitudes only (02:00:00h).</li>
-<li><code class="docutils literal"><span class="pre">epoch</span></code>: 1950, 2000 or -1, the last one meaning that the
+<li><code class="docutils literal notranslate"><span class="pre">epoch</span></code>: 1950, 2000 or -1, the last one meaning that the
 provided coordinates are precessed to the observing epoch.</li>
-<li><code class="docutils literal"><span class="pre">sector</span></code>: to force the cable wrap sector, if needed. Its value
+<li><code class="docutils literal notranslate"><span class="pre">sector</span></code>: to force the cable wrap sector, if needed. Its value
 can be CW, CCW or neutral. Usually, use <em>neutral</em>.</li>
 </ul>
 <blockquote>
-<div><p>e.g. <code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">sidereal=3c84,03:19:48.16h,41:30:42.1,2000,neutral</span></code>
-or   <code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">sidereal=3c84,49.951d,41.512d,2000,neutral</span></code></p>
+<div><p>e.g. <code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">sidereal=3c84,03:19:48.16h,41:30:42.1,2000,neutral</span></code>
+or   <code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">sidereal=3c84,49.951d,41.512d,2000,neutral</span></code></p>
 </div></blockquote>
 </div></blockquote>
 </li>
 <li><p class="first">Choose the recorder :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseRecorder=MANAGEMENT/CalibrationTool</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">chooseRecorder=MANAGEMENT/CalibrationTool</span></code></p>
 </div></blockquote>
 </li>
 <li><p class="first">Open the calibrationtool client in a terminal to display the plots in real time :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">$</span> <span class="pre">calibrationtoolclient</span> <span class="pre">MANAGEMENT/CalibrationTool</span></code>  <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-calibrationtool"><span class="std std-numref">Fig.24</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">calibrationtoolclient</span> <span class="pre">MANAGEMENT/CalibrationTool</span></code>  <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-calibrationtool"><span class="std std-numref">Fig.24</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Set proper parameters according to your beamsize and coordinate frame in order to perform a correct pointing measurement :</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">crossScan=HOR,0.5d,00:00:20</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">crossScan=HOR,0.5d,00:00:20</span></code></p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">HOR</span></code> or <code class="docutils literal"><span class="pre">EQ</span></code> frame: use the same coordinate frame as in the .lis of
+<li><code class="docutils literal notranslate"><span class="pre">HOR</span></code> or <code class="docutils literal notranslate"><span class="pre">EQ</span></code> frame: use the same coordinate frame as in the .lis of
 the schedule otherwise the  offsets will be rejected.</li>
-<li><code class="docutils literal"><span class="pre">0.5d</span></code> indicates the scan length in degrees (in this example 0.5°)</li>
-<li><code class="docutils literal"><span class="pre">00:00:20</span></code> indicates the duration of the scan (in this example: 20 seconds).</li>
+<li><code class="docutils literal notranslate"><span class="pre">0.5d</span></code> indicates the scan length in degrees (in this example 0.5°)</li>
+<li><code class="docutils literal notranslate"><span class="pre">00:00:20</span></code> indicates the duration of the scan (in this example: 20 seconds).</li>
 </ul>
 </div></blockquote>
 </li>
@@ -239,7 +232,7 @@ deg in C-band and &lt; 0.00125 deg in K-band).</p>
 </div></blockquote>
 </li>
 <li><p class="first">If you want to reject the measured offsets :</p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">azelOffsets=0d,0d</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">azelOffsets=0d,0d</span></code></p>
 <p>and repeat the pointing scan procedure.</p>
 </li>
 </ol>
@@ -248,7 +241,7 @@ deg in C-band and &lt; 0.00125 deg in K-band).</p>
 <h2>Focus<a class="headerlink" href="#focus" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first">Set proper parameters according to your beamsize :</p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">focusScan=150,00:01:00</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">focusScan=150,00:01:00</span></code></p>
 <blockquote>
 <div><p>The first number should be three times the wavelength of
 observation in mm (e.g. in C-Band 3*5cm = 150mm).</p>
@@ -261,7 +254,7 @@ than a few tenth of  mm with respect to the zero.</p>
 </div></blockquote>
 </li>
 <li><p class="first">If you want to reject the updated focus position with:</p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">clearServoOffsets</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">clearServoOffsets</span></code></p>
 <p>and repeat the focus scan procedure.</p>
 </li>
 </ol>
@@ -270,9 +263,7 @@ than a few tenth of  mm with respect to the zero.</p>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -281,11 +272,11 @@ than a few tenth of  mm with respect to the zero.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, E. Egron, M. Pilia, S. Loru.
+        &copy; Copyright 2018, E. Egron, M. Pilia, S. Loru
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -300,35 +291,24 @@ than a few tenth of  mm with respect to the zero.</p>
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'1',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 
-  
-  
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

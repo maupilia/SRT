@@ -24,28 +24,19 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="../genindex.html"/>
-        <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="SRT procedures 1 documentation" href="../index.html"/>
-        <link rel="up" title="Problems during the observations" href="index.html"/>
-        <link rel="next" title="Unresolved problems" href="problem-unresolved.html"/>
-        <link rel="prev" title="Problems during the observations" href="index.html"/> 
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Unresolved problems" href="problem-unresolved.html" />
+    <link rel="prev" title="Problems during the observations" href="index.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -108,6 +99,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#jlog">Jlog</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#acu-control-panel">ACU control panel</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#wind-velocity">Wind velocity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#stow-of-the-antenna">Stow of the antenna</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="problem-unresolved.html">Unresolved problems</a></li>
@@ -128,7 +120,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">SRT procedures</a>
@@ -136,9 +128,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -205,11 +198,10 @@ the different panels (Scheduler, MinorServo, Receivers, etc…) and the jlog.</p
 <p><a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-scheduler"><span class="std std-ref">The scheduler status is in FAILURE (add image!)</span></a> when the schedule is not running
 correctly. If the Scan/SubScan number is proceeding correctly, the
 FAILURE can be associated with skipped scans because of the too high
-or too low
-elevation of the source (&gt; 85° or &lt; 5°).</p>
-<p><em>Solution</em>: Stop the schedule with  <code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">stopSchedule</span></code> and
+or too low elevation of the source (&gt; 85° or &lt; 5°).</p>
+<p><em>Solution</em>: Stop the schedule with  <code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">stopSchedule</span></code> and
 check the elevation of the target with <a class="reference external" href="http://www.ira.inaf.it/Observing/castia/site/index.php">CASTIA</a>.
-Then start again the schedule with <code class="docutils literal"><span class="pre">&gt;</span>
+Then start again the schedule with <code class="docutils literal notranslate"><span class="pre">&gt;</span>
 <span class="pre">startSchedule=[projectID]/[schedulename].scd,[N]</span></code> when the target is
 visible.</p>
 <div class="admonition attention">
@@ -246,8 +238,8 @@ the box and read the associated message.</p>
 <strong>MAIN POWER ERROR</strong> message should appear, being assigned a CRITICAL
 priority. To resolve the problem, give the following commands in the
 operatorInput console:</p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code></p>
-<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">antennaTrack</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaTrack</span></code></p>
 <p>If the error message is different or the problem still unresolved, contact the person in charge of
 the observations (observer’s friend).</p>
 </div>
@@ -257,19 +249,32 @@ the observations (observer’s friend).</p>
 <p class="first admonition-title">Attention</p>
 <p class="last"><strong>MeteoClient</strong></p>
 </div>
-<p>Check regularly the wind velocity using the <code class="docutils literal"><span class="pre">$&gt;</span> <span class="pre">meteoClient</span> <span class="pre">&amp;</span></code> on
+<p>Check regularly the wind velocity using the <code class="docutils literal notranslate"><span class="pre">$&gt;</span> <span class="pre">meteoClient</span> <span class="pre">&amp;</span></code> on
 a shell of nuraghe-mng. For observations in K-band, the wind speed
 should not exceed 30 km/h (value to be checked) otherwise the pointing
 accuracy will probably be lost. <a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-windspeed"><span class="std std-ref">The antenna is automatically stowed when the wind speed
 exceeds 60km/h.</span></a></p>
 </div>
+<div class="section" id="stow-of-the-antenna">
+<h2>Stow of the antenna<a class="headerlink" href="#stow-of-the-antenna" title="Permalink to this headline">¶</a></h2>
+<div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last"><strong>Put the antenna in stow with the green button</strong></p>
+</div>
+<p>In the case the control software has some problems or is disable and you cannot
+communicate anymore with the antenna, you can use the <code class="docutils literal notranslate"><span class="pre">green</span> <span class="pre">button</span></code>
+to park the antenna. The green button is located close to the red
+emergency stop button in the control-room.</p>
+<p>When the antenna is parked, look at the ACU monitor, wait until
+<strong>Axis blocked</strong> appears in red (<a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-acu-axis-blocked"><span class="std std-numref">Fig.29</span></a>).
+Only at this moment, you can press on the <code class="docutils literal notranslate"><span class="pre">emergency</span> <span class="pre">stop</span> <span class="pre">button</span></code>
+(<a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-acu-redbutton"><span class="std std-numref">Fig.30</span></a>).</p>
+</div>
 </div>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -287,11 +292,11 @@ exceeds 60km/h.</span></a></p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, E. Egron, M. Pilia, S. Loru.
+        &copy; Copyright 2018, E. Egron, M. Pilia, S. Loru
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -306,35 +311,24 @@ exceeds 60km/h.</span></a></p>
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'1',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 
-  
-  
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

@@ -6,48 +6,57 @@
 
 .. toctree::
    :maxdepth: 1
-  
+
 .. _stop-PuDFB:
 
 ======================
 End of the session
 ======================
 
+>  : commands to insert in the operatorInput panel
+
+.. |logo| image:: monocle_.png
+..    :width: 20pt
+..    :height: 20pt
+..   :align: left
+|logo|: check the execution on the monitor
+
+======================
+
 Your observations are now finished, we can stop the schedule and park
 the antenna.
 
-
-On nuraghe-obs1
-------------------
-
-#. Close SEADAS 
+On their respective desktops
+----------------------------
 
 #. Close the vnc session on seadas
 
 
-#. Close, in the given order, dfbcontroller, tkds and dfb3
-
 #. Close the vnc session on psrdfb
 
 
+On mng-dev
+------------
 
 #. Park the minor servo, active surface and antenna
 
-   ``> goTo=180d,89d``
+   ``> goTo=180d,89d`` |logo| :numref:`srt_mount`
 
-   ``> servoPark``
+   ``> servoPark`` |logo| :numref:`srt_minorservo_end`
 
-   ``> asPark``
+   ``> asPark`` |logo| :numref:`srt_as_park`
 
-   ``> antennaPark``
+   ``> antennaPark`` |logo| :numref:`srt_mount_antennareset`  |logo| :numref:`srt_ACU_stowpin`
+
 
 
 
 Block the axes of the antenna
---------------------------
+------------------------------
 
-Look at the monitor of the antenna and wait until the upper right
-panel becomes red. It can take a few minutes after the command
-*antennaPark* has been given. 
+Look at the ACU monitor, wait until
+**Axis blocked** appears in red. It can take a few minutes after the command
+``> antennaPark`` has been given (:numref:`srt_ACU_axis_blocked`).
 
-Only at this moment, you can press on the red button.
+Only at this moment, you can press on the emergency stop button
+(:numref:`srt_ACU_redbutton`).

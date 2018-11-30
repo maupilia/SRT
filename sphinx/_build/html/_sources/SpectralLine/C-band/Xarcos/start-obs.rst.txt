@@ -46,7 +46,7 @@ $ : commands to insert in a shell
 
 #. Select and configure the XARCOS backend in C-band :
 
-    ``> chooseBackend=BACKENDS/XBackends``   |logo| :numref:`srt_scheduler`
+    ``> chooseBackend=Xarcos``   |logo| :numref:`srt_scheduler`
 
     ``$ genericBackendTui BACKENDS/XBackends``  |logo| :numref:`srt_backendXarcos`
 
@@ -80,4 +80,4 @@ $ : commands to insert in a shell
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 
-    ``> startSchedule=[projectID]/[schedulename].scd,[N]`` |logo| :numref:`srt_scheduler`
+    ``> startSchedule=[schedulename].scd,[N]`` |logo| :numref:`srt_scheduler`

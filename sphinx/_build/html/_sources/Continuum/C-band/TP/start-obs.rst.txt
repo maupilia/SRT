@@ -93,4 +93,4 @@ $  : commands to insert in a shell
 #. Begin the schedule by indicating the start scan [N] or subscan
  [N_n] in the .scd file :
 
-    ``> startSchedule=[projectID]/[schedulename].scd,[N]`` |logo| :numref:`srt_scheduler`
+    ``> startSchedule=[schedulename].scd,[N]`` |logo| :numref:`srt_scheduler`

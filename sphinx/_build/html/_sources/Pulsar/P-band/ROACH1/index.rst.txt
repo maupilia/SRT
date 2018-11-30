@@ -4,16 +4,14 @@
    contain the root `toctree` directive.
 
 
-=====
-ROACH1
-=====
+
+ROACH1 with SEADAS
+-------------------
 
 .. toctree::
    :maxdepth: 1
- 
 
-   Folding mode <Folding/index.rst>
-   Baseband mode <Baseband/index.rst>
-
-
-
+*  :ref:`start-PuPRO`
+*  :ref:`check-PuRO`
+*  :ref:`get-PuRO`
+*  :ref:`stop-PuRO`

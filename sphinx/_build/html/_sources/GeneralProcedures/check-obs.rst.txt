@@ -12,11 +12,11 @@
 Checks during the observations
 ==============================
 
-$ : commands to insert in a shell   
- 
+$ : commands to insert in a shell
+
 > : commands to insert in the operatorInput panel
 
-.. |logo| image:: monocle_.png 
+.. |logo| image:: monocle_.png
 ..    :width: 20pt
 ..    :height: 20pt
 ..   :align: left
@@ -25,21 +25,21 @@ $ : commands to insert in a shell
 ==============================
 
 
-.. On nuraghe-obs2 ---------------
+.. On nuraghe-obs2------------------
 
 .. #. Check that the data are correctly written in your project section :
 
-..    $ cd /archive/data/[projectID]/``   
+..    $ cd /archive/data/[projectID]/``
 
 
 .. #. Look at the Quick-look of the data :
 
-..    $ idl``             
+..    $ idl``
 
 ..    IDL> .r fitslook``
 
 ..    IDL> fitslook``
-	
+
 .. Note that the subscans are shown with a short delay in the
 .. quick-look plots with respect to the real observations.
 
@@ -50,7 +50,7 @@ On nuraghe-mng
 
 #. Check that the data are correctly written in your project section (Maintenance) :
 
-    ``$ cd /archive/data/Maintenance/yyyymmdd``   
+    ``$ cd /archive/data/Maintenance/yyyymmdd``
 
 
 #. Look at the Quick-look of the data :
@@ -67,7 +67,7 @@ On nuraghe-mng
      Check the possible error messages. Try to understand the origin
      of the problem and to solve it. In case of persistent/complex
      problem, contact and report the error messages and the associated
-     UT to the responsible of the observation. 
+     UT to the responsible of the observation.
 
 
 #. **Meteo client**
@@ -77,7 +77,7 @@ On nuraghe-mng
      the wind speed should not exceed 30 km/h (value to be checked)
      otherwise the pointing accuracy will probably be lost. |logo| :numref:`srt_windspeed`
 
-  
+
      .. On nuraghe-obs1 --------------
 
 #. **Scheduler**
@@ -116,16 +116,16 @@ On nuraghe-mng
 #. **AntennaBoss**
 
      Check the status is OK (green), the coordinates of the source and
-     the beam size value are correct (FWHM in degrees). 
+     the beam size value are correct (FWHM in degrees).
      The tracking @ is green when the source is correctly pointed
      (within 1/10 of the beam), while a red circle appears when the
      telescope is in slewing. |logo| :numref:`srt_antennaboss`
-  
+
 
 #. **Mount**
 
      Check the commanded azimuth and elevation of the antenna and
-     its real position (in blue). The status must be green. 
+     its real position (in blue). The status must be green.
      |logo| :numref:`srt_mount`
 
 
@@ -135,7 +135,7 @@ On nuraghe-mng
      choice (shaped, shaped fixed, parabolic, parabolic fixed). |logo|
      :numref:`srt_activesurface`
 
-     "OK" should be green during the observations. 
+     "OK" should be green during the observations.
 
      Sometimes, not all of the small squares of the active surface are
      green. Do not worry for that if they are spread randomly. Instead, it can be problematic if a
@@ -149,14 +149,8 @@ Primary Control Panel ACU
 ---------------------
 
 Check that everything appears in green (see |logo|
-:numref:`srt_ACU_green`). 
+:numref:`srt_ACU_green`).
 If a red box appears, put the cursor
 on it and look at the error message.
 
 Contact and report the error messages to the responsible of the observation (observer friend).
-
-
-
-
-
-	
