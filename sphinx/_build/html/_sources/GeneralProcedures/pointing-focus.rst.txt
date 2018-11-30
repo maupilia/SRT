@@ -37,7 +37,8 @@ Pointing
      and target of your schedules). 
      If the target you plan to observe is too weak to present a good S/N,
      select a calibrator bright enough and located close to your
-     target (`see the internal report N°27 <http://www.oa-cagliari.inaf.it/area.php?page_id=10&skip=4>`_.)
+     target (`see the internal report N°27 <http://www.oa-cagliari.inaf.it/area.php?page_id=10&skip=4>`_.). 
+
 
 #. Set the azimuth and elevation offsets to 0 degree.
 
@@ -49,6 +50,8 @@ Pointing
     (e.g. 3c147 => note **c** in lower case)
 
     otherwise  ``> sidereal=[name],[RA],[Dec],[epoch],[sector]``  
+    
+    Important note: the complete list of the sources which are recorded in the     SRT database is available `on the page <https://discos.readthedocs.io/en/latest/user/srt/source/Appendix_D.html>`_
 
     * ``RA, Dec``: Pay attention to the coordinate formats:
       - decimal degrees, using a **d** suffix, for any coordinate (e.g. 30.00d)
@@ -106,7 +109,7 @@ Focus
    ``> focusScan=150,00:01:00``
 
     The first number should be three times the wavelength of
-    observation in mm (e.g. in C-Band 3*5cm = 150mm).
+    observation in mm (e.g. in C-Band 3*5cm = 150mm). In the case of K-Band observations this value should be set to 60mm. 
 
 #. Look at the calibrationtool client to check the focus measurements. |logo| :numref:`srt_focus`
 

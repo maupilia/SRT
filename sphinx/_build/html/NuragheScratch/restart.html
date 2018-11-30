@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Restart Nuraghe &mdash; SRT procedures 1 documentation</title>
+  <title>Restart Discos &mdash; SRT procedures 1 documentation</title>
   
 
   
@@ -29,7 +29,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Figures" href="../Figures/index.html" />
-    <link rel="prev" title="Shutdown of Nuraghe" href="shutdown.html" /> 
+    <link rel="prev" title="Shutdown of Discos" href="shutdown.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -94,9 +94,9 @@
 </ul>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Problems/index.html">Problems during the observations</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Nuraghe from Scratch</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="shutdown.html">Shutdown of Nuraghe</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Restart Nuraghe</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Discos from Scratch</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="shutdown.html">Shutdown of Discos</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Restart Discos</a></li>
 </ul>
 </li>
 </ul>
@@ -147,9 +147,9 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="index.html">Nuraghe from Scratch</a> &raquo;</li>
+          <li><a href="index.html">Discos from Scratch</a> &raquo;</li>
         
-      <li>Restart Nuraghe</li>
+      <li>Restart Discos</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -168,57 +168,45 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="restart-nuraghe">
-<h1>Restart Nuraghe<a class="headerlink" href="#restart-nuraghe" title="Permalink to this headline">¶</a></h1>
-<p>Please, follow the steps in the order.</p>
+  <div class="section" id="restart-discos">
+<h1>Restart Discos<a class="headerlink" href="#restart-discos" title="Permalink to this headline">¶</a></h1>
 <ol class="arabic">
-<li><p class="first">On <strong>nuraghe-mng</strong>, go on the MNG virtual desktop. Open a shell and launch Nuraghe.</p>
+<li><p class="first">On the <strong>discos-manager computer</strong>, open a terminal and give the following command:</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">nuragheConsole</span> <span class="pre">-start</span></code></p>
-<p>The ACS Command Center will appear.</p>
+<div><p><code class="docutils literal notranslate"><span class="pre">discos</span> <span class="pre">-start</span></code></p>
 </div></blockquote>
+<p>The graphical interface of the ACS Command Center appears.</p>
+<p>Check that <code class="docutils literal notranslate"><span class="pre">remote</span></code> and  <code class="docutils literal notranslate"><span class="pre">use</span> <span class="pre">native</span> <span class="pre">ssh</span></code> are correctly selected in the <strong>Common settings</strong> panel.</p>
+<p>Click on <code class="docutils literal notranslate"><span class="pre">Start</span></code> in the <strong>Acs suite</strong> panel.</p>
+<p>In the <strong>Containers</strong> panel, click on the global green triangle located below the individual triangles to open all of the containers.</p>
+<p>On the <strong>Deployment Info</strong> panel, check that the 33 containers appear progressively.</p>
 </li>
-<li><p class="first">In the <em>Common Settings</em> section located on the upper left of the ACS interface, select</p>
+<li><p class="first">On the <strong>discos-console computer</strong>, open a terminal and give the following command:</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">localhost(single-machine</span> <span class="pre">project)</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">discosConsole</span></code></p>
 </div></blockquote>
-</li>
-<li><p class="first">In the <em>Acs Suite</em> section, click on  <code class="docutils literal notranslate"><span class="pre">Start</span></code> (green triangle with Start).</p>
-</li>
-<li><p class="first">On the bottom left of the ACS interface, click on the <code class="docutils literal notranslate"><span class="pre">ACS</span></code> tab. Wait about one minute to check that the system is running. When it is ready, the following message appears <strong>ACS is up and running</strong> in the log tab of ACS.</p>
-</li>
-<li><p class="first">In the <em>Containers</em> section, click on the single green triangles to start each container. It is not necessary to wait for the closing of the Deployment info window of each container. The name of the containers appear progressively in the log tab with the message <code class="docutils literal notranslate"><span class="pre">ContainerStatusMsg:</span> <span class="pre">Ready</span></code>.</p>
-</li>
-<li><p class="first">On <strong>nuraghe-AS</strong>, open two shells if they are not already there. On the first one, write</p>
-<blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">asContainers</span></code></p>
-<p>On the second one, write  <code class="docutils literal notranslate"><span class="pre">SRTActiveSurfaceGUIClient</span> <span class="pre">&amp;</span></code></p>
-<p>The graphical interface of the active surface appears. The active
-surface is ready when it is green (it takes several minutes).</p>
-</div></blockquote>
-</li>
-<li><p class="first">On <strong>nuraghe-mng</strong>, check that the you have now <strong>31 containers</strong>.</p>
-</li>
-<li><p class="first">Go on the CONSOLE virtual desktop of <strong>nuraghe-mng</strong>. Open a shell and execute the following command</p>
-<blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">nuragheConsole</span></code></p>
-<p>Eight panels appear:</p>
+<p>The 9 panels appear:</p>
 <blockquote>
 <div><ul class="simple">
 <li><strong>operatorInput</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-operatorinput"><span class="std std-numref">Fig.8</span></a>)</li>
 <li><strong>AntennaBoss</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-antennaboss"><span class="std std-numref">Fig.9</span></a>)</li>
 <li><strong>GenericBackend</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.10</span></a>)</li>
-<li><strong>Mount</strong> (<code class="xref std std-numref docutils literal notranslate"><span class="pre">srt_mount_ok</span></code>)</li>
+<li><strong>Mount</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-mount"><span class="std std-numref">Fig.12</span></a>)</li>
 <li><strong>Observatory</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-observatory"><span class="std std-numref">Fig.14</span></a>)</li>
 <li><strong>Receivers</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-receivers"><span class="std std-numref">Fig.15</span></a>)</li>
 <li><strong>Scheduler</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.18</span></a>)</li>
 <li><strong>MinorServo</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-minorservo"><span class="std std-numref">Fig.20</span></a>)</li>
+<li><strong>ACS custom logging client</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-jlog"><span class="std std-numref">Fig.5</span></a>)</li>
 </ul>
 </div></blockquote>
+<p>You can modify the disposition of the individual panels for more clarity.</p>
+<p>From a virtual desktop, open a new terminal to start the <strong>active surface</strong> and write:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">SRTActiveSurfaceGUIClient</span> <span class="pre">&amp;</span></code></p>
 </div></blockquote>
+<p>The related graphical interface is now open. Wait a few minutes until the single squares (representing the attuators) become green.</p>
 </li>
 </ol>
-<p>Nuraghe is now ready!</p>
 </div>
 
 
@@ -232,7 +220,7 @@ surface is ready when it is green (it takes several minutes).</p>
         <a href="../Figures/index.html" class="btn btn-neutral float-right" title="Figures" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="shutdown.html" class="btn btn-neutral" title="Shutdown of Nuraghe" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="shutdown.html" class="btn btn-neutral" title="Shutdown of Discos" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

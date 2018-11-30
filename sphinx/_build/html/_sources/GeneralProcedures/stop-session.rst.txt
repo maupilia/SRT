@@ -32,10 +32,8 @@ On nuraghe-mng
 
 1. Stop your schedule :
 
-   ``> stopSchedule``   *interruption of the current subscan*  |logo| :numref:`srt_scheduler_end`
-
-or ``> haltSchedule``    *the schedule stops at the end of the on-going subscan.* 
-
+   ``> haltSchedule``    *the schedule stops at the end of the on-going subscan.*  |logo| :numref:`srt_scheduler_end`
+   
 
 
 

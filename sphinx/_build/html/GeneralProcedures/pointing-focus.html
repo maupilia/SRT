@@ -92,7 +92,7 @@
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../Problems/index.html">Problems during the observations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../NuragheScratch/index.html">Nuraghe from Scratch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../NuragheScratch/index.html">Discos from Scratch</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../Figures/index.html">Figures</a></li>
@@ -176,7 +176,7 @@ recommended to perform it before observing a source (calibrators
 and target of your schedules).
 If the target you plan to observe is too weak to present a good S/N,
 select a calibrator bright enough and located close to your
-target (<a class="reference external" href="http://www.oa-cagliari.inaf.it/area.php?page_id=10&amp;skip=4">see the internal report N°27</a>.)</div></blockquote>
+target (<a class="reference external" href="http://www.oa-cagliari.inaf.it/area.php?page_id=10&amp;skip=4">see the internal report N°27</a>.).</div></blockquote>
 <ol class="arabic">
 <li><p class="first">Set the azimuth and elevation offsets to 0 degree.</p>
 <blockquote>
@@ -188,6 +188,7 @@ target (<a class="reference external" href="http://www.oa-cagliari.inaf.it/area.
 <div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">track=[name]</span></code>  if the calibrator is in the SRT database
 (e.g. 3c147 =&gt; note <strong>c</strong> in lower case)</p>
 <p>otherwise  <code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">sidereal=[name],[RA],[Dec],[epoch],[sector]</span></code></p>
+<p>Important note: the complete list of the sources which are recorded in the     SRT database is available <a class="reference external" href="https://discos.readthedocs.io/en/latest/user/srt/source/Appendix_D.html">on the page</a></p>
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">RA,</span> <span class="pre">Dec</span></code>: Pay attention to the coordinate formats:
 - decimal degrees, using a <strong>d</strong> suffix, for any coordinate (e.g. 30.00d)
@@ -244,7 +245,7 @@ deg in C-band and &lt; 0.00125 deg in K-band).</p>
 <p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">focusScan=150,00:01:00</span></code></p>
 <blockquote>
 <div><p>The first number should be three times the wavelength of
-observation in mm (e.g. in C-Band 3*5cm = 150mm).</p>
+observation in mm (e.g. in C-Band 3*5cm = 150mm). In the case of K-Band observations this value should be set to 60mm.</p>
 </div></blockquote>
 </li>
 <li><p class="first">Look at the calibrationtool client to check the focus measurements. <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-focus"><span class="std std-numref">Fig.25</span></a></p>

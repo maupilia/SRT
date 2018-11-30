@@ -57,14 +57,15 @@ $ : commands to insert in a shell
      with :
 
        - ``[code]`` = SK00S : central feed only and full Stokes observations ;
-       - ``[code]`` = SK00  : central feed only and non full Stokes observations ;
+       - ``[code]`` = SK00  : central feed only and total intensity observations ;
        - ``[code]`` = SK77S : 7 feeds and full Stokes observations ;
-       - ``[code]`` = SK77  : 7 feeds and non full Stokes observations ;
+       - ``[code]`` = SK77  : 7 feeds and total intensity observations ;
        - ``[code]`` = SK03S : feeds 0 and 3 only and full Stokes observations ;
-       - ``[code]`` = SK03  : feeds 0 and 3 only and non full Stokes observations ;
+       - ``[code]`` = SK03  : feeds 0 and 3 only and total intensity observations ;
        - ``[code]`` = SK06S : feeds 0 and 6 only and full Stokes observations ;
-       - ``[code]`` = SK06  : feeds 0 and 6 only and non full Stokes observations.
+       - ``[code]`` = SK06  : feeds 0 and 6 only and total intensity observations.
 
+Important note: the *initialize* command requires a few more seconds comapared to the other command in order to operate.
 
 #. Set the different parameters of the backend:
 
@@ -75,7 +76,7 @@ $ : commands to insert in a shell
         - ``[sect]`` = 0, 1, 2, 3, 4, 5, 6 in full Stokes observations
           ;
         - ``[sect]`` = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,12, 13 in
-          non full Stokes observations ;
+          total intensity observations ;
         - ``[bw]`` the bandwidth in MHz (420 or 1500) ; 
         - ``[sampleRate]`` in MHz (840 for 420 MHz of bw or 3000 for 1500 MHz of bw) ;
         - ``[bin]`` the frequency channels (1024 or 16384).
@@ -104,10 +105,13 @@ $ : commands to insert in a shell
           dewar angle in degrees.
 
 
-    To read back the position of the dewar :
+..    To read back the position of the dewar :
 
     ``> derotatorGetPosition`` 
+    
+#. Put the antenna at 45 deg of elevation before to check that the signal is in the linear range of the backend:
 
+    ``> goTo=*,45d`` |logo| :numref:`srt_mount`
 
 #. Attenuate the signal based on the rms range [30;33] and check the value on the interface.
 
@@ -115,7 +119,9 @@ $ : commands to insert in a shell
 
     ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB. |logo| :numref:`srt_genericBackend_KKG`
     
-    Important note: For the sections 0, 1, 2 and 3 (feeds 0 and 1), you have to set the attenuation accordingly to the values obtained with getRms. For the other sections the attenuation has to be set at 0 since the rms does not reach 30.
+    Important note 1: For the sections 0, 1, 2 and 3 (feeds 0 and 1), you have to set the attenuation accordingly to the values obtained with getRms. For the other sections the attenuation has to be set at 0 since the rms does not reach 30.
+    
+    Important note 2: The feed 10 does not work, do not consider the related    getRms and tsys values.
 
 
 #. Check the tsys (typical values to be inserted)

@@ -47,7 +47,7 @@ $ : commands to insert in a shell
 
 #. Select the Total Power backend :
 
-    ``> chooseBackend=BACKENDS/TotalPower`` |logo| :numref:`srt_scheduler`
+    ``> chooseBackend=TotalPower`` |logo| :numref:`srt_scheduler`
 
 #. For each section [sect], insert the bandwidth ([bw]=300, 730, 1250 or 2000 MHz) and the sample rate (in MHz) :
 

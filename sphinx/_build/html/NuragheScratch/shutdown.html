@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Shutdown of Nuraghe &mdash; SRT procedures 1 documentation</title>
+  <title>Shutdown of Discos &mdash; SRT procedures 1 documentation</title>
   
 
   
@@ -28,8 +28,8 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Restart Nuraghe" href="restart.html" />
-    <link rel="prev" title="Nuraghe from Scratch" href="index.html" /> 
+    <link rel="next" title="Restart Discos" href="restart.html" />
+    <link rel="prev" title="Discos from Scratch" href="index.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -94,9 +94,9 @@
 </ul>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Problems/index.html">Problems during the observations</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Nuraghe from Scratch</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Shutdown of Nuraghe</a></li>
-<li class="toctree-l2"><a class="reference internal" href="restart.html">Restart Nuraghe</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Discos from Scratch</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Shutdown of Discos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restart.html">Restart Discos</a></li>
 </ul>
 </li>
 </ul>
@@ -147,9 +147,9 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="index.html">Nuraghe from Scratch</a> &raquo;</li>
+          <li><a href="index.html">Discos from Scratch</a> &raquo;</li>
         
-      <li>Shutdown of Nuraghe</li>
+      <li>Shutdown of Discos</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -168,34 +168,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="shutdown-of-nuraghe">
-<h1>Shutdown of Nuraghe<a class="headerlink" href="#shutdown-of-nuraghe" title="Permalink to this headline">¶</a></h1>
-<p>Please, follow the steps in the order.</p>
-<ol class="arabic">
-<li><p class="first">On <strong>nuraghe-mng</strong>, open a shell on the CONSOLE virtual desktop and close the Nuraghe console</p>
+  <div class="section" id="shutdown-of-discos">
+<h1>Shutdown of Discos<a class="headerlink" href="#shutdown-of-discos" title="Permalink to this headline">¶</a></h1>
+<p>From the <strong>discos-console computer</strong>, close discos :</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">nuragheConsole</span> <span class="pre">--stop</span></code></p>
-</div></blockquote>
-</li>
-<li><p class="first">On <strong>nuraghe-AS</strong>, close the graphical interface of the active surface with a click on the <code class="docutils literal notranslate"><span class="pre">Quit</span></code> button (bottom right).</p>
-</li>
-<li><p class="first">On <strong>nuraghe-mng</strong>, go on the ACS Command Center, which is in the MANAGER virtual desktop. Click on the collective stop button <code class="docutils literal notranslate"><span class="pre">(black</span> <span class="pre">square)</span></code> located under the list of all of the containers to close them. It is also possible to close each container individually.</p>
-</li>
-<li><p class="first">On <strong>nuraghe-AS</strong>, select one of the shells that is already open and write <code class="docutils literal notranslate"><span class="pre">enter</span></code> to check you have the control of the prompt. In the case you do not have the prompt, press <code class="docutils literal notranslate"><span class="pre">ctrl-c</span></code>. Then, execute the following commands (you can use the upper arrow of the keyboard to find the commands)</p>
-<blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">~/SRTStopActiveSurfaceContainer.sh</span></code></p>
-</div></blockquote>
-<p>then <code class="docutils literal notranslate"><span class="pre">killACS</span></code>.</p>
-</li>
-<li><p class="first">On <strong>nuraghe-mng</strong>, go back on the ACS Command Center and close <strong>ACS  Suite</strong> with a click on the corresponding stop button <code class="docutils literal notranslate"><span class="pre">(black</span> <span class="pre">square</span> <span class="pre">with</span> <span class="pre">stop)</span></code>.</p>
-</li>
-<li><p class="first">On a shell of <strong>nuraghe-mng</strong>, kill the remaining ACS processes</p>
-<blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">killACS</span></code></p>
-</div></blockquote>
-<p>and wait for the following message: <strong>Removing ACS_INSTANCE temporary directories … done</strong>.</p>
-</li>
-</ol>
+<div><code class="docutils literal notranslate"><span class="pre">discosConsole</span> <span class="pre">-c</span></code></div></blockquote>
+<p>Close also the graphic panel related to the active surface.</p>
+<p>From the <strong>discos-manager computer</strong>, go on the ACS command center and click on <code class="docutils literal notranslate"><span class="pre">kill</span></code>. Wait the prompt (the graphic panel of ACS will close automatically).</p>
 </div>
 
 
@@ -206,10 +185,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="restart.html" class="btn btn-neutral float-right" title="Restart Nuraghe" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="restart.html" class="btn btn-neutral float-right" title="Restart Discos" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral" title="Nuraghe from Scratch" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral" title="Discos from Scratch" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
