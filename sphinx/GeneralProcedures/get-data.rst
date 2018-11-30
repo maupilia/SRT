@@ -12,17 +12,16 @@
 Getting your data
 ======================
 
-Your data are in Maintenance on gavino@nuraghe-mng.
+Your data are on discos-console.
 
 You can download them on your computer whenever you want during the
-observations. Ask for the password.
+observations. 
 
-   ``$ scp -r  gavino@nuraghe-mng:/archive/data/Maintenance/yyyymmdd .``
+   ``$ scp -r  discos@discosconsole:/home/[projectID]/data/yyyymmdd .``
 
 
-.. Your data are in your private directory on *nuraghe-obs2*.
-
-.. You can download them on your computer whenever you want during the observations.
+.. Ask for the password.
 
 ..   $ scp -r  [projectID]@nuraghe-obs2:/archive/data/[projectID]/* .``
 
+..   $ scp -r  gavino@nuraghe-mng:/archive/data/Maintenance/yyyymmdd .``

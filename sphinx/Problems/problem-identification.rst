@@ -16,7 +16,7 @@ jlog, ACS and the ACU control panel.
 Monitor panels
 =========
 
-Look at the `8 panels <http://discos.readthedocs.io/en/latest/user/srt/source/Appendix_A.html>`_. The error messages usually come out in red.
+Look at the `9 panels <http://discos.readthedocs.io/en/latest/user/srt/source/Appendix_A.html>`_. The error messages usually come out in red.
 
 .. ATTENTION:: **operatorInput**
 
