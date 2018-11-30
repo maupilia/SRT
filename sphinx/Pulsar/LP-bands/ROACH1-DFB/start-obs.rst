@@ -6,148 +6,133 @@
 
 .. toctree::
    :maxdepth: 1
-  
+
+.. _start-PuLPDR:
 
 Start the observations
 ======================
 
-$ : commands to insert in a shell   
- 
+$ : commands to insert in a shell
 
-In the operatorInput panel
----------------------
+> : commands to insert in the operatorInput panel
 
+.. |logo| image:: monocle_.png
+..    :width: 20pt
+..    :height: 20pt
+..   :align: left
+|logo|: check the execution on the monitor
 
-#. Insert your project number :
+On seadas
+----------
 
-    ``> project=[projectID]``
+Place your observing files in corr@seadas as follows:
 
+   - your seadas setup file(s) in folder:    corr@seadas:/home/corr/setup/[your project code]
 
-#. Initial setup :
+   - your seadas schedule file(s) in folder: corr@seadas:/home/corr/scheds/[your project code]
 
-    ``> antennaReset``
 
-    ``> setupPLP``
+On nuraghe-obs1
+------------------
+#. Insert your project number
 
+    ``> project=[projectID]``    |logo| :numref:`srt_scheduler`
 
-#. Select the active surface shape (Parabolic for L and P-band observations) :
+#. Initial setup
 
-    ``> asSetup=P``
+    ``> antennaReset``   |logo| :numref:`srt_ACU_axis_blocked`
 
+    ``> setupLLP`` |logo| :numref:`srt_receivers`  |logo| :numref:`srt_ACU_green`
 
-#. Insert the Local Oscillator value in MHz (this value may change) :
+    ``> goTo=*,81.9d`` |logo| :numref:`srt_mount`
 
-    ``> setLO=2188``
 
+#. On a terminal open a vnc session for corr@seadas:
 
-#. Choose the relevant L-band filter (linear filter for 1300-1800 MHz)
+    ``$ vncviewer seadas:1``
 
-    ``> receiversMode=L3L2``
+#. If this fails, start a new vnc session on corr@seadas.
 
+#. Type password at prompt.
 
-#. Set the attenuations for the 2x2 polarizations arriving at the Total Power backend (this may change depending on the settings of the new IF distributor).
 
-    ``> setAttenuation=0,15``
 
-    ``> setAttenuation=1,15``
+#. On another workspace, open a new terminal and start a vnc session for corr@psrdfb:
 
-    ``> setAttenuation=2,0``
+    ``$ vncviewer psrdfb:2``
 
-    ``> setAttenuation=3,0``
+#. If this fails, start a new vnc session on corr@psrdfb.
 
-#. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
+#. Type password at prompt.
 
-    ``> startSchedule=[projectID]/[schedulename].scd,[N_n]``
 
-If your schedule is LST-based (like for LEAP schedules), the antenna points to the relevant source as soon as you launch the schedule, even before the designated start time of observations (but you can start data acquisition with the ROACH1 at a later time). Check on the monitor each time that the antenna is pointing at and **TRACKING** the right source. 
+#. On another workspace, open a new terminal and start a vnc session for the head node leap0:
 
+    ``$ vncviewer leap0:1``
 
+#. If it is not active log on to the LEAP cluster :
 
-On the LEAP cluster (using VNC):
---------------------------
+    ``$ ssh -X user@leap0``     *ask for password*
 
-Before starting data acquisition, do the following:
+#. Launch a VNC session once logged on to leap0 :
 
-#. W2: initial setup in Control directory:
+    ``leap0: $ vncserver &``
 
-    ``$ ./control_init.sh`` 
 
-#. W1: in each of the 8 tabs, launch the daemons:
+In the vnc session corr@seadas
+----------------------------------
 
-    ``$ ~/roach/scripts/daemon.sh``
+#. Open a terminal and start SEADAS
 
-#. When the antenna is tracking the first source and you are ready to start data acquisition, go to W2 and type:
+    ``$ seadas``
 
-    ``$ ./start.csh``  Data acquisition has now started with the ROACH1. 
+#. In the log frame of seadas main window check that SEADAS connects to nuraghe
 
-#. Immediately launch the control software (in W2) which obtains parameters from the antenna and automatically starts and stops observations, depending on whether the antenna is **TRACKING** or **SLEWING**:
+#. Click on the red label at the top right corner of the Antenna and Pointing Management frame.
 
-    ``$ ./control.csh``
+#. Check that the clicked label becomes green and dislpays the word "ENABLED"
 
-If necessary, this code can be interrupted (using Control-C) and re-started at any time while the antenna is tracking the same source, without any consequences. 
 
-You should now see: **“no change. keep doing what you’re doing”** while the antenna keeps tracking the same source. If all goes well, you won’t need to do anything else with data acquisition for the remainder of the session. You should however check the control window (W2) once in a while for possible errors (e.g. antenna WARNING). 
+In the vnc session corr@psrdfb
+----------------------------------
 
+#. Open a terminal and check the system clock is working properly (time properly synchronized, tick phase ~ 100 ns, positive or negative) by typing
 
-To use the DFB in parallel with the ROACH1:
------------------------------------
+    ``$ atdc``
 
-To use the DFB in parallel with the ROACH, we use "DFBController" in PASSIVE mode. DO NOT LAUNCH SEADAS, as this will interrupt the Nuraghe schedule.
+#. Open a new terminal and start DFBCONTROLLER
 
-In the LEAP cluster VNC, open another window and go to :
+    ``$ /home/corr/software/seadas/bin/dfbcontroller``
 
-     ``~/externalClient/LeapDFBSockets/``
+#. In DFBCONTROLLER window, check that the colored label at the right of the
+  "tkds" label is green and displays the word "CONNECTED". If not, click on it.
 
-     and type: 
 
-     ``$ ./simple_server``
+In the vnc session leap0
+----------------------------------
 
-This will allow the DFB to check the antenna parameters of the antenna (written on the LEAP cluster) and acquire data when the tracked source is a pulsar.
+#. If you do not see the LEAPCONTROLLER interface, open a new terminal and start it
 
-After having prepared the ROACH1 for LEAP observations and launched
-"./simple_server", you are ready to set up the DFB.
+    ``$ leapcontroller``
 
+#. In LEAPCONTROLLER window, check that the colored label at the right of the "..." label is green and displays the word "CONNECTED". If not, click on it.
 
-#. Make sure the DFB is turned on (large button at the back) and make sure the cables connected to the DFB are the right ones (DFB3 & DFB4 for L-band, and DFB1 & DFB2 for P-band). 
 
-#. In the “PULSAR” tab, open a terminal and connect to the DFB:
+Inside SEADAS window
+------------------------
 
-     ``ssh –X corr@psrdfb``    **ask for the password**
+#. Verify and adjust attenuation levels
 
-#. Check that the DFB clock is correctly synchronized by typing: 
+#. Select "Schedule" in the "Session mode" combo box
 
-     ``atdc`` and press ``enter``
+#. Click "View obs list". A window named "Observations List" pops up
 
-     Check that the clock is synchronized and that the Tick phase is a
-     small number in ns (less than a few hundreds). If the clock needs
-     to be re-synchronized, follow `these instructions <http://www.jb.man.ac.uk/~pulsar/observing/DFB.pdf>`_ at pag. 53.
+#. Click "View schedule". A window named "Schedule Manager" pops up
 
+#. Click "Load sched" in "Schedule Manager" window. A system window pops up for browsing system directories and selecting the schedule file
 
-#. Launch **dfbcontroller**:
+#. In "Schedule manager" window select schedule lines to be done - mouse left click on each single line - or click button "Select all" for loading the entire schedule in the "Observations List" window
 
-     ``/home/corr/software/seadas/bin/dfbcontroller``
+#. If necessary, rearrange the order of the observations in the "Observations List" window  - left button click == cut line ; mid button click == paste line
 
-
-#. Input these parameters in the dfbcontroller interface:
-
-     - Config: pdfb4_512_1024_1024
-     - Subint time (s): 30.0
-     - Frequency (MHz): 1548
-     - Inverted: no
-     - Write file: yes
-     - Control mode: change from DIRECT to PASSIVE
-
-
-6. At the correct time, launch the Nuraghe schedule + start the ROACH
-observing. The DFB observing will follow automatically.
-
-
-7. Throughout the observing session, check that the DFB temperatures
-don’t go above 70 degrees. If the temperatures are exceedingly high,
-you will need to turn off the DFB for at least half an hour.
-
-
-8. To end DFB observing, simply change the ``Control mode`` from PASSIVE to DIRECT. Then close the DFB windows.
-
- 
-
+#. Click "Observe"

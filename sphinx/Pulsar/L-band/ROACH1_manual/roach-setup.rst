@@ -9,7 +9,9 @@ Roach setup
 
 .. toctree::
    :maxdepth: 1
-  
+
+.. _roach-setup:
+
 Initial setup for the LEAP cluster.
 
 
@@ -29,17 +31,18 @@ In the VNC
 
      This window will be used to start and stop data acquisition.
 
-#. In W2: type a command here to select P-band (and not L-band):
+#. In W2: type a command here to select L-band (and not P-band):
 
-      **Need to go to SRT to remember what the name of that code
-      is**. 
-      That code basically changes the IP table so that we are selecting the desired 8 sub-bands.
+    ``$ ~/roach/scripts/setLband.sh``
 
 
-#. In W2: type a command here to select baseband mode *(little script still to be written)*:
+#. In W2: type a command here to select baseband mode:
 
     ``$ ~/roach/scripts/baseband.sh``
 
-#. Open a third window (W3) with 8 tabs (this will be used to look at the results). As before, type ``$ ssh -X node1``, ``$ ssh -X node2``, etc. for each tab. 
 
+#. In W2: type a command here to select folding mode:
 
+    ``$ ~/roach/scripts/folding.sh``
+
+#. Open a third window (W3) with 8 tabs (this will be used to look at the results). As before, type ``$ ssh -X node1``, ``$ ssh -X node2``, etc. for each tab.

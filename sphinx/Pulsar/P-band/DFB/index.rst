@@ -10,8 +10,8 @@ DFB with SEADAS
 
 .. toctree::
    :maxdepth: 1
- 
-*  :ref:`start-PuPDF`
+
+*  :ref:`start-PuDFB`
 *  :ref:`check-obs`
 *  :ref:`get-data`
 *  :ref:`stop-PuDFB`

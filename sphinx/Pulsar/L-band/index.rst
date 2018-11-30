@@ -9,8 +9,9 @@ L-band
 
 .. toctree::
    :maxdepth: 1
- 
-   
+
+
    DFB with SEADAS <DFB/index.rst>
    ROACH1 <ROACH1/index.rst>
+   ROACH1 manual procedure (if the above should not work) <ROACH1_manual/index.rst>
    ROACH1 + DFB <ROACH1-DFB/index.rst>

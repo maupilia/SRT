@@ -4,17 +4,14 @@
    contain the root `toctree` directive.
 
 
-======================
+==================================
 ROACH1 (baseband) + DFB (folding)
-======================
+==================================
 
 .. toctree::
    :maxdepth: 1
- 
-   Before observing <before-obs.rst>
-   Roach setup <roach-setup.rst>
-   Start the observations <start-obs.rst>
-   Check during the observations <check-obs.rst>
-   Getting your data <get-data.rst>
-   End of the session <stop-session.rst>
 
+*  :ref:`start-PuLPDR`
+*  :ref:`check-PuRO`
+*  :ref:`get-PuRD`
+*  :ref:`stop-PuRD`

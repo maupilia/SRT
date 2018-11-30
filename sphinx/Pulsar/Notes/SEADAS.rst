@@ -3,13 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-=====
+=======
 SEADAS
-=====
+=======
 
-Links A. Corongiu ?
+For instructions on how to create the schedules with SEADAS, please visit `this page <https://www.radiotelescopes.inaf.it/schedules.html>`_
+at the session "Pulsar Observations with the SRT".
 
-
-  
-
-
+For SEADAS complete manual, please visit ....

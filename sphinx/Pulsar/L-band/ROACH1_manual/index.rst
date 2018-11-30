@@ -4,19 +4,15 @@
    contain the root `toctree` directive.
 
 
-=========
-Folding Mode
-=========
+=============
+Baseband Mode
+=============
 
 .. toctree::
    :maxdepth: 1
- 
-   Before observing <before-obs.rst>
-   Roach setup <roach-setup.rst>
-   Start <start-obs.rst>
-   During <check-obs.rst>
-   GetData <get-data.rst>
-   Stop <stop-session.rst>
 
-
-
+*  :ref:`bef-PuMRO`
+*  :ref:`start-PuMRO`
+*  :ref:`check-PuRO`
+*  :ref:`get-PuRO`
+*  :ref:`stop-PuMRO`
