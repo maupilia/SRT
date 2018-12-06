@@ -85,7 +85,7 @@ $  : commands to insert in a shell
       :ref:`pointing-focus`
 
 
-#. Open the calibrationtool client in a terminal to display the pointing and focus plots in real time (if not already open) :
+#. If the pointing and focus operations are included in your schedule, open the calibrationtool client in a terminal to display the pointing and focus plots in real time (if not already open) :
 
     ``$ calibrationtoolclient MANAGEMENT/CalibrationTool``  |logo| :numref:`srt_calibrationtool`
 
