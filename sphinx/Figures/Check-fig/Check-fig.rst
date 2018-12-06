@@ -83,7 +83,7 @@ Meteo Client
 
 
 
-Nuraghe-mng
+Discos-console
 ========
 
        .. _srt_vistaglobale:
@@ -91,7 +91,7 @@ Nuraghe-mng
        .. figure:: srt_vistaglobale.png
 	  :align: center
 
-          **Nuraghe-mng** is the machine where you run the system and where 
+          **Discos-console** is the machine where you run the system and where 
 	  you should find the input terminal and all the monitors. It is also 
 	  the destination for your schedules.
 
