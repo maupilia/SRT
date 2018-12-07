@@ -9,5 +9,6 @@ LP-bands
 
 .. toctree::
    :maxdepth: 1
- 
+
    ROACH1 + DFB <ROACH1-DFB/index.rst>
+   ROACH1 + DFB manual procedure (if the above should not work) <RD_manual/index.rst>
