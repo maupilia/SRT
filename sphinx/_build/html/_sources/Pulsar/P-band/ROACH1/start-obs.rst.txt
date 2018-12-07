@@ -97,7 +97,7 @@ In the vnc session leap0
 
 #. If you do not see the LEAPCONTROLLER interface, open a new terminal and start it
 
-    ``$ leapcontroller``
+    ``$ /home/user/seadas/bin/leapcontroller``
 
 #. In LEAPCONTROLLER window, check that the colored label at the right of the "..." label is green and displays the word "CONNECTED". If not, click on it.
 
