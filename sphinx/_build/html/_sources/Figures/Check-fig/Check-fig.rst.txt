@@ -6,74 +6,74 @@
 
 .. toctree::
    :maxdepth:1
- 
+
 .. _Check-fig:
 
 
 ACS Command Center
-========
+===================
 
        .. _srt_acs:
 
-       .. figure:: srt_acs.png 
+       .. figure:: srt_acs.png
 	  :align: center
-  
+
           The **ACS** monitor shows the state of the containers related to each DISCOS component.
-          The state of each container can be verified in the section highlighted in blue. 
+          The state of each container can be verified in the section highlighted in blue.
 	  The blue arrow indicates the number of containers (31 when the system is ready).
 
 
 Active Surface
-=========
+===============
 
        .. _srt_activesurface:
 
-       .. figure:: srt_activesurface.png 
+       .. figure:: srt_activesurface.png
 	   :align: center
 
-	   This monitor shows the status of the actuators in a graphical representation of the **Active Surface** and its configuration. 
+	   This monitor shows the status of the actuators in a graphical representation of the **Active Surface** and its configuration.
 
 
 Active Surface
-=========
+==============
 
        .. _srt_as_park:
 
-       .. figure:: srt_as_park.png 
+       .. figure:: srt_as_park.png
 	   :align: center
 
-	   The **Active Surface** monitor after parking the active surface by using ``> asPark`` 
+	   The **Active Surface** monitor after parking the active surface by using ``> asPark``
 
 Active Surface
-=========
+==============
 
        .. _srt_as_parabolic:
 
-       .. figure:: srt_as_parabolic.png 
+       .. figure:: srt_as_parabolic.png
 	   :align: center
 
 	   The **Active Surface** monitor in the parabolic configuration.
 
 
 Logging Display
-==========
+===============
 
        .. _srt_jlog:
 
-       .. figure:: srt_jlog.png 
+       .. figure:: srt_jlog.png
 	   :align: center
 
 	   The **Logging Display** shows the log messages related to
 	   the observation. New messages are shown over the
-	   previous ones. 
+	   previous ones.
 
 
 Meteo Client
-=========
+=============
 
        .. _srt_meteo:
 
-       .. figure:: srt_meteo.png 
+       .. figure:: srt_meteo.png
 	   :align: center
 
            The **Meteo Client** window shows the atmospheric temperature
@@ -84,90 +84,90 @@ Meteo Client
 
 
 Nuraghe-mng
-========
+===========
 
        .. _srt_vistaglobale:
 
        .. figure:: srt_vistaglobale.png
 	  :align: center
 
-          **Nuraghe-mng** is the machine where you run the system and where 
-	  you should find the input terminal and all the monitors. It is also 
+          **Nuraghe-mng** is the machine where you run the system and where
+	  you should find the input terminal and all the monitors. It is also
 	  the destination for your schedules.
 
 
 OperatorInput
-========
+=============
 
        .. _srt_operatorinput:
 
-       .. figure:: srt_operatorinput.png 
+       .. figure:: srt_operatorinput.png
 	   :align: center
 
-           In the **input console** the users can write Nuraghe commands. The prompt is just a sequential number enclosed in <>. 
-           If a command is properly read, the system replies by repeating the command itself, followed by the operation results 
+           In the **input console** the users can write Nuraghe commands. The prompt is just a sequential number enclosed in <>.
+           If a command is properly read, the system replies by repeating the command itself, followed by the operation results
            (if they are foreseen).
 
 
 AntennaBoss
-========
+===========
 
        .. _srt_antennaboss:
 
-       .. figure:: srt_antennaboss.png 
+       .. figure:: srt_antennaboss.png
            :width: 15cm
 	   :align: center
-          
-           The **AntennaBoss** monitor shows the target info, indicating the commanded and actual positions pointed by     
+
+           The **AntennaBoss** monitor shows the target info, indicating the commanded and actual positions pointed by
            the antenna. It also gives a feedback on the pointing
            accuracy and on the overall antenna status.
 
 
 GenericBackend
-==========
+===============
 
        .. _srt_genericBackend:
 
-       .. figure:: srt_genericBackend.png 
+       .. figure:: srt_genericBackend.png
 	   :align: center
 
 	   The monitor **GenericBackend** shows the backend setup parameters related to each section.
 
        .. _srt_genericBackend_KKG:
 
-       .. figure:: srt_genericBackend_KKG.png 
+       .. figure:: srt_genericBackend_KKG.png
 	   :align: center
 
        The monitor **GenericBackend** in the K-band configuration.
 
 
 Mount
-====
+======
 
        .. _srt_mount:
 
        .. figure:: srt_mount.png
-           :width: 15cm 
+           :width: 15cm
 	   :align: center
 
 	   Observers need to focus only on the **Mount** status (indicated by the green box) and on the actual position of the axis expressed in Azimuth and Elevation (shown in blue), compared to the commanded positions (actual positions with the label "Cmd Az." and "Cmd El.").
 
        .. _srt_mount_antennareset:
 
-       .. figure:: srt_mount_antennareset.png 
+       .. figure:: srt_mount_antennareset.png
            :width: 15cm
 	   :align: center
-  
+
            The **Mount** monitor after the park of the antenna by using ``> antennaPark``
 
 
 Observatory
-========
+===========
 
        .. _srt_observatory:
 
        .. figure:: srt_observatory.png
-           :width: 15cm 
+           :width: 15cm
 	   :align: center
 
            The **Observatory** monitor shows the station time and coordinates.
@@ -175,21 +175,21 @@ Observatory
 
 
 ReceiversBoss
-==========
+==============
 
        .. _srt_receivers:
 
-       .. figure:: srt_receivers.png 
+       .. figure:: srt_receivers.png
            :width: 15cm
 	   :align: center
 
-	   The **ReceiverBoss** monitor summarizes the frontend setup parameters. 
+	   The **ReceiverBoss** monitor summarizes the frontend setup parameters.
            The bottom part is devoted to the derotator (dewar positioner), when available.
 
 
        .. _srt_receivers_LLP:
 
-       .. figure:: srt_receivers_LLP.png 
+       .. figure:: srt_receivers_LLP.png
            :width: 15cm
 	   :align: center
 
@@ -199,7 +199,7 @@ ReceiversBoss
        .. _srt_receivers_KKG:
 
        .. figure:: srt_receivers_KKG.png
-           :width: 15cm 
+           :width: 15cm
 	   :align: center
 
        The **ReceiverBoss** monitor in the K-band configuration.
@@ -207,39 +207,39 @@ ReceiversBoss
 
 
 Scheduler
-======
+=========
 
         .. _srt_scheduler:
 
-     	.. figure:: srt_scheduler.png 
+     	.. figure:: srt_scheduler.png
            :width: 15cm
 	   :align: center
-          
+
            The **Scheduler** monitor shows the details on the selected data acquisition devices and on the running schedule, if any.
 
         .. _srt_scheduler_end:
 
      	.. figure:: srt_scheduler_end.png
-           :width: 15cm 
+           :width: 15cm
 	   :align: center
 
            The **Scheduler** monitor after the interruption of the current subscan by using ``> stopSchedule`` or ``> haltSchedule``
 
 
 MinorServo
-=======
+===========
 
        .. _srt_minorservo:
 
        .. figure:: srt_minorservo.png
-           :width: 15cm 
+           :width: 15cm
 	   :align: center
 
 	   The **MinorServo** monitor shows the current setup code and the minor-servo status and movement. In this case the image refers to the C-band configuration.
 
        .. _srt_minorservo_LLP:
 
-       .. figure:: srt_minorservo_LLP.png 
+       .. figure:: srt_minorservo_LLP.png
            :width: 15cm
 	   :align: center
 
@@ -247,7 +247,7 @@ MinorServo
 
        .. _srt_minorservo_KKG:
 
-       .. figure:: srt_minorservo_KKG.png 
+       .. figure:: srt_minorservo_KKG.png
            :width: 15cm
 	   :align: center
 
@@ -255,7 +255,7 @@ MinorServo
 
        .. _srt_minorservo_end:
 
-       .. figure:: srt_minorservo_end.png 
+       .. figure:: srt_minorservo_end.png
            :width: 15cm
 	   :align: center
 
@@ -264,11 +264,11 @@ MinorServo
 
 
 Calibration tool client
-==============
+========================
 
        .. _srt_calibrationtool:
 
-       .. figure:: calibrationtool_cut.png 
+       .. figure:: calibrationtool_cut.png
 	   :align: center
 
            In the **Calibration tool client** window the subscan
@@ -280,30 +280,30 @@ Calibration tool client
 
        .. _srt_focus:
 
-       .. figure:: srt_focus.png 
+       .. figure:: srt_focus.png
 	   :align: center
 
            **Calibration tool client** window related to a focus subscan.
 
 GenericBackendX
-===========
+================
 
        .. _srt_backendXarcos:
 
-       .. figure:: generic-backend-Xarcos.png 
+       .. figure:: generic-backend-Xarcos.png
 	   :align: center
 
            A second **GenericBackend** panel shows the setup
 	   parameters of each section of Xarcos.
 
-	   
+
 
 Primary Control Panel ACU
-=================
+==========================
 
        .. _srt_ACU_green:
 
-       .. figure:: srt_ACU_green.png 
+       .. figure:: srt_ACU_green.png
 	   :align: center
 
-           Primary Control Panel ACU. 
+           Primary Control Panel ACU.

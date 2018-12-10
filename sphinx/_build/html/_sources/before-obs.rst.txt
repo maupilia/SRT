@@ -6,7 +6,7 @@
 
 .. toctree::
    :maxdepth:1
-  
+
 .. _before-obs:
 
 ======================
@@ -16,7 +16,7 @@ Important checks
 Some checks need to be performed before starting the observations.
 
 On discos-manager (ACS)
-------------------
+------------------------
 
 Check that all of the **33 containers** are active on ACS (:numref:`srt_acs`).
 
@@ -24,14 +24,14 @@ Check that all of the **33 containers** are active on ACS (:numref:`srt_acs`).
 
 .. <https://srtsupervisoronduty.readthedocs.io/it/latest/sd/srt/procedures/nuraghe.html#avvio-di-nuraghe>`_
 
-Check also that the log client **jlog** is open in order to track possible error messages. 
+Check also that the log client **jlog** is open in order to track possible error messages.
 In case it is not open, type ``$ jlog &`` on a shell.
 
 
 On discos-console (observer computer)
-------------------
+--------------------------------------
 
-On the CONSOLE virtual desktop, check the presence of the 9 panels (:numref:`srt_vistaglobale`): 
+On the CONSOLE virtual desktop, check the presence of the 9 panels (:numref:`srt_vistaglobale`):
    - **operatorInput** (:numref:`srt_operatorinput`)
    - **AntennaBoss** (:numref:`srt_antennaboss`)
    - **GenericBackend** (:numref:`srt_genericBackend`)
@@ -44,14 +44,15 @@ On the CONSOLE virtual desktop, check the presence of the 9 panels (:numref:`srt
      jlog &`` on a shell;
 
 Check also that:
-     
+
    - the interface of the **Meteo client** is open to check the wind
      velocity in real time (it should be < 60 km/h)
      (:numref:`srt_meteo`). If the interface is closed, type ``$
      meteoClient &`` on a shell;
 
-   - the **quicklook** is open;
-   
+   - the **quicklook** is open. If it is closed, open it by clicking on the
+    **quicklook.html** icon on the desktop of discos-console;
+
    - the **active surface** is green (:numref:`srt_activesurface`).
 .. warning:: The active surface does not work properly if a large fraction (a whole sector) becomes red. It is a problem in K-band observations (:numref:`srt_AS-fraction-red`);
 
@@ -61,7 +62,7 @@ Upload your shedules (.scd, .lis, .bck and .cfg files) and check them:
 
    *From your computer:*
 
-   ``$ scp  [schedulename.*] discos@discosconsole:/home/[projectID]/schedules/.``
+   ``$ scp  [schedulename.*] [projectID]@discosconsole:/home/[projectID]/schedules/.``
 
    *On discos-console:*
 
@@ -81,5 +82,3 @@ Upload your shedules (.scd, .lis, .bck and .cfg files) and check them:
 ..   $ cd /archive/schedules/[projectID]``
 
 ..   $ scheduleChecker [schedulename.scd]``
-
-

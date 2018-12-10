@@ -33,8 +33,8 @@ On their respective desktops
 #. Close the vnc session on leap0
 
 
-On mng-dev
-------------
+On discos-console
+------------------
 
 #. Park the minor servo, active surface and antenna
 

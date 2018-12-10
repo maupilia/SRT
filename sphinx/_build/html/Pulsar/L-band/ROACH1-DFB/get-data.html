@@ -168,14 +168,14 @@
 <p>You can download them on your computer whenever you want during the
 observations.</p>
 <blockquote>
-<div><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">scp</span> <span class="pre">-r</span>&#160; <span class="pre">projectID&#64;discos-console:data/yyyymmdd</span> <span class="pre">.</span></code></div></blockquote>
+<div><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">scp</span> <span class="pre">-r</span>&#160; <span class="pre">[projectID]&#64;discos-console:data/yyyymmdd</span> <span class="pre">.</span></code></div></blockquote>
 <p>The ROACH1 data have been written on the nodes of the LEAP cluster. After the observation run, this baseband data needs to be de-dispersed and folded (it may take a few hours and no other observations with the ROACH1 can take place while the cluster is being used).
 The folding or search procedure you have required in your proposal will be performed offline by your project friend.</p>
 <p>The final archive data will be stored on the head node of the LEAP cluster (leap0) in ~/DATA/.</p>
-<p>This data (in .ar format) can then be transferred to nuraghe-mng or a
+<p>This data (in .ar format) can then be transferred to discos-console or a
 personal computer using “scp”. In LEAP cluster VNC:</p>
 <blockquote>
-<div><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">scp</span> <span class="pre">-r</span> <span class="pre">~/DATA/[today’s</span> <span class="pre">date]</span>&#160; <span class="pre">[projectID]&#64;nuraghe-mng:/archive/data/[projectID]/</span></code></div></blockquote>
+<div><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">scp</span> <span class="pre">-r</span> <span class="pre">~/DATA/[today’s</span> <span class="pre">date]</span>&#160; <span class="pre">[projectID]&#64;discos-console:/home/[projectID]/data/</span></code></div></blockquote>
 </div>
 
 

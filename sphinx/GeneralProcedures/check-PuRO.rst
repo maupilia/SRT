@@ -94,15 +94,15 @@ External client
 The difference between ``./start.csh`` and ``./start_simple.csh`` is that ``./start_simple.csh`` does not call the external client to get information about the source. If the external client is working, use ``./start.csh`` and the right folders will be automatically created using the name of the source that is being tracked and the most recent timestamp.
 
 
-On nuraghe-mng
---------------
+On discos-console
+-----------------
 
-#. Check that the data are correctly written in your project section (Rescicom) :
+#. Look at the Quick-look of the data by clicking on the icon in the desktop of discos-console:
 
-    ``$ cd /archive/data/Rescicom/yyyymmdd``
+      quicklook.html
 
 
-#. **jlog**
+#. **ACS custom logging client**
 
      The logging display shows warning and error messages. Warning
      messages are indicated in yellow while error messages are in red
@@ -111,7 +111,7 @@ On nuraghe-mng
      Check the possible error messages. Try to understand the origin
      of the problem and to solve it. In case of persistent/complex
      problem, contact and report the error messages and the associated
-     UT time (into the web page .......).
+     UT to the responsible of the observation.
 
 
 #. **Meteo client**

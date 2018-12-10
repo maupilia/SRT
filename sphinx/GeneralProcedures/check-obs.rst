@@ -22,7 +22,6 @@ $ : commands to insert in a shell
 ..   :align: left
 |logo|: check the execution on the monitor
 
-==============================
 
 
 .. On nuraghe-obs2------------------
@@ -45,17 +44,17 @@ $ : commands to insert in a shell
 
 
 
-On nuraghe-mng
---------------
+On discos-console
+------------------
 
-#. Check that the data are correctly written in your project section (Maintenance) :
+#. Check that the data are correctly written in your project section :
 
-    ``$ cd /archive/data/Maintenance/yyyymmdd``
+    ``$ cd /home/[projectID]/data/yyyymmdd``
 
 
-#. Look at the Quick-look of the data :
+#. Look at the Quick-look of the data by clicking on the icon in the desktop of discos-console:
 
-      TBD (tool M. Bachetti)
+      quicklook.html
 
 
 #. **ACS custom logging client**
@@ -146,7 +145,7 @@ On nuraghe-mng
 
 
 Primary Control Panel ACU
----------------------
+-------------------------
 
 Check that everything appears in green (see |logo|
 :numref:`srt_ACU_green`).

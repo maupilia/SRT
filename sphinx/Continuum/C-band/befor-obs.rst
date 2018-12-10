@@ -6,13 +6,13 @@
 
 .. toctree::
    :maxdepth:1
-  
+
 
 Before observing
-======================
+=================
 
-$ : commands to insert in a shell   
- 
+$ : commands to insert in a shell
+
 > : commands to insert in the operatorInput panel
 
 

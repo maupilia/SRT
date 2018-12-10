@@ -6,8 +6,8 @@
 
 .. toctree::
    :maxdepth:1
-  
-.. _before-obs:
+
+.. _before-obs_old:
 
 ======================
 Important checks
@@ -16,7 +16,7 @@ Important checks
 Some checks need to be performed before starting the observations.
 
 
-On nuraghe-mng
+On discos-console
 ------------------
 
 Check that :
@@ -34,7 +34,7 @@ Check that :
 .. On nuraghe-obs1 ------------------
 
 
-Check the presence of the 9 panels (:numref:`srt_vistaglobale`): 
+Check the presence of the 9 panels (:numref:`srt_vistaglobale`):
    - **operatorInput** (:numref:`srt_operatorinput`)
    - **AntennaBoss** (:numref:`srt_antennaboss`)
    - **GenericBackend** (:numref:`srt_genericBackend`)

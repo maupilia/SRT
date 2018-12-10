@@ -11,7 +11,7 @@
 
 
 Before observing
-======================
+===================
 
 **Notes :** The following instructions are for observing at L-band with the ROACH1 in baseband mode. The observed bandwidth is limited to 128 MHz.
 

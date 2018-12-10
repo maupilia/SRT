@@ -9,9 +9,9 @@
 
 .. _pointing-focus:
 
-======================
+================================
 Pointing and Focus optimization
-======================
+================================
 
 
 $  : commands to insert in a shell
@@ -30,14 +30,14 @@ $  : commands to insert in a shell
 
 
 Pointing
-======
+========
 
      The pointing optimization depends on the elevation of the sources. It is strongly
      recommended to perform it before observing a source (calibrators
-     and target of your schedules). 
+     and target of your schedules).
      If the target you plan to observe is too weak to present a good S/N,
      select a calibrator bright enough and located close to your
-     target (`see the internal report N°27 <http://www.oa-cagliari.inaf.it/area.php?page_id=10&skip=4>`_.). 
+     target (`see the internal report N°27 <http://www.oa-cagliari.inaf.it/area.php?page_id=10&skip=4>`_.).
 
 
 #. Set the azimuth and elevation offsets to 0 degree.
@@ -45,12 +45,12 @@ Pointing
     ``> azelOffsets=0d,0d``
 
 #. Choose and track a proper calibrator.
-    
-    ``> track=[name]``  if the calibrator is in the SRT database 
+
+    ``> track=[name]``  if the calibrator is in the SRT database
     (e.g. 3c147 => note **c** in lower case)
 
-    otherwise  ``> sidereal=[name],[RA],[Dec],[epoch],[sector]``  
-    
+    otherwise  ``> sidereal=[name],[RA],[Dec],[epoch],[sector]``
+
     Important note: the complete list of the sources which are recorded in the     SRT database is available `on the page <https://discos.readthedocs.io/en/latest/user/srt/source/Appendix_D.html>`_
 
     * ``RA, Dec``: Pay attention to the coordinate formats:
@@ -59,7 +59,7 @@ Pointing
       - hh:mm:ss, with a **h** suffix, for longitudes only (02:00:00h).
 
     * ``epoch``: 1950, 2000 or -1, the last one meaning that the
-      provided coordinates are precessed to the observing epoch. 
+      provided coordinates are precessed to the observing epoch.
 
     * ``sector``: to force the cable wrap sector, if needed. Its value
       can be CW, CCW or neutral. Usually, use *neutral*.
@@ -87,16 +87,16 @@ Pointing
 
     * ``00:00:20`` indicates the duration of the scan (in this example: 20 seconds).
 
-    
+
 #. Look at the calibrationtool client to check the pointing offsets.
 
     Pointing offsets must be less than 1/10 of the beamsize (i.e. about < 0.005
-    deg in C-band and < 0.00125 deg in K-band). 
+    deg in C-band and < 0.00125 deg in K-band).
 
 
 #. If you want to reject the measured offsets :
 
-   ``> azelOffsets=0d,0d``   
+   ``> azelOffsets=0d,0d``
 
    and repeat the pointing scan procedure.
 
@@ -109,14 +109,14 @@ Focus
    ``> focusScan=150,00:01:00``
 
     The first number should be three times the wavelength of
-    observation in mm (e.g. in C-Band 3*5cm = 150mm). In the case of K-Band observations this value should be set to 60mm. 
+    observation in mm (e.g. in C-Band 3*5cm = 150mm). In the case of K-Band observations this value should be set to 60mm.
 
 #. Look at the calibrationtool client to check the focus measurements. |logo| :numref:`srt_focus`
 
     The focus is correct if you see a Gaussian with an offset lower
     than a few tenth of  mm with respect to the zero.
 
-#. If you want to reject the updated focus position with: 
+#. If you want to reject the updated focus position with:
 
    ``> clearServoOffsets``
 

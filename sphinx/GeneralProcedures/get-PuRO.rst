@@ -17,7 +17,7 @@ The folding or search procedure you have required in your proposal will be perfo
 
 The final archive data will be stored on the head node of the LEAP cluster (leap0) in ~/DATA/.
 
-This data (in .ar format) can then be transferred to nuraghe-mng or a
+This data (in .ar format) can then be transferred to discos-console or a
 personal computer using "scp". In LEAP cluster VNC:
 
-     ``$ scp -r ~/DATA/[today’s date]  [projectID]@nuraghe-mng:/archive/data/[projectID]/``
+     ``$ scp -r ~/DATA/[today’s date]  [projectID]@discos-console:/home/[projectID]/data/``

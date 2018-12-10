@@ -5,7 +5,7 @@
 
 
 Primary Control Panel ACU
-=================
+=========================
 
 At the end of your observations, do not press the emergency stop button when
 the **Stow Pin Motion** is yellow as below.
@@ -42,29 +42,29 @@ as indicated in the following figure:
 
 
 AntennaBoss
-========
+============
 
 
 Observatory
-========
+============
 
 
 Mount
-====
+======
 
 
 
 
 GenericBackend
-==========
+==============
 
 
 ReceiversBoss
-==========
+=============
 
 
 Scheduler
-======
+==========
 
 The antenna is not in tracking when the @ is red.
 Note that it can also be red when the antenna is in slewing (to reach
@@ -82,13 +82,13 @@ number is frozen, stop the schedule.
 
 
 MinorServo
-=======
+===========
 
 
 
 
 Logging Display
-==========
+===============
 
         .. _jlog-err:
 
@@ -99,7 +99,7 @@ Logging Display
 
 
 Active Surface
-=============
+===============
 
 The active surface does not work properly if a large fraction (a whole sector) becomes red. It is a problem in K-band observations.
 
@@ -113,7 +113,7 @@ The active surface does not work properly if a large fraction (a whole sector) b
 
 
 MeteoClient
-========
+===========
 
 The real-time monitoring of the wind velocity is performed with the
 meteoClient on a nuraghe-mng shell: ``$ meteoClient``. The red

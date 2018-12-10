@@ -169,16 +169,15 @@
 <p><img alt="logo" src="../../../_images/monocle_21.png" />: check the execution on the monitor</p>
 <div class="section" id="on-seadas">
 <h2>On seadas<a class="headerlink" href="#on-seadas" title="Permalink to this headline">¶</a></h2>
-<p>Place your observing files in <a class="reference external" href="mailto:corr&#37;&#52;&#48;seadas">corr<span>&#64;</span>seadas</a> as follows:</p>
+<p>Place your observing files in <a class="reference external" href="mailto:pulsar&#37;&#52;&#48;seadas">pulsar<span>&#64;</span>seadas</a> as follows:</p>
 <blockquote>
 <div><ul class="simple">
-<li>your seadas setup file(s) in folder:    <a class="reference external" href="mailto:corr&#37;&#52;&#48;seadas">corr<span>&#64;</span>seadas</a>:/home/corr/setup/[your project code]</li>
-<li>your seadas schedule file(s) in folder: <a class="reference external" href="mailto:corr&#37;&#52;&#48;seadas">corr<span>&#64;</span>seadas</a>:/home/corr/scheds/[your project code]</li>
+<li>your seadas setup and schedule file(s) in folder: <a class="reference external" href="mailto:pulsar&#37;&#52;&#48;seadas">pulsar<span>&#64;</span>seadas</a>:/home/pulsar/scheds/[your project code]</li>
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="on-nuraghe-obs1">
-<h2>On nuraghe-obs1<a class="headerlink" href="#on-nuraghe-obs1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="on-discos-console">
+<h2>On discos-console<a class="headerlink" href="#on-discos-console" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first">Insert your project number</p>
 <blockquote>
@@ -192,12 +191,12 @@
 <p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">goTo=*,81.9d</span></code> <img alt="logo" src="../../../_images/monocle_21.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-mount"><span class="std std-numref">Fig.12</span></a></p>
 </div></blockquote>
 </li>
-<li><p class="first">On a terminal open a vnc session for <a class="reference external" href="mailto:corr&#37;&#52;&#48;seadas">corr<span>&#64;</span>seadas</a>:</p>
+<li><p class="first">On a terminal open a vnc session for <a class="reference external" href="mailto:pulsar&#37;&#52;&#48;seadas">pulsar<span>&#64;</span>seadas</a>:</p>
 <blockquote>
 <div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">vncviewer</span> <span class="pre">seadas:1</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">If this fails, start a new vnc session on <a class="reference external" href="mailto:corr&#37;&#52;&#48;seadas">corr<span>&#64;</span>seadas</a>.</p>
+<li><p class="first">If this fails, start a new vnc session on <a class="reference external" href="mailto:pulsar&#37;&#52;&#48;seadas">pulsar<span>&#64;</span>seadas</a>.</p>
 </li>
 <li><p class="first">Type password at prompt.</p>
 </li>
@@ -227,8 +226,8 @@
 </li>
 </ol>
 </div>
-<div class="section" id="in-the-vnc-session-corr-seadas">
-<h2>In the vnc session <a class="reference external" href="mailto:corr&#37;&#52;&#48;seadas">corr<span>&#64;</span>seadas</a><a class="headerlink" href="#in-the-vnc-session-corr-seadas" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="in-the-vnc-session-pulsar-seadas">
+<h2>In the vnc session <a class="reference external" href="mailto:pulsar&#37;&#52;&#48;seadas">pulsar<span>&#64;</span>seadas</a><a class="headerlink" href="#in-the-vnc-session-pulsar-seadas" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first">Open a terminal and start SEADAS</p>
 <blockquote>
@@ -253,7 +252,7 @@
 </li>
 <li><p class="first">Open a new terminal and start DFBCONTROLLER</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">/home/corr/software/seadas/bin/dfbcontroller</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">dfbcontroller</span></code></p>
 </div></blockquote>
 </li>
 <li><p class="first">In DFBCONTROLLER window, check that the colored label at the right of the</p>
@@ -267,7 +266,7 @@
 <ol class="arabic">
 <li><p class="first">If you do not see the LEAPCONTROLLER interface, open a new terminal and start it</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">leapcontroller</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">/home/user/seadas/bin/leapcontroller</span></code></p>
 </div></blockquote>
 </li>
 <li><p class="first">In LEAPCONTROLLER window, check that the colored label at the right of the “…” label is green and displays the word “CONNECTED”. If not, click on it.</p>
@@ -277,10 +276,9 @@
 <div class="section" id="inside-seadas-window">
 <h2>Inside SEADAS window<a class="headerlink" href="#inside-seadas-window" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li>Verify and adjust attenuation levels</li>
 <li>Select “Schedule” in the “Session mode” combo box</li>
-<li>Click “View obs list”. A window named “Observations List” pops up</li>
-<li>Click “View schedule”. A window named “Schedule Manager” pops up</li>
+<li>Verify and adjust attenuation levels. You can do so by following the procedure below, using the schedule TEST.scd which you will find under the directory /home/corr/scheds/. Once you have started the schedule (see points below) you need to check the PDFB3 panel in the psrdfb vnc session. Under tab <cite>…</cite> make sure that the RMS level for each channel is around 10. If it is not, go back to the SEADAS interface and select different attenuation values (which can be different for the two channels) and press <cite>set atten.</cite></li>
+<li>Click “Schedule Management”. A window named “Seadas Schedule Manager” pops up</li>
 <li>Click “Load sched” in “Schedule Manager” window. A system window pops up for browsing system directories and selecting the schedule file</li>
 <li>In “Schedule manager” window select schedule lines to be done - mouse left click on each single line - or click button “Select all” for loading the entire schedule in the “Observations List” window</li>
 <li>If necessary, rearrange the order of the observations in the “Observations List” window  - left button click == cut line ; mid button click == paste line</li>

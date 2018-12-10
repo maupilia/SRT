@@ -25,14 +25,14 @@ End of the session
 Your observations are now finished, we can stop the schedule and park
 the antenna.
 
-On nuraghe-mng
---------------
+On discos-console
+-----------------
 
 .. On nuraghe-obs1 ------------------
 
 1. Stop your schedule :
 
-   ``> haltSchedule``    *the schedule stops at the end of the on-going subscan.* 
+   ``> haltSchedule``    *the schedule stops at the end of the on-going subscan.*
 
    Important note: do not stop Xarcos schedule with **stopSchedule**.
 
@@ -58,4 +58,3 @@ Look at the ACU monitor, wait until
 
 Only at this moment, you can press on the emergency stop button
 (:numref:`srt_ACU_redbutton`).
-

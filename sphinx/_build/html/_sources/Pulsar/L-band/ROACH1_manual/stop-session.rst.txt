@@ -38,8 +38,8 @@ In LEAP VNC
 2. W1: ``$ ./end.csh`` to end data acquisition and close the daemons.
 
 
-On nuraghe-mng
-----------------
+On discos-console
+-------------------
 
 1. Stop your schedule :
 
