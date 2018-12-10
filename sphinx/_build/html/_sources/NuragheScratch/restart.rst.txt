@@ -11,7 +11,7 @@ Restart Discos
 
     ``discos -start``
 
-   The graphical interface of the ACS Command Center appears.
+   The graphical interface of the ACS Command Center appears (:numref:`srt_acs_2`).
 
    Check that ``remote`` and  ``use native ssh`` are correctly selected in the **Common settings** panel.
 

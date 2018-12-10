@@ -212,7 +212,7 @@ or   <code class="docutils literal notranslate"><span class="pre">&gt;</span> <s
 </li>
 <li><p class="first">Open the calibrationtool client in a terminal to display the plots in real time :</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">calibrationtoolclient</span> <span class="pre">MANAGEMENT/CalibrationTool</span></code>  <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-calibrationtool"><span class="std std-numref">Fig.24</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">calibrationtoolclient</span> <span class="pre">MANAGEMENT/CalibrationTool</span></code>  <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-calibrationtool"><span class="std std-numref">Fig.25</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Set proper parameters according to your beamsize and coordinate frame in order to perform a correct pointing measurement :</p>
@@ -241,6 +241,28 @@ deg in C-band and &lt; 0.00125 deg in K-band).</p>
 <div class="section" id="focus">
 <h2>Focus<a class="headerlink" href="#focus" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
+<li><p class="first">Choose and track a proper calibrator.</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">track=[name]</span></code>  if the calibrator is in the SRT database
+(e.g. 3c147 =&gt; note <strong>c</strong> in lower case)</p>
+<p>otherwise  <code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">sidereal=[name],[RA],[Dec],[epoch],[sector]</span></code></p>
+<p>Important note: the complete list of the sources which are recorded in the     SRT database is available <a class="reference external" href="https://discos.readthedocs.io/en/latest/user/srt/source/Appendix_D.html">on the page</a></p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">RA,</span> <span class="pre">Dec</span></code>: Pay attention to the coordinate formats:
+- decimal degrees, using a <strong>d</strong> suffix, for any coordinate (e.g. 30.00d)
+- sexagesimal degrees, with no suffix, for any coordinate (30:00:00)
+- hh:mm:ss, with a <strong>h</strong> suffix, for longitudes only (02:00:00h).</li>
+<li><code class="docutils literal notranslate"><span class="pre">epoch</span></code>: 1950, 2000 or -1, the last one meaning that the
+provided coordinates are precessed to the observing epoch.</li>
+<li><code class="docutils literal notranslate"><span class="pre">sector</span></code>: to force the cable wrap sector, if needed. Its value
+can be CW, CCW or neutral. Usually, use <em>neutral</em>.</li>
+</ul>
+<blockquote>
+<div><p>e.g. <code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">sidereal=3c84,03:19:48.16h,41:30:42.1,2000,neutral</span></code>
+or   <code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">sidereal=3c84,49.951d,41.512d,2000,neutral</span></code></p>
+</div></blockquote>
+</div></blockquote>
+</li>
 <li><p class="first">Set proper parameters according to your beamsize :</p>
 <p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">focusScan=150,00:01:00</span></code></p>
 <blockquote>
@@ -248,7 +270,7 @@ deg in C-band and &lt; 0.00125 deg in K-band).</p>
 observation in mm (e.g. in C-Band 3*5cm = 150mm). In the case of K-Band observations this value should be set to 60mm.</p>
 </div></blockquote>
 </li>
-<li><p class="first">Look at the calibrationtool client to check the focus measurements. <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-focus"><span class="std std-numref">Fig.25</span></a></p>
+<li><p class="first">Look at the calibrationtool client to check the focus measurements. <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-focus"><span class="std std-numref">Fig.26</span></a></p>
 <blockquote>
 <div><p>The focus is correct if you see a Gaussian with an offset lower
 than a few tenth of  mm with respect to the zero.</p>

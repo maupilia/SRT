@@ -7,20 +7,20 @@
 
 .. toctree::
    :maxdepth: 1
-  
+
 .. _start-CoCSa:
 
 Start the observations
 ======================
 
 
-$ : commands to insert in a shell   
- 
+$ : commands to insert in a shell
+
 > : commands to insert in the operatorInput panel
 
 
 
-.. |logo| image:: monocle_.png 
+.. |logo| image:: monocle_.png
 ..    :width: 20pt
 ..    :height: 20pt
 ..   :align: left
@@ -28,7 +28,7 @@ $ : commands to insert in a shell
 
 
 ======================
- 
+
 
 
 #. Insert your project number :
@@ -38,7 +38,7 @@ $ : commands to insert in a shell
 
 #. Initial setup :
 
-    ``> antennaReset`` |logo| :numref:`srt_ACU_axis_blocked` 
+    ``> antennaReset`` |logo| :numref:`srt_ACU_axis_blocked`
 
     ``> setupCCB`` |logo| :numref:`srt_receivers` |logo| :numref:`srt_ACU_green`
 
@@ -53,20 +53,20 @@ $ : commands to insert in a shell
 #. Select and configure the SARDARA backend :
 
     ``> chooseBackend=Sardara`` |logo| :numref:`srt_scheduler`
-    
+
     ``$ genericBackendTui BACKENDS/Sardara``
 
-    ``> initialize=SC00S`` for full-stokes observations or
+    ``> initialize=SC00S`` for full-Stokes observations or
     ``> initialize=SC00`` for total intensity observations.
 
 #. Set the different parameters of the backend :
 
     ``> setSection=[sect],*,[bw],*,*,[sampleRate],[bin]`` |logo| :numref:`srt_genericBackend`
 
-    with : 
+    with :
 
       - ``[sect]``: 0 in full-stokes observations and ``[sect]``: 0, 1 in total intensity observations ;
-      - ``[bw]`` the bandwidth in MHz (420 or 1500 MHz) ; 
+      - ``[bw]`` the bandwidth in MHz (420 or 1500 MHz) ;
       - ``[sampleRate]`` in MHz (840 for 420 MHz of bw or 3000 for 1500 MHz of bw) ;
       - ``[bin]`` the frequency channels (1024 or 16384).
 
@@ -80,11 +80,11 @@ $ : commands to insert in a shell
 
 #. Attenuate the signal based on the rms range [30;33] and check the value on the interface :
 
-     ``> getRms``  
+     ``> getRms``
 
      ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.  |logo| :numref:`srt_genericBackend`
 
-#. Check the tsys (typical values to be inserted) :
+#. Check the tsys (typical 30-35 K) :
 
      ``> tsys`` |logo| :numref:`srt_genericBackend`
 
