@@ -104,6 +104,29 @@ Pointing
 Focus
 ======
 
+#. Choose and track a proper calibrator.
+
+    ``> track=[name]``  if the calibrator is in the SRT database
+    (e.g. 3c147 => note **c** in lower case)
+
+    otherwise  ``> sidereal=[name],[RA],[Dec],[epoch],[sector]``
+
+    Important note: the complete list of the sources which are recorded in the     SRT database is available `on the page <https://discos.readthedocs.io/en/latest/user/srt/source/Appendix_D.html>`_
+
+    * ``RA, Dec``: Pay attention to the coordinate formats:
+      - decimal degrees, using a **d** suffix, for any coordinate (e.g. 30.00d)
+      - sexagesimal degrees, with no suffix, for any coordinate (30:00:00)
+      - hh:mm:ss, with a **h** suffix, for longitudes only (02:00:00h).
+
+    * ``epoch``: 1950, 2000 or -1, the last one meaning that the
+      provided coordinates are precessed to the observing epoch.
+
+    * ``sector``: to force the cable wrap sector, if needed. Its value
+      can be CW, CCW or neutral. Usually, use *neutral*.
+
+     e.g. ``> sidereal=3c84,03:19:48.16h,41:30:42.1,2000,neutral``
+     or   ``> sidereal=3c84,49.951d,41.512d,2000,neutral``
+     
 #. Set proper parameters according to your beamsize :
 
    ``> focusScan=150,00:01:00``
