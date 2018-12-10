@@ -21,8 +21,19 @@ ACS Command Center
           The **ACS** monitor shows the state of the containers related to each DISCOS component.
           The state of each container can be verified in the section highlighted in blue. 
 	  The blue arrow indicates the number of containers (33 when the system is ready).
+	  
 
+ACS Command Center
+========
 
+       .. _srt_acs_2:
+
+       .. figure:: srt_acs_2.png 
+	  :align: center
+	  
+	  In the **Common settings** panel of the ACS monitor, the ``remote``  and  the ``use native ssh`` items must be selected as indicated by the green arrows. The ``Start`` and  the ``global green triangle`` buttons highlighted in green must be used to restart the **Acs suite** and the **Containers**, respectively. The ``Kill`` button highlighted in red must be used to close the ACS panel during the Shutdown of Discos. 
+	  
+	  
 Active Surface
 =========
 
