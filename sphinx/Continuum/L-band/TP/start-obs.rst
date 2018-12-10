@@ -6,19 +6,19 @@
 
 .. toctree::
    :maxdepth:1
-  
+
 .. _start-CoLTP:
 
 Start the observations
 ======================
 
-$ : commands to insert in a shell   
- 
+$ : commands to insert in a shell
+
 > : commands to insert in the operatorInput panel
 
 
 
-.. |logo| image:: monocle_.png 
+.. |logo| image:: monocle_.png
 ..    :width: 20pt
 ..    :height: 20pt
 ..   :align: left
@@ -27,7 +27,7 @@ $ : commands to insert in a shell
 
 #. Insert your project number :
 
-    ``> project=[projectID]``  |logo| :numref:`Fig. %s, <srt_scheduler>` 
+    ``> project=[projectID]``  |logo| :numref:`Fig. %s, <srt_scheduler>`
 
 
 #. Initial setup :
@@ -84,7 +84,7 @@ $ : commands to insert in a shell
 
     ``> getTpi``
 
-#. Check the tsys (typical values to be inserted)
+#. Check the tsys (typical values 25-30 K)
 
     ``> tsys`` |logo| :numref:`srt_genericBackend`
 

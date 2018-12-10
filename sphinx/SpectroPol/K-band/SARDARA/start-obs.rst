@@ -124,7 +124,7 @@ Important note: the *initialize* command requires a few more seconds comapared t
     Important note 2: The feed 10 does not work, do not consider the related getRms and tsys values.
 
 
-#. Check the tsys (typical values to be inserted)
+#. Check the tsys (typical values up to 100 K)
 
     ``> tsys`` |logo| :numref:`srt_genericBackend_KKG`
 

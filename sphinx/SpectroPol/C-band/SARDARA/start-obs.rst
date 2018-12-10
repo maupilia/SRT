@@ -6,18 +6,18 @@
 
 .. toctree::
    :maxdepth: 1
-  
+
 .. _start-SPCSa:
 
 Start the observations
 ======================
 
-$ : commands to insert in a shell   
- 
+$ : commands to insert in a shell
+
 > : commands to insert in the operatorInput panel
 
 
-.. |logo| image:: monocle_.png 
+.. |logo| image:: monocle_.png
 ..    :width: 20pt
 ..    :height: 20pt
 ..   :align: left
@@ -48,24 +48,24 @@ $ : commands to insert in a shell
 #. Select and configure the SARDARA backend
 
     ``> chooseBackend=Sardara`` |logo| :numref:`srt_scheduler`
-    
+
     ``$ genericBackendTui BACKENDS/Sardara``
 
     ``> initialize=SC00S`` for full Stokes observations  or
-    ``> initialize=SC00`` for non full Stokes observations
+    ``> initialize=SC00`` for total intensity observations
 
 
 #. Set the different parameters of the backend :
 
     ``> setSection=[sect],*,[bw],*,*,[sampleRate],[bin]`` |logo| :numref:`srt_genericBackend`
 
-    with : 
+    with :
 
-      - ``[sect]``: 0 in full Stokes observations ; 
-      - ``[bw]`` the bandwidth in MHz (420 or 1500 MHz) ; 
+      - ``[sect]``: 0 in full Stokes observations ;
+      - ``[bw]`` the bandwidth in MHz (420 or 1500 MHz) ;
       - ``[sampleRate]`` in MHz (840 for 420 MHz of bw or 3000 for 1500 MHz di bw) ;
       - ``[bin]`` the frequency channels (1024 or 16384).
-      
+
 #. Choose the integration time in ms (e.g. n=10 corresponds to 100 spectra/sec)
 
     ``> integration=[n]``
@@ -76,11 +76,11 @@ $ : commands to insert in a shell
 
 #. Attenuate the signal based on the rms range [30;33] and check the value on the interface.
 
-    ``> getRms``  
+    ``> getRms``
 
     ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.  |logo| :numref:`srt_genericBackend`
 
-#. Check the tsys (typical values to be inserted)
+#. Check the tsys (typical values 30-35 K)
 
      ``> tsys`` |logo| :numref:`srt_genericBackend`
 

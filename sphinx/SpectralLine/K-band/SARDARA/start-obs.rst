@@ -7,7 +7,7 @@
 .. toctree::
    :maxdepth: 1
 
-.. |logo| image:: monocle_.png 
+.. |logo| image:: monocle_.png
 ..    :width: 20pt
 ..    :height: 20pt
 ..   :align: left
@@ -18,8 +18,8 @@
 Start the observations
 =======================
 
-$ : commands to insert in a shell   
- 
+$ : commands to insert in a shell
+
 > : commands to insert in the operatorInput panel
 
 
@@ -27,7 +27,7 @@ $ : commands to insert in a shell
 
 #. Insert your project number
 
-    ``> project=[projectID]`` |logo| :numref:`srt_scheduler` 
+    ``> project=[projectID]`` |logo| :numref:`srt_scheduler`
 
 #. Initial setup
 
@@ -46,7 +46,7 @@ $ : commands to insert in a shell
 #. Select and configure the SARDARA backend in K-band
 
     ``> chooseBackend=Sardara``  |logo| :numref:`srt_scheduler`
-    
+
     ``$ genericBackendTui BACKENDS/Sardara``
 
     ``> initialize=[code]``
@@ -61,19 +61,19 @@ $ : commands to insert in a shell
        - ``[code]`` = SK03 : feeds 0 and 3 only and total intensity observations ;
        - ``[code]`` = SK06S : feeds 0 and 6 only and full Stokes observations ;
        - ``[code]`` = SK06 : feeds 0 and 6 only and total intensity observations.
-       
+
 Important note: the *initialize* command requires a few more seconds comapared to the other command in order to operate.
 
 #. Set the different parameters of the backend:
 
    ``> setSection=[sect],*,[bw],*,*,[sampleRate],[bin]``  |logo| :numref:`srt_genericBackend_KKG`
 
-     with : 
+     with :
 
         - ``[sect]`` = 0, 1, 2, 3, 4, 5, 6 in full Stokes observations ;
         - ``[sect]`` = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,12, 13 in
           total intensity observations ;
-        - ``[bw]`` the bandwidth in MHz (420 or 1500) ; 
+        - ``[bw]`` the bandwidth in MHz (420 or 1500) ;
         - ``[sampleRate]`` in MHz (840 for 420 MKz of bw or 3000 for 1500 MHz of bw) ;
         - ``[bin]`` the frequency channels (1024 or 16384).
 
@@ -101,7 +101,7 @@ Important note: the *initialize* command requires a few more seconds comapared t
 
 ..    To read back the position of the dewar :
 
-    ``> derotatorGetPosition`` 
+    ``> derotatorGetPosition``
 
 #. Put the antenna at 45 deg of elevation before to check that the signal is in the linear range of the backend:
 
@@ -109,16 +109,16 @@ Important note: the *initialize* command requires a few more seconds comapared t
 
 #. Attenuate the signal based on the rms range [30;33] and check the value on the interface.
 
-    ``> getRms``  
+    ``> getRms``
 
     ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.  |logo| :numref:`srt_genericBackend_KKG`
-    
+
     Important note 1: For the sections 0, 1, 2 and 3 (feeds 0 and 1), you have to set the attenuation accordingly to the values obtained with getRms. For the other sections the attenuation has to be set at 0 since the rms does not reach 30.
-    
+
     Important note 2: The feed 10 does not work, do not consider the related    getRms and tsys values.
 
 
-#. Check the tsys (typical values to be inserted)
+#. Check the tsys (typical values up to 100 K)
 
     ``> tsys`` |logo| :numref:`srt_genericBackend_KKG`
 

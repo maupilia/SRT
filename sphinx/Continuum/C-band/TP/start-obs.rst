@@ -69,7 +69,7 @@ $  : commands to insert in a shell
 
     ``> getTpi``
 
-#. Check the tsys (typical values 35,29 K)
+#. Check the tsys (typical values 30-35 K)
 
     ``> tsys`` |logo| :numref:`srt_genericBackend`
 

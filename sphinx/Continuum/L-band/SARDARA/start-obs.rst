@@ -6,17 +6,17 @@
 
 .. toctree::
    :maxdepth:1
-  
+
 .. _start-CoLSa:
 
 Start the observations
 ======================
 
-$ : commands to insert in a shell   
- 
+$ : commands to insert in a shell
+
 > : commands to insert in the operatorInput panel
 
-.. |logo| image:: monocle_.png 
+.. |logo| image:: monocle_.png
 ..    :width: 20pt
 ..    :height: 20pt
 ..   :align: left
@@ -26,13 +26,13 @@ $ : commands to insert in a shell
 ======================
 
 
-#. Insert your project number 
+#. Insert your project number
 
     ``> project=[projectID]`` |logo| :numref:`srt_scheduler`
 
-#. Initial setup 
+#. Initial setup
 
-    ``> antennaReset`` |logo| :numref:`srt_ACU_axis_blocked` 
+    ``> antennaReset`` |logo| :numref:`srt_ACU_axis_blocked`
 
     ``> setupLLP``  |logo| :numref:`srt_receivers_KKG` |logo| :numref:`srt_ACU_green`
 
@@ -40,7 +40,7 @@ $ : commands to insert in a shell
 
     ``> asSetup=P`` |logo| :numref:`srt_as_parabolic`
 
-#. Select the receiver mode 
+#. Select the receiver mode
 
     ``> receiversMode=[code]`` where ``[code]`` can be ``XXC1``,
     ``XXC2``, ``XXC3``, ``XXC4``, ``XXC5``, ``XXL1``, ``XXL2``,
@@ -54,7 +54,7 @@ $ : commands to insert in a shell
        - **5** : 1625-1715 MHz.
 
 #. Select the Maccaferri filter :
-    
+
     - ``ifd=BW-NARROW`` for 115 MHz of bw ;
     - ``ifd=BW-MEDIUM`` for 230 MHz of bw ;
     - ``ifd=BW-WIDE`` for 460 MHz of bw ;
@@ -68,24 +68,24 @@ $ : commands to insert in a shell
 #. Select and configure the SARDARA backend in L-band
 
     ``> chooseBackend=Sardara`` |logo| :numref:`srt_scheduler`
-    
+
     ``$ genericBackendTui BACKENDS/Sardara``
 
     ``> initialize=SL00S`` for full Stokes observations or
-    ``> initialize=SL00`` for non full Stokes observations.
+    ``> initialize=SL00`` for total intensity observations.
 
 
-#. Set the different parameters of the backend 
+#. Set the different parameters of the backend
 
     ``> setSection=[sect],*,1500,*,*,3000,[bin]`` |logo| :numref:`srt_genericBackend`
 
-     with : 
+     with :
 
        - ``[sect]`` : 0 in full Stokes observations and ``[sect]`` :
          0, 1 in non full-stokes observations ;
        - ``[bin]`` the frequency channels (1024 or 16384).
 
-    
+
 #. Choose the integration time in ms (e.g. n=10 corresponds to 100 spectra/sec)
 
     ``> integration=[n]``
@@ -96,14 +96,14 @@ $ : commands to insert in a shell
 
 #. Attenuate the signal based on the rms range [30;33] and check the value on the interface
 
-    ``> getRms``  
+    ``> getRms``
 
     ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB. |logo| :numref:`srt_genericBackend`
 
-#. Check the tsys (typical values to be inserted)
+#. Check the tsys (typical 25-30 K)
 
      ``> tsys`` |logo| :numref:`srt_genericBackend`
 
-#. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file 
+#. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file
 
      ``> startSchedule=[schedulename].scd,[N]`` |logo| :numref:`srt_scheduler`
