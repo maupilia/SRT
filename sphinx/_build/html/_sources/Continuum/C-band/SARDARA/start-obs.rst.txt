@@ -57,7 +57,7 @@ $ : commands to insert in a shell
     ``$ genericBackendTui BACKENDS/Sardara``
 
     ``> initialize=SC00S`` for full-stokes observations or
-    ``> initialize=SC00`` for non full-stokes observations.
+    ``> initialize=SC00`` for total intensity observations.
 
 #. Set the different parameters of the backend :
 
@@ -65,7 +65,7 @@ $ : commands to insert in a shell
 
     with : 
 
-      - ``[sect]``: 0 in full-stokes observations and ``[sect]``: 0, 1 in non full-stokes observations ;
+      - ``[sect]``: 0 in full-stokes observations and ``[sect]``: 0, 1 in total intensity observations ;
       - ``[bw]`` the bandwidth in MHz (420 or 1500 MHz) ; 
       - ``[sampleRate]`` in MHz (840 for 420 MHz of bw or 3000 for 1500 MHz of bw) ;
       - ``[bin]`` the frequency channels (1024 or 16384).

@@ -17,11 +17,11 @@ Your data are on discos-console.
 You can download them on your computer whenever you want during the
 observations.
 
-   ``$ scp -r  [projectID]@discosconsole:/home/[projectID]/data/yyyymmdd .``
+   ``$ scp -r  [projectID]@discos-console:/home/[projectID]/data/yyyymmdd .``
 
 or, if they are acquired with SARDARA:
 
-   ``$ scp -r  [projectID]@discosconsole:/home/[projectID]/sardaraData/yyyymmdd .``
+   ``$ scp -r  [projectID]@discos-console:/home/[projectID]/sardaraData/yyyymmdd .``
 
 .. Ask for the password.
 
