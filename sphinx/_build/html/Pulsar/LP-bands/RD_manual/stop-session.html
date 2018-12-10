@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>ROACH1 (baseband) + DFB (folding) &mdash; SRT procedures 1 documentation</title>
+  <title>End of the session &mdash; SRT procedures 1 documentation</title>
   
 
   
@@ -28,8 +28,8 @@
   <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="ROACH1 (baseband) in P-band + DFB (folding) in L-band" href="../RD_manual/index.html" />
-    <link rel="prev" title="LP-bands" href="../index.html" /> 
+    <link rel="next" title="Notes about the ROACH1 backend" href="../../Notes/Roach1.html" />
+    <link rel="prev" title="Getting your data" href="get-data.html" /> 
 
   
   <script src="../../../_static/js/modernizr.min.js"></script>
@@ -92,10 +92,16 @@
 <li class="toctree-l2"><a class="reference internal" href="../../L-band/index.html">L-band</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../P-band/index.html">P-band</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">LP-bands</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">ROACH1 + DFB</a><ul class="simple">
+<li class="toctree-l3"><a class="reference internal" href="../ROACH1-DFB/index.html">ROACH1 + DFB</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">ROACH1 + DFB manual procedure (if the above should not work)</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="before-obs.html">Before observing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="roach-setup.html">Roach setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="start-obs.html">Start the observations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="check-obs.html">Check during the observations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="get-data.html">Getting your data</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">End of the session</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../RD_manual/index.html">ROACH1 + DFB manual procedure (if the above should not work)</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../index.html#notes">Notes</a></li>
@@ -160,13 +166,15 @@
         
           <li><a href="../index.html">LP-bands</a> &raquo;</li>
         
-      <li>ROACH1 (baseband) + DFB (folding)</li>
+          <li><a href="index.html">ROACH1 (baseband) in P-band + DFB (folding) in L-band</a> &raquo;</li>
+        
+      <li>End of the session</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/Pulsar/LP-bands/ROACH1-DFB/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/Pulsar/LP-bands/RD_manual/stop-session.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -179,16 +187,46 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="roach1-baseband-dfb-folding">
-<h1>ROACH1 (baseband) + DFB (folding)<a class="headerlink" href="#roach1-baseband-dfb-folding" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
+  <div class="toctree-wrapper compound">
 </div>
-<ul class="simple">
-<li><a class="reference internal" href="../../L-band/ROACH1-DFB/start-obs.html#start-puldr"><span class="std std-ref">Start the observations</span></a></li>
-<li><a class="reference internal" href="../../../GeneralProcedures/check-PuRO.html#check-puro"><span class="std std-ref">Checks during the observations</span></a></li>
-<li><a class="reference internal" href="../../L-band/ROACH1-DFB/get-data.html#get-purd"><span class="std std-ref">Getting your data</span></a></li>
-<li><a class="reference internal" href="../../L-band/ROACH1-DFB/stop-PuRD.html#stop-purd"><span class="std std-ref">End of the session</span></a></li>
-</ul>
+<div class="section" id="end-of-the-session">
+<h1>End of the session<a class="headerlink" href="#end-of-the-session" title="Permalink to this headline">¶</a></h1>
+<p>Your observations are now finished, we can stop the schedule and park
+the antenna.</p>
+<div class="section" id="in-leap-vnc">
+<h2>In LEAP VNC<a class="headerlink" href="#in-leap-vnc" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>W2: Do a <code class="docutils literal notranslate"><span class="pre">Control-C</span></code> to end the ./control.csh script.</li>
+<li>W2: <code class="docutils literal notranslate"><span class="pre">$./end.csh</span></code> to end data acquisition and close the daemons.</li>
+</ol>
+</div>
+<div class="section" id="on-nuraghe-obs1">
+<h2>On nuraghe-obs1<a class="headerlink" href="#on-nuraghe-obs1" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Stop your schedule :</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">stopSchedule</span></code>   <em>interruption of the current subscan</em></p>
+<blockquote>
+<div><p>or</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">haltSchedule</span></code>    <em>the schedule stops at the end of the on-going subscan.</em></p>
+</div></blockquote>
+</li>
+<li><p class="first">Park the minor servo, active surface and antenna</p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">goTo=180d,89d</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">servoPark</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">asPark</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaPark</span></code></p>
+</li>
+</ol>
+</div>
+<div class="section" id="block-the-axes-of-the-antenna">
+<h2>Block the axes of the antenna<a class="headerlink" href="#block-the-axes-of-the-antenna" title="Permalink to this headline">¶</a></h2>
+<p>Look at the monitor of the antenna and wait until the upper right
+panel becomes red. It can take a few minutes after the command
+<code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaPark</span></code> has been given.</p>
+<p>Only at this moment, you can press on the emergency stop button.</p>
+</div>
 </div>
 
 
@@ -199,10 +237,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../RD_manual/index.html" class="btn btn-neutral float-right" title="ROACH1 (baseband) in P-band + DFB (folding) in L-band" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../../Notes/Roach1.html" class="btn btn-neutral float-right" title="Notes about the ROACH1 backend" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../index.html" class="btn btn-neutral" title="LP-bands" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="get-data.html" class="btn btn-neutral" title="Getting your data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

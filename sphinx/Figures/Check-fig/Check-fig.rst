@@ -20,7 +20,7 @@ ACS Command Center
 
           The **ACS** monitor shows the state of the containers related to each DISCOS component.
           The state of each container can be verified in the section highlighted in blue.
-	  The blue arrow indicates the number of containers (31 when the system is ready).
+	  The blue arrow indicates the number of containers (33 when the system is ready).
 
 
 Active Surface
@@ -83,15 +83,17 @@ Meteo Client
 
 
 
-Nuraghe-mng
 ===========
+=======
+Discos-console
+========
 
        .. _srt_vistaglobale:
 
        .. figure:: srt_vistaglobale.png
 	  :align: center
 
-          **Nuraghe-mng** is the machine where you run the system and where
+          **Discos-console** is the machine where you run the system and where
 	  you should find the input terminal and all the monitors. It is also
 	  the destination for your schedules.
 
