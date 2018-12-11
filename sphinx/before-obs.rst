@@ -20,7 +20,7 @@ On discos-manager (ACS)
 
 Check that all of the **33 containers** are active on ACS (:numref:`srt_acs`).
 
-.. warning:: If the number of containers is 0 instead of 33 in ACS, you have to start ACS (see the :ref:`restart` procedure in the  Discos from Scratch section).
+.. warning:: If the number of containers is 0 instead of 33 in ACS, you have to start ACS (see the :ref:`Restart-Discos` procedure in the  Discos from Scratch section).
 
 .. <https://srtsupervisoronduty.readthedocs.io/it/latest/sd/srt/procedures/nuraghe.html#avvio-di-nuraghe>`_
 
