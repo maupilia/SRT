@@ -20,12 +20,12 @@ On discos-manager (ACS)
 
 Check that all of the **33 containers** are active on ACS (:numref:`srt_acs`).
 
-.. warning:: If the number of containers is 0 instead of 33 in ACS, `you have to start ACS (see ...).
+.. warning:: If the number of containers is 0 instead of 33 in ACS, you have to start ACS (see the :ref:`Restart Discos` procedure in the  Discos from Scratch section).
 
 .. <https://srtsupervisoronduty.readthedocs.io/it/latest/sd/srt/procedures/nuraghe.html#avvio-di-nuraghe>`_
 
-Check also that the log client **jlog** is open in order to track possible error messages.
-In case it is not open, type ``$ jlog &`` on a shell.
+.. Check also that the log client **jlog** is open in order to track possible error messages.
+.. In case it is not open, type ``$ jlog &`` on a shell.
 
 
 On discos-console (observer computer)
@@ -40,8 +40,9 @@ On the CONSOLE virtual desktop, check the presence of the 9 panels (:numref:`srt
    - **Receivers** (:numref:`srt_receivers`)
    - **Scheduler** (:numref:`srt_scheduler`)
    - **MinorServo** (:numref:`srt_minorservo`)
-   - **ACS custom logging client** (:numref:`srt_jlog`). In case it is not open, type ``$
-     jlog &`` on a shell;
+   - **ACS custom logging client** (:numref:`srt_jlog`)
+   
+.. In case it is not open, type ``$ jlog &`` on a shell;
 
 Check also that:
 
