@@ -15,6 +15,8 @@ Important checks
 
 Some checks need to be performed before starting the observations.
 
+.. important:: Before observing, check that the ``emergency stop button`` is not pressed.
+
 On discos-manager (ACS)
 ------------------------
 
