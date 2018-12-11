@@ -58,6 +58,8 @@ $ : commands to insert in a shell
 
     ``> initialize=SC00S`` for full-Stokes observations or
     ``> initialize=SC00`` for total intensity observations.
+    
+    Important note: both SARDARA configurations SC00S and SC00 are set to work with a default bandwidth of 1500 MHz and 1024 channels. Only in the event that you wanted to observe with different bandwidth and/or channel values you have to set the parameters of the backend as follows.
 
 #. Set the different parameters of the backend :
 
