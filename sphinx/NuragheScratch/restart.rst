@@ -50,7 +50,7 @@ Restart Discos
 
     ``SRTActiveSurfaceGUIClient &``
 
-   The related graphical interface is now open. Wait a few minutes until the single squares (representing the attuators) become green.
+   The related graphical interface is now open. Wait a few minutes until the single squares (representing the attuators) become green. The status of the active surface is in the "WARNING" configuration (:numref:`srt_as_park`).
 
 
 
