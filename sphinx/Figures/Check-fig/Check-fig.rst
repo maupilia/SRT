@@ -57,6 +57,7 @@ Active Surface
 
 ..	   The **Active Surface** monitor after parking the active surface by using ``> asPark``
 
+
 Active Surface
 ==============
 
@@ -66,6 +67,18 @@ Active Surface
 	   :align: center
 
 	   The **Active Surface** monitor in the parabolic configuration.
+	   
+	  
+Active Surface
+==============
+
+       .. _srt_as_park:
+
+       .. figure:: srt_as_park.png
+	   :align: center
+
+	   The status of the **active surface** is ``WARNING`` after the "Restart Discos" procedure.
+	   
 
 
 Logging Display
