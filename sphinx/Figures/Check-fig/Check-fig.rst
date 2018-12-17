@@ -48,12 +48,14 @@ Active Surface
 Active Surface
 ==============
 
-       .. _srt_as_park:
+       .. _srt_activesurface:
 
-       .. figure:: srt_as_park.png
+       .. figure:: srt_activesurface.png
 	   :align: center
+	    
+.. important:: After parking the active surface by using ``> asPark``, in the **Active Surface** monitor the status of the ``Actual Profile`` box is ``Park``
 
-	   The **Active Surface** monitor after parking the active surface by using ``> asPark``
+..	   The **Active Surface** monitor after parking the active surface by using ``> asPark``
 
 Active Surface
 ==============
