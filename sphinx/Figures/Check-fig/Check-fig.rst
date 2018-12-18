@@ -48,7 +48,7 @@ Active Surface
 Active Surface
 ==============
 
-       .. _srt_activesurface:
+       .. _srt_activesurface_2:
 
        .. figure:: srt_activesurface.png
 	   :align: center
