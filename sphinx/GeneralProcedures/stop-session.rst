@@ -43,7 +43,7 @@ On discos-console
 
    ``> servoPark`` |logo| :numref:`srt_minorservo_end`
 
-   ``> asPark`` |logo| :numref:`srt_activesurface`
+   ``> asPark`` |logo| :numref:`srt_activesurface_2`
 
    ``> antennaPark`` |logo| :numref:`srt_mount_antennareset`  |logo| :numref:`srt_ACU_stowpin`
 
