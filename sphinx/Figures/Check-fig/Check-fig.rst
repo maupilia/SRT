@@ -50,7 +50,7 @@ Active Surface
 
        .. _srt_activesurface_2:
 
-       .. figure:: srt_activesurface.png
+       .. figure:: srt_activesurface_2.png
 	   :align: center
 	    
            After parking the active surface by using ``> asPark``, in the **Active Surface** monitor the status of the ``Actual Profile`` box is ``Park`` (not "Shaped" as indicated in the figure).
