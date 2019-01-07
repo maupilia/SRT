@@ -10,6 +10,17 @@
 .. _Check-fig:
 
 
+Control Room
+===================
+
+       .. _srt_control_room:
+
+       .. figure:: srt_control_room.png
+	  :align: center
+
+          SRT control room layout.
+	  
+
 ACS Command Center
 ===================
 
