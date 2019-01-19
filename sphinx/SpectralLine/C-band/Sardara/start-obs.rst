@@ -70,6 +70,10 @@ $ : commands to insert in a shell
 
     ``> integration=[n]``
 
+#. Put the antenna at 45 deg of elevation before checking that the signal is in the linear range of the backend:
+
+    ``> goTo=*,45d`` |logo| :numref:`srt_mount`
+
 #. Check that the getTpi command is working correctly before proceeding:
 
      ``> getTpi``
