@@ -103,7 +103,7 @@ Important note: the *initialize* command requires a few more seconds comapared t
 
     ``> derotatorGetPosition`` 
     
-#. Put the antenna at 45 deg of elevation before to check that the signal is in the linear range of the backend:
+#. Put the antenna at 45 deg of elevation before checking that the signal is in the linear range of the backend:
 
     ``> goTo=*,45d`` |logo| :numref:`srt_mount`
     
