@@ -93,9 +93,9 @@ Wait 10 seconds. If the errors disappear, you can proceed to the observations.
 
 If the errors persist:
 
-- push the **emergency stop**
+- push the **emergency stop button**
 
-- release the **emergency stop**
+- release the **emergency stop button**
 
 ``> antennaReset``
 
