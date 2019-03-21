@@ -101,7 +101,7 @@ If the errors persist:
 
 ``> antennaTrack``
 
- At this point, the problem should be resolved. Otherwise, contact the person in charge of
+At this point, the problem should be resolved. Otherwise, contact the person in charge of
 the observations (observer’s friend).
 
 
