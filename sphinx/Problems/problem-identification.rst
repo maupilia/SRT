@@ -69,6 +69,41 @@ ACU control panel
 If one or different boxes appear in yellow (warning) or red (error), put the mouse on
 the box and read the associated message.
 
+.. ATTENTION:: **Servo system and axis errors**
+
+After the stow of the antenna, errors related to the main servo system
+or to the azimuth/elevation axes may occur.
+
+To solve the problem, give the following commands in the
+operatorInput console:
+
+``> antennaReset``
+
+``> antennaTrack``
+
+Wait 10 seconds. If the errors disappear, you can proceed to the observations.
+
+Instead, if the errors remain, give again the previous commands:
+
+``> antennaReset``
+
+``> antennaTrack``
+ 
+Wait 10 seconds. If the errors disappear, you can proceed to the observations.
+
+If the errors persist:
+
+- push the **emergency stop**
+
+- release the **emergency stop**
+
+``> antennaReset``
+
+``> antennaTrack``
+
+ At this point, the problem should be resolved. Otherwise, contact the person in charge of
+the observations (observer’s friend).
+
 
 .. ATTENTION:: **Power errors**
 
