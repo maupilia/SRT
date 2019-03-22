@@ -129,7 +129,18 @@ Wind velocity
 Check regularly the wind velocity using the ``$> meteoClient &`` on
 a shell of nuraghe-mng. For observations in K-band, the wind speed
 should not exceed 30 km/h (value to be checked) otherwise the pointing
-accuracy will probably be lost. :ref:`srt_windspeed`
+accuracy will probably be lost. 
+
+.. ATTENTION:: **Unstow of the antenna**
+
+:ref:`srt_windspeed`
+If you want to continue the observations without redoing the setup from the beginning (receiver, bandwidth, attenuations, etc...), you can simply unstow the antenna and start again the observations where you left off, following the sequence of commands:
+
+``> antennaUnstow``
+
+``> antennaTrack``
+
+``> tartSchedule=[schedulename].scd,[N]`` where you were previously.
 
 
 Stow of the antenna
