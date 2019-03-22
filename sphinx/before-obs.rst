@@ -59,7 +59,7 @@ Check also that:
    - the **active surface** is green (:numref:`srt_activesurface`).
 .. warning:: The active surface does not work properly if a large fraction (a whole sector) becomes red. It is a problem in K-band observations (:numref:`srt_AS-fraction-red`);
 
-
+.. warning:: If the **calibrationtool client** is already open or if you need to open it during your observation, do not close it during the whole session.
 
 Upload your shedules (.scd, .lis, .bck and .cfg files) and check them:
 
