@@ -140,7 +140,7 @@ If you want to continue the observations without redoing the setup from the begi
 
 ``> antennaTrack``
 
-``> tartSchedule=[schedulename].scd,[N]`` where you were previously.
+``> startSchedule=[schedulename].scd,[N]`` where you were previously.
 
 
 Stow of the antenna
