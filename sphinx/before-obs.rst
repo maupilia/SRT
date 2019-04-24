@@ -69,6 +69,8 @@ Upload your shedules (.scd, .lis, .bck and .cfg files) and check them:
 
    *On discos-console:*
 
+   ``$ ssh -X [projectID]@discos-console``
+
    ``$ cd /home/[projectID]/schedules``
 
    ``$ scheduleChecker [schedulename.scd]``
