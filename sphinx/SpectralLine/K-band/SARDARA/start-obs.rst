@@ -114,7 +114,7 @@ Important note: the *initialize* command requires a few more seconds comapared t
      If getTpi=0,0 then there is a problem, you need to ask for help. 
      If getTpi=(a few millions) then proceed.
 
-#. Attenuate the signal based on the rms range [30;33] and check the value on the interface.
+#. Attenuate the signal based on the rms range [24;26] and check the value on the interface.
 
     ``> getRms``
 
