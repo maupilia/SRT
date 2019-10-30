@@ -51,6 +51,15 @@ Restart Discos
     ``SRTActiveSurfaceGUIClient &``
 
    The related graphical interface is now open. Wait a few minutes until the single squares (representing the attuators) become green. The status of the active surface is in the "WARNING" configuration (:numref:`srt_as_park`).
+   
+   From a virtual desktop, open two new terminal to start the panels related to the **Meteo Client** and the **Calibration Tool Client** (if necessary) and write, rispectively:
+   
+  ``meteoClient &``
+  
+  ``calibrationtoolclient MANAGEMENT/CalibrationTool &``
+  
+  The graphical interface related to the meteo Client (:numref:`srt_meteo`) and  the calibration Tool Client (:numref:`srt_calibrationtool`) are now open and updated in real time. 
+  
 
 
 
