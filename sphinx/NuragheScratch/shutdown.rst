@@ -11,7 +11,7 @@ From the **discos-console computer**, close discos :
 
     ``discosConsole -c``
 
-Close also all the graphic panel, including those related to the active surface, the meteo client and the calibration tool client.
+Close also all the graphic panels, including those related to the active surface, the meteo client and the calibration tool client.
 
 
 From the **discos-manager computer**, go on the ACS command center and click on ``kill``. Wait the prompt (the graphic panel of ACS will close automatically).
