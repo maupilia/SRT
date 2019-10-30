@@ -78,7 +78,7 @@ number is frozen, stop the schedule.
      	.. figure:: srt_scheduler_failure.png
 	   :align: center
 
-           The scheduler status is in FAILURE (add image!)
+           The scheduler status is in FAILURE
 
 
 MinorServo
