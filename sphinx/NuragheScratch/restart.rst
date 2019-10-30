@@ -58,7 +58,7 @@ Restart Discos
   
   ``calibrationtoolclient MANAGEMENT/CalibrationTool &``
   
-  The graphical interface related to the meteo Client (:numref:`srt_meteo`) and  the calibration Tool Client (:numref:`srt_calibrationtool`) are now open and updated in real time. 
+  The graphical interfaces related to the meteo Client (:numref:`srt_meteo`) and  the calibration Tool Client (:numref:`srt_calibrationtool`) are now open and updated in real time. 
   
 
 
