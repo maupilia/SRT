@@ -52,7 +52,7 @@ Restart Discos
 
    The related graphical interface is now open. Wait a few minutes until the single squares (representing the attuators) become green. The status of the active surface is in the "WARNING" configuration (:numref:`srt_as_park`).
    
-   From a virtual desktop, open two new terminal to start the panels related to the **Meteo Client** and the **Calibration Tool Client** (if necessary) and write, rispectively:
+   From a virtual desktop, open two new terminals to start the panels related to the **Meteo Client** and the **Calibration Tool Client** (if necessary) and write, rispectively:
    
   ``meteoClient &``
   
