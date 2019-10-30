@@ -60,3 +60,5 @@ Look at the ACU monitor, wait until
 
 Only at this moment, you can press on the emergency stop button
 (:numref:`srt_ACU_redbutton`).
+
+.. warning:: Don't worry if in the **Logging Display** appears the red warning with the message **CRITICAL: MountContainer EMERGENCY_STOP**, this is a engineering low-level information, please ignore it (:numref:`log_emergency_stop`). 
