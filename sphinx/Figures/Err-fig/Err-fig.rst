@@ -103,7 +103,7 @@ Logging Display
     	.. figure:: log_emergency_stop.png
 	   :align: center
 
-           The warning message indicated by the blue arrow automatically appears after the emergency stop button is pressed.
+           The warning message indicated by the blue arrow automatically appears when the emergency stop button is pressed.
 	   
 	   
 Active Surface
