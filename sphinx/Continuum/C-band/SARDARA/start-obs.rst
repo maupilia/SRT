@@ -87,7 +87,7 @@ $ : commands to insert in a shell
      If getTpi=0,0 then there is a problem, you need to ask for help. 
      If getTpi=(a few millions) then proceed.
 
-#. Attenuate the signal based on the rms range [22;24] and check the value on the interface :
+#. Attenuate the signal based on the rms range [20;22] and check the value on the interface :
      
      ``> getRms``  
 
