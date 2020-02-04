@@ -20,7 +20,7 @@ Some checks need to be performed before starting the observations.
 On discos-manager (ACS)
 ------------------------
 
-Check that all of the **34 containers** are active on ACS (:numref:`srt_acs`).
+Check that all of the **35 containers** are active on ACS (:numref:`srt_acs`).
 
 .. warning:: If the number of containers is 0 instead of 34 in ACS, you have to start ACS (see the :ref:`Restart-Discos` procedure in the  Discos from Scratch section).
 
