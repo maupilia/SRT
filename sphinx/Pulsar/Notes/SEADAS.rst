@@ -10,4 +10,4 @@ SEADAS
 For instructions on how to create the schedules with SEADAS, please visit `this page <https://www.radiotelescopes.inaf.it/schedules.html>`_
 at the session "Pulsar Observations with the SRT".
 
-For SEADAS complete manual, please visit ....
+We can find the complete documentation of SEADAS `here <https://github.com/AlessandroCorongiu/PulsarDocsSRT>`_.

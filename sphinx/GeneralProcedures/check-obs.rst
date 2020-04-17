@@ -55,6 +55,10 @@ On discos-console
 #. Look at the Quick-look of the data by clicking on the icon in the desktop of discos-console:
 
       quicklook.html
+      
+      Every now and then, check that the Quick-look tool is being updated. 
+      If it is not being updated, check the folder where the data are being written.
+      If no data are being written, ask for help.
 
 
 #. **ACS custom logging client**

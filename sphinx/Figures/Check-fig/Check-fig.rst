@@ -10,6 +10,17 @@
 .. _Check-fig:
 
 
+Control Room
+===================
+
+       .. _srt_control_room:
+
+       .. figure:: srt_control_room.png
+	  :align: center
+
+          SRT control room layout.
+	  
+
 ACS Command Center
 ===================
 
@@ -48,12 +59,15 @@ Active Surface
 Active Surface
 ==============
 
-       .. _srt_as_park:
+       .. _srt_activesurface_2:
 
-       .. figure:: srt_as_park.png
+       .. figure:: srt_activesurface_2.png
 	   :align: center
+	    
+           After parking the active surface by using ``> asPark``, in the **Active Surface** monitor the status of the ``Actual Profile`` box is ``Park``.
 
-	   The **Active Surface** monitor after parking the active surface by using ``> asPark``
+..	   The **Active Surface** monitor after parking the active surface by using ``> asPark``
+
 
 Active Surface
 ==============
@@ -64,6 +78,18 @@ Active Surface
 	   :align: center
 
 	   The **Active Surface** monitor in the parabolic configuration.
+	   
+	  
+Active Surface
+==============
+
+       .. _srt_as_park:
+
+       .. figure:: srt_as_park.png
+	   :align: center
+
+	   The status of the **active surface** is ``WARNING`` after the "Restart Discos" procedure.
+	   
 
 
 Logging Display

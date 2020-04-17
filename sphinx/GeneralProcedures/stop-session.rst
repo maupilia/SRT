@@ -43,7 +43,9 @@ On discos-console
 
    ``> servoPark`` |logo| :numref:`srt_minorservo_end`
 
-   ``> asPark`` |logo| :numref:`srt_as_park`
+   ``> asPark`` |logo| :numref:`srt_activesurface_2`
+   
+   Wait until the antenna has finished the goTo command and reached the position at 180° (azimuth) and 89° (elevation).
 
    ``> antennaPark`` |logo| :numref:`srt_mount_antennareset`  |logo| :numref:`srt_ACU_stowpin`
 
@@ -58,3 +60,5 @@ Look at the ACU monitor, wait until
 
 Only at this moment, you can press on the emergency stop button
 (:numref:`srt_ACU_redbutton`).
+
+.. warning:: Don't worry if in the **Logging Display** appears the red warning with the message **CRITICAL: MountContainer EMERGENCY_STOP**, this is a engineering low-level information, please ignore it (:numref:`log_emergency_stop`). 
