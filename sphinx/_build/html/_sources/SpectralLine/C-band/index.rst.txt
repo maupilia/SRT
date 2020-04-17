@@ -10,7 +10,5 @@ C-band
 .. toctree::
    :maxdepth: 1
 
-   SARDARA <SARDARA/index.rst>
+   SARDARA <Sardara/index.rst>
    Xarcos <Xarcos/index.rst>
-   
-
