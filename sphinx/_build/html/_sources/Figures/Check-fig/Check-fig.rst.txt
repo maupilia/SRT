@@ -119,11 +119,9 @@ Meteo Client
 
 
 
-
-===========
-=======
+==============
 Discos-console
-========
+==============
 
        .. _srt_vistaglobale:
 
@@ -177,7 +175,7 @@ GenericBackend
        .. figure:: srt_genericBackend_KKG.png
 	   :align: center
 
-       The monitor **GenericBackend** in the K-band configuration.
+           The monitor **GenericBackend** in the K-band configuration.
 
 
 Mount
@@ -232,7 +230,7 @@ ReceiversBoss
            :width: 15cm
 	   :align: center
 
-       The **ReceiverBoss** monitor in the L-band configuration.
+           The **ReceiverBoss** monitor in the L-band configuration.
 
 
        .. _srt_receivers_KKG:
@@ -241,7 +239,7 @@ ReceiversBoss
            :width: 15cm
 	   :align: center
 
-       The **ReceiverBoss** monitor in the K-band configuration.
+           The **ReceiverBoss** monitor in the K-band configuration.
 
 
 
@@ -346,46 +344,3 @@ Primary Control Panel ACU
 	   :align: center
 
            Primary Control Panel ACU.
-
-
-SEADAS
-=======
-
-      .. _seadas_disabled:
-
-      .. figure:: seadas_disabled.jpg
-          :align: center
-
-          Seadas GUI. On the top right, the red box signals that the control of the antenna is DISABLED.
-
-	  
-      .. _seadas_enabled:
-      
-      .. figure:: seadas_enabled.jpg
-          :align: center
-		  
-          Seadas GUI. On the top right, the green box signals that the control of the antenna is now ENABLED.
-
-
-      .. _session_mode:
-
-      .. figure:: session_mode.jpg
-	  :align: center
-		  
-          Seadas GUI. On the top left, circled in black, the Session Mode combo box where the option Schedule needs to be selected in order to start the observations through your pre-prepared schedule.
-
-
-      .. _schedule_management:
-
-      .. figure:: schedule_management.jpg
-          :align: center
-		  
-          Seadas GUI. Pop-up window where the schedule can be uploaded by clicking on the button `Load sched`.
-
-
-      .. _schedule_management_full:
-
-      .. figure:: schedule_management_full.jpg
-          :align: center
-
-          Seadas GUI pop-up window for schedule management. The uploaded schedule lines will appear on the top panel. The ones selected for observations will appear in the bottom panel.

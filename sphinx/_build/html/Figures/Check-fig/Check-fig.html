@@ -107,8 +107,10 @@
 <li class="toctree-l3"><a class="reference internal" href="#id3">Active Surface</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id4">Active Surface</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#logging-display">Logging Display</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#meteo-client">Meteo Client</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#discos-console">Discos-console</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#meteo-client">Meteo Client</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#discos-console">Discos-console</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#operatorinput">OperatorInput</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#antennaboss">AntennaBoss</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#genericbackend">GenericBackend</a></li>
@@ -120,7 +122,6 @@
 <li class="toctree-l3"><a class="reference internal" href="#calibration-tool-client">Calibration tool client</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#genericbackendx">GenericBackendX</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#primary-control-panel-acu">Primary Control Panel ACU</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#seadas">SEADAS</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Err-fig/index.html">Error messages</a></li>
@@ -282,9 +283,8 @@ and wind parameters (including wind direction) using a
 graphic interface.</span></p>
 </div>
 </div></blockquote>
-</div>
 <div class="section" id="discos-console">
-<h1>Discos-console<a class="headerlink" href="#discos-console" title="Permalink to this headline">¶</a></h1>
+<h2>Discos-console<a class="headerlink" href="#discos-console" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><div class="figure align-center" id="id14">
 <span id="srt-vistaglobale"></span><img alt="../../_images/srt_vistaglobale.png" src="../../_images/srt_vistaglobale.png" />
@@ -293,6 +293,7 @@ you should find the input terminal and all the monitors. It is also
 the destination for your schedules.</span></p>
 </div>
 </div></blockquote>
+</div>
 </div>
 <div class="section" id="operatorinput">
 <h1>OperatorInput<a class="headerlink" href="#operatorinput" title="Permalink to this headline">¶</a></h1>
@@ -323,20 +324,20 @@ accuracy and on the overall antenna status.</span></p>
 <span id="srt-genericbackend"></span><img alt="../../_images/srt_genericBackend.png" src="../../_images/srt_genericBackend.png" />
 <p class="caption"><span class="caption-number">Fig.13 </span><span class="caption-text">The monitor <strong>GenericBackend</strong> shows the backend setup parameters related to each section.</span></p>
 </div>
-<div class="figure align-center" id="srt-genericbackend-kkg">
-<img alt="../../_images/srt_genericBackend_KKG.png" src="../../_images/srt_genericBackend_KKG.png" />
+<div class="figure align-center" id="id18">
+<span id="srt-genericbackend-kkg"></span><img alt="../../_images/srt_genericBackend_KKG.png" src="../../_images/srt_genericBackend_KKG.png" />
+<p class="caption"><span class="caption-number">Fig.14 </span><span class="caption-text">The monitor <strong>GenericBackend</strong> in the K-band configuration.</span></p>
 </div>
-<p>The monitor <strong>GenericBackend</strong> in the K-band configuration.</p>
 </div></blockquote>
 </div>
 <div class="section" id="mount">
 <h1>Mount<a class="headerlink" href="#mount" title="Permalink to this headline">¶</a></h1>
 <blockquote>
-<div><div class="figure align-center" id="id18">
+<div><div class="figure align-center" id="id19">
 <span id="srt-mount"></span><a class="reference internal image-reference" href="../../_images/srt_mount.png"><img alt="../../_images/srt_mount.png" src="../../_images/srt_mount.png" style="width: 15cm;" /></a>
 <p class="caption"><span class="caption-number">Fig.15 </span><span class="caption-text">Observers need to focus only on the <strong>Mount</strong> status (indicated by the green box) and on the actual position of the axis expressed in Azimuth and Elevation (shown in blue), compared to the commanded positions (actual positions with the label “Cmd Az.” and “Cmd El.”).</span></p>
 </div>
-<div class="figure align-center" id="id19">
+<div class="figure align-center" id="id20">
 <span id="srt-mount-antennareset"></span><a class="reference internal image-reference" href="../../_images/srt_mount_antennareset.png"><img alt="../../_images/srt_mount_antennareset.png" src="../../_images/srt_mount_antennareset.png" style="width: 15cm;" /></a>
 <p class="caption"><span class="caption-number">Fig.16 </span><span class="caption-text">The <strong>Mount</strong> monitor after the park of the antenna by using <code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaPark</span></code></span></p>
 </div>
@@ -345,7 +346,7 @@ accuracy and on the overall antenna status.</span></p>
 <div class="section" id="observatory">
 <h1>Observatory<a class="headerlink" href="#observatory" title="Permalink to this headline">¶</a></h1>
 <blockquote>
-<div><div class="figure align-center" id="id20">
+<div><div class="figure align-center" id="id21">
 <span id="srt-observatory"></span><a class="reference internal image-reference" href="../../_images/srt_observatory.png"><img alt="../../_images/srt_observatory.png" src="../../_images/srt_observatory.png" style="width: 15cm;" /></a>
 <p class="caption"><span class="caption-number">Fig.17 </span><span class="caption-text">The <strong>Observatory</strong> monitor shows the station time and coordinates.</span></p>
 </div>
@@ -354,29 +355,29 @@ accuracy and on the overall antenna status.</span></p>
 <div class="section" id="receiversboss">
 <h1>ReceiversBoss<a class="headerlink" href="#receiversboss" title="Permalink to this headline">¶</a></h1>
 <blockquote>
-<div><div class="figure align-center" id="id21">
+<div><div class="figure align-center" id="id22">
 <span id="srt-receivers"></span><a class="reference internal image-reference" href="../../_images/srt_receivers.png"><img alt="../../_images/srt_receivers.png" src="../../_images/srt_receivers.png" style="width: 15cm;" /></a>
 <p class="caption"><span class="caption-number">Fig.18 </span><span class="caption-text">The <strong>ReceiverBoss</strong> monitor summarizes the frontend setup parameters.
 The bottom part is devoted to the derotator (dewar positioner), when available.</span></p>
 </div>
-<div class="figure align-center" id="srt-receivers-llp">
-<a class="reference internal image-reference" href="../../_images/srt_receivers_LLP.png"><img alt="../../_images/srt_receivers_LLP.png" src="../../_images/srt_receivers_LLP.png" style="width: 15cm;" /></a>
+<div class="figure align-center" id="id23">
+<span id="srt-receivers-llp"></span><a class="reference internal image-reference" href="../../_images/srt_receivers_LLP.png"><img alt="../../_images/srt_receivers_LLP.png" src="../../_images/srt_receivers_LLP.png" style="width: 15cm;" /></a>
+<p class="caption"><span class="caption-number">Fig.19 </span><span class="caption-text">The <strong>ReceiverBoss</strong> monitor in the L-band configuration.</span></p>
 </div>
-<p>The <strong>ReceiverBoss</strong> monitor in the L-band configuration.</p>
-<div class="figure align-center" id="srt-receivers-kkg">
-<a class="reference internal image-reference" href="../../_images/srt_receivers_KKG.png"><img alt="../../_images/srt_receivers_KKG.png" src="../../_images/srt_receivers_KKG.png" style="width: 15cm;" /></a>
+<div class="figure align-center" id="id24">
+<span id="srt-receivers-kkg"></span><a class="reference internal image-reference" href="../../_images/srt_receivers_KKG.png"><img alt="../../_images/srt_receivers_KKG.png" src="../../_images/srt_receivers_KKG.png" style="width: 15cm;" /></a>
+<p class="caption"><span class="caption-number">Fig.20 </span><span class="caption-text">The <strong>ReceiverBoss</strong> monitor in the K-band configuration.</span></p>
 </div>
-<p>The <strong>ReceiverBoss</strong> monitor in the K-band configuration.</p>
 </div></blockquote>
 </div>
 <div class="section" id="scheduler">
 <h1>Scheduler<a class="headerlink" href="#scheduler" title="Permalink to this headline">¶</a></h1>
 <blockquote>
-<div><div class="figure align-center" id="id22">
+<div><div class="figure align-center" id="id25">
 <span id="srt-scheduler"></span><a class="reference internal image-reference" href="../../_images/srt_scheduler.png"><img alt="../../_images/srt_scheduler.png" src="../../_images/srt_scheduler.png" style="width: 15cm;" /></a>
 <p class="caption"><span class="caption-number">Fig.21 </span><span class="caption-text">The <strong>Scheduler</strong> monitor shows the details on the selected data acquisition devices and on the running schedule, if any.</span></p>
 </div>
-<div class="figure align-center" id="id23">
+<div class="figure align-center" id="id26">
 <span id="srt-scheduler-end"></span><a class="reference internal image-reference" href="../../_images/srt_scheduler_end.png"><img alt="../../_images/srt_scheduler_end.png" src="../../_images/srt_scheduler_end.png" style="width: 15cm;" /></a>
 <p class="caption"><span class="caption-number">Fig.22 </span><span class="caption-text">The <strong>Scheduler</strong> monitor after the interruption of the current subscan by using <code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">stopSchedule</span></code> or <code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">haltSchedule</span></code></span></p>
 </div>
@@ -385,19 +386,19 @@ The bottom part is devoted to the derotator (dewar positioner), when available.<
 <div class="section" id="minorservo">
 <h1>MinorServo<a class="headerlink" href="#minorservo" title="Permalink to this headline">¶</a></h1>
 <blockquote>
-<div><div class="figure align-center" id="id24">
+<div><div class="figure align-center" id="id27">
 <span id="srt-minorservo"></span><a class="reference internal image-reference" href="../../_images/srt_minorservo.png"><img alt="../../_images/srt_minorservo.png" src="../../_images/srt_minorservo.png" style="width: 15cm;" /></a>
 <p class="caption"><span class="caption-number">Fig.23 </span><span class="caption-text">The <strong>MinorServo</strong> monitor shows the current setup code and the minor-servo status and movement. In this case the image refers to the C-band configuration.</span></p>
 </div>
-<div class="figure align-center" id="id25">
+<div class="figure align-center" id="id28">
 <span id="srt-minorservo-llp"></span><a class="reference internal image-reference" href="../../_images/srt_minorservo_LLP.png"><img alt="../../_images/srt_minorservo_LLP.png" src="../../_images/srt_minorservo_LLP.png" style="width: 15cm;" /></a>
 <p class="caption"><span class="caption-number">Fig.24 </span><span class="caption-text">The <strong>MinorServo</strong> monitor in the L-band configuration.</span></p>
 </div>
-<div class="figure align-center" id="id26">
+<div class="figure align-center" id="id29">
 <span id="srt-minorservo-kkg"></span><a class="reference internal image-reference" href="../../_images/srt_minorservo_KKG.png"><img alt="../../_images/srt_minorservo_KKG.png" src="../../_images/srt_minorservo_KKG.png" style="width: 15cm;" /></a>
 <p class="caption"><span class="caption-number">Fig.25 </span><span class="caption-text">The <strong>MinorServo</strong> monitor in the K-band configuration.</span></p>
 </div>
-<div class="figure align-center" id="id27">
+<div class="figure align-center" id="id30">
 <span id="srt-minorservo-end"></span><a class="reference internal image-reference" href="../../_images/srt_minorservo_end.png"><img alt="../../_images/srt_minorservo_end.png" src="../../_images/srt_minorservo_end.png" style="width: 15cm;" /></a>
 <p class="caption"><span class="caption-number">Fig.26 </span><span class="caption-text">The <strong>MinorServo</strong> monitor after the park of the minor servos by using <code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">servoPark</span></code></span></p>
 </div>
@@ -406,7 +407,7 @@ The bottom part is devoted to the derotator (dewar positioner), when available.<
 <div class="section" id="calibration-tool-client">
 <h1>Calibration tool client<a class="headerlink" href="#calibration-tool-client" title="Permalink to this headline">¶</a></h1>
 <blockquote>
-<div><div class="figure align-center" id="id28">
+<div><div class="figure align-center" id="id31">
 <span id="srt-calibrationtool"></span><img alt="../../_images/calibrationtool_cut.png" src="../../_images/calibrationtool_cut.png" />
 <p class="caption"><span class="caption-number">Fig.27 </span><span class="caption-text">In the <strong>Calibration tool client</strong> window the subscan
 currently being acquired is shown in real-time (upper
@@ -415,7 +416,7 @@ last completed subscan - in its full sampling - is
 shown. We can read the information about the pointing
 of focus offsets (“peakoffsets”), the beam size (“HPBW”), etc.</span></p>
 </div>
-<div class="figure align-center" id="id29">
+<div class="figure align-center" id="id32">
 <span id="srt-focus"></span><img alt="../../_images/srt_focus.png" src="../../_images/srt_focus.png" />
 <p class="caption"><span class="caption-number">Fig.28 </span><span class="caption-text"><strong>Calibration tool client</strong> window related to a focus subscan.</span></p>
 </div>
@@ -424,7 +425,7 @@ of focus offsets (“peakoffsets”), the beam size (“HPBW”), etc.</span></p
 <div class="section" id="genericbackendx">
 <h1>GenericBackendX<a class="headerlink" href="#genericbackendx" title="Permalink to this headline">¶</a></h1>
 <blockquote>
-<div><div class="figure align-center" id="id30">
+<div><div class="figure align-center" id="id33">
 <span id="srt-backendxarcos"></span><img alt="../../_images/generic-backend-Xarcos.png" src="../../_images/generic-backend-Xarcos.png" />
 <p class="caption"><span class="caption-number">Fig.29 </span><span class="caption-text">A second <strong>GenericBackend</strong> panel shows the setup
 parameters of each section of Xarcos.</span></p>
@@ -434,34 +435,9 @@ parameters of each section of Xarcos.</span></p>
 <div class="section" id="primary-control-panel-acu">
 <h1>Primary Control Panel ACU<a class="headerlink" href="#primary-control-panel-acu" title="Permalink to this headline">¶</a></h1>
 <blockquote>
-<div><div class="figure align-center" id="id31">
+<div><div class="figure align-center" id="id34">
 <span id="srt-acu-green"></span><img alt="../../_images/srt_ACU_green.png" src="../../_images/srt_ACU_green.png" />
 <p class="caption"><span class="caption-number">Fig.30 </span><span class="caption-text">Primary Control Panel ACU.</span></p>
-</div>
-</div></blockquote>
-</div>
-<div class="section" id="seadas">
-<h1>SEADAS<a class="headerlink" href="#seadas" title="Permalink to this headline">¶</a></h1>
-<blockquote>
-<div><div class="figure align-center" id="id32">
-<span id="seadas-disabled"></span><img alt="../../_images/seadas_disabled.jpg" src="../../_images/seadas_disabled.jpg" />
-<p class="caption"><span class="caption-number">Fig.31 </span><span class="caption-text">Seadas GUI. On the top right, the red box signals that the control of the antenna is DISABLED.</span></p>
-</div>
-<div class="figure align-center" id="id33">
-<span id="seadas-enabled"></span><img alt="../../_images/seadas_enabled.jpg" src="../../_images/seadas_enabled.jpg" />
-<p class="caption"><span class="caption-number">Fig.32 </span><span class="caption-text">Seadas GUI. On the top right, the green box signals that the control of the antenna is now ENABLED.</span></p>
-</div>
-<div class="figure align-center" id="id34">
-<span id="session-mode"></span><img alt="../../_images/session_mode.jpg" src="../../_images/session_mode.jpg" />
-<p class="caption"><span class="caption-number">Fig.33 </span><span class="caption-text">Seadas GUI. On the top left, circled in black, the Session Mode combo box where the option Schedule needs to be selected in order to start the observations through your pre-prepared schedule.</span></p>
-</div>
-<div class="figure align-center" id="id35">
-<span id="schedule-management"></span><img alt="../../_images/schedule_management.jpg" src="../../_images/schedule_management.jpg" />
-<p class="caption"><span class="caption-number">Fig.34 </span><span class="caption-text">Seadas GUI. Pop-up window where the schedule can be uploaded by clicking on the button <cite>Load sched</cite>.</span></p>
-</div>
-<div class="figure align-center" id="id36">
-<span id="schedule-management-full"></span><img alt="../../_images/schedule_management_full.jpg" src="../../_images/schedule_management_full.jpg" />
-<p class="caption"><span class="caption-number">Fig.35 </span><span class="caption-text">Seadas GUI pop-up window for schedule management. The uploaded schedule lines will appear on the top panel. The ones selected for observations will appear in the bottom panel.</span></p>
 </div>
 </div></blockquote>
 </div>
