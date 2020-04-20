@@ -167,78 +167,44 @@
 <p>$ : commands to insert in a shell</p>
 <p>&gt; : commands to insert in the operatorInput panel</p>
 <p><img alt="logo" src="../../../_images/monocle_21.png" />: check the execution on the monitor</p>
-<div class="section" id="on-seadas">
-<h2>On seadas<a class="headerlink" href="#on-seadas" title="Permalink to this headline">¶</a></h2>
-<p>Place your observing files in <a class="reference external" href="mailto:pulsar&#37;&#52;&#48;seadas">pulsar<span>&#64;</span>seadas</a> as follows:</p>
-<blockquote>
-<div><ul class="simple">
-<li>your seadas setup and schedule file(s) in folder: <a class="reference external" href="mailto:pulsar&#37;&#52;&#48;seadas">pulsar<span>&#64;</span>seadas</a>:/home/pulsar/scheds/[your project code]</li>
-</ul>
-</div></blockquote>
-</div>
 <div class="section" id="on-discos-console">
-<h2>On discos-console<a class="headerlink" href="#on-discos-console" title="Permalink to this headline">¶</a></h2>
+<h2>On DISCOS-CONSOLE<a class="headerlink" href="#on-discos-console" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first">Insert your project number</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code>    <img alt="logo" src="../../../_images/monocle_21.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.19</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code>    <img alt="logo" src="../../../_images/monocle_21.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.21</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Initial setup</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code>   <img alt="logo" src="../../../_images/monocle_21.png" /> <a class="reference internal" href="../../../Figures/Err-fig/Err-fig.html#srt-acu-axis-blocked"><span class="std std-numref">Fig.30</span></a></p>
-<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setupLLP</span></code> <img alt="logo" src="../../../_images/monocle_21.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span class="std std-numref">Fig.16</span></a>  <img alt="logo" src="../../../_images/monocle_21.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-acu-green"><span class="std std-numref">Fig.28</span></a></p>
-<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">goTo=*,81.9d</span></code> <img alt="logo" src="../../../_images/monocle_21.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-mount"><span class="std std-numref">Fig.13</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code>   <img alt="logo" src="../../../_images/monocle_21.png" /> <a class="reference internal" href="../../../Figures/Err-fig/Err-fig.html#srt-acu-axis-blocked"><span class="std std-numref">Fig.37</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setupPLP</span></code> <img alt="logo" src="../../../_images/monocle_21.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span class="std std-numref">Fig.18</span></a>  <img alt="logo" src="../../../_images/monocle_21.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-acu-green"><span class="std std-numref">Fig.30</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">goTo=*,85d</span></code> <img alt="logo" src="../../../_images/monocle_21.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-mount"><span class="std std-numref">Fig.15</span></a></p>
 </div></blockquote>
 </li>
-<li><p class="first">On a terminal open a vnc session for <a class="reference external" href="mailto:pulsar&#37;&#52;&#48;seadas">pulsar<span>&#64;</span>seadas</a>:</p>
+</ol>
+</div>
+<div class="section" id="on-pulsar-vlbi">
+<h2>On PULSAR/VLBI<a class="headerlink" href="#on-pulsar-vlbi" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Login as pulsar. Place your schedules in folder /home/pulsar/scheds/[your project code]</p>
+</li>
+<li><p class="first">From a terminal, start SEADAS</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">vncviewer</span> <span class="pre">seadas:1</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">seadas</span></code></p>
 </div></blockquote>
-</li>
-<li><p class="first">If this fails, start a new vnc session on <a class="reference external" href="mailto:pulsar&#37;&#52;&#48;seadas">pulsar<span>&#64;</span>seadas</a>.</p>
-</li>
-<li><p class="first">Type password at prompt.</p>
 </li>
 <li><p class="first">On another workspace, open a new terminal and start a vnc session for <a class="reference external" href="mailto:corr&#37;&#52;&#48;psrdfb">corr<span>&#64;</span>psrdfb</a>:</p>
 <blockquote>
 <div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">vncviewer</span> <span class="pre">psrdfb:2</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">If this fails, start a new vnc session on <a class="reference external" href="mailto:corr&#37;&#52;&#48;psrdfb">corr<span>&#64;</span>psrdfb</a>.</p>
-</li>
 <li><p class="first">Type password at prompt.</p>
 </li>
 <li><p class="first">On another workspace, open a new terminal and start a vnc session for the head node leap0:</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">vncviewer</span> <span class="pre">leap0:1</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">vncviewer</span> <span class="pre">leap0:2</span></code></p>
 </div></blockquote>
-</li>
-<li><p class="first">If it is not active log on to the LEAP cluster :</p>
-<blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">ssh</span> <span class="pre">-X</span> <span class="pre">user&#64;leap0</span></code>     <em>ask for password</em></p>
-</div></blockquote>
-</li>
-<li><p class="first">Launch a VNC session once logged on to leap0 :</p>
-<blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">leap0:</span> <span class="pre">$</span> <span class="pre">vncserver</span> <span class="pre">&amp;</span></code></p>
-</div></blockquote>
-</li>
-</ol>
-</div>
-<div class="section" id="in-the-vnc-session-pulsar-seadas">
-<h2>In the vnc session <a class="reference external" href="mailto:pulsar&#37;&#52;&#48;seadas">pulsar<span>&#64;</span>seadas</a><a class="headerlink" href="#in-the-vnc-session-pulsar-seadas" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic">
-<li><p class="first">Open a terminal and start SEADAS</p>
-<blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">seadas</span></code></p>
-</div></blockquote>
-</li>
-<li><p class="first">In the log frame of seadas main window check that SEADAS connects to nuraghe</p>
-</li>
-<li><p class="first">Click on the red label at the top right corner of the Antenna and Pointing Management frame.</p>
-</li>
-<li><p class="first">Check that the clicked label becomes green and dislpays the word “ENABLED”</p>
 </li>
 </ol>
 </div>
@@ -250,16 +216,14 @@
 <div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">atdc</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">Open a new terminal and start DFBCONTROLLER</p>
+<li><p class="first">If DFBCONTROLLER is not already on, open a new terminal and start it</p>
 <blockquote>
 <div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">dfbcontroller</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">In DFBCONTROLLER window, check that the colored label at the right of the</p>
+<li><p class="first">In DFBCONTROLLER window, check that the colored label at the right of the “tkds” label is green and displays the word “CONNECTED”. If not, click on it.</p>
 </li>
 </ol>
-<blockquote>
-<div>“tkds” label is green and displays the word “CONNECTED”. If not, click on it.</div></blockquote>
 </div>
 <div class="section" id="in-the-vnc-session-leap0">
 <h2>In the vnc session leap0<a class="headerlink" href="#in-the-vnc-session-leap0" title="Permalink to this headline">¶</a></h2>
@@ -269,20 +233,20 @@
 <div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">/home/user/seadas/bin/leapcontroller</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">In LEAPCONTROLLER window, check that the colored label at the right of the “…” label is green and displays the word “CONNECTED”. If not, click on it.</p>
-</li>
 </ol>
 </div>
 <div class="section" id="inside-seadas-window">
 <h2>Inside SEADAS window<a class="headerlink" href="#inside-seadas-window" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li>Select “Schedule” in the “Session mode” combo box</li>
-<li>Verify and adjust attenuation levels. You can do so by following the procedure below, using the schedule TEST.scd which you will find under the directory /home/corr/scheds/. Once you have started the schedule (see points below) you need to check the PDFB3 panel in the psrdfb vnc session. Under tab <cite>…</cite> make sure that the RMS level for each channel is around 10. If it is not, go back to the SEADAS interface and select different attenuation values (which can be different for the two channels) and press <cite>set atten.</cite></li>
-<li>Click “Schedule Management”. A window named “Seadas Schedule Manager” pops up</li>
-<li>Click “Load sched” in “Schedule Manager” window. A system window pops up for browsing system directories and selecting the schedule file</li>
-<li>In “Schedule manager” window select schedule lines to be done - mouse left click on each single line - or click button “Select all” for loading the entire schedule in the “Observations List” window</li>
+<li>Enable the antenna control by clicking on the red label at the top right corner of the Antenna and Pointing Management frame. <img alt="logo" src="../../../_images/monocle_21.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#seadas-disabled"><span class="std std-numref">Fig.31</span></a></li>
+<li>Check that the label becomes green and displays the word “ENABLED” <img alt="logo" src="../../../_images/monocle_21.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#seadas-enabled"><span class="std std-numref">Fig.32</span></a></li>
+<li>Select “Schedule” in the “Session mode” combo box <img alt="logo" src="../../../_images/monocle_21.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#session-mode"><span class="std std-numref">Fig.33</span></a></li>
+<li>Click “Schedule Management”. A window named “Seadas schedule management” pops up <img alt="logo" src="../../../_images/monocle_21.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#schedule-management"><span class="std std-numref">Fig.34</span></a></li>
+<li>Click “Load sched” in “Schedule management” window. A system window pops up for browsing system directories and selecting the schedule file</li>
+<li>In “Schedule manager” window select schedule lines to be done - mouse left click on each single line - or click button “Select all” for loading the entire schedule in the “Observations List” window <img alt="logo" src="../../../_images/monocle_21.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#schedule-management-full"><span class="std std-numref">Fig.35</span></a></li>
 <li>If necessary, rearrange the order of the observations in the “Observations List” window  - left button click == cut line ; mid button click == paste line</li>
-<li>Click “Observe”</li>
+<li>Back on SEADAS main window click “Observe”</li>
+<li>Do not forget to verify and adjust attenuation levels for the DFB. You can find the test schedule TEST.scd under the directory scheds/ (or you can add a similar line to your schedule). Once you have started the schedule, check the PDFB3 panel in the psrdfb vnc session, Under tab <cite>Samplers</cite> where you fill find the the RMS levels of the channels. Also, check the SPD plotting tool to compare the bandpasses of the two channel. Aim to align the bandpasses, with the highest channel RMS around 13. In order to do so, iteratively go back to the SEADAS interface and select the desired attenuation values (which can be different for the two channels), then press <cite>set atten.</cite></li>
 </ol>
 </div>
 </div>

@@ -5,13 +5,13 @@
 
 
 ==================================
-ROACH1 (baseband) + DFB (folding)
+ROACH1 + DFB
 ==================================
 
 .. toctree::
    :maxdepth: 1
 
-*  :ref:`start-PuLDR`
+*  :ref:`start-PuLPDR`
 *  :ref:`check-PuRO`
 *  :ref:`get-PuRD`
 *  :ref:`stop-PuRD`

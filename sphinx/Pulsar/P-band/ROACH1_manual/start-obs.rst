@@ -38,7 +38,7 @@ In the operatorInput panel
 
     ``> antennaReset``
 
-    ``> setupPLP`` |logo| :numref:`srt_receivers_LLP`
+    ``> setupPPP`` |logo| :numref:`srt_receivers_LLP`
 
 
 #. Select the active surface shape (Parabolic for L and P-band observations) :
@@ -46,9 +46,9 @@ In the operatorInput panel
     ``> asSetup=P``  |logo| :numref:`srt_activesurface`
 
 
-#. Choose the relevant L-band filter (linear filter for 1300-1800 MHz)
+#. Choose the relevant P-band filter e.g. (recommended)
 
-    ``> receiversMode=L2L4`` |logo| :numref:`srt_receivers_LLP`
+    ``> receiversMode=L2XX`` |logo| :numref:`srt_receivers_LLP`
 
 
 #. Insert the Local Oscillator value in MHz:

@@ -5,13 +5,13 @@
 
 
 
-DFB with SEADAS
+DFB
 ---------------
 
 .. toctree::
    :maxdepth: 1
 
-*  :ref:`start-PuDFB`
+*  :ref:`start-PuLDFB`
 *  :ref:`check-obs`
 *  :ref:`get-data`
 *  :ref:`stop-PuDFB`

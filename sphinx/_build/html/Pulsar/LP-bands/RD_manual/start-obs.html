@@ -27,9 +27,7 @@
   <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Check during the observations" href="check-obs.html" />
-    <link rel="prev" title="Roach setup" href="roach-setup.html" /> 
+    <link rel="search" title="Search" href="../../../search.html" /> 
 
   
   <script src="../../../_static/js/modernizr.min.js"></script>
@@ -85,28 +83,9 @@
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../before-obs.html">Important checks</a></li>
 </ul>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../Continuum/index.html">Continuum</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Pulsar observations</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../../C-band/index.html">C-band</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../L-band/index.html">L-band</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../P-band/index.html">P-band</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../index.html">LP-bands</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../ROACH1-DFB/index.html">ROACH1 + DFB</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="index.html">ROACH1 + DFB manual procedure (if the above should not work)</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="before-obs.html">Before observing</a></li>
-<li class="toctree-l4"><a class="reference internal" href="roach-setup.html">Roach setup</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">Start the observations</a></li>
-<li class="toctree-l4"><a class="reference internal" href="check-obs.html">Check during the observations</a></li>
-<li class="toctree-l4"><a class="reference internal" href="get-data.html">Getting your data</a></li>
-<li class="toctree-l4"><a class="reference internal" href="stop-session.html">End of the session</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../index.html#notes">Notes</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Pulsar observations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../SpectralLine/index.html">Spectral lines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../SpectroPol/index.html">Spectro-polarimetry</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../VLBI/index.html">VLBI</a></li>
@@ -162,12 +141,6 @@
     
       <li><a href="../../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../../index.html">Pulsar observations</a> &raquo;</li>
-        
-          <li><a href="../index.html">LP-bands</a> &raquo;</li>
-        
-          <li><a href="index.html">ROACH1 (baseband) in P-band + DFB (folding) in L-band</a> &raquo;</li>
-        
       <li>Start the observations</li>
     
     
@@ -190,135 +163,92 @@
   <div class="toctree-wrapper compound">
 </div>
 <div class="section" id="start-the-observations">
-<h1>Start the observations<a class="headerlink" href="#start-the-observations" title="Permalink to this headline">¶</a></h1>
+<span id="start-purd"></span><h1>Start the observations<a class="headerlink" href="#start-the-observations" title="Permalink to this headline">¶</a></h1>
 <p>$ : commands to insert in a shell</p>
+<p>&gt; : commands to insert in the operatorInput panel</p>
+<p><img alt="logo" src="../../../_images/monocle_22.png" />: check the execution on the monitor</p>
 <div class="section" id="in-the-operatorinput-panel">
 <h2>In the operatorInput panel<a class="headerlink" href="#in-the-operatorinput-panel" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first">Insert your project number :</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code>    <img alt="logo" src="../../../_images/monocle_22.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.21</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Initial setup :</p>
 <blockquote>
 <div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code></p>
-<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setupPLP</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setupPLP</span></code> <img alt="logo" src="../../../_images/monocle_22.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers-llp"><span class="std std-numref">Fig.19</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Select the active surface shape (Parabolic for L and P-band observations) :</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">asSetup=P</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">asSetup=P</span></code>  <img alt="logo" src="../../../_images/monocle_22.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-activesurface"><span class="std std-numref">Fig.4</span></a></p>
 </div></blockquote>
 </li>
-<li><p class="first">Insert the Local Oscillator value in MHz (this value may change) :</p>
+<li><p class="first">Choose the relevant LP-band filter, e.g.</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setLO=2188</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">receiversMode=L2L4</span></code> <img alt="logo" src="../../../_images/monocle_22.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers-llp"><span class="std std-numref">Fig.19</span></a></p>
 </div></blockquote>
 </li>
-<li><p class="first">Choose the relevant L-band filter (linear filter for 1300-1800 MHz)</p>
+<li><p class="first">Insert the Local Oscillator value in MHz:</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">receiversMode=L3L2</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">setLO=...</span></code> <img alt="logo" src="../../../_images/monocle_22.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers-llp"><span class="std std-numref">Fig.19</span></a></p>
 </div></blockquote>
 </li>
-<li><p class="first">Set the attenuations for the 2x2 polarizations arriving at the Total Power backend (this may change depending on the settings of the new IF distributor).</p>
+<li><p class="first">Set the attenuations (to zero) for the 2 polarizations arriving at the Total Power backend (this may change depending on the settings of the new IF distributor).</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setAttenuation=0,15</span></code></p>
-<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setAttenuation=1,15</span></code></p>
-<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setAttenuation=2,0</span></code></p>
-<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setAttenuation=3,0</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setAttenuation=0,15</span></code> <img alt="logo" src="../../../_images/monocle_22.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.13</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setAttenuation=1,15</span></code> <img alt="logo" src="../../../_images/monocle_22.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.13</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setAttenuation=2,0</span></code> <img alt="logo" src="../../../_images/monocle_22.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.13</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setAttenuation=3,0</span></code> <img alt="logo" src="../../../_images/monocle_22.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.13</span></a></p>
 </div></blockquote>
 </li>
 <li><p class="first">Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">startSchedule=[projectID]/[schedulename].scd,[N_n]</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">startSchedule=[projectID]/[schedulename].scd,[N_n]</span></code> <img alt="logo" src="../../../_images/monocle_22.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.21</span></a></p>
+<blockquote>
+<div><p>If your schedule is LST-based (like for LEAP schedules), the antenna points to the relevant source as soon as you launch the schedule, even before the designated start time of observations (but you can start data acquisition with the ROACH1 at a later time). Check on the monitor each time that the antenna is pointing at and <strong>TRACKING</strong> the right source.</p>
+</div></blockquote>
 </div></blockquote>
 </li>
 </ol>
-<p>If your schedule is LST-based (like for LEAP schedules), the antenna points to the relevant source as soon as you launch the schedule, even before the designated start time of observations (but you can start data acquisition with the ROACH1 at a later time). Check on the monitor each time that the antenna is pointing at and <strong>TRACKING</strong> the right source.</p>
 </div>
 <div class="section" id="on-the-leap-cluster-using-vnc">
 <h2>On the LEAP cluster (using VNC):<a class="headerlink" href="#on-the-leap-cluster-using-vnc" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">In W1: type a command here to select baseband mode:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">~/roach/scripts/baseband.sh</span></code></p>
+</div></blockquote>
+</li>
+</ol>
 <p>Before starting data acquisition, do the following:</p>
 <ol class="arabic">
-<li><p class="first">W2: initial setup in Control directory:</p>
+<li><p class="first">W1: initial setup in Control directory:</p>
 <blockquote>
 <div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">./control_init.sh</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">W1: in each of the 8 tabs, launch the daemons:</p>
+</ol>
+<p>This will ssh to all 8 nodes and start the daemons in another window (W2).</p>
+<ol class="arabic">
+<li><p class="first">When the antenna is tracking the first source and you are ready to start data acquisition, go to W and type:</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">~/roach/scripts/daemon.sh</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">./start.csh</span></code></p>
+<blockquote>
+<div><p>Data acquisition has now started with the ROACH1.</p>
+</div></blockquote>
 </div></blockquote>
 </li>
-<li><p class="first">When the antenna is tracking the first source and you are ready to start data acquisition, go to W2 and type:</p>
-<blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">./start.csh</span></code>  Data acquisition has now started with the ROACH1.</p>
-</div></blockquote>
-</li>
-<li><p class="first">Immediately launch the control software (in W2) which obtains parameters from the antenna and automatically starts and stops observations, depending on whether the antenna is <strong>TRACKING</strong> or <strong>SLEWING</strong>:</p>
+<li><p class="first">Immediately launch the control software (in W1) which obtains parameters from the antenna and automatically starts and stops observations, depending on whether the antenna is <strong>TRACKING</strong> or <strong>SLEWING</strong>:</p>
 <blockquote>
 <div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">./control.csh</span></code></p>
 </div></blockquote>
 </li>
 </ol>
 <p>If necessary, this code can be interrupted (using Control-C) and re-started at any time while the antenna is tracking the same source, without any consequences.</p>
-<p>You should now see: <strong>“no change. keep doing what you’re doing”</strong> while the antenna keeps tracking the same source. If all goes well, you won’t need to do anything else with data acquisition for the remainder of the session. You should however check the control window (W2) once in a while for possible errors (e.g. antenna WARNING).</p>
-</div>
-<div class="section" id="to-use-the-dfb-in-parallel-with-the-roach1">
-<h2>To use the DFB in parallel with the ROACH1:<a class="headerlink" href="#to-use-the-dfb-in-parallel-with-the-roach1" title="Permalink to this headline">¶</a></h2>
-<p>To use the DFB in parallel with the ROACH, we use “DFBController” in PASSIVE mode. DO NOT LAUNCH SEADAS, as this will interrupt the Nuraghe schedule.</p>
-<p>In the LEAP cluster VNC, open another window and go to :</p>
-<blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">~/externalClient/LeapDFBSockets/</span></code></p>
-<p>and type:</p>
-<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">./simple_server</span></code></p>
-</div></blockquote>
-<p>This will allow the DFB to check the antenna parameters of the antenna (written on the LEAP cluster) and acquire data when the tracked source is a pulsar.</p>
-<p>After having prepared the ROACH1 for LEAP observations and launched
-“./simple_server”, you are ready to set up the DFB.</p>
-<ol class="arabic">
-<li><p class="first">Make sure the DFB is turned on (large button at the back) and make sure the cables connected to the DFB are the right ones (DFB3 &amp; DFB4 for L-band, and DFB1 &amp; DFB2 for P-band).</p>
-</li>
-<li><p class="first">In the “PULSAR” tab, open a terminal and connect to the DFB:</p>
-<blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">–X</span> <span class="pre">corr&#64;psrdfb</span></code>    <strong>ask for the password</strong></p>
-</div></blockquote>
-</li>
-<li><p class="first">Check that the DFB clock is correctly synchronized by typing:</p>
-<blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">atdc</span></code> and press <code class="docutils literal notranslate"><span class="pre">enter</span></code></p>
-<p>Check that the clock is synchronized and that the Tick phase is a
-small number in ns (less than a few hundreds). If the clock needs
-to be re-synchronized, follow <a class="reference external" href="http://www.jb.man.ac.uk/~pulsar/observing/DFB.pdf">these instructions</a> at pag. 53.</p>
-</div></blockquote>
-</li>
-<li><p class="first">Launch <strong>dfbcontroller</strong>:</p>
-<blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">/home/corr/software/seadas/bin/dfbcontroller</span></code></p>
-</div></blockquote>
-</li>
-<li><p class="first">Input these parameters in the dfbcontroller interface:</p>
-<blockquote>
-<div><ul class="simple">
-<li>Config: pdfb4_512_1024_1024</li>
-<li>Subint time (s): 30.0</li>
-<li>Frequency (MHz): 1548</li>
-<li>Inverted: no</li>
-<li>Write file: yes</li>
-<li>Control mode: change from DIRECT to PASSIVE</li>
-</ul>
-</div></blockquote>
-</li>
-</ol>
-<p>6. At the correct time, launch the Nuraghe schedule + start the ROACH
-observing. The DFB observing will follow automatically.</p>
-<p>7. Throughout the observing session, check that the DFB temperatures
-don’t go above 70 degrees. If the temperatures are exceedingly high,
-you will need to turn off the DFB for at least half an hour.</p>
-<ol class="arabic simple" start="8">
-<li>To end DFB observing, simply change the <code class="docutils literal notranslate"><span class="pre">Control</span> <span class="pre">mode</span></code> from PASSIVE to DIRECT. Then close the DFB windows.</li>
-</ol>
+<p>You should now see: <strong>“no change. keep doing what you’re doing”</strong> while the antenna keeps tracking the same source. If all goes well, you won’t need to do anything else with data acquisition for the remainder of the session. You should however check the control window (W1) once in a while for possible errors (e.g. antenna WARNING).</p>
 </div>
 </div>
 
@@ -327,15 +257,6 @@ you will need to turn off the DFB for at least half an hour.</p>
            
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="check-obs.html" class="btn btn-neutral float-right" title="Check during the observations" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="roach-setup.html" class="btn btn-neutral" title="Roach setup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>

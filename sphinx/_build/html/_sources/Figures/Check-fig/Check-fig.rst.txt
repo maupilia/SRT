@@ -10,6 +10,17 @@
 .. _Check-fig:
 
 
+Control Room
+===================
+
+       .. _srt_control_room:
+
+       .. figure:: srt_control_room.png
+	  :align: center
+
+          SRT control room layout.
+
+
 ACS Command Center
 ===================
 
@@ -21,19 +32,19 @@ ACS Command Center
           The **ACS** monitor shows the state of the containers related to each DISCOS component.
           The state of each container can be verified in the section highlighted in blue.
 	  The blue arrow indicates the number of containers (33 when the system is ready).
-	  
+
 
 ACS Command Center
 ========
 
        .. _srt_acs_2:
 
-       .. figure:: srt_acs_2.png 
+       .. figure:: srt_acs_2.png
 	  :align: center
-	  
-	  In the **Common settings** panel of the ACS monitor, the ``remote``  and  the ``use native ssh`` items must be selected as indicated by the green arrows. The ``Start`` and  the ``global green triangle`` buttons highlighted in green must be used to restart the **Acs suite** and the **Containers**, respectively. The ``Kill`` button highlighted in red must be used to close the ACS panel during the Shutdown of Discos. 
-	  
-	  
+
+	  In the **Common settings** panel of the ACS monitor, the ``remote``  and  the ``use native ssh`` items must be selected as indicated by the green arrows. The ``Start`` and  the ``global green triangle`` buttons highlighted in green must be used to restart the **Acs suite** and the **Containers**, respectively. The ``Kill`` button highlighted in red must be used to close the ACS panel during the Shutdown of Discos.
+
+
 Active Surface
 ===============
 
@@ -48,12 +59,15 @@ Active Surface
 Active Surface
 ==============
 
-       .. _srt_as_park:
+       .. _srt_activesurface_2:
 
-       .. figure:: srt_as_park.png
+       .. figure:: srt_activesurface_2.png
 	   :align: center
 
-	   The **Active Surface** monitor after parking the active surface by using ``> asPark``
+           After parking the active surface by using ``> asPark``, in the **Active Surface** monitor the status of the ``Actual Profile`` box is ``Park``.
+
+..	   The **Active Surface** monitor after parking the active surface by using ``> asPark``
+
 
 Active Surface
 ==============
@@ -64,6 +78,18 @@ Active Surface
 	   :align: center
 
 	   The **Active Surface** monitor in the parabolic configuration.
+
+
+Active Surface
+==============
+
+       .. _srt_as_park:
+
+       .. figure:: srt_as_park.png
+	   :align: center
+
+	   The status of the **active surface** is ``WARNING`` after the "Restart Discos" procedure.
+
 
 
 Logging Display
@@ -320,3 +346,46 @@ Primary Control Panel ACU
 	   :align: center
 
            Primary Control Panel ACU.
+
+
+SEADAS
+=======
+
+      .. _seadas_disabled:
+
+      .. figure:: seadas_disabled.jpg
+          :align: center
+
+          Seadas GUI. On the top right, the red box signals that the control of the antenna is DISABLED.
+
+	  
+      .. _seadas_enabled:
+      
+      .. figure:: seadas_enabled.jpg
+          :align: center
+		  
+          Seadas GUI. On the top right, the green box signals that the control of the antenna is now ENABLED.
+
+
+      .. _session_mode:
+
+      .. figure:: session_mode.jpg
+	  :align: center
+		  
+          Seadas GUI. On the top left, circled in black, the Session Mode combo box where the option Schedule needs to be selected in order to start the observations through your pre-prepared schedule.
+
+
+      .. _schedule_management:
+
+      .. figure:: schedule_management.jpg
+          :align: center
+		  
+          Seadas GUI. Pop-up window where the schedule can be uploaded by clicking on the button `Load sched`.
+
+
+      .. _schedule_management_full:
+
+      .. figure:: schedule_management_full.jpg
+          :align: center
+
+          Seadas GUI pop-up window for schedule management. The uploaded schedule lines will appear on the top panel. The ones selected for observations will appear in the bottom panel.

@@ -5,7 +5,7 @@
 
 
 
-ROACH1 with SEADAS
+ROACH1
 -------------------
 
 .. toctree::

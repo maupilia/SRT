@@ -26,14 +26,14 @@ the antenna.
 On their respective desktops
 ----------------------------
 
-#. Close the vnc session on seadas
+#. Close SEADAS by clicking on the Quit button at the top left of SEADAS window
 
 
 #. Close the vnc session on leap0
 
 
-On discos-console
------------------
+On DISCOS-CONSOLE
+--------------------
 
 #. Park the minor servo, active surface and antenna
 

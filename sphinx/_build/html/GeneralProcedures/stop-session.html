@@ -171,15 +171,17 @@
 the antenna.</p>
 <div class="section" id="on-discos-console">
 <h2>On discos-console<a class="headerlink" href="#on-discos-console" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
 <ol class="arabic">
 <li><p class="first">Stop your schedule :</p>
-<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">haltSchedule</span></code>    <em>the schedule stops at the end of the on-going subscan.</em>  <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-scheduler-end"><span class="std std-numref">Fig.20</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">haltSchedule</span></code>    <em>the schedule stops at the end of the on-going subscan.</em>  <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-scheduler-end"><span class="std std-numref">Fig.22</span></a></p>
 </li>
 <li><p class="first">Park the minor servo, active surface and antenna</p>
-<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">goTo=180d,89d</span></code> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-mount"><span class="std std-numref">Fig.13</span></a></p>
-<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">servoPark</span></code> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-minorservo-end"><span class="std std-numref">Fig.24</span></a></p>
-<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">asPark</span></code> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-as-park"><span class="std std-numref">Fig.4</span></a></p>
-<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaPark</span></code> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-mount-antennareset"><span class="std std-numref">Fig.14</span></a>  <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-acu-stowpin"><span class="std std-numref">Fig.29</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">goTo=180d,89d</span></code> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-mount"><span class="std std-numref">Fig.15</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">servoPark</span></code> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-minorservo-end"><span class="std std-numref">Fig.26</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">asPark</span></code> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-activesurface-2"><span class="std std-numref">Fig.5</span></a></p>
+<p>Wait until the antenna has finished the goTo command and reached the position at 180° (azimuth) and 89° (elevation).</p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaPark</span></code> <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-mount-antennareset"><span class="std std-numref">Fig.16</span></a>  <img alt="logo" src="../_images/monocle_6.png" /> <a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-acu-stowpin"><span class="std std-numref">Fig.31</span></a></p>
 </li>
 </ol>
 </div>
@@ -187,9 +189,13 @@ the antenna.</p>
 <h2>Block the axes of the antenna<a class="headerlink" href="#block-the-axes-of-the-antenna" title="Permalink to this headline">¶</a></h2>
 <p>Look at the ACU monitor, wait until
 <strong>Axis blocked</strong> appears in red. It can take a few minutes after the command
-<code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaPark</span></code> has been given (<a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-acu-axis-blocked"><span class="std std-numref">Fig.30</span></a>).</p>
+<code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaPark</span></code> has been given (<a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-acu-axis-blocked"><span class="std std-numref">Fig.32</span></a>).</p>
 <p>Only at this moment, you can press on the emergency stop button
-(<a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-acu-redbutton"><span class="std std-numref">Fig.31</span></a>).</p>
+(<a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-acu-redbutton"><span class="std std-numref">Fig.33</span></a>).</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Don’t worry if in the <strong>Logging Display</strong> appears the red warning with the message <strong>CRITICAL: MountContainer EMERGENCY_STOP</strong>, this is a engineering low-level information, please ignore it (<a class="reference internal" href="../Figures/Err-fig/Err-fig.html#log-emergency-stop"><span class="std std-numref">Fig.36</span></a>).</p>
+</div>
 </div>
 </div>
 

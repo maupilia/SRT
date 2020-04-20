@@ -58,6 +58,8 @@ $ : commands to insert in a shell
 
     ``> initialize=SC00S`` for full-Stokes observations or
     ``> initialize=SC00`` for total intensity observations.
+    
+    Important note: both SARDARA configurations SC00S and SC00 are set to work with a default bandwidth of 1500 MHz and 1024 channels. Only in the event that you wanted to observe with different bandwidth and/or channel values you have to set the parameters of the backend (see the following item).
 
 #. Set the different parameters of the backend :
 
@@ -74,13 +76,20 @@ $ : commands to insert in a shell
 
      ``> integration=[n]``
 
-#. Put the antenna at 45 deg of elevation before to check that the signal is in the linear range of the backend:
+#. Put the antenna at 45 deg of elevation before checking that the signal is in the linear range of the backend:
 
-    ``> goTo=*,45d`` |logo| :numref:`srt_mount`
+     ``> goTo=*,45d`` |logo| :numref:`srt_mount`
 
-#. Attenuate the signal based on the rms range [30;33] and check the value on the interface :
+#. Check that the getTpi command is working correctly before proceeding:
 
-     ``> getRms``
+     ``> getTpi``
+     
+     If getTpi=0,0 then there is a problem, you need to ask for help. 
+     If getTpi=(a few millions) then proceed.
+
+#. Attenuate the signal based on the rms range [20;22] and check the value on the interface :
+     
+     ``> getRms``  
 
      ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.  |logo| :numref:`srt_genericBackend`
 

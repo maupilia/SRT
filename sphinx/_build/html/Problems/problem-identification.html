@@ -232,6 +232,30 @@ previous section).</p>
 the box and read the associated message.</p>
 <div class="admonition attention">
 <p class="first admonition-title">Attention</p>
+<p class="last"><strong>Servo system and axis errors</strong></p>
+</div>
+<p>After the stow of the antenna, errors related to the main servo system
+or to the azimuth/elevation axes may occur.</p>
+<p>To solve the problem, give the following commands in the
+operatorInput console:</p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaTrack</span></code></p>
+<p>Wait 10 seconds. If the errors disappear, you can proceed to the observations.</p>
+<p>Instead, if the errors remain, give again the previous commands:</p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaTrack</span></code></p>
+<p>Wait 10 seconds. If the errors disappear, you can proceed to the observations.</p>
+<p>If the errors persist:</p>
+<ul class="simple">
+<li>push the <strong>emergency stop button</strong></li>
+<li>release the <strong>emergency stop button</strong></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaTrack</span></code></p>
+<p>At this point, the problem should be resolved. Otherwise, contact the person in charge of
+the observations (observer’s friend).</p>
+<div class="admonition attention">
+<p class="first admonition-title">Attention</p>
 <p class="last"><strong>Power errors</strong></p>
 </div>
 <p>In the case of <strong>err_Power_Error</strong> label, look at the jlog window. The
@@ -252,8 +276,17 @@ the observations (observer’s friend).</p>
 <p>Check regularly the wind velocity using the <code class="docutils literal notranslate"><span class="pre">$&gt;</span> <span class="pre">meteoClient</span> <span class="pre">&amp;</span></code> on
 a shell of nuraghe-mng. For observations in K-band, the wind speed
 should not exceed 30 km/h (value to be checked) otherwise the pointing
-accuracy will probably be lost. <a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-windspeed"><span class="std std-ref">The antenna is automatically stowed when the wind speed
-exceeds 60km/h.</span></a></p>
+accuracy will probably be lost.</p>
+<div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last"><strong>Unstow of the antenna</strong></p>
+</div>
+<p><a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-windspeed"><span class="std std-ref">The antenna is automatically stowed when the wind speed
+exceeds 60km/h.</span></a>
+If you want to continue the observations without redoing the setup from the beginning (receiver, bandwidth, attenuations, etc…), you can simply unstow the antenna and start again the observations where you left off, following the sequence of commands:</p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaUnstow</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaTrack</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">startSchedule=[schedulename].scd,[N]</span></code> where you were previously.</p>
 </div>
 <div class="section" id="stow-of-the-antenna">
 <h2>Stow of the antenna<a class="headerlink" href="#stow-of-the-antenna" title="Permalink to this headline">¶</a></h2>
@@ -266,9 +299,9 @@ communicate anymore with the antenna, you can use the <code class="docutils lite
 to park the antenna. The green button is located close to the red
 emergency stop button in the control-room.</p>
 <p>When the antenna is parked, look at the ACU monitor, wait until
-<strong>Axis blocked</strong> appears in red (<a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-acu-axis-blocked"><span class="std std-numref">Fig.29</span></a>).
+<strong>Axis blocked</strong> appears in red (<a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-acu-axis-blocked"><span class="std std-numref">Fig.32</span></a>).
 Only at this moment, you can press on the <code class="docutils literal notranslate"><span class="pre">emergency</span> <span class="pre">stop</span> <span class="pre">button</span></code>
-(<a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-acu-redbutton"><span class="std std-numref">Fig.30</span></a>).</p>
+(<a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-acu-redbutton"><span class="std std-numref">Fig.33</span></a>).</p>
 </div>
 </div>
 

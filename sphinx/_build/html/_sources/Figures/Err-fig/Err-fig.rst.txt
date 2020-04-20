@@ -78,7 +78,7 @@ number is frozen, stop the schedule.
      	.. figure:: srt_scheduler_failure.png
 	   :align: center
 
-           The scheduler status is in FAILURE (add image!)
+           The scheduler status is in FAILURE
 
 
 MinorServo
@@ -98,6 +98,14 @@ Logging Display
            The error messages are show in the Logging Display with a short explanation of the related problem.
 
 
+        .. _log_emergency_stop:
+
+    	.. figure:: log_emergency_stop.png
+	   :align: center
+
+           The warning message indicated by the blue arrow automatically appears when the emergency stop button is pressed.
+	   
+	   
 Active Surface
 ===============
 

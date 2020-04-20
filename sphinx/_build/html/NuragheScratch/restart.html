@@ -168,14 +168,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="restart-discos">
-<h1>Restart Discos<a class="headerlink" href="#restart-discos" title="Permalink to this headline">¶</a></h1>
+  <div class="toctree-wrapper compound">
+</div>
+<div class="section" id="restart-discos">
+<span id="id1"></span><h1>Restart Discos<a class="headerlink" href="#restart-discos" title="Permalink to this headline">¶</a></h1>
 <ol class="arabic">
 <li><p class="first">On the <strong>discos-manager computer</strong>, open a terminal and give the following command:</p>
 <blockquote>
 <div><p><code class="docutils literal notranslate"><span class="pre">discos</span> <span class="pre">-start</span></code></p>
 </div></blockquote>
-<p>The graphical interface of the ACS Command Center appears (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-acs-2"><span class="std std-numref">Fig.2</span></a>).</p>
+<p>The graphical interface of the ACS Command Center appears (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-acs-2"><span class="std std-numref">Fig.3</span></a>).</p>
 <p>Check that <code class="docutils literal notranslate"><span class="pre">remote</span></code> and  <code class="docutils literal notranslate"><span class="pre">use</span> <span class="pre">native</span> <span class="pre">ssh</span></code> are correctly selected in the <strong>Common settings</strong> panel.</p>
 <p>Click on <code class="docutils literal notranslate"><span class="pre">Start</span></code> in the <strong>Acs suite</strong> panel.</p>
 <p>In the <strong>Containers</strong> panel, click on the global green triangle located below the individual triangles to open all of the containers.</p>
@@ -188,15 +190,15 @@
 <p>The 9 panels appear:</p>
 <blockquote>
 <div><ul class="simple">
-<li><strong>operatorInput</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-operatorinput"><span class="std std-numref">Fig.9</span></a>)</li>
-<li><strong>AntennaBoss</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-antennaboss"><span class="std std-numref">Fig.10</span></a>)</li>
-<li><strong>GenericBackend</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.11</span></a>)</li>
-<li><strong>Mount</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-mount"><span class="std std-numref">Fig.13</span></a>)</li>
-<li><strong>Observatory</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-observatory"><span class="std std-numref">Fig.15</span></a>)</li>
-<li><strong>Receivers</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-receivers"><span class="std std-numref">Fig.16</span></a>)</li>
-<li><strong>Scheduler</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.19</span></a>)</li>
-<li><strong>MinorServo</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-minorservo"><span class="std std-numref">Fig.21</span></a>)</li>
-<li><strong>ACS custom logging client</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-jlog"><span class="std std-numref">Fig.6</span></a>)</li>
+<li><strong>operatorInput</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-operatorinput"><span class="std std-numref">Fig.11</span></a>)</li>
+<li><strong>AntennaBoss</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-antennaboss"><span class="std std-numref">Fig.12</span></a>)</li>
+<li><strong>GenericBackend</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.13</span></a>)</li>
+<li><strong>Mount</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-mount"><span class="std std-numref">Fig.15</span></a>)</li>
+<li><strong>Observatory</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-observatory"><span class="std std-numref">Fig.17</span></a>)</li>
+<li><strong>Receivers</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-receivers"><span class="std std-numref">Fig.18</span></a>)</li>
+<li><strong>Scheduler</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.21</span></a>)</li>
+<li><strong>MinorServo</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-minorservo"><span class="std std-numref">Fig.23</span></a>)</li>
+<li><strong>ACS custom logging client</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-jlog"><span class="std std-numref">Fig.8</span></a>)</li>
 </ul>
 </div></blockquote>
 <p>You can modify the disposition of the individual panels for more clarity.</p>
@@ -204,9 +206,15 @@
 <blockquote>
 <div><p><code class="docutils literal notranslate"><span class="pre">SRTActiveSurfaceGUIClient</span> <span class="pre">&amp;</span></code></p>
 </div></blockquote>
-<p>The related graphical interface is now open. Wait a few minutes until the single squares (representing the attuators) become green.</p>
+<p>The related graphical interface is now open. Wait a few minutes until the single squares (representing the attuators) become green. The status of the active surface is in the “WARNING” configuration (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-as-park"><span class="std std-numref">Fig.7</span></a>).</p>
+<p>From a virtual desktop, open two new terminals to start the panels related to the <strong>Meteo Client</strong> and the <strong>Calibration Tool Client</strong> (if necessary) and write, rispectively:</p>
 </li>
 </ol>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">meteoClient</span> <span class="pre">&amp;</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">calibrationtoolclient</span> <span class="pre">MANAGEMENT/CalibrationTool</span> <span class="pre">&amp;</span></code></p>
+<p>The graphical interfaces related to the meteo Client (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-meteo"><span class="std std-numref">Fig.9</span></a>) and  the calibration Tool Client (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-calibrationtool"><span class="std std-numref">Fig.27</span></a>) are now open and updated in real time.</p>
+</div></blockquote>
 </div>
 
 

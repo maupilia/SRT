@@ -17,6 +17,8 @@ performing observations with SRT. For a complete documentation on the
 user guide *Observing at SRT with Discos*, please click
 `here <http://discos.readthedocs.io/en/latest/index.html>`_.
 
+A picture of the SRT control room layout is provided in :numref:`srt_control_room`.
+
 Before observing, check that the system is ready. Then select the
 **observation mode** you want, a menu will appear with the different receivers (**C-**,
 **K-** and **L-bands**) and the associated backends (**Total Power**, **SARDARA**,

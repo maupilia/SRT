@@ -29,7 +29,7 @@ the antenna.
 On their respective desktops
 ----------------------------
 
-#. Close the vnc session on seadas
+#. Close SEADAS by clicking on the Quit button at the top left of SEADAS window 
 
 
 #. Close the vnc session on psrdfb
@@ -45,7 +45,7 @@ On discos-console
    ``> servoPark`` |logo| :numref:`srt_minorservo_end`
 
    ``> asPark`` |logo| :numref:`srt_as_park`
-   
+
    Wait until the antenna has finished the goTo command and reached the position at 180° (azimuth) and 89° (elevation).
 
    ``> antennaPark`` |logo| :numref:`srt_mount_antennareset`  |logo| :numref:`srt_ACU_stowpin`

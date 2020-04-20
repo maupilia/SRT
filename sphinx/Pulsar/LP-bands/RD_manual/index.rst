@@ -5,16 +5,14 @@
 
 
 ====================================
-ROACH1 (baseband) in P-band + DFB (folding) in L-band
+ROACH1 P-band + DFB L-band
 ====================================
 
 .. toctree::
    :maxdepth: 1
- 
-   Before observing <before-obs.rst>
-   Roach setup <roach-setup.rst>
-   Start the observations <start-obs.rst>
-   Check during the observations <check-obs.rst>
-   Getting your data <get-data.rst>
-   End of the session <stop-session.rst>
 
+*  :ref:`bef-PuMPRO`
+*  :ref:`start-PuRD`
+*  :ref:`check-PuRO`
+*  :ref:`get-PuRD`
+*  :ref:`stop-PuRD`

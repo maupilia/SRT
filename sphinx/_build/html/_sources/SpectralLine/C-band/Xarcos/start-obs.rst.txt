@@ -46,7 +46,7 @@ $ : commands to insert in a shell
 
 #. Select and configure the XARCOS backend in C-band :
 
-    ``> chooseBackend=Xarcos``   |logo| :numref:`srt_scheduler`
+    ``> chooseBackend=XArcos``   |logo| :numref:`srt_scheduler`
 
     ``$ genericBackendTui BACKENDS/XBackends``  |logo| :numref:`srt_backendXarcos`
 

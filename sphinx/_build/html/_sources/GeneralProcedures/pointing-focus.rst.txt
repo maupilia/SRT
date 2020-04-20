@@ -87,6 +87,7 @@ Pointing
 
     * ``00:00:20`` indicates the duration of the scan (in this example: 20 seconds).
 
+Important note: in the event of not ideal weather conditions, you have to set a smaller scan length value of about 0.15d.
 
 #. Look at the calibrationtool client to check the pointing offsets.
 

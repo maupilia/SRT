@@ -6,9 +6,6 @@
 
 .. toctree::
    :maxdepth: 1
-  
-
-**Notes :** The following instructions are for observing at P-band with the ROACH1 in baseband mode, in parallel with the DFB observing at L-band in folding mode. The observed bandwidth of the ROACH1 backend is 128 MHz and includes the whole P-band (305-410 MHz), while the DFB can capture the entire L-band. 
 
 
 ======================
@@ -33,7 +30,7 @@ On nuraghe-obs1
 ------------------
 
 
-1. Check the presence of the 8 panels : 
+1. Check the presence of the 8 panels :
 
     - operatorInput
     - AntennaBoss
@@ -69,9 +66,3 @@ On nuraghe-obs1
 5. Go back to nuraghe-obs1 and open the leap0 VNC session using
 **VNCViewer** or **TigerVNC** and selecting **leap0:1**  *(ask for
 password)*.
-
-
-
-
-
-

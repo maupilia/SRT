@@ -103,21 +103,29 @@ Important note: the *initialize* command requires a few more seconds comapared t
 
     ``> derotatorGetPosition`` 
     
-#. Put the antenna at 45 deg of elevation before to check that the signal is in the linear range of the backend:
+#. Put the antenna at 45 deg of elevation before checking that the signal is in the linear range of the backend:
 
     ``> goTo=*,45d`` |logo| :numref:`srt_mount`
+    
+#. Check that the getTpi command is working correctly before proceeding:
 
-#. Attenuate the signal based on the rms range [30;33] and check the value on the interface.
+     ``> getTpi``
+     
+     If getTpi=0,0 then there is a problem, you need to ask for help. 
+     If getTpi=(a few millions) then proceed.    
+    
+#. Attenuate the signal based on the rms range [20;22] and check the value on the interface.
 
    ``> getRms``  
 
    ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB. |logo| :numref:`srt_genericBackend_KKG`
    
-   Important note 1: For the sections 0, 1, 2 and 3 (feeds 0 and 1), you have to set the attenuation accordingly to the values obtained with getRms. For the other sections the attenuation has to be set at 0 since the rms does not reach 30.
-    
-   Important note 2: The feed 10 does not work, do not consider the related    getRms and tsys values.
+   Important note 1: You have to set the attenuation accordingly to the values obtained with getRms. It could happen that the rms value of the sections 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15 (feeds 2, 3, 4, 5, 6) does not reach 30. In this case, the attenuation has to be set to 0. 
+  
+   Important note 2: The section 10 does not work, do not consider the related    getRms and tsys values.
    
-
+..   Important note 1: For the sections 0, 1, 2 and 3 (feeds 0 and 1), you have to set the attenuation accordingly to the values obtained with getRms. For the other sections the attenuation has to be set to 0 since the rms does not reach 30.   
+   
 #. Check the tsys (typical values: 110-120 K for bw=1500MHz and 120-130 K for bw=420MHz)
 
     ``> tsys`` |logo| :numref:`srt_genericBackend_KKG`

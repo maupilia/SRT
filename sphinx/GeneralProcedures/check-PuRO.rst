@@ -94,12 +94,8 @@ External client
 The difference between ``./start.csh`` and ``./start_simple.csh`` is that ``./start_simple.csh`` does not call the external client to get information about the source. If the external client is working, use ``./start.csh`` and the right folders will be automatically created using the name of the source that is being tracked and the most recent timestamp.
 
 
-On discos-console
+On DISCOS-CONSOLE
 -----------------
-
-#. Look at the Quick-look of the data by clicking on the icon in the desktop of discos-console:
-
-      quicklook.html
 
 
 #. **ACS custom logging client**
@@ -120,7 +116,6 @@ On discos-console
      the antenna is automatically stowed. |logo| :numref:`srt_windspeed`
 
 
-     .. On nuraghe-obs1 --------------
 
 #. **Scheduler**
 

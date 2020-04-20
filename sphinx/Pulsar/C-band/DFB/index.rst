@@ -5,7 +5,7 @@
 
 
 
-DFB with SEADAS
+DFB
 ----------------
 
 .. toctree::
