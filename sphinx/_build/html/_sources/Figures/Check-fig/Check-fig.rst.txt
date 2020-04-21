@@ -35,7 +35,7 @@ ACS Command Center
 
 
 ACS Command Center
-========
+===================
 
        .. _srt_acs_2:
 
@@ -359,15 +359,15 @@ SEADAS
 
 
        .. _seadas_enabled:
-
+       
        .. figure:: seadas_enabled.jpg
            :align: center
-
+	
            Seadas GUI. On the top right, the green box signals that the control of the antenna is now ENABLED.
 
 
        .. _session_mode:
-
+       
        .. figure:: session_mode.jpg
            :align: center
 

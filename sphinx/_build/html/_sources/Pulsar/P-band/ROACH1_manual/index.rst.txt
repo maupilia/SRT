@@ -4,9 +4,9 @@
    contain the root `toctree` directive.
 
 
-=============
-Baseband Mode
-=============
+=======
+ROACH1
+=======
 
 .. toctree::
    :maxdepth: 1

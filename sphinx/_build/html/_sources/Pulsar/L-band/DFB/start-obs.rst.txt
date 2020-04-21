@@ -10,6 +10,7 @@
 
 .. _start-PuLDFB:
 
+
 Start the observations
 ======================
 
@@ -22,7 +23,6 @@ $ : commands to insert in a shell
 ..    :height: 20pt
 ..   :align: left
 |logo|: check the execution on the monitor
-
 
 
 On DISCOS-CONSOLE
@@ -40,11 +40,6 @@ On DISCOS-CONSOLE
 
     ``> goTo=*,85d`` |logo| :numref:`srt_mount`
 
-#. Follow the link below to perform the pointing optimization:
-
-    :ref:`pointing-focus`
-
-
 
 On PULSAR/VLBI
 ---------------
@@ -61,6 +56,11 @@ On PULSAR/VLBI
 
 #. Type password at prompt.
 
+#. On another workspace, open a new terminal and start a vnc session for the head node leap0:
+
+    ``$ vncviewer leap0:2``
+
+
 In the vnc session corr@psrdfb
 ----------------------------------
 
@@ -74,20 +74,22 @@ In the vnc session corr@psrdfb
 
 #. In DFBCONTROLLER window, check that the colored label at the right of the "tkds" label is green and displays the word "CONNECTED". If not, click on it.
 
+
+
 Inside SEADAS window
 ----------------------------------
 
-#. Enable the antenna control by clicking on the red label at the top right corner of the Antenna and Pointing Management frame. |logo| :numref:`seadasDisabled`
+#. Enable the antenna control by clicking on the red label at the top right corner of the Antenna and Pointing Management frame. |logo| :numref:`seadas_disabled`
 
-#. Check that the label becomes green and displays the word "ENABLED"
+#. Check that the label becomes green and displays the word "ENABLED" |logo| :numref:`seadas_enabled`
 
-#. Select "Schedule" in the "Session mode" combo box
+#. Select "Schedule" in the "Session mode" combo box |logo| :numref:`session_mode`
 
-#. Click "Schedule Management". A window named "Seadas schedule management" pops up
+#. Click "Schedule Management". A window named "Seadas schedule management" pops up |logo| :numref:`schedule_management`
 
 #. Click "Load sched" in "Schedule management" window. A system window pops up for browsing system directories and selecting the schedule file
 
-#. In "Schedule manager" window select schedule lines to be done - mouse left click on each single line - or click button "Select all" for loading the entire schedule in the "Observations List" window
+#. In "Schedule manager" window select schedule lines to be done - mouse left click on each single line - or click button "Select all" for loading the entire schedule in the "Observations List" window |logo| :numref:`schedule_management_full`
 
 #. If necessary, rearrange the order of the observations in the "Observations List" window  - left button click == cut line ; mid button click == paste line
 

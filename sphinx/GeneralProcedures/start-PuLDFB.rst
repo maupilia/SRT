@@ -8,7 +8,7 @@
    :maxdepth: 1
 
 
-.. _start-PuPRO:
+.. _start-PuLDFB:
 
 
 Start the observations
@@ -50,34 +50,49 @@ On PULSAR/VLBI
 
     ``$ seadas``
 
+#. On another workspace, open a new terminal and start a vnc session for corr@psrdfb:
+
+    ``$ vncviewer psrdfb:2``
+
+#. Type password at prompt.
+
 #. On another workspace, open a new terminal and start a vnc session for the head node leap0:
 
     ``$ vncviewer leap0:2``
 
 
-In the vnc session leap0
+In the vnc session corr@psrdfb
 ----------------------------------
 
-#. If you do not see the LEAPCONTROLLER interface, open a new terminal and start it
+#. Open a terminal and check the system clock is working properly (time properly synchronized, tick phase ~ 100 ns, positive or negative) by typing
 
-    ``$ /home/user/seadas/bin/leapcontroller``
+    ``$ atdc``
+
+#. If DFBCONTROLLER is not already on, open a new terminal and start it
+
+    ``$ dfbcontroller``
+
+#. In DFBCONTROLLER window, check that the colored label at the right of the "tkds" label is green and displays the word "CONNECTED". If not, click on it.
+
 
 
 Inside SEADAS window
 ----------------------------------
 
-#. Enable the antenna control by clicking on the red label at the top right corner of the Antenna and Pointing Management frame. |logo| :numref:`seadasDisabled`
+#. Enable the antenna control by clicking on the red label at the top right corner of the Antenna and Pointing Management frame. |logo| :numref:`seadas_disabled`
 
-#. Check that the label becomes green and displays the word "ENABLED"
+#. Check that the label becomes green and displays the word "ENABLED" |logo| :numref:`seadas_enabled`
 
-#. Select "Schedule" in the "Session mode" combo box
+#. Select "Schedule" in the "Session mode" combo box |logo| :numref:`session_mode`
 
-#. Click "Schedule Management". A window named "Seadas schedule management" pops up
+#. Click "Schedule Management". A window named "Seadas schedule management" pops up |logo| :numref:`schedule_management`
 
 #. Click "Load sched" in "Schedule management" window. A system window pops up for browsing system directories and selecting the schedule file
 
-#. In "Schedule manager" window select schedule lines to be done - mouse left click on each single line - or click button "Select all" for loading the entire schedule in the "Observations List" window
+#. In "Schedule manager" window select schedule lines to be done - mouse left click on each single line - or click button "Select all" for loading the entire schedule in the "Observations List" window |logo| :numref:`schedule_management_full`
 
 #. If necessary, rearrange the order of the observations in the "Observations List" window  - left button click == cut line ; mid button click == paste line
 
 #. Back on SEADAS main window click "Observe"
+
+#. Do not forget to verify and adjust attenuation levels. You can find the test schedule TEST.scd under the directory scheds/ (or you can add a similar line to your schedule). Once you have started the schedule, check the PDFB3 panel in the psrdfb vnc session, Under tab `Samplers` where you fill find the the RMS levels of the channels. Also, check the SPD plotting tool to compare the bandpasses of the two channel. Aim to align the bandpasses, with the highest channel RMS around 13. In order to do so, iteratively go back to the SEADAS interface and select the desired attenuation values (which can be different for the two channels), then press `set atten.`

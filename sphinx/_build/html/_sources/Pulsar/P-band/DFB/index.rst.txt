@@ -5,8 +5,8 @@
 
 
 
-DFB with SEADAS
---------------
+DFB
+-------------
 
 .. toctree::
    :maxdepth: 1
