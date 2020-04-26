@@ -28,7 +28,7 @@ $  : commands to insert in a shell
 
 ======================
 
-The pointing and focus optimization requires the Total Power backend. Set first the parameters of the Total Power, then proceed with the pointing and focus procedutes described below.
+The pointing and focus optimization requires the Total Power backend. Set first the parameters of the Total Power, then proceed with the pointing and focus procedures described below.
 
 
 Total Power setup
@@ -36,11 +36,13 @@ Total Power setup
 
     ``> chooseBackend=TotalPower`` |logo| :numref:`srt_scheduler`
     
-    ``> setSection=0,*,1250.000000,*,*,0.0000333,*``
+    Insert the bandwidth (300, 730, 1250 or 2000 MHz) and choose the sample rate (in MHz) :
+
+    ``> setSection=0,*,[bw],*,*,[sampleRate],*`` |logo| :numref:`srt_genericBackend`
+
+    ``> setSection=1,*,[bw],*,*,[sampleRate],*``
     
-    ``> setSection=1,*,1250.000000,*,*,0.0000333,*``
-    
-    Put the antenna at 45 deg of elevation and attenuate the signal in order to have the counts in the range [800-1100] :
+    Put the antenna at 45 deg of elevation and attenuate the signal in order to have the counts in the range [750-1100] : 
     
     ``> goTo=*,45d`` |logo| :numref:`srt_mount`
 
@@ -48,6 +50,22 @@ Total Power setup
     
     ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.  |logo| :numref:`srt_genericBackend`
 
+
+
+Recorder selection and Calibration tool display
+==============================================
+
+The pointing and focus need the calibration tool client and the selection of the correct recorder.
+
+#. Choose the recorder :
+
+    ``> chooseRecorder=MANAGEMENT/CalibrationTool``
+
+#. Check if the calibrationtool client is open. If not, open it in a terminal to display the plots in real time :
+
+    ``$ calibrationtoolclient MANAGEMENT/CalibrationTool``  |logo| :numref:`srt_calibrationtool`
+    
+    
 
 Pointing
 ========
@@ -87,14 +105,6 @@ Pointing
      e.g. ``> sidereal=3c84,03:19:48.16h,41:30:42.1,2000,neutral``
      or   ``> sidereal=3c84,49.951d,41.512d,2000,neutral``
 
-
-#. Choose the recorder :
-
-    ``> chooseRecorder=MANAGEMENT/CalibrationTool``
-
-#. Check if the calibrationtool client is open. If not, open it in a terminal to display the plots in real time :
-
-    ``$ calibrationtoolclient MANAGEMENT/CalibrationTool``  |logo| :numref:`srt_calibrationtool`
 
 #. Set proper parameters according to your beamsize and coordinate frame in order to perform a correct pointing measurement :
 
