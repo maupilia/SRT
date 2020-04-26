@@ -89,6 +89,7 @@ Pointing
 
    Important note: in the event of not ideal weather conditions, you have to set a smaller scan length value of about 0.15d.
 
+
 #. Look at the calibrationtool client to check the pointing offsets.
 
     Pointing offsets must be less than 1/10 of the beamsize (i.e. about < 0.005
@@ -131,6 +132,7 @@ Focus
 #. Cancel the previous focus position with:
 
    ``> clearServoOffsets``
+   
 
 #. Set proper parameters according to your beamsize :
 
