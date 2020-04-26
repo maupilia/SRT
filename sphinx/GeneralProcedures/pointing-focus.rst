@@ -28,6 +28,25 @@ $  : commands to insert in a shell
 
 ======================
 
+The pointing and focus optimization requires the Total Power backend. Set first the parameters of the Total Power, then proceed with the pointing and focus procedutes described below.
+
+
+Total Power setup
+=================
+
+    ``> chooseBackend=TotalPower`` |logo| :numref:`srt_scheduler`
+    
+    ``> setSection=0,*,1250.000000,*,*,0.0000333,*``
+    ``> setSection=1,*,1250.000000,*,*,0.0000333,*``
+    
+    Put the antenna at 45 deg of elevation and attenuate the signal in order to have the counts in the range [800-1100] :
+    
+    ``> goTo=*,45d`` |logo| :numref:`srt_mount`
+
+    ``> getTpi``
+    
+    ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.  |logo| :numref:`srt_genericBackend`
+
 
 Pointing
 ========
