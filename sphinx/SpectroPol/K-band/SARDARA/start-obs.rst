@@ -128,9 +128,7 @@ $ : commands to insert in a shell
 
     Important note 1: You have to set the attenuation accordingly to the values obtained with getRms. It could happen that the rms value of the sections 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15 (feeds 2, 3, 4, 5, 6) does not reach 30. In this case, the attenuation has to be set to 0. 
   
-    Important note 2: The section 10 does not work, do not consider the related    getRms and tsys values.
-   
-..   Important note 1: For the sections 0, 1, 2 and 3 (feeds 0 and 1), you have to set the attenuation accordingly to the values obtained with getRms. For the other sections the attenuation has to be set to 0 since the rms does not reach 30.     
+    Important note 2: The section 10 does not work, do not consider the related    getRms and tsys values.   
 
 #. Check the tsys (typical values up to 100 K)
 
@@ -146,6 +144,9 @@ $ : commands to insert in a shell
     ``> startSchedule=[schedulename].scd,[N]``  |logo| :numref:`srt_scheduler`
     
     
+    
+    
+..   Important note 1: For the sections 0, 1, 2 and 3 (feeds 0 and 1), you have to set the attenuation accordingly to the values obtained with getRms. For the other sections the attenuation has to be set to 0 since the rms does not reach 30.  
     
 ..    To read back the position of the dewar :
 
