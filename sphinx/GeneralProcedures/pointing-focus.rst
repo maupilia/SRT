@@ -37,6 +37,7 @@ Total Power setup
     ``> chooseBackend=TotalPower`` |logo| :numref:`srt_scheduler`
     
     ``> setSection=0,*,1250.000000,*,*,0.0000333,*``
+    
     ``> setSection=1,*,1250.000000,*,*,0.0000333,*``
     
     Put the antenna at 45 deg of elevation and attenuate the signal in order to have the counts in the range [800-1100] :
