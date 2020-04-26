@@ -45,6 +45,10 @@ $ : commands to insert in a shell
 #. Insert the Local Oscillator value in MHz
 
     ``> setLO=[freq]`` |logo| :numref:`srt_receivers_KKG`
+    
+#. Follow the link below to perform the pointing and focus optimization (if not already included in your schedule) :
+
+      :ref:`pointing-focus`
 
 #. Select and configure the SARDARA backend in K-band
 
@@ -65,7 +69,7 @@ $ : commands to insert in a shell
        - ``[code]`` = SK06S : feeds 0 and 6 only and full Stokes observations ;
        - ``[code]`` = SK06  : feeds 0 and 6 only and total intensity observations.
 
-Important note: the *initialize* command requires a few more seconds comapared to the other command in order to operate.
+    Important note: the *initialize* command requires a few more seconds comapared to the other command in order to operate.
 
 #. Set the different parameters of the backend:
 
@@ -126,9 +130,9 @@ Important note: the *initialize* command requires a few more seconds comapared t
 
     ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB. |logo| :numref:`srt_genericBackend_KKG`
 
-   Important note 1: You have to set the attenuation accordingly to the values obtained with getRms. It could happen that the rms value of the sections 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15 (feeds 2, 3, 4, 5, 6) does not reach 30. In this case, the attenuation has to be set to 0. 
+    Important note 1: You have to set the attenuation accordingly to the values obtained with getRms. It could happen that the rms value of the sections 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15 (feeds 2, 3, 4, 5, 6) does not reach 30. In this case, the attenuation has to be set to 0. 
   
-   Important note 2: The section 10 does not work, do not consider the related    getRms and tsys values.
+    Important note 2: The section 10 does not work, do not consider the related    getRms and tsys values.
    
 ..   Important note 1: For the sections 0, 1, 2 and 3 (feeds 0 and 1), you have to set the attenuation accordingly to the values obtained with getRms. For the other sections the attenuation has to be set to 0 since the rms does not reach 30.     
 
@@ -140,9 +144,6 @@ Important note: the *initialize* command requires a few more seconds comapared t
 
     ``> wx``
 
-#. Follow the link below to perform the pointing and focus optimization (if not already included in your schedule) :
-
-      :ref:`pointing-focus`
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 
