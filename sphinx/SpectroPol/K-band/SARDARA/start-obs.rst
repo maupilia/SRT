@@ -107,11 +107,7 @@ $ : commands to insert in a shell
           no rotation is applied. To specify a static angle :
           ``>  derotatorSetPosition=[ang]d``     with ``[ang]`` the
           dewar angle in degrees.
-
-
-..    To read back the position of the dewar :
-
-    ``> derotatorGetPosition``
+          
 
 #. Put the antenna at 45 deg of elevation before checking that the signal is in the linear range of the backend:
 
@@ -148,3 +144,9 @@ $ : commands to insert in a shell
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 
     ``> startSchedule=[schedulename].scd,[N]``  |logo| :numref:`srt_scheduler`
+    
+    
+    
+..    To read back the position of the dewar :
+
+         ``> derotatorGetPosition``
