@@ -112,7 +112,7 @@ Focus
 
     otherwise  ``> sidereal=[name],[RA],[Dec],[epoch],[sector]``
 
-    Important note: the complete list of the sources which are recorded in the     SRT database is available `on the page <https://discos.readthedocs.io/en/latest/user/srt/source/Appendix_D.html>`_
+    Important note: the complete list of the sources which are recorded in the SRT database is available `on the page <https://discos.readthedocs.io/en/latest/user/srt/source/Appendix_D.html>`_
 
     * ``RA, Dec``: Pay attention to the coordinate formats:
       - decimal degrees, using a **d** suffix, for any coordinate (e.g. 30.00d)
@@ -127,7 +127,11 @@ Focus
 
      e.g. ``> sidereal=3c84,03:19:48.16h,41:30:42.1,2000,neutral``
      or   ``> sidereal=3c84,49.951d,41.512d,2000,neutral``
-     
+  
+#. Cancel the previous focus position with:
+
+   ``> clearServoOffsets``
+
 #. Set proper parameters according to your beamsize :
 
    ``> focusScan=150,00:01:00``
