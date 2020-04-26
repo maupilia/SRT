@@ -72,7 +72,7 @@ Pointing
 
     ``> chooseRecorder=MANAGEMENT/CalibrationTool``
 
-#. Open the calibrationtool client in a terminal to display the plots in real time :
+#. Check if the calibrationtool client is open. If not, open it in a terminal to display the plots in real time :
 
     ``$ calibrationtoolclient MANAGEMENT/CalibrationTool``  |logo| :numref:`srt_calibrationtool`
 
