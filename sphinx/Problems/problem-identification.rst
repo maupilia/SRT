@@ -79,7 +79,7 @@ If the **wa_Servo_DC_Warn** label appears on the yellow warning box, the observa
 
 ``> asPark``
 
-Comunicate the problem to the person in charge of the observations, as indicated by your project friend.
+Communicate the problem to the person in charge of the observations, as indicated by your project friend.
 
 
 .. ATTENTION:: **Servo system and axis errors**
