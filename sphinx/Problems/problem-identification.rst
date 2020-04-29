@@ -69,6 +69,19 @@ ACU control panel
 If one or different boxes appear in yellow (warning) or red (error), put the mouse on
 the box and read the associated message.
 
+.. ATTENTION:: **Servo DC warning**
+
+If the **wa_Servo_DC_Warn** label appears on the yellow warning box, the observations must be **immediately** interrupted. Give the following commands to stow the antenna:
+
+``> antennaPark``
+
+``> servoPark``
+
+``> asPark``
+
+Comunicate the problem to the person in charge of the observations, as indicated by your project friend.
+
+
 .. ATTENTION:: **Servo system and axis errors**
 
 After the stow of the antenna, errors related to the main servo system
@@ -119,17 +132,6 @@ operatorInput console:
 If the error message is different or the problem still unresolved, contact the person in charge of
 the observations (observer’s friend).
 
-.. ATTENTION:: **Servo DC warning**
-
-If the **wa_Servo_DC_Warn** label appears on the yellow warning box, the observations must be immediately interrupted. Give the following commands to stow the antenna:
-
-``> servoPark``
-
-``> asPark``
-
-``> antennaPark``
-
-Comunicate the problem to the person in charge of the observations (observer’s friend).
 
 Wind velocity
 ========
