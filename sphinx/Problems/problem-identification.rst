@@ -119,7 +119,17 @@ operatorInput console:
 If the error message is different or the problem still unresolved, contact the person in charge of
 the observations (observer’s friend).
 
+.. ATTENTION:: **Servo DC warning**
 
+If the **wa_Servo_DC_Warn** label appears on the yellow warning box, the observations must be immediately interrupted. Give the following commands to stow the antenna:
+
+``> servoPark``
+
+``> asPark``
+
+``> antennaPark``
+
+Comunicate the problem to the person in charge of the observations (observer’s friend).
 
 Wind velocity
 ========
