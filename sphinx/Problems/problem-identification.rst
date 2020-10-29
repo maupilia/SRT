@@ -102,7 +102,7 @@ Instead, if the errors remain, give again the previous commands:
 
 ``> antennaTrack``
  
-Wait 10 seconds. If the errors disappear, you can proceed to the observations.
+Wait 10 seconds. If the errors disappear, you can proceed to the observations. Please, set first the minor servo setup as indicated before.
 
 If the errors persist:
 
@@ -114,7 +114,7 @@ If the errors persist:
 
 ``> antennaTrack``
 
-At this point, the problem should be resolved. You can proceed with the observations, by setting first the minor servo setup ``> servoSetup[code]``, with ``[code=LLP,PPP,CCB,KKG]``.
+At this point, the problem should be resolved. You can proceed with the observations. Please, set first the minor servo setup as indicated before.
 
 If the problem persits, please contact the person in charge of
 the observations (observer’s friend).
