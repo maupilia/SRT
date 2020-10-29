@@ -94,7 +94,7 @@ operatorInput console:
 
 ``> antennaTrack``
 
-Wait 10 seconds. If the errors disappear, you can proceed to the observations.
+Wait 10 seconds. If the errors disappear, you can proceed to the observations by setting first the minor servo setup ``> servoSetup[code]``, with ``[code=LLP,PPP,CCB,KKG]``.
 
 Instead, if the errors remain, give again the previous commands:
 
@@ -114,7 +114,9 @@ If the errors persist:
 
 ``> antennaTrack``
 
-At this point, the problem should be resolved. Otherwise, contact the person in charge of
+At this point, the problem should be resolved. You can proceed with the observations, by setting first the minor servo setup ``> servoSetup[code]``, with ``[code=LLP,PPP,CCB,KKG]``.
+
+If the problem persits, please contact the person in charge of
 the observations (observer’s friend).
 
 
