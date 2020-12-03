@@ -122,8 +122,8 @@ Pointing
 
 #. Look at the calibrationtool client to check the pointing offsets.
 
-    Pointing offsets must be less than 1/10 of the beamsize (i.e. about < 0.005
-    deg in C-band and < 0.00125 deg in K-band).
+    Pointing offsets are generally less than 1/10 of the beamsize (i.e. about < 0.005
+    deg in C-band and < 0.00125 deg in K-band). They can also be slighty larger than these values, in particular in K-band.
 
 
 #. If you want to reject the measured offsets :
