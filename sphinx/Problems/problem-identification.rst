@@ -20,7 +20,7 @@ Errors, warning and failure of the MinorServoBoss can be related to the crash of
 Check first if the server crashed and restart it if needed. Ask the project friend to complete the procedure from viewer01 (VLBI console). The instructions are on this link:
 https://srtsupervisoronduty.readthedocs.io/it/latest/sd/srt/procedures/minor_servo.html#mscu-restart.
 
-After restarting the server it is necessary to restart the containers of the minor servos.
+After restarting the server it is necessary to restart the containers of the minor servos on the discos-console computer.
 
 
 Quicklook
