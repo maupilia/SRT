@@ -13,6 +13,25 @@ Check the presence of error messages on the different monitor panels, the
 jlog, ACS and the ACU control panel. 
 
 
+MinorServo
+=========
+
+Errors, warning and failure of the MinorServoBoss can be related to the crash of the server that manages the minor servos: MSCU.
+Check first if the server crashes and restart it if needed. Ask the project friend to complete the procedure (the instructions on this link:
+https://srtsupervisoronduty.readthedocs.io/it/latest/sd/srt/procedures/minor_servo.html#mscu-restart).
+
+
+
+Quicklook
+=========
+
+If the Quicklook stop running correctly and is frozen to a previous session, you can restart it from a terminal with the user “observer”:
+
+``$ su - discos service quicklook restart`` 
+
+Please, ask the project friend to complete the procedure with the password.
+
+
 Monitor panels
 =========
 
