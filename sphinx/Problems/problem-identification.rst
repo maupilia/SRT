@@ -17,7 +17,7 @@ MinorServo
 =========
 
 Errors, warning and failure of the MinorServoBoss can be related to the crash of the server that manages the minor servos: MSCU.
-Check first if the server crashed and restart it if needed. Ask the project friend to complete the procedure (the instructions on this link:
+Check first if the server crashed and restart it if needed. Ask the project friend to complete the procedure (the instructions are on this link:
 https://srtsupervisoronduty.readthedocs.io/it/latest/sd/srt/procedures/minor_servo.html#mscu-restart).
 
 
