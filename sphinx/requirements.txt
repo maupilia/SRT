@@ -1,4 +1,3 @@
-docutils
-sphinx-astropy
-nbsphinx>=0.8.3,!=0.8.8
-ipython
+sphinx==5.3.0
+sphinx_rtd_theme==1.1.1
+sphinx-notfound-page==1.0.2
