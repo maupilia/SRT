@@ -1,0 +1,4 @@
+docutils
+sphinx-astropy
+nbsphinx>=0.8.3,!=0.8.8
+ipython
